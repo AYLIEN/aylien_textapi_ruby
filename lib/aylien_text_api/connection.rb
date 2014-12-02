@@ -14,6 +14,8 @@
 
 require 'json'
 require 'logger'
+require 'uri'
+require 'net/http'
 
 module AylienTextApi
   class Connection
