@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.aylien.com/api/v1/related
+    body:
+      encoding: US-ASCII
+      string: phrase=android
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Aylien Text API Ruby Gem 0.0.1
+      Content-Type:
+      - application/x-www-form-urlencoded
+      App-Id:
+      - <PASSWORD>
+      App-Key:
+      - <PASSWORD>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty/1.5.12.1
+      Date:
+      - Tue, 02 Dec 2014 18:16:24 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '1403'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! "{\n  \"phrase\": \"android\",\n  \"related\": [{\n    \"phrase\":
+        \"ios\",\n    \"distance\": 0.8744090795516968\n  }, {\n    \"phrase\": \"iphone\",\n
+        \   \"distance\": 0.8465747237205505\n  }, {\n    \"phrase\": \"iphone ipad\",\n
+        \   \"distance\": 0.8268404006958008\n  }, {\n    \"phrase\": \"blackberry
+        playbook\",\n    \"distance\": 0.8240213394165039\n  }, {\n    \"phrase\":
+        \"symbian\",\n    \"distance\": 0.8222286701202393\n  }, {\n    \"phrase\":
+        \"smartphones\",\n    \"distance\": 0.8179833889007568\n  }, {\n    \"phrase\":
+        \"smartphone\",\n    \"distance\": 0.8097701072692871\n  }, {\n    \"phrase\":
+        \"froyo\",\n    \"distance\": 0.7987280488014221\n  }, {\n    \"phrase\":
+        \"webos\",\n    \"distance\": 0.7951686382293701\n  }, {\n    \"phrase\":
+        \"ipad\",\n    \"distance\": 0.7910612225532532\n  }, {\n    \"phrase\": \"app\",\n
+        \   \"distance\": 0.7821643352508545\n  }, {\n    \"phrase\": \"blackberry\",\n
+        \   \"distance\": 0.7789986729621887\n  }, {\n    \"phrase\": \"jelly bean\",\n
+        \   \"distance\": 0.7675120830535889\n  }, {\n    \"phrase\": \"ipod touch\",\n
+        \   \"distance\": 0.762033998966217\n  }, {\n    \"phrase\": \"symbian s60\",\n
+        \   \"distance\": 0.7563616633415222\n  }, {\n    \"phrase\": \"kitkat\",\n
+        \   \"distance\": 0.7541030645370483\n  }, {\n    \"phrase\": \"iphones\",\n
+        \   \"distance\": 0.7453151345252991\n  }, {\n    \"phrase\": \"cyanogenmod\",\n
+        \   \"distance\": 0.7441946864128113\n  }, {\n    \"phrase\": \"jailbroken\",\n
+        \   \"distance\": 0.7417730093002319\n  }, {\n    \"phrase\": \"tizen\",\n
+        \   \"distance\": 0.7413533329963684\n  }]\n}"
+    http_version: 
+  recorded_at: Tue, 02 Dec 2014 18:15:22 GMT
+recorded_with: VCR 2.9.3

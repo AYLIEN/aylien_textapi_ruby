@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.aylien.com/api/v1/language
+    body:
+      encoding: US-ASCII
+      string: url=http%3A%2F%2Fwww.bbc.com%2Fsport%2F0%2Ffootball%2F25912393
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Aylien Text API Ruby Gem 0.0.1
+      Content-Type:
+      - application/x-www-form-urlencoded
+      App-Id:
+      - <PASSWORD>
+      App-Key:
+      - <PASSWORD>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty/1.5.12.1
+      Date:
+      - Tue, 02 Dec 2014 18:16:09 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '1298'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! "{\n  \"text\": \"Four-time Ballon d'Or winner Messi, 26, is reported
+        to be a target for French side Paris St-Germain.\\u00a0\\nMessi making chances\\nLionel
+        Messi has created 36 chances for Barcelona this season and has been on the
+        winning side in 16 of the 20 games he has played\\nIn an interview with radio
+        station RAC1, posted on Barcelona's website,\\u00a0 Bartomeu said: \\\"The
+        club will sit down and negotiate a new contract.\\n\\\"We will do what we
+        have to, to ensure he's the best-paid player.\\\"\\nMessi scored 60 goals
+        in 50 appearances last season but has struggled to match that goalscoring
+        form in 2013-14.\\nHe has scored 18 goals so far but just eight of those have
+        been in the league.\\nHis last league goal came in September, before he was
+        out for five weeks with a hamstring injury.\\n\\\"He can do everything,\\\"
+        said Barca coach Gerardo Martino. \\\"If he succeeds in other facets of his
+        game, it doesn't matter if he scores.\\n\\\"Nothing surprises me with him.
+        He controls the game well, passes the ball well, he is a good finisher, he
+        can press and recover the ball.\\n\\\"He sees passes that most people can
+        only see whilst watching the game on TV or in the stands, not ones that you
+        can normally see on the field.\\\"\\nAlso related to this story\\n\",\n  \"lang\":
+        \"en\",\n  \"confidence\": 0.9999957602699473\n}"
+    http_version: 
+  recorded_at: Tue, 02 Dec 2014 18:15:07 GMT
+recorded_with: VCR 2.9.3

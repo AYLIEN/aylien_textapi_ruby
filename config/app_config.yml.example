@@ -1,0 +1,7 @@
+text_api:
+  correct_keys:
+    app_id: YOUR APP_ID
+    app_key: YOUR APP_KEY
+  incorrect_keys:
+    app_id: random_string
+    app_key: random_string

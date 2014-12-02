@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.aylien.com/api/v1/concepts
+    body:
+      encoding: US-ASCII
+      string: url=http%3A%2F%2Fwww.bbc.co.uk%2Fnews%2Fbusiness-25821345
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Aylien Text API Ruby Gem 0.0.1
+      Content-Type:
+      - application/x-www-form-urlencoded
+      App-Id:
+      - <PASSWORD>
+      App-Key:
+      - <PASSWORD>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty/1.5.12.1
+      Date:
+      - Tue, 02 Dec 2014 18:16:14 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '4113'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"text":"Boeing confirms $4bn order from GE\nGeneral Electric''s
+        aircraft leasing and financing arm has confirmed that it has placed an order
+        for 40 Boeing planes worth $4bn (\u00a32.3bn) at list prices.\n\nThe order
+        was booked last year, but so far had been attributed to an \"unidentified
+        customer\" by Boeing.\n\nGE Capital Aviation Services (GECAS) said the new
+        planes would help it meet growing demand for more fuel-efficient aircraft
+        from its customers.\n\n\"Our airline customers require more fuel-efficient
+        aircraft to compete in the marketplace,\" Norman CT Liu, chief executive of
+        GECAS, said in a statement.\n\nGECAS has now placed total orders for 95 units
+        of 737 MAX 8 airplanes and 387 of the next-generation 737-800 jets making
+        it the biggest buyer of the two models in the leasing industry.\n\nA slowdown
+        in global travel demand, coupled with high fuel prices, has hurt the profitability
+        of many airlines across the globe in recent years.\n\nAs a result, airlines
+        have been looking to keep their costs in check to try and sustain their profitability.\n\nThat
+        has in turn caused a rise in demand for fuel-efficient aircraft.\n\nThe 100-200
+        seat narrow-body - or single-aisle - aircraft market is forecast to generate
+        $20 trillion (\u00a312.8tn) over the next 20 years.\n\nThe sector is currently
+        dominated by Airbus''s A320 and Boeing''s 737 aircraft, but other firms are
+        also looking to tap into the market.\n\nBoeing has claimed that its next-generation
+        737''s offer the \"lowest operating costs in its class\".","language":"en","concepts":{"http://dbpedia.org/resource/Connecticut":{"surfaceForms":[{"string":"CT","score":0.7768695300895874,"offset":538}],"types":["http://schema.org/Place","http://dbpedia.org/ontology/Place","http://dbpedia.org/ontology/PopulatedPlace","http://dbpedia.org/ontology/Region","http://schema.org/AdministrativeArea","http://dbpedia.org/ontology/AdministrativeRegion"],"support":22055},"http://dbpedia.org/resource/General_Electric":{"surfaceForms":[{"string":"GE","score":0.9908060693929266,"offset":32}],"types":["http://dbpedia.org/ontology/Device","http://dbpedia.org/ontology/InformationAppliance"],"support":4179},"http://dbpedia.org/resource/Aircraft_lease":{"surfaceForms":[{"string":"aircraft
+        leasing","score":0.9965442211698443,"offset":54}],"types":[""],"support":458},"http://dbpedia.org/resource/GE_Capital_Aviation_Services":{"surfaceForms":[{"string":"GE
+        Capital Aviation Services","score":1.0,"offset":294},{"string":"GECAS","score":1.0,"offset":324}],"types":["http://dbpedia.org/ontology/Agent","http://schema.org/Organization","http://dbpedia.org/ontology/Organisation","http://dbpedia.org/ontology/Company"],"support":68},"http://dbpedia.org/resource/Normans":{"surfaceForms":[{"string":"Norman","score":0.5994888273262919,"offset":531}],"types":[""],"support":4563},"http://dbpedia.org/resource/Our_Airline":{"surfaceForms":[{"string":"Our
+        airline","score":1.0,"offset":440}],"types":["http://dbpedia.org/ontology/Agent","http://schema.org/Organization","http://dbpedia.org/ontology/Organisation","http://dbpedia.org/ontology/Company","http://dbpedia.org/ontology/Airline"],"support":54},"http://dbpedia.org/resource/Boeing_737_MAX":{"surfaceForms":[{"string":"737
+        MAX","score":1.0,"offset":644}],"types":["http://schema.org/Product","http://dbpedia.org/ontology/MeanOfTransportation","http://dbpedia.org/ontology/Aircraft"],"support":69},"http://dbpedia.org/resource/Narrow-body_aircraft":{"surfaceForms":[{"string":"narrow-body","score":1.0,"offset":1124}],"types":[""],"support":144},"http://dbpedia.org/resource/Boeing":{"surfaceForms":[{"string":"Boeing","score":0.9974806337343421,"offset":0}],"types":["http://dbpedia.org/ontology/Agent","http://schema.org/Organization","http://dbpedia.org/ontology/Organisation","http://dbpedia.org/ontology/Company"],"support":7424},"http://dbpedia.org/resource/Airbus_A320_family":{"surfaceForms":[{"string":"A320","score":0.9813322468296155,"offset":1290}],"types":["http://schema.org/Product","http://dbpedia.org/ontology/MeanOfTransportation","http://dbpedia.org/ontology/Aircraft"],"support":1491}}}'
+    http_version: 
+  recorded_at: Tue, 02 Dec 2014 18:15:11 GMT
+recorded_with: VCR 2.9.3

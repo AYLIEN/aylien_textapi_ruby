@@ -1,0 +1,185 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.aylien.com/api/v1/extract
+    body:
+      encoding: US-ASCII
+      string: url=http%3A%2F%2Fwww.bbc.com%2Fsport%2F0%2Ffootball%2F30180206
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Aylien Text API Ruby Gem 0.0.1
+      Content-Type:
+      - application/x-www-form-urlencoded
+      App-Id:
+      - <PASSWORD>
+      App-Key:
+      - <PASSWORD>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty/1.5.12.1
+      Date:
+      - Tue, 02 Dec 2014 18:16:23 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '11061'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! "{\n  \"title\": \"Qatar, Abu Dhabi and Dubai: New centre of the sporting
+        world?\",\n  \"article\": \"Qatar, Abu Dhabi and Dubai: New centre of the
+        sporting world?\\n\\nWhere once, sport looked west for investment and inspiration,
+        now it looks east.\\n\\nThe oil-rich billionaires of the Gulf have planted
+        a flag at the heart of the sporting landscape in recent years. They have invested
+        their inconceivable wealth across an array of sports into all corners of the
+        world and now they are using their influence to bring sport to the region,
+        as a global statement of their ambition.\\n\\nThree Gulf states are at the
+        heart of this extraordinary revolution: Qatar, Abu Dhabi and Dubai. In Dubai
+        alone, you will find one billionaire in every 200,000 people.\\n\\nIn Abu
+        Dhabi, a rival state in the United Arab Emirates, the figures are just as
+        extraordinary. It is in the process of building the jaw-dropping having paid
+        the world-famous Paris museum more than \\u00a3400m just to use the name.
+        While in Qatar, more than 14% of households have at least \\u00a31m of private
+        wealth in the bank.\\n\\nAnd it is that wealth, that influence, which has
+        lured sport to the Gulf.\\n\\nTake last week, for instance. On Monday, the
+        row over Qatar's right to stage the 2022 World Cup rumbled on. On Tuesday,
+        Doha in Qatar won the right to host the 2019 World Athletics Championships.
+        From Thursday to Sunday, Rory McIlroy duelled with Henrik Stenson at the European
+        Tour's season-ending showpiece in Dubai.\\n\\nLewis Hamilton, Nico Rosberg
+        and the rest of the Formula 1 circus were in Abu Dhabi from Thursday before
+        contesting the final Grand Prix of the season on Sunday at the ostentatious
+        Yas Marina Circuit, built at a cost of about \\u00a3900m ($1.5bn).\\n\\nThe
+        region is fast becoming a sporting hub like no other. Qatar, for example,
+        will host world championships in boxing, swimming, squash, handball and para-athletics
+        in the next 12 months as well as staging almost 40 other sporting events.\\n\\nThe
+        question is why? Dr Christopher Davidson, reader in Middle East studies at
+        Durham University, says the approach is all about increasing global exposure.\\n\\n\\\"One
+        of the key reasons behind the approach is the desire to accumulate 'soft power'
+        in states which are either major trade partners or, more importantly, potential
+        military protectors, notably the UK, France and the United States,\\\" he
+        told the BBC.\\n\\n\\\"If sport is a way to allow these Gulf states to grab
+        favourable headlines and become better known, then it can help them to appear
+        more open, more friendly.\\\"\\n\\nIf we look at each of the three states
+        individually, the picture is easier to understand.\\n\\nDubai has the longest
+        association with sport thanks to its supreme ruler, Sheikh Mohammed bin Rashid
+        Al Maktoum. The 65-year-old is best known as owner of Godolphin, the thoroughbred
+        horse racing group, which he founded in 1994.\\n\\nIn 1996, the Dubai World
+        Cup was inaugurated as the world's richest horserace and takes place at the
+        world's most opulent course, the Meydan, built at a cost of \\u00a3800m ($1.25bn).\\n\\nSheikh
+        Mohammed's private wealth is estimated at \\u00a39bn, but his reach extends
+        far beyond that. He founded Emirates Airways, which last year\\n\\nThey have
+        shirt deals with Italy's AC Milan, French club Paris St-Germain and Arsenal,
+        whose north London stadium will be named after the airline until at least
+        2028. But they also have deals with the US Open tennis, the International
+        Cricket Council, the Ryder Cup and the USA Rugby Union team.\\n\\nKevin Hasler,
+        general manager of PR firm BPG, Cohn & Wolfe, said: \\\"When you watch a Premier
+        League game and the commentator says 'here at the Etihad' or 'their third
+        successive win at the Emirates', naming stadiums and shirt sponsorship has
+        become enormously effective.\\n\\n\\\"Brands are being seen around the world
+        in newspapers and on TV, day in, day out. The core of these strategies is
+        about investing to put these states on the map, getting them talked about
+        and discussed.\\\"\\n\\nElsewhere, Dubai has hosted an ATP Tennis event at
+        the Aviation Club with Roger Federer, who has a home in the region, winning
+        four times in five years from 2003 and a sixth time this year.\\n\\nThere
+        was, of course, that ill-fated attempt to buy Liverpool in 2007 and 2008.\\n\\nAbu
+        Dhabi has, however, gone one step further. If Dubai has Emirates Airways,
+        Abu Dhabi has Etihad - a name synonymous with the Abu Dhabi-owned Manchester
+        City.\\n\\nAbu Dhabi is ruled by Sheikh Khalifa bin Zayed Al Nahyan. His half
+        brother, Mansour bin Zayed bin Sultan bin Zayed bin Khalifa Al Nahyan (better
+        known as Sheikh Mansour) is the man who bought Manchester City in 2008.\\n\\nThe
+        family have ruled the emirate since the 18th century and pride themselves
+        on 'respect for heritage, culture, tradition.'\\n\\nThe ruling family are
+        complex with Sheikh Mansour one of 19 sons born to Abu Dhabi's long-term ruler
+        Sheikh Zayed bin Sultan Al Nahyan. His mother, one of six wives, had six sons,
+        making her part of this vast family the most influential.\\n\\nIn terms of
+        wealth? It is almost limitless. It is estimated that the family have as much
+        as $1tn in overseas assets alone. Their investment in City represents loose
+        change, in relative terms, even if they have pumped in excess of \\u00a31bn
+        into the club since 2008.\\n\\nTheir football interests extend elsewhere,
+        however. A company owned by Sheikh Mansour has recently agreed to to the tune
+        of \\u00a3312m.\\n\\nThe work will include the creation of a hotel and shopping
+        centre. But perhaps it is their move to expand into the United States that
+        is more interesting.\\n\\nIn 2013, Major League Soccer and the iconic New
+        York Yankees announced a pioneering deal to create an MLS franchise in New
+        York in time for the start of the 2015-16 season -\\n\\nIt is a development
+        that could give Abu Dhabi a footing and profile in the United States that
+        was previously unimaginable. A few months later, it was announced Sheikh Mansour
+        and Manchester City added Australian side Melbourne Heart.\\n\\n\\\"You could
+        look at things like the Abu Dhabi Grand Prix, the Abu Dhabi golf championships
+        and the investment in Manchester City as some of their most prominent global
+        marketing assets,\\\" said Ben Faber, senior director at Fast Track Middle
+        East, the company tasked with delivering City's fan loyalty programmes.\\n\\n\\\"The
+        Manchester City investment has given the emirate global awareness through
+        the fan base and they have been able to tap into associated Abu Dhabi businesses
+        such as Etihad to leverage off the back of that ownership as sponsors of the
+        club.\\\"\\n\\nAnd what of Qatar? Financial experts describe it as the world's
+        most ambitious deal hunter. A brief scan across the London skyline would suggest
+        they have a point.\\n\\nThe Shard, is Qatari owned, as are swathes of the
+        Canary Wharf financial district.\\n\\nDuring the financial crisis, the Qatar
+        Investment Authority (QIA) emerged as a white-knight investor to become Barclays'
+        biggest shareholder. A little further east, many of the buildings in the Olympic
+        Village are now owned by QIA.\\n\\nThe world's most expensive block of flats,
+        is Qatar owned as is Harrods, the famous department store. It owns a fifth
+        of the London stock exchange, 20% of Camden market. The reach is extraordinary.\\n\\nQatar
+        is ruled by a 34-year-old Emir Sheikh Tamim bin Hamad Al Thani, the world's
+        youngest reigning monarch. Born in Doha, the capital of Qatar, he was educated
+        at Harrow School in London, before graduating from the Royal Military Academy
+        Sandhurst. He is now head of the QIA, which is estimated to have assets of
+        \\u00a3300bn.\\n\\nQuestions remain about the bidding process for the 2022
+        World Cup and world governing body Fifa has yet to fully address the plight
+        of the 1.4m migrant workers in the country, many of whom are there against
+        their will.\\n\\nThe project began just after the turn of the century, when
+        some of Europe's elder footballing statesmen were lured to Qatar for one last
+        pay day. Pep Guardiola was among them, playing for Al Ahli between 2003 and
+        2005.\\n\\nThe Bayern Munich manager subsequently became an ambassador for
+        Qatar's successful World Cup bid. But there was more to come. Some 10 days
+        after Fifa announced the country would host the World Cup in 2022, came the
+        news that Qatar would appear on the Barcelona shirt, in a deal that would
+        become the biggest in football sponsorship history.\\n\\nThe deal was struck
+        with the Qatar Foundation, the country's charitable arm. Two years later,
+        Qatar Airways' paid \\u00a376m (\\u20ac96m) to extend the country's sponsorship
+        to all areas of the club.\\n\\nThen in 2011, QIA bought Paris St-Germain.
+        It was a bold move to harness the potential of the biggest one-club city in
+        Europe. To aid their cause PSG signed a controversial \\u20ac200m-a-year sponsorship
+        deal with the Qatar Tourism Authority. Paris is not the only city in Europe
+        touched by the wealth of Qatar. A year earlier, Sheikh Abdullah Al-Thani,
+        of the country's Royal Family, bought the Spanish club Malaga.\\n\\nQatar's
+        wealth is built on having the world's third-largest natural gas reserves.
+        But they will not last forever. \\\"By bringing sport to the Gulf, these states
+        are not only helping to boost tourism, boosting GDP as a result, but they
+        are also reducing their reliance on the oil, gas or industry that may not
+        last forever,\\\" said Dr Davidson.\\n\\nAnd yet while the region brings opportunity
+        and wealth it also brings with it controversy. The climate does not suit all
+        sport at all times. The row about when to stage the 2022 World Cup is well
+        publicised. Qatar is also moving the 2019 World Athletics Championships to
+        the autumn because of the unbearable summer heat.\\n\\nAnd that is to say
+        nothing of conditions for migrant workers, who often have to surrender the
+        passports and whose right to come and go is governed by their employer.\\n\\nIn
+        September two British researchers documenting the problems faced by migrant
+        workers were held for 10 days without charge. In Dubai, the former Leeds United
+        managing director David Haigh has been in prison for six months without charge.\\n\\nAnd
+        yet these issues are being overlooked. Money talks. As does the opportunity
+        to take sport to new parts of the world.\\n\\nWill these states continue to
+        bankroll sport, continue to build their sport portfolios?\\n\\nNo one can
+        be certain of the answer. Doha has twice bid for the Olympic Games but they
+        are unlikely to be put off bidding again. Who would bet against them?\\n\\nThere
+        are, however, those who believe that the region's investment focus is shifting
+        towards cultural and artistic assets. In 2017, construction is due to be complete
+        on a based on the original in New York.\\n\\nBut having secured such a stronghold
+        in sport, their existing investments will remain a key part of each respective
+        state's marketing strategies. The wealth is limitless, the ambition to bring
+        the best athletes in the world to the region remains.\\n\\nIt is a land grab
+        unmatched anywhere in the world. In sporting terms, east has met west.\",\n
+        \ \"image\": \"\",\n  \"author\": \"Ben Smith\",\n  \"videos\": [],\n  \"feeds\":
+        []\n}"
+    http_version: 
+  recorded_at: Tue, 02 Dec 2014 18:15:20 GMT
+recorded_with: VCR 2.9.3

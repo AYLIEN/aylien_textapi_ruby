@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.aylien.com/api/v1/summarize
+    body:
+      encoding: US-ASCII
+      string: url=http%3A%2F%2Fwww.bbc.com%2Fsport%2F0%2Ffootball%2F25912393
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Aylien Text API Ruby Gem 0.0.1
+      Content-Type:
+      - application/x-www-form-urlencoded
+      App-Id:
+      - <PASSWORD>
+      App-Key:
+      - <PASSWORD>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty/1.5.12.1
+      Date:
+      - Tue, 02 Dec 2014 18:16:05 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '1916'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! "{\n  \"text\": \"Lionel Messi: Forward is not for sale, says Barcelona
+        president\\n\\nBarcelona forward Lionel Messi is not for sale and the club
+        plan to discuss a new contract with the Argentine, says president Josep Maria
+        Bartomeu.\\n\\nFour-time Ballon d'Or winner Messi, 26, is reported to be a\\n\\nIn
+        an interview with radio station RAC1, Bartomeu said: \\\"The club will sit
+        down and negotiate a new contract.\\n\\n\\\"We will do what we have to, to
+        ensure he's the best-paid player.\\\"\\n\\nMessi scored 60 goals in 50 appearances
+        last season but has struggled to match that goalscoring form in 2013-14.\\n\\nHe
+        has scored 18 goals so far but just eight of those have been in the league.\\n\\nHis
+        last league goal came in September, before he was out for five weeks with
+        a hamstring injury.\\n\\n\\\"He can do everything,\\\" said Barca coach Gerardo
+        Martino. \\\"If he succeeds in other facets of his game, it doesn't matter
+        if he scores.\\n\\n\\\"Nothing surprises me with him. He controls the game
+        well, passes the ball well, he is a good finisher, he can press and recover
+        the ball.\\n\\n\\\"He sees passes that most people can only see whilst watching
+        the game on TV or in the stands, not ones that you can normally see on the
+        field.\\\"\",\n  \"sentences\": [\"Lionel Messi: Forward is not for sale,
+        says Barcelona president\\n\\nBarcelona forward Lionel Messi is not for sale
+        and the club plan to discuss a new contract with the Argentine, says president
+        Josep Maria Bartomeu.\", \"Four-time Ballon d'Or winner Messi, 26, is reported
+        to be a\\n\\nIn an interview with radio station RAC1, Bartomeu said: \\\"The
+        club will sit down and negotiate a new contract.\", \"His last league goal
+        came in September, before he was out for five weeks with a hamstring injury.\",
+        \"\\\"If he succeeds in other facets of his game, it doesn't matter if he
+        scores.\", \"He controls the game well, passes the ball well, he is a good
+        finisher, he can press and recover the ball.\"]\n}"
+    http_version: 
+  recorded_at: Tue, 02 Dec 2014 18:15:02 GMT
+recorded_with: VCR 2.9.3

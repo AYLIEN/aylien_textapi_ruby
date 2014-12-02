@@ -1,0 +1,302 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.aylien.com/api/v1/entities
+    body:
+      encoding: US-ASCII
+      string: url=http%3A%2F%2Fwww.businessinsider.com%2Fcarl-icahn-open-letter-to-apple-2014-1
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Aylien Text API Ruby Gem 0.0.1
+      Content-Type:
+      - application/x-www-form-urlencoded
+      App-Id:
+      - <PASSWORD>
+      App-Key:
+      - <PASSWORD>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty/1.5.12.1
+      Date:
+      - Tue, 02 Dec 2014 18:16:30 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '20361'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"text":"Carl Icahn Open Letter To Apple\nHe announced on Twitter
+        that he bought another $500 million worth of Apple stock, bringing his total
+        to $3.6 billion.\n\nHe also wrote an open letter to Apple shareholders explaining
+        why he thinks Apple needs to ramp up its share buybacks. He believes a share
+        buyback would easily goose the company''s share price.\n\nOver the course
+        of my long career as an investor and as Chairman of Icahn Enterprises, our
+        best performing investments result from opportunities that we like to call
+        \"no brainers.\" Recent examples of such \u201cno brainers\u201d have been
+        our investments in Netflix, Hain Celestial, Chesapeake, Forest Labs and Herbalife,
+        just to name a few. In our opinion, a great example of a \u201cno brainer\u201d
+        in today\u2019s market is Apple. The S&P 500\u2019s price to earnings multiple
+        is 71% higher than Apple\u2019s, and if Apple were simply valued at the same
+        multiple, its share price would be $840, which is 52% higher than its current
+        price.1 This is a dramatic valuation disconnect that simply makes no sense
+        to us, and it seems that the company agrees with us on this point. Tim Cook
+        himself has expressed on more than one occasion that Apple is undervalued,
+        and as the company states, it already has in place \u201cthe largest share
+        repurchase authorization in history.\u201d We believe, however, that this
+        share repurchase authorization can and should be even larger, and effectuating
+        that for the benefit of all of the company\u2019s shareholders is the sole
+        intention of our proposal. The company has recommended voting against our
+        proposal for various reasons. It seems to us that the basis of its argument
+        against our proposal is that the company believes, because of the \u201cdynamic
+        competitive landscape\u201d and because its \u201crapid pace of innovation
+        require[s] unprecedented investment, flexibility and access to resources\u201d,
+        it does not currently have enough excess liquidity to increase the size of
+        its repurchase program. Assuming this indeed is the basis for the company\u2019s
+        argument, we find its position overly conservative (almost to the point of
+        being irrational), when we consider that the company had $130 billion of net
+        cash as of September 28, 2013 and that consensus earnings are expected to
+        be almost $40 billion next year. Given this massive net cash position and
+        robust earnings generation, Apple is perhaps the most overcapitalized company
+        in corporate history, from our perspective. Regardless of what liquidity it
+        may require with respect to \u201cunprecedented investment, flexibility and
+        access to resources\u201d for innovation moving forward, we believe the unprecedented
+        degree to which the company is currently overcapitalized would overcompensate
+        for any such investments (including possible investments in strategic M&A,
+        to which the company does not refer). Said another way, we believe that the
+        combination of the company\u2019s unprecedentedly enormous net cash balance,
+        robust annual earnings, and tremendous borrowing capacity provide more than
+        enough excess liquidity to afford both the use of cash for any necessary ongoing
+        business-related investments in addition to the cash used for the increased
+        share repurchases proposed.\n\nIt is our belief that it is the responsibility
+        of the Board, on behalf of the company\u2019s shareholders, to take advantage
+        of such a large and unmistakable opportunity. Indeed, we believe that by choosing
+        not to increase the size of the repurchase program, the directors are actually
+        performing a great disservice to the owners, especially smaller shareholders
+        who may not be in a position to buy more stock themselves. Meanwhile, we are
+        in a position to continue buying shares in the market at today''s price, so
+        perhaps we should thank the Board for not being more aggressive, and thus
+        allowing us to accumulate an even larger investment position at a price that
+        reflects the aforementioned valuation disconnect. In fact, over the past two
+        weeks we purchased $1 billion more in Apple shares, $500 million of which
+        we purchased today, bringing our total ownership position in Apple to a current
+        value of approximately $3.6 billion.\n\nGiven the degree to which Apple appears
+        undervalued to us, we almost feel that it\u2019s a waste of time to debate
+        the point. As we believe it to be the preeminent and most innovative consumer
+        products company in the world, with the greatest brand, hardware, software,
+        and services in the world, Apple has had tremendous growth to date, and we
+        fail to see why this growth would not continue moving forward. The industry
+        (smartphones and tablets) is expected to grow volume at a 15% compounded annual
+        growth rate from 2013 through 2017 according to IDC. We believe Apple should
+        continue to benefit from this secular growth, as last year, 85% of Apple\u2019s
+        revenues came from smartphones, tablets, and related software, services, and
+        accessories. The naysayers question whether Apple will be able to participate
+        in this growth without sacrificing pricing and gross margins, especially with
+        competition from Google, Samsung, Microsoft, Amazon and Chinese manufacturers.
+        Our response to them is that the answer is already evident to us from the
+        continuing loyalty of Apple\u2019s growing customer base. The highly successful
+        evolutionary (not revolutionary) introductions of the iPhone 5s and 5c and
+        Ipad Air and Mini, prove to us that Apple could, for the most part, maintain
+        pricing and gross margin as we believe consumers are willing to pay a reasonable
+        premium for the world\u2019s best smartphones and tablets. The rumored future
+        introduction of product line extensions with larger screens for both the iPhone
+        and iPad would further support this view.2 In fact, a recent study from NDC
+        shows that the iPhone accounted for 42% of smartphone users in the United
+        States at the end of 2013, up a staggering 20% from the prior year. Despite
+        its great scale and narrow focus, Apple has an operating margin of just 28.5%.
+        We believe its customers\u2019 willingness to pay a premium price for the
+        world\u2019s greatest products should enable Apple to participate in the expected
+        volume growth of these categories while at the same time largely maintaining
+        its average selling prices and gross margins. And, as software and services
+        improve and become even more important to consumers in the future, we expect
+        customer loyalty to strengthen further.\n\nEven if the story ended with Apple\u2019s
+        existing product and software lines, we would still choose to make Apple our
+        largest investment. But there is more to the story! Tim Cook keeps saying
+        that he expects to introduce \u201cnew products in new categories\u201d and
+        yet very few people seem to be listening. We\u2019re not aware of a single
+        Wall Street analyst who includes \u201cnew products in new categories\u201d
+        or new services in any of their financial projections, even though Apple clearly
+        has an impressive track record of such new category product introductions,
+        even if it does so rarely. Apple released the iPhone in 2007 and the iPad
+        five years later in 2012, both so extraordinarily successful that today they
+        represent the majority of the company\u2019s revenue. Tim Cook\u2019s comments,
+        along with advancements in enabling technologies, lead us to believe that
+        we may see in the not too distant future what new groundbreaking products
+        they\u2019ve been working on developing in Cupertino these last several years.3\n\nTo
+        get a sense of the scale of the opportunity that stems from new products in
+        new categories, let\u2019s take a moment to consider the possibility of an
+        Apple television. The major electronics companies are now focused on ultra
+        high definition TVs as their next big opportunity. Ultra high definition is
+        expected to offer a level of image clarity that is superior to today\u2019s
+        high definition televisions for screen sizes 55 inches and above. To date,
+        the barrier to mass market adoption of ultra high definition has been the
+        price gap between it and regular high definition, but that price gap is closing
+        and will soon be de minimis. The closing of this price gap is supported by
+        statements made by the Co-CEO of Samsung Electronics, who expects the price
+        gap to fall to 10% by the end of this year. While cable companies will likely
+        be slow to upgrade their linear TV infrastructure due to cost, video content
+        is expected to be accessible through the internet via services like Netflix
+        and others. We believe ultra high definition represents a major catalyst for
+        the next TV replacement cycle and a promising moment for Apple to introduce
+        its first new product in this category. Reed Hastings, CEO of Netflix, has
+        referenced ultra high definition as a major catalyst for Netflix going forward.
+        While this is true for Netflix, we believe it is also true for Apple, not
+        just for its hardware but also for selling ultra high definition movies and
+        shows on iTunes through the internet. With 238 million TVs sold globally in
+        2012, it would not surprise us if Apple could sell 25 million new Apple ultra
+        high definition televisions at $1,600 per unit, especially when considering
+        both its track record of introducing best in class products and its market
+        share in smartphones and tablets.4 At a gross margin of 37.7%, which would
+        be consistent with that of the overall company, such a debut would add $40
+        billion of revenues and $15 billion to operating income annually.5\n\nThe
+        possibility of a television represents only one opportunity for the company
+        that stems from new products in new categories. While we won\u2019t go through
+        all of them here, we see several major opportunities in hardware alone. With
+        advancements in miniaturization and continued improvements in Siri, it seems
+        obvious to us that Apple has a compelling opportunity in the exciting area
+        of wearable devices, supported by rumors that Apple is developing a smartwatch
+        (as Tim Cook himself said the wrist is \u201can area of great interest for
+        Apple\u201d). While many consider Apple a hardware company, to pigeonhole
+        it as such is no longer appropriate in our opinion. Apple has built an ecosystem
+        of hardware, software, and services that we believe collectively represents
+        the most successful consumer product platform in the entire history of consumer-facing
+        technologies. And as Apple\u2019s customer base continues to enjoy the use
+        of this ecosystem, storing media in the cloud and moving it from one Apple
+        device to another as doing so becomes increasingly convenient with innovations
+        such as Airplay (as just one simple example of this ecosystem\u2019s current
+        functionality), we believe that customer base grows increasingly loyal and
+        excited for the next Apple product release, making it an asset in and of itself
+        that grows and becomes increasingly valuable. Indeed, we believe any new software
+        service that offers new functionality to this customer base becomes a large
+        opportunity for Apple to introduce as a revolutionary and disruptive bolt-on
+        to the ecosystem. As just one of many possible examples of this phenomenon,
+        Apple could introduce a next generation payments solution. In terms of whether
+        the marketplace is well addressed by mobile payments solutions, Tim Cook has
+        said \u201cI think it is in its infancy\u2026 I think it is just getting started
+        and just of out of the starting block.\u201d With the fingerprint sensor,
+        iBeacon, 575+ million credit card numbers stored in iTunes, and Apple\u2019s
+        homogeneous iOS installed base with 79% of devices using iOS 7, we believe
+        a revolutionary payments solution is now a very real opportunity that the
+        company could choose to pursue. With respect to all of Apple\u2019s new and
+        existing opportunities for growth, they will only prove to be successful with
+        strong execution from the company\u2019s management, in whom we hold great
+        confidence. Naysayers say Tim Cook is not Steve Jobs, and they\u2019re absolutely
+        right. He is Tim Cook and we believe he is doing an excellent job, and Jonathan
+        Ive, Senior VP of Design, is Jonathan Ive and we believe he\u2019s doing an
+        excellent job, etcetera.\n\nIn this letter, we have above summarized why we
+        believe Apple is undervalued in order to express how ridiculous it seems to
+        us for Apple to horde so much cash rather than repurchase stock (and thereby
+        use that cash to make a larger investment in itself for the benefit of all
+        of the company\u2019s shareholders). In its statement in opposition to our
+        proposal, the company claims that \u201cthe Board and management team have
+        demonstrated a strong commitment to returning capital to shareholders\u201d
+        and we believe that is true, but we also believe that commitment is not strong
+        enough given the unique degree to which the company is both undervalued and
+        overcapitalized. Furthermore, it is important to note that a share repurchase
+        is not simply an act of \u201creturning capital to shareholders\u201d since
+        it is also the company effectively making an investment in itself. To us,
+        as long term investors, this is an important difference: a dividend is a pure
+        return of capital while a share repurchase is the company making an investment
+        in itself by buying shares in the market at the current price, which we believe
+        to be undervalued, from shareholders willing to sell at that price for the
+        benefit of shareholders who choose to remain investors for the longer term.
+        And we are long term investors. It should be noted that no one on the Board
+        seems to be an expert in the world of investment management. However, based
+        on our record, we believe few will argue that we are experts in this area,
+        and we have no doubts that the Board is doing a great disservice to its shareholders
+        by not immediately increasing the size of the share repurchase program in
+        order to more effectively take advantage of what we believe to be the company\u2019s
+        low market valuation.\n\nWe have expressed above what we believe to be the
+        company\u2019s primary reason for not supporting our proposal. Conversely,
+        it is our belief that Apple\u2019s current excess liquidity is without historical
+        precedent and beyond reasonable comparison to its peers or otherwise, and
+        such dramatic overcapitalization affords the company enough excess liquidity
+        to repurchase the amount of shares we proposed. Apple\u2019s existing capital
+        return program has just $37 billion remaining, and the company has until the
+        end of 2015 to complete it. Without any changes to the program, the largest
+        pile of corporate cash in the world is likely to grow even larger, and if
+        the share price rises, this Board will have missed a great opportunity to
+        use more of that hoarded cash to repurchase shares at an attractive value.
+        While it is important for the Board to focus on the return of capital on a
+        sustained basis, it is also important for the Board to evaluate whether or
+        not its share price is undervalued and to take advantage of it with share
+        repurchases, especially when the balance sheet exhibits dramatic excess liquidity,
+        as we believe Apple\u2019s does today.\n\nThe Board may argue that with so
+        much opportunity, it would be prudent to maintain its excess liquidity to
+        increase R&D or make acquisitions, especially when considering the financial
+        strength of its competitors. We completely agree that the company must innovate
+        and should be flexible to make prudent strategic acquisitions, yet even after
+        taking such factors into account, we believe that tremendous excess liquidity
+        remains. With respect to possible M&A (to which the company does not refer
+        in its statement), for the opportunities highlighted above (a TV, a watch,
+        a payment service), we find it extremely difficult to identify any possible
+        strategic acquisitions of scale that make sense. Furthermore, such action
+        would seem to conflict with Apple\u2019s culture historically. A remarkable
+        fact is that since the Board reacquired Steve Jobs through the NeXT acquisition
+        for $427 million in 1997, the next largest acquisition Apple made was $2.6
+        billion for Nortel\u2019s patent portfolio. Amazingly, over these 17 years,
+        Apple made just $7.8 billion worth of acquisitions in total during this timeframe.
+        Apple clearly has a long history and culture of developing its innovation
+        internally, which leads us to believe that the company will not seek out large
+        acquisitions to pursue any of the opportunities about which we have speculated.
+        In terms of paying for the necessary innovation internally, Apple is expected
+        to generate $40 billion of earnings next year, which already takes into account
+        an increasing R&D expense. In order to address the argument that Apple should
+        reserve excess liquidity to more effectively compete with some of its deep-pocketed
+        competitors, there is no doubt that some of them also have significant earnings
+        and net cash on their balance sheets (whether or not that is appropriate).
+        But Apple has much more. When compared to its next largest competitor, Microsoft,
+        for example, Apple has $68 billion more net cash and is expected to generate
+        $18 billion more in earnings during 2014.\n\nThe Board may argue that much
+        of its cash and earnings are international and therefore subject to a repatriation
+        tax if returned to the United States to repurchase shares. While this is true,
+        we question why the company would not simply borrow the money in the Unites
+        States to the extent it deems its domestic cash of $36 billion and domestic
+        earnings are insufficient. Given that the company has $130 billion of net
+        cash and $40 billion of expected annual earnings, and the fact that it is
+        hard to find a better time in history to borrow money, a $50 billion share
+        repurchase over the course of fiscal year 2014 seems more than reasonable
+        to us. Today, Apple\u2019s outstanding ten year bonds yield 3.63%, and its
+        five year bonds yield 2%. Apple could either continue to carry this debt,
+        repay it from its domestic earnings over time, or repatriate cash from abroad
+        upon the passage of corporate tax reform.\n\nThe company has stated that it
+        is \u201cupdating perspectives on its capital return program for 2014 and
+        beyond\u201d and \u201ccollecting input from a very broad base of shareholders.\u201d
+        We believe, if our proposal receives majority shareholder support, that the
+        Board should respect it and increase the repurchase program as requested.
+        We believe this action will greatly enhance value for all long term shareholders
+        who believe, as we do, in the great potential of this company. If the Board
+        takes this action, we will applaud them for taking advantage of one of the
+        greatest examples of a \u201cno brainer\u201d we have seen in five decades
+        of successful investing.","entities":{"percentage":["71 %","52 %","15 %","85
+        %","42 %","20 %","10 %","79 %","3.63 %","2 %"],"organization":["Apple","IDC","Samsung
+        , Microsoft","Samsung Electronics","Netflix","Apple\u2019s","VP","Microsoft"],"location":["Chesapeake",".1","United
+        States","Hastings"],"keyword":["Apple could sell 25 million new Apple","Apple
+        product","Apple to introduce its first new product","Apple shares","Apple
+        has $ 68 billion more net cash","opportunity for the company that stems from
+        new products","opportunity for Apple","company making an investment in itself
+        by buying shares","Apple our largest investment","company is currently overcapitalized
+        would overcompensate for any such investments -LRB- including possible investments","products
+        company","Apple","company has $ 130 billion of net cash","company had $ 130
+        billion of net cash","opportunity that the company","company effectively making
+        an investment","Board to evaluate whether or not its share price","company","cash
+        used for the increased share","opportunity that stems from new products"],"date":["September
+        28 , 2013","next year","today","past two weeks","2013","2017","last year","end
+        of 2013","2007","2012","end of this year","1,600","end of 2015","1997","2014","fiscal
+        year 2014","ten year"],"money":["$ 500 million","$ 3.6 billion","$ 840","$
+        130 billion","$ 40 billion","$ 1 billion","$","$ 15 billion","$ 37 billion","$
+        427 million","$ 2.6 billion","$ 7.8 billion","$ 68 billion","$ 18 billion","$
+        36 billion","$ 50 billion"],"person":["Carl","Icahn Open","Icahn Enterprises","Hain
+        Celestial","Tim Cook","Tim Cook\u2019s","Reed Hastings","Steve Jobs","Tim","Cook","Jonathan
+        Ive","Jonathan","Ive"],"product":["iPhone","Ipad","Airplay"]}}'
+    http_version: 
+  recorded_at: Tue, 02 Dec 2014 18:15:27 GMT
+recorded_with: VCR 2.9.3

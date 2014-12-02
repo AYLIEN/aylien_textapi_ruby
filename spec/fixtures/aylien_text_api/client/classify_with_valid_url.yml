@@ -1,0 +1,98 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.aylien.com/api/v1/classify
+    body:
+      encoding: US-ASCII
+      string: url=http%3A%2F%2Ftechcrunch.com%2F2014%2F10%2F20%2Fthe-super-slim-kindle-voyage-is-a-great-travel-companion%2F
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Aylien Text API Ruby Gem 0.0.1
+      Content-Type:
+      - application/x-www-form-urlencoded
+      App-Id:
+      - <PASSWORD>
+      App-Key:
+      - <PASSWORD>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty/1.5.12.1
+      Date:
+      - Tue, 02 Dec 2014 18:15:53 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '4482'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! "{\n  \"text\": \"The Super-Slim Kindle Voyage Is A Great Travel Companion\\nIn
+        1935, Sir Allen Lane and V. K. Krishna Menon founded Penguin Books, a company
+        dedicated to producing high-quality, small-format paperback books for the
+        world market. These small, well-made little books introduced some amazing
+        fiction, philosophy, classical thought and spiritualism to a hungry audience,
+        and the low price made it easy to build a library of amazing titles that could
+        fit into a milk crate. Penguin, it can be argued, brought about an intellectual
+        sea change, bringing us both the post-war writers of note and, in another
+        direction, the Beats and the spiritual riot of the 1960s.\\n\\nWhy was Penguin
+        so popular? And why is the 6-inch Kindle Voyage its emotional successor? Both
+        revolutionized the physical notion of books.\\n\\nIn Penguin\\u2019s case,
+        the medium was truly the message, and\\u00a0the writing inside the small,
+        pocketable books allowed for portability and encouraged collection. In the
+        Kindle Voyage\\u2019s case, Amazon has created a delightful travel companion.\\n\\nFirst,
+        let\\u2019s address the size. The $199 Voyage ($219 without ads and with 3G)
+        is about as big as a Penguin paperback and just a bit bigger (and thicker)
+        than a standard passport. It\\u2019s 7.6 mm thick and removed from its case
+        it looks about as substantial as a thin stack of paper.\\n\\nThe Voyage is
+        the Kindle distilled. Almost all of the features are there \\u2013 touchscreen,
+        bright white e-ink display, and even a special haptic feedback system that
+        allows you to \\u201cclick\\u201d left and right side buttons to turn pages.
+        You can also swipe the page left and right to move to the next page and small
+        dedicated spots above the longer touch-sensitive pads that go back one page.\\n\\nAmazon
+        sells an $45 folding case for the Voyage that opens up like a Moleskine reporter\\u2019s
+        notebook. It activates the Kindle upon opening and turns it off when closed.
+        Hidden magnets then allow you to turn the cover into a little stand for hands-free
+        reading.\\n\\nSo how does it work? In short, I love e-ink devices, and the
+        Voyage is the best of them. Because it lasts for weeks \\u2013 I haven\\u2019t
+        charged it in a full week of use \\u2013 you can stick it in a bag or backpack
+        and expect it to be ready to read. The bright backlit screen casts a gentle
+        glow that is reactive to outside light and makes reading pleasant without
+        the glare of LCD. As a dedicated e-reader, it is nearly perfect, and I rarely
+        say anything in CE is perfect.\\n\\nWho is this for? It\\u2019s for readers.
+        The Voyage doesn\\u2019t do much except display books and allow you to buy
+        them. You can download thousands of titles and not run out of space and, thanks
+        to new organizational systems, you can place books into folders and control
+        their placement on the device. But, again, it\\u2019s for readers. Don\\u2019t
+        expect to read email, browse the web, or control your home security system
+        from this device. It\\u2019s the e-reader perfected, however, and that means
+        a lot.\\n\\nI don\\u2019t know how much longer the market for dedicated e-readers
+        will exist, but I certainly appreciate Amazon\\u2019s dedication to the cause.
+        E-ink devices are special because they\\u2019re amazingly readable and light
+        and have great battery life. All of these aspects work in concert to offer
+        a reading experience akin to thumbing through a Penguin Classic.\\n\\nAgain,
+        this isn\\u2019t for everyone. It\\u2019s great for travel \\u2013 I took
+        it with me to Disrupt in Europe and have read it on planes for the past few
+        days \\u2013 and it\\u2019s great for people who don\\u2019t want a distracting
+        reading experience. It\\u2019s a great gateway tablet, for example, for folks
+        who don\\u2019t want a complex experience and instead just want to read. It\\u2019s
+        also far more comfortable on the eyes for night reading in bed and the text
+        can be modified for any eyes.\\n\\nAmazon is aiming for readers. It knows
+        that people love Kindles because they are pure products for reading. And the
+        Voyage is Amazon\\u2019s latest attempt at perfecting the e-book. Not unlike
+        Penguin, Amazon looked at the market and made a bold move. It\\u2019s paid
+        off and the resulting products \\u2013 the Fire like and this new Kindle \\u2013
+        are nearly perfect media consumption devices by a company that knows how to
+        sell.\",\n  \"language\": \"en\",\n  \"categories\": [{\n    \"label\": \"economy,
+        business and finance - computing and information technology\",\n    \"code\":
+        \"04003000\",\n    \"confidence\": 1.0\n  }]\n}"
+    http_version: 
+  recorded_at: Tue, 02 Dec 2014 18:14:50 GMT
+recorded_with: VCR 2.9.3
