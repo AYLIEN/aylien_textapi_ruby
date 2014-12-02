@@ -28,9 +28,9 @@ end
 or pass them as parameters to AylienTextApi::Client class.
 
 ````ruby
-  require 'aylien_text_api'
+require 'aylien_text_api'
 
-  client = AylienTextApi::Client.new(app_id: "YOUR APP ID", app_key: "YOUR APP KEY")
+client = AylienTextApi::Client.new(app_id: "YOUR APP ID", app_key: "YOUR APP KEY")
 ````
 
 Examples
