@@ -1,6 +1,0 @@
-lib/aylien_text_api.rb f2102bd4fb3108e9409ad673b37ef1f099d73812
-lib/aylien_text_api/error.rb 88403144078774764418f9c5c8b4b3d7fa5b578c
-lib/aylien_text_api/client.rb 92b826abe42b8718cd4df3ae0eb514df0e64ec73
-lib/aylien_text_api/version.rb 42bd3643ac334ee3ac8c2755320cb22e3bdeca0f
-lib/aylien_text_api/connection.rb af2456cab99ee0f5e10b7b1f6208d60f5db11408
-lib/aylien_text_api/configuration.rb b650c4f167458f6facdde53722543e53198356a3
