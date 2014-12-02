@@ -17,8 +17,8 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_development_dependency 'rake', '~> 10.4.0'
-  s.add_development_dependency "minitest"
-  s.add_development_dependency "vcr"
-  s.add_development_dependency "webmock"
+  s.add_development_dependency 'rake', '~> 10.4'
+  s.add_development_dependency 'minitest', '~> 5.4'
+  s.add_development_dependency 'vcr', '~> 2.9'
+  s.add_development_dependency 'webmock', '~> 1.20'
 end

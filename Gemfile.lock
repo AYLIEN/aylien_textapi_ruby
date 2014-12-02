@@ -22,7 +22,7 @@ PLATFORMS
 
 DEPENDENCIES
   aylien_text_api!
-  minitest
-  rake (~> 10.4.0)
-  vcr
-  webmock
+  minitest (~> 5.4)
+  rake (~> 10.4)
+  vcr (~> 2.9)
+  webmock (~> 1.20)
