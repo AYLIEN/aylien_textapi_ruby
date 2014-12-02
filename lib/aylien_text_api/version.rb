@@ -13,5 +13,5 @@
 # limitations under the License.
 
 module AylienTextApi
-  VERSION = "0.0.1" unless defined? AylienTextApi::VERSION
+  VERSION = "0.0.2" unless defined? AylienTextApi::VERSION
 end
