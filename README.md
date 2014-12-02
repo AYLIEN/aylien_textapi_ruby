@@ -14,15 +14,16 @@ Configuration
 =============
 Aylien Text API needs app_id and app_key which you can get it from [Text API website](https://developer.aylien.com/signup).
 
-You can pass configuration options as a block to AylienTextApi::Client.new.
+You can pass configuration options as a block to AylienTextApi.configure.
 
 ````ruby
 require 'aylien_text_api'
 
-client = AylienTextApi::Client.new do |config|
+AylienTextApi.configure do |config|
   config.app_id        =    "YOUR_APP_ID"
   config.app_key       =    "YOUR_APP_KEY"
 end
+client = AylienTextApi::Client.new
 ````
 
 or pass them as parameters to AylienTextApi::Client class.
