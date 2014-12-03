@@ -1,5 +1,6 @@
 About
 =====
+[![Gem Version](https://badge.fury.io/rb/aylien_text_api.svg)](http://badge.fury.io/rb/aylien_text_api)
 
 This is the Ruby client library for AYLIEN's APIs. If you haven't already done so, you will need to [sign up](https://developer.aylien.com/signup).
 
@@ -40,12 +41,13 @@ After configuring a client, you can do the following things:
 
 ````ruby
 client.extract url: "http://techcrunch.com/2014/02/27/aylien-launches-text-analysis-api-to-help-developers-extract-meaning-from-documents/"
+
 # => {
-  :title=>"Aylien Launches Text-Analysis API To Help Developers...",
-  :article=>"Working with text is often a messy business for...",
-  :image=>"", :author=>"Frederic Lardinois", :videos=>[],
-  :feeds=>["http://techcrunch.com/2014/02/27/aylien-...
-  }
+#  :title=>"Aylien Launches Text-Analysis API To Help Developers...",
+#  :article=>"Working with text is often a messy business for...",
+#  :image=>"", :author=>"Frederic Lardinois", :videos=>[],
+#  :feeds=>["http://techcrunch.com/2014/02/27/aylien-...
+#  }
 ````
 
 If any errors happen during the call, nil will be returned. If destructive methods are used, an exception corresponding to the error will be returned.
@@ -53,9 +55,9 @@ If any errors happen during the call, nil will be returned. If destructive metho
 ````ruby
 client.classify! url: "http://www.bbc.com/sport/0/football/25912393"
 # => {:text=>"Lionel Messi: Forward is not for sale, says...,
- :language=>"en",
- :categories=>[{:label=>"sport - soccer", :code=>"15054000", :confidence=>1.0}]
- }
+# :language=>"en",
+# :categories=>[{:label=>"sport - soccer", :code=>"15054000", :confidence=>1.0}]
+# }
 ````
 
 Third Party Libraries and Dependencies

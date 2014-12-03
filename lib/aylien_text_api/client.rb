@@ -17,7 +17,7 @@ module AylienTextApi
   class Client
     attr_accessor *Configuration::VALID_CONFIG_KEYS
 
-    # Creates an Client object.
+    # Creates a Client object.
     # @param [Hash] options Configuration params
     # @option options [String] :app_id The APP_ID
     # @option options [String] :app_key The APP_KEY
