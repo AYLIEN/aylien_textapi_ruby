@@ -7,16 +7,18 @@ http_interactions:
       encoding: US-ASCII
       string: url=http%3A%2F%2Fwww.bbc.com%2Fsport%2F0%2Ffootball%2F30180206
     headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
-      - Aylien Text API Ruby Gem 0.0.1
+      - Aylien Text API Ruby Gem 0.1.0
       Content-Type:
       - application/x-www-form-urlencoded
       App-Id:
-      - <PASSWORD>
+      - "<PASSWORD>"
       App-Key:
-      - <PASSWORD>
+      - "<PASSWORD>"
   response:
     status:
       code: 200
@@ -25,161 +27,272 @@ http_interactions:
       Server:
       - openresty/1.5.12.1
       Date:
-      - Tue, 02 Dec 2014 18:16:23 GMT
+      - Tue, 10 Feb 2015 14:07:14 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
-      - '11061'
+      - '11247'
       Connection:
       - keep-alive
+      X-Ratelimit-Limit:
+      - '207000'
+      X-Ratelimit-Remaining:
+      - '205351'
+      X-Ratelimit-Reset:
+      - '1423612800'
     body:
-      encoding: US-ASCII
-      string: ! "{\n  \"title\": \"Qatar, Abu Dhabi and Dubai: New centre of the sporting
-        world?\",\n  \"article\": \"Qatar, Abu Dhabi and Dubai: New centre of the
-        sporting world?\\n\\nWhere once, sport looked west for investment and inspiration,
-        now it looks east.\\n\\nThe oil-rich billionaires of the Gulf have planted
-        a flag at the heart of the sporting landscape in recent years. They have invested
-        their inconceivable wealth across an array of sports into all corners of the
-        world and now they are using their influence to bring sport to the region,
-        as a global statement of their ambition.\\n\\nThree Gulf states are at the
-        heart of this extraordinary revolution: Qatar, Abu Dhabi and Dubai. In Dubai
-        alone, you will find one billionaire in every 200,000 people.\\n\\nIn Abu
-        Dhabi, a rival state in the United Arab Emirates, the figures are just as
-        extraordinary. It is in the process of building the jaw-dropping having paid
-        the world-famous Paris museum more than \\u00a3400m just to use the name.
-        While in Qatar, more than 14% of households have at least \\u00a31m of private
-        wealth in the bank.\\n\\nAnd it is that wealth, that influence, which has
-        lured sport to the Gulf.\\n\\nTake last week, for instance. On Monday, the
-        row over Qatar's right to stage the 2022 World Cup rumbled on. On Tuesday,
-        Doha in Qatar won the right to host the 2019 World Athletics Championships.
-        From Thursday to Sunday, Rory McIlroy duelled with Henrik Stenson at the European
-        Tour's season-ending showpiece in Dubai.\\n\\nLewis Hamilton, Nico Rosberg
-        and the rest of the Formula 1 circus were in Abu Dhabi from Thursday before
-        contesting the final Grand Prix of the season on Sunday at the ostentatious
-        Yas Marina Circuit, built at a cost of about \\u00a3900m ($1.5bn).\\n\\nThe
-        region is fast becoming a sporting hub like no other. Qatar, for example,
-        will host world championships in boxing, swimming, squash, handball and para-athletics
-        in the next 12 months as well as staging almost 40 other sporting events.\\n\\nThe
-        question is why? Dr Christopher Davidson, reader in Middle East studies at
-        Durham University, says the approach is all about increasing global exposure.\\n\\n\\\"One
-        of the key reasons behind the approach is the desire to accumulate 'soft power'
-        in states which are either major trade partners or, more importantly, potential
-        military protectors, notably the UK, France and the United States,\\\" he
-        told the BBC.\\n\\n\\\"If sport is a way to allow these Gulf states to grab
-        favourable headlines and become better known, then it can help them to appear
-        more open, more friendly.\\\"\\n\\nIf we look at each of the three states
-        individually, the picture is easier to understand.\\n\\nDubai has the longest
-        association with sport thanks to its supreme ruler, Sheikh Mohammed bin Rashid
-        Al Maktoum. The 65-year-old is best known as owner of Godolphin, the thoroughbred
-        horse racing group, which he founded in 1994.\\n\\nIn 1996, the Dubai World
-        Cup was inaugurated as the world's richest horserace and takes place at the
-        world's most opulent course, the Meydan, built at a cost of \\u00a3800m ($1.25bn).\\n\\nSheikh
-        Mohammed's private wealth is estimated at \\u00a39bn, but his reach extends
-        far beyond that. He founded Emirates Airways, which last year\\n\\nThey have
-        shirt deals with Italy's AC Milan, French club Paris St-Germain and Arsenal,
-        whose north London stadium will be named after the airline until at least
-        2028. But they also have deals with the US Open tennis, the International
-        Cricket Council, the Ryder Cup and the USA Rugby Union team.\\n\\nKevin Hasler,
-        general manager of PR firm BPG, Cohn & Wolfe, said: \\\"When you watch a Premier
-        League game and the commentator says 'here at the Etihad' or 'their third
-        successive win at the Emirates', naming stadiums and shirt sponsorship has
-        become enormously effective.\\n\\n\\\"Brands are being seen around the world
-        in newspapers and on TV, day in, day out. The core of these strategies is
-        about investing to put these states on the map, getting them talked about
-        and discussed.\\\"\\n\\nElsewhere, Dubai has hosted an ATP Tennis event at
-        the Aviation Club with Roger Federer, who has a home in the region, winning
-        four times in five years from 2003 and a sixth time this year.\\n\\nThere
-        was, of course, that ill-fated attempt to buy Liverpool in 2007 and 2008.\\n\\nAbu
-        Dhabi has, however, gone one step further. If Dubai has Emirates Airways,
-        Abu Dhabi has Etihad - a name synonymous with the Abu Dhabi-owned Manchester
-        City.\\n\\nAbu Dhabi is ruled by Sheikh Khalifa bin Zayed Al Nahyan. His half
-        brother, Mansour bin Zayed bin Sultan bin Zayed bin Khalifa Al Nahyan (better
-        known as Sheikh Mansour) is the man who bought Manchester City in 2008.\\n\\nThe
-        family have ruled the emirate since the 18th century and pride themselves
-        on 'respect for heritage, culture, tradition.'\\n\\nThe ruling family are
-        complex with Sheikh Mansour one of 19 sons born to Abu Dhabi's long-term ruler
-        Sheikh Zayed bin Sultan Al Nahyan. His mother, one of six wives, had six sons,
-        making her part of this vast family the most influential.\\n\\nIn terms of
-        wealth? It is almost limitless. It is estimated that the family have as much
-        as $1tn in overseas assets alone. Their investment in City represents loose
-        change, in relative terms, even if they have pumped in excess of \\u00a31bn
-        into the club since 2008.\\n\\nTheir football interests extend elsewhere,
-        however. A company owned by Sheikh Mansour has recently agreed to to the tune
-        of \\u00a3312m.\\n\\nThe work will include the creation of a hotel and shopping
-        centre. But perhaps it is their move to expand into the United States that
-        is more interesting.\\n\\nIn 2013, Major League Soccer and the iconic New
-        York Yankees announced a pioneering deal to create an MLS franchise in New
-        York in time for the start of the 2015-16 season -\\n\\nIt is a development
-        that could give Abu Dhabi a footing and profile in the United States that
-        was previously unimaginable. A few months later, it was announced Sheikh Mansour
-        and Manchester City added Australian side Melbourne Heart.\\n\\n\\\"You could
-        look at things like the Abu Dhabi Grand Prix, the Abu Dhabi golf championships
-        and the investment in Manchester City as some of their most prominent global
-        marketing assets,\\\" said Ben Faber, senior director at Fast Track Middle
-        East, the company tasked with delivering City's fan loyalty programmes.\\n\\n\\\"The
-        Manchester City investment has given the emirate global awareness through
-        the fan base and they have been able to tap into associated Abu Dhabi businesses
-        such as Etihad to leverage off the back of that ownership as sponsors of the
-        club.\\\"\\n\\nAnd what of Qatar? Financial experts describe it as the world's
-        most ambitious deal hunter. A brief scan across the London skyline would suggest
-        they have a point.\\n\\nThe Shard, is Qatari owned, as are swathes of the
-        Canary Wharf financial district.\\n\\nDuring the financial crisis, the Qatar
-        Investment Authority (QIA) emerged as a white-knight investor to become Barclays'
-        biggest shareholder. A little further east, many of the buildings in the Olympic
-        Village are now owned by QIA.\\n\\nThe world's most expensive block of flats,
-        is Qatar owned as is Harrods, the famous department store. It owns a fifth
-        of the London stock exchange, 20% of Camden market. The reach is extraordinary.\\n\\nQatar
-        is ruled by a 34-year-old Emir Sheikh Tamim bin Hamad Al Thani, the world's
-        youngest reigning monarch. Born in Doha, the capital of Qatar, he was educated
-        at Harrow School in London, before graduating from the Royal Military Academy
-        Sandhurst. He is now head of the QIA, which is estimated to have assets of
-        \\u00a3300bn.\\n\\nQuestions remain about the bidding process for the 2022
-        World Cup and world governing body Fifa has yet to fully address the plight
-        of the 1.4m migrant workers in the country, many of whom are there against
-        their will.\\n\\nThe project began just after the turn of the century, when
-        some of Europe's elder footballing statesmen were lured to Qatar for one last
-        pay day. Pep Guardiola was among them, playing for Al Ahli between 2003 and
-        2005.\\n\\nThe Bayern Munich manager subsequently became an ambassador for
-        Qatar's successful World Cup bid. But there was more to come. Some 10 days
-        after Fifa announced the country would host the World Cup in 2022, came the
-        news that Qatar would appear on the Barcelona shirt, in a deal that would
-        become the biggest in football sponsorship history.\\n\\nThe deal was struck
-        with the Qatar Foundation, the country's charitable arm. Two years later,
-        Qatar Airways' paid \\u00a376m (\\u20ac96m) to extend the country's sponsorship
-        to all areas of the club.\\n\\nThen in 2011, QIA bought Paris St-Germain.
-        It was a bold move to harness the potential of the biggest one-club city in
-        Europe. To aid their cause PSG signed a controversial \\u20ac200m-a-year sponsorship
-        deal with the Qatar Tourism Authority. Paris is not the only city in Europe
-        touched by the wealth of Qatar. A year earlier, Sheikh Abdullah Al-Thani,
-        of the country's Royal Family, bought the Spanish club Malaga.\\n\\nQatar's
-        wealth is built on having the world's third-largest natural gas reserves.
-        But they will not last forever. \\\"By bringing sport to the Gulf, these states
-        are not only helping to boost tourism, boosting GDP as a result, but they
-        are also reducing their reliance on the oil, gas or industry that may not
-        last forever,\\\" said Dr Davidson.\\n\\nAnd yet while the region brings opportunity
-        and wealth it also brings with it controversy. The climate does not suit all
-        sport at all times. The row about when to stage the 2022 World Cup is well
-        publicised. Qatar is also moving the 2019 World Athletics Championships to
-        the autumn because of the unbearable summer heat.\\n\\nAnd that is to say
-        nothing of conditions for migrant workers, who often have to surrender the
-        passports and whose right to come and go is governed by their employer.\\n\\nIn
-        September two British researchers documenting the problems faced by migrant
-        workers were held for 10 days without charge. In Dubai, the former Leeds United
-        managing director David Haigh has been in prison for six months without charge.\\n\\nAnd
-        yet these issues are being overlooked. Money talks. As does the opportunity
-        to take sport to new parts of the world.\\n\\nWill these states continue to
-        bankroll sport, continue to build their sport portfolios?\\n\\nNo one can
-        be certain of the answer. Doha has twice bid for the Olympic Games but they
-        are unlikely to be put off bidding again. Who would bet against them?\\n\\nThere
-        are, however, those who believe that the region's investment focus is shifting
-        towards cultural and artistic assets. In 2017, construction is due to be complete
-        on a based on the original in New York.\\n\\nBut having secured such a stronghold
-        in sport, their existing investments will remain a key part of each respective
-        state's marketing strategies. The wealth is limitless, the ambition to bring
-        the best athletes in the world to the region remains.\\n\\nIt is a land grab
-        unmatched anywhere in the world. In sporting terms, east has met west.\",\n
-        \ \"image\": \"\",\n  \"author\": \"Ben Smith\",\n  \"videos\": [],\n  \"feeds\":
-        []\n}"
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogICJhdXRob3IiOiAiQmVuIFNtaXRoIiwKICAiaW1hZ2UiOiAiIiwKICAi
+        YXJ0aWNsZSI6ICJRYXRhciwgQWJ1IERoYWJpIGFuZCBEdWJhaTogTmV3IGNl
+        bnRyZSBvZiB0aGUgc3BvcnRpbmcgd29ybGQ/XG5cbldoZXJlIG9uY2UsIHNw
+        b3J0IGxvb2tlZCB3ZXN0IGZvciBpbnZlc3RtZW50IGFuZCBpbnNwaXJhdGlv
+        biwgbm93IGl0IGxvb2tzIGVhc3QuXG5cblRoZSBvaWwtcmljaCBiaWxsaW9u
+        YWlyZXMgb2YgdGhlIEd1bGYgaGF2ZSBwbGFudGVkIGEgZmxhZyBhdCB0aGUg
+        aGVhcnQgb2YgdGhlIHNwb3J0aW5nIGxhbmRzY2FwZSBpbiByZWNlbnQgeWVh
+        cnMuIFRoZXkgaGF2ZSBpbnZlc3RlZCB0aGVpciBpbmNvbmNlaXZhYmxlIHdl
+        YWx0aCBhY3Jvc3MgYW4gYXJyYXkgb2Ygc3BvcnRzIGludG8gYWxsIGNvcm5l
+        cnMgb2YgdGhlIHdvcmxkIGFuZCBub3cgdGhleSBhcmUgdXNpbmcgdGhlaXIg
+        aW5mbHVlbmNlIHRvIGJyaW5nIHNwb3J0IHRvIHRoZSByZWdpb24sIGFzIGEg
+        Z2xvYmFsIHN0YXRlbWVudCBvZiB0aGVpciBhbWJpdGlvbi5cblxuVGhyZWUg
+        R3VsZiBzdGF0ZXMgYXJlIGF0IHRoZSBoZWFydCBvZiB0aGlzIGV4dHJhb3Jk
+        aW5hcnkgcmV2b2x1dGlvbjogUWF0YXIsIEFidSBEaGFiaSBhbmQgRHViYWku
+        IEluIER1YmFpIGFsb25lLCB5b3Ugd2lsbCBmaW5kIG9uZSBiaWxsaW9uYWly
+        ZSBpbiBldmVyeSAyMDAsMDAwIHBlb3BsZS5cblxuSW4gQWJ1IERoYWJpLCBh
+        IHJpdmFsIHN0YXRlIGluIHRoZSBVbml0ZWQgQXJhYiBFbWlyYXRlcywgdGhl
+        IGZpZ3VyZXMgYXJlIGp1c3QgYXMgZXh0cmFvcmRpbmFyeS4gSXQgaXMgaW4g
+        dGhlIHByb2Nlc3Mgb2YgYnVpbGRpbmcgdGhlIGphdy1kcm9wcGluZyBMb3V2
+        cmUgQWJ1IERoYWJpLMKgIGhhdmluZyBwYWlkIHRoZSB3b3JsZC1mYW1vdXMg
+        UGFyaXMgbXVzZXVtIG1vcmUgdGhhbiDCozQwMG0ganVzdCB0byB1c2UgdGhl
+        IG5hbWUuIFdoaWxlIGluIFFhdGFyLCBtb3JlIHRoYW4gMTQlIG9mIGhvdXNl
+        aG9sZHMgaGF2ZSBhdCBsZWFzdCDCozFtIG9mIHByaXZhdGUgd2VhbHRoIGlu
+        IHRoZSBiYW5rLlxuXG5BbmQgaXQgaXMgdGhhdCB3ZWFsdGgsIHRoYXQgaW5m
+        bHVlbmNlLCB3aGljaCBoYXMgbHVyZWQgc3BvcnQgdG8gdGhlIEd1bGYuXG5c
+        blRha2UgbGFzdCB3ZWVrLCBmb3IgaW5zdGFuY2UuIE9uIE1vbmRheSwgdGhl
+        IHJvdyBvdmVyIFFhdGFyJ3MgcmlnaHQgdG8gc3RhZ2UgdGhlIDIwMjIgV29y
+        bGQgQ3VwIHJ1bWJsZWQgb24uIE9uIFR1ZXNkYXksIERvaGEgaW4gUWF0YXIg
+        d29uIHRoZSByaWdodCB0byBob3N0IHRoZSAyMDE5IFdvcmxkIEF0aGxldGlj
+        cyBDaGFtcGlvbnNoaXBzLiBGcm9tIFRodXJzZGF5IHRvIFN1bmRheSwgUm9y
+        eSBNY0lscm95IGR1ZWxsZWQgd2l0aCBIZW5yaWsgU3RlbnNvbiBhdCB0aGUg
+        RXVyb3BlYW4gVG91cidzIHNlYXNvbi1lbmRpbmcgc2hvd3BpZWNlIGluIER1
+        YmFpLlxuXG5MZXdpcyBIYW1pbHRvbiwgTmljbyBSb3NiZXJnIGFuZCB0aGUg
+        cmVzdCBvZiB0aGUgRm9ybXVsYSAxIGNpcmN1cyB3ZXJlIGluIEFidSBEaGFi
+        aSBmcm9tIFRodXJzZGF5IGJlZm9yZSBjb250ZXN0aW5nIHRoZSBmaW5hbCBH
+        cmFuZCBQcml4IG9mIHRoZSBzZWFzb24gb24gU3VuZGF5IGF0IHRoZSBvc3Rl
+        bnRhdGlvdXMgWWFzIE1hcmluYSBDaXJjdWl0LCBidWlsdCBhdCBhIGNvc3Qg
+        b2YgYWJvdXQgwqM5MDBtICgkMS41Ym4pLlxuXG5UaGUgcmVnaW9uIGlzIGZh
+        c3QgYmVjb21pbmcgYSBzcG9ydGluZyBodWIgbGlrZSBubyBvdGhlci4gUWF0
+        YXIsIGZvciBleGFtcGxlLCB3aWxsIGhvc3Qgd29ybGQgY2hhbXBpb25zaGlw
+        cyBpbiBib3hpbmcsIHN3aW1taW5nLCBzcXVhc2gsIGhhbmRiYWxsIGFuZCBw
+        YXJhLWF0aGxldGljcyBpbiB0aGUgbmV4dCAxMiBtb250aHMgYXMgd2VsbCBh
+        cyBzdGFnaW5nIGFsbW9zdCA0MCBvdGhlciBzcG9ydGluZyBldmVudHMuXG5c
+        blRoZSBxdWVzdGlvbiBpcyB3aHk/IERyIENocmlzdG9waGVyIERhdmlkc29u
+        LCByZWFkZXIgaW4gTWlkZGxlIEVhc3Qgc3R1ZGllcyBhdCBEdXJoYW0gVW5p
+        dmVyc2l0eSwgc2F5cyB0aGUgYXBwcm9hY2ggaXMgYWxsIGFib3V0IGluY3Jl
+        YXNpbmcgZ2xvYmFsIGV4cG9zdXJlLlxuXG5cIk9uZSBvZiB0aGUga2V5IHJl
+        YXNvbnMgYmVoaW5kIHRoZSBhcHByb2FjaCBpcyB0aGUgZGVzaXJlIHRvIGFj
+        Y3VtdWxhdGUgJ3NvZnQgcG93ZXInIGluIHN0YXRlcyB3aGljaCBhcmUgZWl0
+        aGVyIG1ham9yIHRyYWRlIHBhcnRuZXJzIG9yLCBtb3JlIGltcG9ydGFudGx5
+        LCBwb3RlbnRpYWwgbWlsaXRhcnkgcHJvdGVjdG9ycywgbm90YWJseSB0aGUg
+        VUssIEZyYW5jZSBhbmQgdGhlIFVuaXRlZCBTdGF0ZXMsXCIgaGUgdG9sZCB0
+        aGUgQkJDLlxuXG5cIklmIHNwb3J0IGlzIGEgd2F5IHRvIGFsbG93IHRoZXNl
+        IEd1bGYgc3RhdGVzIHRvIGdyYWIgZmF2b3VyYWJsZSBoZWFkbGluZXMgYW5k
+        IGJlY29tZSBiZXR0ZXIga25vd24sIHRoZW4gaXQgY2FuIGhlbHAgdGhlbSB0
+        byBhcHBlYXIgbW9yZSBvcGVuLCBtb3JlIGZyaWVuZGx5LlwiXG5cbklmIHdl
+        IGxvb2sgYXQgZWFjaCBvZiB0aGUgdGhyZWUgc3RhdGVzIGluZGl2aWR1YWxs
+        eSwgdGhlIHBpY3R1cmUgaXMgZWFzaWVyIHRvIHVuZGVyc3RhbmQuXG5cbkR1
+        YmFpIGhhcyB0aGUgbG9uZ2VzdCBhc3NvY2lhdGlvbiB3aXRoIHNwb3J0IHRo
+        YW5rcyB0byBpdHMgc3VwcmVtZSBydWxlciwgU2hlaWtoIE1vaGFtbWVkIGJp
+        biBSYXNoaWQgQWwgTWFrdG91bS4gVGhlIDY1LXllYXItb2xkIGlzIGJlc3Qg
+        a25vd24gYXMgb3duZXIgb2YgR29kb2xwaGluLCB0aGUgdGhvcm91Z2hicmVk
+        IGhvcnNlIHJhY2luZyBncm91cCwgd2hpY2ggaGUgZm91bmRlZCBpbiAxOTk0
+        LlxuXG5JbiAxOTk2LCB0aGUgRHViYWkgV29ybGQgQ3VwIHdhcyBpbmF1Z3Vy
+        YXRlZCBhcyB0aGUgd29ybGQncyByaWNoZXN0IGhvcnNlcmFjZSBhbmQgdGFr
+        ZXMgcGxhY2UgYXQgdGhlIHdvcmxkJ3MgbW9zdCBvcHVsZW50IGNvdXJzZSwg
+        dGhlIE1leWRhbiwgYnVpbHQgYXQgYSBjb3N0IG9mIMKjODAwbSAoJDEuMjVi
+        bikuXG5cblNoZWlraCBNb2hhbW1lZCdzIHByaXZhdGUgd2VhbHRoIGlzIGVz
+        dGltYXRlZCBhdCDCozlibiwgYnV0IGhpcyByZWFjaCBleHRlbmRzIGZhciBi
+        ZXlvbmQgdGhhdC4gSGUgZm91bmRlZCBFbWlyYXRlcyBBaXJ3YXlzLCB3aGlj
+        aCBsYXN0IHllYXIgc3BlbnQgMSBiaWxsaW9uIGRpcmhhbXMgKMKjMTcyLjRt
+        KSBvbiBzcG9uc29yaW5nIHNwb3J0LlxuXG5UaGV5IGhhdmUgc2hpcnQgZGVh
+        bHMgd2l0aCBJdGFseSdzIEFDIE1pbGFuLCBGcmVuY2ggY2x1YiBQYXJpcyBT
+        dC1HZXJtYWluIGFuZCBBcnNlbmFsLCB3aG9zZSBub3J0aCBMb25kb24gc3Rh
+        ZGl1bSB3aWxsIGJlIG5hbWVkIGFmdGVyIHRoZSBhaXJsaW5lIHVudGlsIGF0
+        IGxlYXN0IDIwMjguIEJ1dCB0aGV5IGFsc28gaGF2ZSBkZWFscyB3aXRoIHRo
+        ZSBVUyBPcGVuIHRlbm5pcywgdGhlIEludGVybmF0aW9uYWwgQ3JpY2tldCBD
+        b3VuY2lsLCB0aGUgUnlkZXIgQ3VwIGFuZCB0aGUgVVNBIFJ1Z2J5IFVuaW9u
+        IHRlYW0uXG5cbktldmluIEhhc2xlciwgZ2VuZXJhbCBtYW5hZ2VyIG9mIFBS
+        IGZpcm0gQlBHLCBDb2huICYgV29sZmUsIHNhaWQ6IFwiV2hlbiB5b3Ugd2F0
+        Y2ggYSBQcmVtaWVyIExlYWd1ZSBnYW1lIGFuZCB0aGUgY29tbWVudGF0b3Ig
+        c2F5cyAnaGVyZSBhdCB0aGUgRXRpaGFkJyBvciAndGhlaXIgdGhpcmQgc3Vj
+        Y2Vzc2l2ZSB3aW4gYXQgdGhlIEVtaXJhdGVzJywgbmFtaW5nIHN0YWRpdW1z
+        IGFuZCBzaGlydCBzcG9uc29yc2hpcCBoYXMgYmVjb21lIGVub3Jtb3VzbHkg
+        ZWZmZWN0aXZlLlxuXG5cIkJyYW5kcyBhcmUgYmVpbmcgc2VlbiBhcm91bmQg
+        dGhlIHdvcmxkIGluIG5ld3NwYXBlcnMgYW5kIG9uIFRWLCBkYXkgaW4sIGRh
+        eSBvdXQuIFRoZSBjb3JlIG9mIHRoZXNlIHN0cmF0ZWdpZXMgaXMgYWJvdXQg
+        aW52ZXN0aW5nIHRvIHB1dCB0aGVzZSBzdGF0ZXMgb24gdGhlIG1hcCwgZ2V0
+        dGluZyB0aGVtIHRhbGtlZCBhYm91dCBhbmQgZGlzY3Vzc2VkLlwiXG5cbkVs
+        c2V3aGVyZSwgRHViYWkgaGFzIGhvc3RlZCBhbiBBVFAgVGVubmlzIGV2ZW50
+        IGF0IHRoZSBBdmlhdGlvbiBDbHViIHdpdGggUm9nZXIgRmVkZXJlciwgd2hv
+        IGhhcyBhIGhvbWUgaW4gdGhlIHJlZ2lvbiwgd2lubmluZyBmb3VyIHRpbWVz
+        IGluIGZpdmUgeWVhcnMgZnJvbSAyMDAzIGFuZCBhIHNpeHRoIHRpbWUgdGhp
+        cyB5ZWFyLlxuXG5UaGVyZSB3YXMsIG9mIGNvdXJzZSwgdGhhdCBpbGwtZmF0
+        ZWQgYXR0ZW1wdCB0byBidXkgTGl2ZXJwb29sIGluIDIwMDcgYW5kIDIwMDgu
+        XG5cbkFidSBEaGFiaSBoYXMsIGhvd2V2ZXIsIGdvbmUgb25lIHN0ZXAgZnVy
+        dGhlci4gSWYgRHViYWkgaGFzIEVtaXJhdGVzIEFpcndheXMsIEFidSBEaGFi
+        aSBoYXMgRXRpaGFkIC0gYSBuYW1lIHN5bm9ueW1vdXMgd2l0aCB0aGUgQWJ1
+        IERoYWJpLW93bmVkIE1hbmNoZXN0ZXIgQ2l0eS5cblxuQWJ1IERoYWJpIGlz
+        IHJ1bGVkIGJ5IFNoZWlraCBLaGFsaWZhIGJpbiBaYXllZCBBbCBOYWh5YW4u
+        IEhpcyBoYWxmIGJyb3RoZXIsIE1hbnNvdXIgYmluIFpheWVkIGJpbiBTdWx0
+        YW4gYmluIFpheWVkIGJpbiBLaGFsaWZhIEFsIE5haHlhbiAoYmV0dGVyIGtu
+        b3duIGFzIFNoZWlraCBNYW5zb3VyKSBpcyB0aGUgbWFuIHdobyBib3VnaHQg
+        TWFuY2hlc3RlciBDaXR5IGluIDIwMDguXG5cblRoZSBmYW1pbHkgaGF2ZSBy
+        dWxlZCB0aGUgZW1pcmF0ZSBzaW5jZSB0aGUgMTh0aCBjZW50dXJ5IGFuZCBw
+        cmlkZSB0aGVtc2VsdmVzIG9uICdyZXNwZWN0IGZvciBoZXJpdGFnZSwgY3Vs
+        dHVyZSwgdHJhZGl0aW9uLidcblxuVGhlIHJ1bGluZyBmYW1pbHkgYXJlIGNv
+        bXBsZXggd2l0aCBTaGVpa2ggTWFuc291ciBvbmUgb2YgMTkgc29ucyBib3Ju
+        IHRvIEFidSBEaGFiaSdzIGxvbmctdGVybSBydWxlciBTaGVpa2ggWmF5ZWQg
+        YmluIFN1bHRhbiBBbCBOYWh5YW4uIEhpcyBtb3RoZXIsIG9uZSBvZiBzaXgg
+        d2l2ZXMsIGhhZCBzaXggc29ucywgbWFraW5nIGhlciBwYXJ0IG9mIHRoaXMg
+        dmFzdCBmYW1pbHkgdGhlIG1vc3QgaW5mbHVlbnRpYWwuXG5cbkluIHRlcm1z
+        IG9mIHdlYWx0aD8gSXQgaXMgYWxtb3N0IGxpbWl0bGVzcy4gSXQgaXMgZXN0
+        aW1hdGVkIHRoYXQgdGhlIGZhbWlseSBoYXZlIGFzIG11Y2ggYXMgJDF0biBp
+        biBvdmVyc2VhcyBhc3NldHMgYWxvbmUuIFRoZWlyIGludmVzdG1lbnQgaW4g
+        Q2l0eSByZXByZXNlbnRzIGxvb3NlIGNoYW5nZSwgaW4gcmVsYXRpdmUgdGVy
+        bXMsIGV2ZW4gaWYgdGhleSBoYXZlIHB1bXBlZCBpbiBleGNlc3Mgb2YgwqMx
+        Ym4gaW50byB0aGUgY2x1YiBzaW5jZSAyMDA4LlxuXG5UaGVpciBmb290YmFs
+        bCBpbnRlcmVzdHMgZXh0ZW5kIGVsc2V3aGVyZSwgaG93ZXZlci4gQSBjb21w
+        YW55IG93bmVkIGJ5IFNoZWlraCBNYW5zb3VyIGhhcyByZWNlbnRseSBhZ3Jl
+        ZWQgdG8gZnVuZCB0aGUgcmVkZXZlbG9wbWVudCBvZiBSZWFsIE1hZHJpZCdz
+        IGljb25pYyBTYW50aWFnbyBCZXJuYWJldSBzdGFkaXVtwqAgdG8gdGhlIHR1
+        bmUgb2YgwqMzMTJtLlxuXG5UaGUgd29yayB3aWxsIGluY2x1ZGUgdGhlIGNy
+        ZWF0aW9uIG9mIGEgaG90ZWwgYW5kIHNob3BwaW5nIGNlbnRyZS4gQnV0IHBl
+        cmhhcHMgaXQgaXMgdGhlaXIgbW92ZSB0byBleHBhbmQgaW50byB0aGUgVW5p
+        dGVkIFN0YXRlcyB0aGF0IGlzIG1vcmUgaW50ZXJlc3RpbmcuXG5cbkluIDIw
+        MTMsIE1ham9yIExlYWd1ZSBTb2NjZXIgYW5kIHRoZSBpY29uaWMgTmV3IFlv
+        cmsgWWFua2VlcyBhbm5vdW5jZWQgYSBwaW9uZWVyaW5nIGRlYWwgdG8gY3Jl
+        YXRlIGFuIE1MUyBmcmFuY2hpc2UgaW4gTmV3IFlvcmsgaW4gdGltZSBmb3Ig
+        dGhlIHN0YXJ0IG9mIHRoZSAyMDE1LTE2IHNlYXNvbiAtIE5ldyBZb3JrIENp
+        dHkgRkMgd2FzIGJvcm4uXG5cbkl0IGlzIGEgZGV2ZWxvcG1lbnQgdGhhdCBj
+        b3VsZCBnaXZlIEFidSBEaGFiaSBhIGZvb3RpbmcgYW5kIHByb2ZpbGUgaW4g
+        dGhlIFVuaXRlZCBTdGF0ZXMgdGhhdCB3YXMgcHJldmlvdXNseSB1bmltYWdp
+        bmFibGUuIEEgZmV3IG1vbnRocyBsYXRlciwgaXQgd2FzIGFubm91bmNlZCBT
+        aGVpa2ggTWFuc291ciBhbmQgTWFuY2hlc3RlciBDaXR5IGFkZGVkIEF1c3Ry
+        YWxpYW4gc2lkZSBNZWxib3VybmUgSGVhcnQuXG5cblwiWW91IGNvdWxkIGxv
+        b2sgYXQgdGhpbmdzIGxpa2UgdGhlIEFidSBEaGFiaSBHcmFuZCBQcml4LCB0
+        aGUgQWJ1IERoYWJpIGdvbGYgY2hhbXBpb25zaGlwcyBhbmQgdGhlIGludmVz
+        dG1lbnQgaW4gTWFuY2hlc3RlciBDaXR5IGFzIHNvbWUgb2YgdGhlaXIgbW9z
+        dCBwcm9taW5lbnQgZ2xvYmFsIG1hcmtldGluZyBhc3NldHMsXCIgc2FpZCBC
+        ZW4gRmFiZXIsIHNlbmlvciBkaXJlY3RvciBhdCBGYXN0IFRyYWNrIE1pZGRs
+        ZSBFYXN0LCB0aGUgY29tcGFueSB0YXNrZWQgd2l0aCBkZWxpdmVyaW5nIENp
+        dHkncyBmYW4gbG95YWx0eSBwcm9ncmFtbWVzLlxuXG5cIlRoZSBNYW5jaGVz
+        dGVyIENpdHkgaW52ZXN0bWVudCBoYXMgZ2l2ZW4gdGhlIGVtaXJhdGUgZ2xv
+        YmFsIGF3YXJlbmVzcyB0aHJvdWdoIHRoZSBmYW4gYmFzZSBhbmQgdGhleSBo
+        YXZlIGJlZW4gYWJsZSB0byB0YXAgaW50byBhc3NvY2lhdGVkIEFidSBEaGFi
+        aSBidXNpbmVzc2VzIHN1Y2ggYXMgRXRpaGFkIHRvIGxldmVyYWdlIG9mZiB0
+        aGUgYmFjayBvZiB0aGF0IG93bmVyc2hpcCBhcyBzcG9uc29ycyBvZiB0aGUg
+        Y2x1Yi5cIlxuXG5BbmQgd2hhdCBvZiBRYXRhcj8gRmluYW5jaWFsIGV4cGVy
+        dHMgZGVzY3JpYmUgaXQgYXMgdGhlIHdvcmxkJ3MgbW9zdCBhbWJpdGlvdXMg
+        ZGVhbCBodW50ZXIuIEEgYnJpZWYgc2NhbiBhY3Jvc3MgdGhlIExvbmRvbiBz
+        a3lsaW5lIHdvdWxkIHN1Z2dlc3QgdGhleSBoYXZlIGEgcG9pbnQuXG5cblRo
+        ZSBTaGFyZCwgRXVyb3BlJ3MgdGFsbGVzdCBidWlsZGluZyzCoCBpcyBRYXRh
+        cmkgb3duZWQsIGFzIGFyZSBzd2F0aGVzIG9mIHRoZSBDYW5hcnkgV2hhcmYg
+        ZmluYW5jaWFsIGRpc3RyaWN0LlxuXG5EdXJpbmcgdGhlIGZpbmFuY2lhbCBj
+        cmlzaXMsIHRoZSBRYXRhciBJbnZlc3RtZW50IEF1dGhvcml0eSAoUUlBKSBl
+        bWVyZ2VkIGFzIGEgd2hpdGUta25pZ2h0IGludmVzdG9yIHRvIGJlY29tZSBC
+        YXJjbGF5cycgYmlnZ2VzdCBzaGFyZWhvbGRlci4gQSBsaXR0bGUgZnVydGhl
+        ciBlYXN0LCBtYW55IG9mIHRoZSBidWlsZGluZ3MgaW4gdGhlIE9seW1waWMg
+        VmlsbGFnZSBhcmUgbm93IG93bmVkIGJ5IFFJQS5cblxuVGhlIHdvcmxkJ3Mg
+        bW9zdCBleHBlbnNpdmUgYmxvY2sgb2YgZmxhdHMsIE51bWJlciBPbmUgSHlk
+        ZSBQYXJrLMKgIGlzIFFhdGFyIG93bmVkIGFzIGlzIEhhcnJvZHMsIHRoZSBm
+        YW1vdXMgZGVwYXJ0bWVudCBzdG9yZS4gSXQgb3ducyBhIGZpZnRoIG9mIHRo
+        ZSBMb25kb24gc3RvY2sgZXhjaGFuZ2UsIDIwJSBvZiBDYW1kZW4gbWFya2V0
+        LiBUaGUgcmVhY2ggaXMgZXh0cmFvcmRpbmFyeS5cblxuUWF0YXIgaXMgcnVs
+        ZWQgYnkgYSAzNC15ZWFyLW9sZCBFbWlyIFNoZWlraCBUYW1pbSBiaW4gSGFt
+        YWQgQWwgVGhhbmksIHRoZSB3b3JsZCdzIHlvdW5nZXN0IHJlaWduaW5nIG1v
+        bmFyY2guIEJvcm4gaW4gRG9oYSwgdGhlIGNhcGl0YWwgb2YgUWF0YXIsIGhl
+        IHdhcyBlZHVjYXRlZCBhdCBIYXJyb3cgU2Nob29sIGluIExvbmRvbiwgYmVm
+        b3JlIGdyYWR1YXRpbmcgZnJvbSB0aGUgUm95YWwgTWlsaXRhcnkgQWNhZGVt
+        eSBTYW5kaHVyc3QuIEhlIGlzIG5vdyBoZWFkIG9mIHRoZSBRSUEsIHdoaWNo
+        IGlzIGVzdGltYXRlZCB0byBoYXZlIGFzc2V0cyBvZiDCozMwMGJuLlxuXG5R
+        dWVzdGlvbnMgcmVtYWluIGFib3V0IHRoZSBiaWRkaW5nIHByb2Nlc3MgZm9y
+        IHRoZSAyMDIyIFdvcmxkIEN1cCBhbmQgd29ybGQgZ292ZXJuaW5nIGJvZHkg
+        RmlmYSBoYXMgeWV0IHRvIGZ1bGx5IGFkZHJlc3MgdGhlIHBsaWdodCBvZiB0
+        aGUgMS40bSBtaWdyYW50IHdvcmtlcnMgaW4gdGhlIGNvdW50cnksIG1hbnkg
+        b2Ygd2hvbSBhcmUgdGhlcmUgYWdhaW5zdCB0aGVpciB3aWxsLlxuXG5UaGUg
+        cHJvamVjdCBiZWdhbiBqdXN0IGFmdGVyIHRoZSB0dXJuIG9mIHRoZSBjZW50
+        dXJ5LCB3aGVuIHNvbWUgb2YgRXVyb3BlJ3MgZWxkZXIgZm9vdGJhbGxpbmcg
+        c3RhdGVzbWVuIHdlcmUgbHVyZWQgdG8gUWF0YXIgZm9yIG9uZSBsYXN0IHBh
+        eSBkYXkuIFBlcCBHdWFyZGlvbGEgd2FzIGFtb25nIHRoZW0sIHBsYXlpbmcg
+        Zm9yIEFsIEFobGkgYmV0d2VlbiAyMDAzIGFuZCAyMDA1LlxuXG5UaGUgQmF5
+        ZXJuIE11bmljaCBtYW5hZ2VyIHN1YnNlcXVlbnRseSBiZWNhbWUgYW4gYW1i
+        YXNzYWRvciBmb3IgUWF0YXIncyBzdWNjZXNzZnVsIFdvcmxkIEN1cCBiaWQu
+        IEJ1dCB0aGVyZSB3YXMgbW9yZSB0byBjb21lLiBTb21lIDEwIGRheXMgYWZ0
+        ZXIgRmlmYSBhbm5vdW5jZWQgdGhlIGNvdW50cnkgd291bGQgaG9zdCB0aGUg
+        V29ybGQgQ3VwIGluIDIwMjIsIGNhbWUgdGhlIG5ld3MgdGhhdCBRYXRhciB3
+        b3VsZCBhcHBlYXIgb24gdGhlIEJhcmNlbG9uYSBzaGlydCwgaW4gYSBkZWFs
+        IHRoYXQgd291bGQgYmVjb21lIHRoZSBiaWdnZXN0IGluIGZvb3RiYWxsIHNw
+        b25zb3JzaGlwIGhpc3RvcnkuXG5cblRoZSBkZWFsIHdhcyBzdHJ1Y2sgd2l0
+        aCB0aGUgUWF0YXIgRm91bmRhdGlvbiwgdGhlIGNvdW50cnkncyBjaGFyaXRh
+        YmxlIGFybS4gVHdvIHllYXJzIGxhdGVyLCBRYXRhciBBaXJ3YXlzJyBwYWlk
+        IMKjNzZtICjigqw5Nm0pIHRvIGV4dGVuZCB0aGUgY291bnRyeSdzIHNwb25z
+        b3JzaGlwIHRvIGFsbCBhcmVhcyBvZiB0aGUgY2x1Yi5cblxuVGhlbiBpbiAy
+        MDExLCBRSUEgYm91Z2h0IFBhcmlzIFN0LUdlcm1haW4uIEl0IHdhcyBhIGJv
+        bGQgbW92ZSB0byBoYXJuZXNzIHRoZSBwb3RlbnRpYWwgb2YgdGhlIGJpZ2dl
+        c3Qgb25lLWNsdWIgY2l0eSBpbiBFdXJvcGUuIFRvIGFpZCB0aGVpciBjYXVz
+        ZSBQU0cgc2lnbmVkIGEgY29udHJvdmVyc2lhbCDigqwyMDBtLWEteWVhciBz
+        cG9uc29yc2hpcCBkZWFsIHdpdGggdGhlIFFhdGFyIFRvdXJpc20gQXV0aG9y
+        aXR5LiBQYXJpcyBpcyBub3QgdGhlIG9ubHkgY2l0eSBpbiBFdXJvcGUgdG91
+        Y2hlZCBieSB0aGUgd2VhbHRoIG9mIFFhdGFyLiBBIHllYXIgZWFybGllciwg
+        U2hlaWtoIEFiZHVsbGFoIEFsLVRoYW5pLCBvZiB0aGUgY291bnRyeSdzIFJv
+        eWFsIEZhbWlseSwgYm91Z2h0IHRoZSBTcGFuaXNoIGNsdWIgTWFsYWdhLlxu
+        XG5RYXRhcidzIHdlYWx0aCBpcyBidWlsdCBvbiBoYXZpbmcgdGhlIHdvcmxk
+        J3MgdGhpcmQtbGFyZ2VzdCBuYXR1cmFsIGdhcyByZXNlcnZlcy4gQnV0IHRo
+        ZXkgd2lsbCBub3QgbGFzdCBmb3JldmVyLiBcIkJ5IGJyaW5naW5nIHNwb3J0
+        IHRvIHRoZSBHdWxmLCB0aGVzZSBzdGF0ZXMgYXJlIG5vdCBvbmx5IGhlbHBp
+        bmcgdG8gYm9vc3QgdG91cmlzbSwgYm9vc3RpbmcgR0RQIGFzIGEgcmVzdWx0
+        LCBidXQgdGhleSBhcmUgYWxzbyByZWR1Y2luZyB0aGVpciByZWxpYW5jZSBv
+        biB0aGUgb2lsLCBnYXMgb3IgaW5kdXN0cnkgdGhhdCBtYXkgbm90IGxhc3Qg
+        Zm9yZXZlcixcIiBzYWlkIERyIERhdmlkc29uLlxuXG5BbmQgeWV0IHdoaWxl
+        IHRoZSByZWdpb24gYnJpbmdzIG9wcG9ydHVuaXR5IGFuZCB3ZWFsdGggaXQg
+        YWxzbyBicmluZ3Mgd2l0aCBpdCBjb250cm92ZXJzeS4gVGhlIGNsaW1hdGUg
+        ZG9lcyBub3Qgc3VpdCBhbGwgc3BvcnQgYXQgYWxsIHRpbWVzLiBUaGUgcm93
+        IGFib3V0IHdoZW4gdG8gc3RhZ2UgdGhlIDIwMjIgV29ybGQgQ3VwIGlzIHdl
+        bGwgcHVibGljaXNlZC4gUWF0YXIgaXMgYWxzbyBtb3ZpbmcgdGhlIDIwMTkg
+        V29ybGQgQXRobGV0aWNzIENoYW1waW9uc2hpcHMgdG8gdGhlIGF1dHVtbiBi
+        ZWNhdXNlIG9mIHRoZSB1bmJlYXJhYmxlIHN1bW1lciBoZWF0LlxuXG5BbmQg
+        dGhhdCBpcyB0byBzYXkgbm90aGluZyBvZiBjb25kaXRpb25zIGZvciBtaWdy
+        YW50IHdvcmtlcnMsIHdobyBvZnRlbiBoYXZlIHRvIHN1cnJlbmRlciB0aGUg
+        cGFzc3BvcnRzIGFuZCB3aG9zZSByaWdodCB0byBjb21lIGFuZCBnbyBpcyBn
+        b3Zlcm5lZCBieSB0aGVpciBlbXBsb3llci5cblxuSW4gU2VwdGVtYmVyIHR3
+        byBCcml0aXNoIHJlc2VhcmNoZXJzIGRvY3VtZW50aW5nIHRoZSBwcm9ibGVt
+        cyBmYWNlZCBieSBtaWdyYW50IHdvcmtlcnMgd2VyZSBoZWxkIGZvciAxMCBk
+        YXlzIHdpdGhvdXQgY2hhcmdlLiBJbiBEdWJhaSwgdGhlIGZvcm1lciBMZWVk
+        cyBVbml0ZWQgbWFuYWdpbmcgZGlyZWN0b3IgRGF2aWQgSGFpZ2ggaGFzIGJl
+        ZW4gaW4gcHJpc29uIGZvciBzaXggbW9udGhzIHdpdGhvdXQgY2hhcmdlLlxu
+        XG5BbmQgeWV0IHRoZXNlIGlzc3VlcyBhcmUgYmVpbmcgb3Zlcmxvb2tlZC4g
+        TW9uZXkgdGFsa3MuIEFzIGRvZXMgdGhlIG9wcG9ydHVuaXR5IHRvIHRha2Ug
+        c3BvcnQgdG8gbmV3IHBhcnRzIG9mIHRoZSB3b3JsZC5cblxuV2lsbCB0aGVz
+        ZSBzdGF0ZXMgY29udGludWUgdG8gYmFua3JvbGwgc3BvcnQsIGNvbnRpbnVl
+        IHRvIGJ1aWxkIHRoZWlyIHNwb3J0IHBvcnRmb2xpb3M/XG5cbk5vIG9uZSBj
+        YW4gYmUgY2VydGFpbiBvZiB0aGUgYW5zd2VyLiBEb2hhIGhhcyB0d2ljZSBi
+        aWQgZm9yIHRoZSBPbHltcGljIEdhbWVzIGJ1dCB0aGV5IGFyZSB1bmxpa2Vs
+        eSB0byBiZSBwdXQgb2ZmIGJpZGRpbmcgYWdhaW4uIFdobyB3b3VsZCBiZXQg
+        YWdhaW5zdCB0aGVtP1xuXG5UaGVyZSBhcmUsIGhvd2V2ZXIsIHRob3NlIHdo
+        byBiZWxpZXZlIHRoYXQgdGhlIHJlZ2lvbidzIGludmVzdG1lbnQgZm9jdXMg
+        aXMgc2hpZnRpbmcgdG93YXJkcyBjdWx0dXJhbCBhbmQgYXJ0aXN0aWMgYXNz
+        ZXRzLiBJbiAyMDE3LCBjb25zdHJ1Y3Rpb24gaXMgZHVlIHRvIGJlIGNvbXBs
+        ZXRlIG9uIGEgbmV3IEd1Z2dlbmhlaW0gTXVzZXVtLMKgIGJhc2VkIG9uIHRo
+        ZSBvcmlnaW5hbCBpbiBOZXcgWW9yay5cblxuQnV0IGhhdmluZyBzZWN1cmVk
+        IHN1Y2ggYSBzdHJvbmdob2xkIGluIHNwb3J0LCB0aGVpciBleGlzdGluZyBp
+        bnZlc3RtZW50cyB3aWxsIHJlbWFpbiBhIGtleSBwYXJ0IG9mIGVhY2ggcmVz
+        cGVjdGl2ZSBzdGF0ZSdzIG1hcmtldGluZyBzdHJhdGVnaWVzLiBUaGUgd2Vh
+        bHRoIGlzIGxpbWl0bGVzcywgdGhlIGFtYml0aW9uIHRvIGJyaW5nIHRoZSBi
+        ZXN0IGF0aGxldGVzIGluIHRoZSB3b3JsZCB0byB0aGUgcmVnaW9uIHJlbWFp
+        bnMuXG5cbkl0IGlzIGEgbGFuZCBncmFiIHVubWF0Y2hlZCBhbnl3aGVyZSBp
+        biB0aGUgd29ybGQuIEluIHNwb3J0aW5nIHRlcm1zLCBlYXN0IGhhcyBtZXQg
+        d2VzdC4iLAogICJ2aWRlb3MiOiBbXSwKICAidGl0bGUiOiAiTmV3IGNlbnRy
+        ZSBvZiB0aGUgc3BvcnRpbmcgd29ybGQ/IiwKICAiZmVlZHMiOiBbXQp9
     http_version: 
-  recorded_at: Tue, 02 Dec 2014 18:15:20 GMT
+  recorded_at: Tue, 10 Feb 2015 14:06:59 GMT
 recorded_with: VCR 2.9.3

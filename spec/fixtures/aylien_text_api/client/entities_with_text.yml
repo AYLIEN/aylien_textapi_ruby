@@ -7,16 +7,18 @@ http_interactions:
       encoding: US-ASCII
       string: text=Barack+Hussein+Obama+II+is+the+44th+and+current%0A++++++President+of+the+United+States%2C+and+the+first%0A++++++African+American+to+hold+the+office.
     headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
-      - Aylien Text API Ruby Gem 0.0.1
+      - Aylien Text API Ruby Gem 0.1.0
       Content-Type:
       - application/x-www-form-urlencoded
       App-Id:
-      - <PASSWORD>
+      - "<PASSWORD>"
       App-Key:
-      - <PASSWORD>
+      - "<PASSWORD>"
   response:
     status:
       code: 200
@@ -25,19 +27,25 @@ http_interactions:
       Server:
       - openresty/1.5.12.1
       Date:
-      - Tue, 02 Dec 2014 18:16:36 GMT
+      - Tue, 10 Feb 2015 14:05:55 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
       - '381'
       Connection:
       - keep-alive
+      X-Ratelimit-Limit:
+      - '207000'
+      X-Ratelimit-Remaining:
+      - '205398'
+      X-Ratelimit-Reset:
+      - '1423612800'
     body:
-      encoding: US-ASCII
-      string: ! '{"text":"Barack Hussein Obama II is the 44th and current\n      President
+      encoding: UTF-8
+      string: '{"text":"Barack Hussein Obama II is the 44th and current\n      President
         of the United States, and the first\n      African American to hold the office.","entities":{"location":["United
         States"],"keyword":["current","President","44th","United","Obama","African","Hussein","American","Barack","office"],"person":["Barack","Hussein
         Obama II"],"product":["Barack Hussein Obama II"]}}'
     http_version: 
-  recorded_at: Tue, 02 Dec 2014 18:15:33 GMT
+  recorded_at: Tue, 10 Feb 2015 14:05:40 GMT
 recorded_with: VCR 2.9.3

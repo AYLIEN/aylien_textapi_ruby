@@ -1,4 +1,4 @@
-# Copyright 2014 Aylien, Inc. All Rights Reserved.
+# Copyright 2015 Aylien, Inc. All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -25,8 +25,19 @@ module AylienTextApi
     DEFAULT_APP_ID       = nil
     DEFAULT_APP_KEY      = nil
 
-    ENDPOINTS = [:extract, :classify, :concepts, :entities, :hashtags,
-      :language, :related, :sentiment, :summarize]
+    ENDPOINTS = {
+      extract:  'extract',
+      classify: 'classify',
+      concepts: 'concepts',
+      entities: 'entities',
+      hashtags: 'hashtags',
+      language: 'language',
+      related: 'related',
+      sentiment: 'sentiment',
+      summarize: 'summarize',
+      microformats: 'microformats',
+      unsupervised_classify: 'classify/unsupervised'
+    }
 
     # Build accessor methods for every config options so we can do this, for example:
     #   AylienTextApi.method = :get

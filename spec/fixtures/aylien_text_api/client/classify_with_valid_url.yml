@@ -7,16 +7,18 @@ http_interactions:
       encoding: US-ASCII
       string: url=http%3A%2F%2Ftechcrunch.com%2F2014%2F10%2F20%2Fthe-super-slim-kindle-voyage-is-a-great-travel-companion%2F
     headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
-      - Aylien Text API Ruby Gem 0.0.1
+      - Aylien Text API Ruby Gem 0.1.0
       Content-Type:
       - application/x-www-form-urlencoded
       App-Id:
-      - <PASSWORD>
+      - "<PASSWORD>"
       App-Key:
-      - <PASSWORD>
+      - "<PASSWORD>"
   response:
     status:
       code: 200
@@ -25,74 +27,120 @@ http_interactions:
       Server:
       - openresty/1.5.12.1
       Date:
-      - Tue, 02 Dec 2014 18:15:53 GMT
+      - Tue, 10 Feb 2015 14:06:14 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
-      - '4482'
+      - '4382'
       Connection:
       - keep-alive
+      X-Ratelimit-Limit:
+      - '207000'
+      X-Ratelimit-Remaining:
+      - '205379'
+      X-Ratelimit-Reset:
+      - '1423612800'
     body:
-      encoding: US-ASCII
-      string: ! "{\n  \"text\": \"The Super-Slim Kindle Voyage Is A Great Travel Companion\\nIn
-        1935, Sir Allen Lane and V. K. Krishna Menon founded Penguin Books, a company
-        dedicated to producing high-quality, small-format paperback books for the
-        world market. These small, well-made little books introduced some amazing
-        fiction, philosophy, classical thought and spiritualism to a hungry audience,
-        and the low price made it easy to build a library of amazing titles that could
-        fit into a milk crate. Penguin, it can be argued, brought about an intellectual
-        sea change, bringing us both the post-war writers of note and, in another
-        direction, the Beats and the spiritual riot of the 1960s.\\n\\nWhy was Penguin
-        so popular? And why is the 6-inch Kindle Voyage its emotional successor? Both
-        revolutionized the physical notion of books.\\n\\nIn Penguin\\u2019s case,
-        the medium was truly the message, and\\u00a0the writing inside the small,
-        pocketable books allowed for portability and encouraged collection. In the
-        Kindle Voyage\\u2019s case, Amazon has created a delightful travel companion.\\n\\nFirst,
-        let\\u2019s address the size. The $199 Voyage ($219 without ads and with 3G)
-        is about as big as a Penguin paperback and just a bit bigger (and thicker)
-        than a standard passport. It\\u2019s 7.6 mm thick and removed from its case
-        it looks about as substantial as a thin stack of paper.\\n\\nThe Voyage is
-        the Kindle distilled. Almost all of the features are there \\u2013 touchscreen,
-        bright white e-ink display, and even a special haptic feedback system that
-        allows you to \\u201cclick\\u201d left and right side buttons to turn pages.
-        You can also swipe the page left and right to move to the next page and small
-        dedicated spots above the longer touch-sensitive pads that go back one page.\\n\\nAmazon
-        sells an $45 folding case for the Voyage that opens up like a Moleskine reporter\\u2019s
-        notebook. It activates the Kindle upon opening and turns it off when closed.
-        Hidden magnets then allow you to turn the cover into a little stand for hands-free
-        reading.\\n\\nSo how does it work? In short, I love e-ink devices, and the
-        Voyage is the best of them. Because it lasts for weeks \\u2013 I haven\\u2019t
-        charged it in a full week of use \\u2013 you can stick it in a bag or backpack
-        and expect it to be ready to read. The bright backlit screen casts a gentle
-        glow that is reactive to outside light and makes reading pleasant without
-        the glare of LCD. As a dedicated e-reader, it is nearly perfect, and I rarely
-        say anything in CE is perfect.\\n\\nWho is this for? It\\u2019s for readers.
-        The Voyage doesn\\u2019t do much except display books and allow you to buy
-        them. You can download thousands of titles and not run out of space and, thanks
-        to new organizational systems, you can place books into folders and control
-        their placement on the device. But, again, it\\u2019s for readers. Don\\u2019t
-        expect to read email, browse the web, or control your home security system
-        from this device. It\\u2019s the e-reader perfected, however, and that means
-        a lot.\\n\\nI don\\u2019t know how much longer the market for dedicated e-readers
-        will exist, but I certainly appreciate Amazon\\u2019s dedication to the cause.
-        E-ink devices are special because they\\u2019re amazingly readable and light
-        and have great battery life. All of these aspects work in concert to offer
-        a reading experience akin to thumbing through a Penguin Classic.\\n\\nAgain,
-        this isn\\u2019t for everyone. It\\u2019s great for travel \\u2013 I took
-        it with me to Disrupt in Europe and have read it on planes for the past few
-        days \\u2013 and it\\u2019s great for people who don\\u2019t want a distracting
-        reading experience. It\\u2019s a great gateway tablet, for example, for folks
-        who don\\u2019t want a complex experience and instead just want to read. It\\u2019s
-        also far more comfortable on the eyes for night reading in bed and the text
-        can be modified for any eyes.\\n\\nAmazon is aiming for readers. It knows
-        that people love Kindles because they are pure products for reading. And the
-        Voyage is Amazon\\u2019s latest attempt at perfecting the e-book. Not unlike
-        Penguin, Amazon looked at the market and made a bold move. It\\u2019s paid
-        off and the resulting products \\u2013 the Fire like and this new Kindle \\u2013
-        are nearly perfect media consumption devices by a company that knows how to
-        sell.\",\n  \"language\": \"en\",\n  \"categories\": [{\n    \"label\": \"economy,
-        business and finance - computing and information technology\",\n    \"code\":
-        \"04003000\",\n    \"confidence\": 1.0\n  }]\n}"
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogICJ0ZXh0IjogIlRoZSBTdXBlci1TbGltIEtpbmRsZSBWb3lhZ2UgSXMg
+        QSBHcmVhdCBUcmF2ZWwgQ29tcGFuaW9uXG5JbiAxOTM1LCBTaXIgQWxsZW4g
+        TGFuZSBhbmQgVi4gSy4gS3Jpc2huYSBNZW5vbiBmb3VuZGVkIFBlbmd1aW4g
+        Qm9va3MsIGEgY29tcGFueSBkZWRpY2F0ZWQgdG8gcHJvZHVjaW5nIGhpZ2gt
+        cXVhbGl0eSwgc21hbGwtZm9ybWF0IHBhcGVyYmFjayBib29rcyBmb3IgdGhl
+        IHdvcmxkIG1hcmtldC4gVGhlc2Ugc21hbGwsIHdlbGwtbWFkZSBsaXR0bGUg
+        Ym9va3MgaW50cm9kdWNlZCBzb21lIGFtYXppbmcgZmljdGlvbiwgcGhpbG9z
+        b3BoeSwgY2xhc3NpY2FsIHRob3VnaHQgYW5kIHNwaXJpdHVhbGlzbSB0byBh
+        IGh1bmdyeSBhdWRpZW5jZSwgYW5kIHRoZSBsb3cgcHJpY2UgbWFkZSBpdCBl
+        YXN5IHRvIGJ1aWxkIGEgbGlicmFyeSBvZiBhbWF6aW5nIHRpdGxlcyB0aGF0
+        IGNvdWxkIGZpdCBpbnRvIGEgbWlsayBjcmF0ZS4gUGVuZ3VpbiwgaXQgY2Fu
+        IGJlIGFyZ3VlZCwgYnJvdWdodCBhYm91dCBhbiBpbnRlbGxlY3R1YWwgc2Vh
+        IGNoYW5nZSwgYnJpbmdpbmcgdXMgYm90aCB0aGUgcG9zdC13YXIgd3JpdGVy
+        cyBvZiBub3RlIGFuZCwgaW4gYW5vdGhlciBkaXJlY3Rpb24sIHRoZSBCZWF0
+        cyBhbmQgdGhlIHNwaXJpdHVhbCByaW90IG9mIHRoZSAxOTYwcy5cblxuV2h5
+        IHdhcyBQZW5ndWluIHNvIHBvcHVsYXI/IEFuZCB3aHkgaXMgdGhlIDYtaW5j
+        aCBLaW5kbGUgVm95YWdlIGl0cyBlbW90aW9uYWwgc3VjY2Vzc29yPyBCb3Ro
+        IHJldm9sdXRpb25pemVkIHRoZSBwaHlzaWNhbCBub3Rpb24gb2YgYm9va3Mu
+        XG5cbkluIFBlbmd1aW7igJlzIGNhc2UsIHRoZSBtZWRpdW0gd2FzIHRydWx5
+        IHRoZSBtZXNzYWdlLCBhbmTCoHRoZSB3cml0aW5nIGluc2lkZSB0aGUgc21h
+        bGwsIHBvY2tldGFibGUgYm9va3MgYWxsb3dlZCBmb3IgcG9ydGFiaWxpdHkg
+        YW5kIGVuY291cmFnZWQgY29sbGVjdGlvbi4gSW4gdGhlIEtpbmRsZSBWb3lh
+        Z2XigJlzIGNhc2UsIEFtYXpvbiBoYXMgY3JlYXRlZCBhIGRlbGlnaHRmdWwg
+        dHJhdmVsIGNvbXBhbmlvbi5cblxuRmlyc3QsIGxldOKAmXMgYWRkcmVzcyB0
+        aGUgc2l6ZS4gVGhlICQxOTkgVm95YWdlICgkMjE5IHdpdGhvdXQgYWRzIGFu
+        ZCB3aXRoIDNHKSBpcyBhYm91dCBhcyBiaWcgYXMgYSBQZW5ndWluIHBhcGVy
+        YmFjayBhbmQganVzdCBhIGJpdCBiaWdnZXIgKGFuZCB0aGlja2VyKSB0aGFu
+        IGEgc3RhbmRhcmQgcGFzc3BvcnQuIEl04oCZcyA3LjYgbW0gdGhpY2sgYW5k
+        IHJlbW92ZWQgZnJvbSBpdHMgY2FzZSBpdCBsb29rcyBhYm91dCBhcyBzdWJz
+        dGFudGlhbCBhcyBhIHRoaW4gc3RhY2sgb2YgcGFwZXIuXG5cblRoZSBWb3lh
+        Z2UgaXMgdGhlIEtpbmRsZSBkaXN0aWxsZWQuIEFsbW9zdCBhbGwgb2YgdGhl
+        IGZlYXR1cmVzIGFyZSB0aGVyZSDigJMgdG91Y2hzY3JlZW4sIGJyaWdodCB3
+        aGl0ZSBlLWluayBkaXNwbGF5LCBhbmQgZXZlbiBhIHNwZWNpYWwgaGFwdGlj
+        IGZlZWRiYWNrIHN5c3RlbSB0aGF0IGFsbG93cyB5b3UgdG8g4oCcY2xpY2vi
+        gJ0gbGVmdCBhbmQgcmlnaHQgc2lkZSBidXR0b25zIHRvIHR1cm4gcGFnZXMu
+        IFlvdSBjYW4gYWxzbyBzd2lwZSB0aGUgcGFnZSBsZWZ0IGFuZCByaWdodCB0
+        byBtb3ZlIHRvIHRoZSBuZXh0IHBhZ2UgYW5kIHNtYWxsIGRlZGljYXRlZCBz
+        cG90cyBhYm92ZSB0aGUgbG9uZ2VyIHRvdWNoLXNlbnNpdGl2ZSBwYWRzIHRo
+        YXQgZ28gYmFjayBvbmUgcGFnZS5cblxuQW1hem9uIHNlbGxzIGFuICQ0NSBm
+        b2xkaW5nIGNhc2UgZm9yIHRoZSBWb3lhZ2UgdGhhdCBvcGVucyB1cCBsaWtl
+        IGEgTW9sZXNraW5lIHJlcG9ydGVy4oCZcyBub3RlYm9vay4gSXQgYWN0aXZh
+        dGVzIHRoZSBLaW5kbGUgdXBvbiBvcGVuaW5nIGFuZCB0dXJucyBpdCBvZmYg
+        d2hlbiBjbG9zZWQuIEhpZGRlbiBtYWduZXRzIHRoZW4gYWxsb3cgeW91IHRv
+        IHR1cm4gdGhlIGNvdmVyIGludG8gYSBsaXR0bGUgc3RhbmQgZm9yIGhhbmRz
+        LWZyZWUgcmVhZGluZy5cblxuU28gaG93IGRvZXMgaXQgd29yaz8gSW4gc2hv
+        cnQsIEkgbG92ZSBlLWluayBkZXZpY2VzLCBhbmQgdGhlIFZveWFnZSBpcyB0
+        aGUgYmVzdCBvZiB0aGVtLiBCZWNhdXNlIGl0IGxhc3RzIGZvciB3ZWVrcyDi
+        gJMgSSBoYXZlbuKAmXQgY2hhcmdlZCBpdCBpbiBhIGZ1bGwgd2VlayBvZiB1
+        c2Ug4oCTIHlvdSBjYW4gc3RpY2sgaXQgaW4gYSBiYWcgb3IgYmFja3BhY2sg
+        YW5kIGV4cGVjdCBpdCB0byBiZSByZWFkeSB0byByZWFkLiBUaGUgYnJpZ2h0
+        IGJhY2tsaXQgc2NyZWVuIGNhc3RzIGEgZ2VudGxlIGdsb3cgdGhhdCBpcyBy
+        ZWFjdGl2ZSB0byBvdXRzaWRlIGxpZ2h0IGFuZCBtYWtlcyByZWFkaW5nIHBs
+        ZWFzYW50IHdpdGhvdXQgdGhlIGdsYXJlIG9mIExDRC4gQXMgYSBkZWRpY2F0
+        ZWQgZS1yZWFkZXIsIGl0IGlzIG5lYXJseSBwZXJmZWN0LCBhbmQgSSByYXJl
+        bHkgc2F5IGFueXRoaW5nIGluIENFIGlzIHBlcmZlY3QuXG5cbldobyBpcyB0
+        aGlzIGZvcj8gSXTigJlzIGZvciByZWFkZXJzLiBUaGUgVm95YWdlIGRvZXNu
+        4oCZdCBkbyBtdWNoIGV4Y2VwdCBkaXNwbGF5IGJvb2tzIGFuZCBhbGxvdyB5
+        b3UgdG8gYnV5IHRoZW0uIFlvdSBjYW4gZG93bmxvYWQgdGhvdXNhbmRzIG9m
+        IHRpdGxlcyBhbmQgbm90IHJ1biBvdXQgb2Ygc3BhY2UgYW5kLCB0aGFua3Mg
+        dG8gbmV3IG9yZ2FuaXphdGlvbmFsIHN5c3RlbXMsIHlvdSBjYW4gcGxhY2Ug
+        Ym9va3MgaW50byBmb2xkZXJzIGFuZCBjb250cm9sIHRoZWlyIHBsYWNlbWVu
+        dCBvbiB0aGUgZGV2aWNlLiBCdXQsIGFnYWluLCBpdOKAmXMgZm9yIHJlYWRl
+        cnMuIERvbuKAmXQgZXhwZWN0IHRvIHJlYWQgZW1haWwsIGJyb3dzZSB0aGUg
+        d2ViLCBvciBjb250cm9sIHlvdXIgaG9tZSBzZWN1cml0eSBzeXN0ZW0gZnJv
+        bSB0aGlzIGRldmljZS4gSXTigJlzIHRoZSBlLXJlYWRlciBwZXJmZWN0ZWQs
+        IGhvd2V2ZXIsIGFuZCB0aGF0IG1lYW5zIGEgbG90LlxuXG5JIGRvbuKAmXQg
+        a25vdyBob3cgbXVjaCBsb25nZXIgdGhlIG1hcmtldCBmb3IgZGVkaWNhdGVk
+        IGUtcmVhZGVycyB3aWxsIGV4aXN0LCBidXQgSSBjZXJ0YWlubHkgYXBwcmVj
+        aWF0ZSBBbWF6b27igJlzIGRlZGljYXRpb24gdG8gdGhlIGNhdXNlLiBFLWlu
+        ayBkZXZpY2VzIGFyZSBzcGVjaWFsIGJlY2F1c2UgdGhleeKAmXJlIGFtYXpp
+        bmdseSByZWFkYWJsZSBhbmQgbGlnaHQgYW5kIGhhdmUgZ3JlYXQgYmF0dGVy
+        eSBsaWZlLiBBbGwgb2YgdGhlc2UgYXNwZWN0cyB3b3JrIGluIGNvbmNlcnQg
+        dG8gb2ZmZXIgYSByZWFkaW5nIGV4cGVyaWVuY2UgYWtpbiB0byB0aHVtYmlu
+        ZyB0aHJvdWdoIGEgUGVuZ3VpbiBDbGFzc2ljLlxuXG5BZ2FpbiwgdGhpcyBp
+        c27igJl0IGZvciBldmVyeW9uZS4gSXTigJlzIGdyZWF0IGZvciB0cmF2ZWwg
+        4oCTIEkgdG9vayBpdCB3aXRoIG1lIHRvIERpc3J1cHQgaW4gRXVyb3BlIGFu
+        ZCBoYXZlIHJlYWQgaXQgb24gcGxhbmVzIGZvciB0aGUgcGFzdCBmZXcgZGF5
+        cyDigJMgYW5kIGl04oCZcyBncmVhdCBmb3IgcGVvcGxlIHdobyBkb27igJl0
+        IHdhbnQgYSBkaXN0cmFjdGluZyByZWFkaW5nIGV4cGVyaWVuY2UuIEl04oCZ
+        cyBhIGdyZWF0IGdhdGV3YXkgdGFibGV0LCBmb3IgZXhhbXBsZSwgZm9yIGZv
+        bGtzIHdobyBkb27igJl0IHdhbnQgYSBjb21wbGV4IGV4cGVyaWVuY2UgYW5k
+        IGluc3RlYWQganVzdCB3YW50IHRvIHJlYWQuIEl04oCZcyBhbHNvIGZhciBt
+        b3JlIGNvbWZvcnRhYmxlIG9uIHRoZSBleWVzIGZvciBuaWdodCByZWFkaW5n
+        IGluIGJlZCBhbmQgdGhlIHRleHQgY2FuIGJlIG1vZGlmaWVkIGZvciBhbnkg
+        ZXllcy5cblxuQW1hem9uIGlzIGFpbWluZyBmb3IgcmVhZGVycy4gSXQga25v
+        d3MgdGhhdCBwZW9wbGUgbG92ZSBLaW5kbGVzIGJlY2F1c2UgdGhleSBhcmUg
+        cHVyZSBwcm9kdWN0cyBmb3IgcmVhZGluZy4gQW5kIHRoZSBWb3lhZ2UgaXMg
+        QW1hem9u4oCZcyBsYXRlc3QgYXR0ZW1wdCBhdCBwZXJmZWN0aW5nIHRoZSBl
+        LWJvb2suIE5vdCB1bmxpa2UgUGVuZ3VpbiwgQW1hem9uIGxvb2tlZCBhdCB0
+        aGUgbWFya2V0IGFuZCBtYWRlIGEgYm9sZCBtb3ZlLiBJdOKAmXMgcGFpZCBv
+        ZmYgYW5kIHRoZSByZXN1bHRpbmcgcHJvZHVjdHMg4oCTIHRoZSBGaXJlIGxp
+        a2UgYW5kIHRoaXMgbmV3IEtpbmRsZSDigJMgYXJlIG5lYXJseSBwZXJmZWN0
+        IG1lZGlhIGNvbnN1bXB0aW9uIGRldmljZXMgYnkgYSBjb21wYW55IHRoYXQg
+        a25vd3MgaG93IHRvIHNlbGwuIiwKICAibGFuZ3VhZ2UiOiAiZW4iLAogICJj
+        YXRlZ29yaWVzIjogW3sKICAgICJsYWJlbCI6ICJlY29ub215LCBidXNpbmVz
+        cyBhbmQgZmluYW5jZSAtIGNvbXB1dGluZyBhbmQgaW5mb3JtYXRpb24gdGVj
+        aG5vbG9neSIsCiAgICAiY29kZSI6ICIwNDAwMzAwMCIsCiAgICAiY29uZmlk
+        ZW5jZSI6IDEuMAogIH1dCn0=
     http_version: 
-  recorded_at: Tue, 02 Dec 2014 18:14:50 GMT
+  recorded_at: Tue, 10 Feb 2015 14:05:59 GMT
 recorded_with: VCR 2.9.3

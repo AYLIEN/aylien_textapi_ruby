@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.aylien.com/api/v1/microformats
+    body:
+      encoding: US-ASCII
+      string: url=http%3A%2F%2Fcodepen.io%2Fanon%2Fpen%2FZYaKbz.html
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Aylien Text API Ruby Gem 0.1.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      App-Id:
+      - random_string
+      App-Key:
+      - random_string
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Server:
+      - openresty/1.5.12.1
+      Date:
+      - Tue, 10 Feb 2015 14:06:22 GMT
+      Content-Type:
+      - text/plain; charset=us-ascii
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: Authentication failed
+    http_version: 
+  recorded_at: Tue, 10 Feb 2015 14:06:07 GMT
+recorded_with: VCR 2.9.3

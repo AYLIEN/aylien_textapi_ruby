@@ -1,4 +1,4 @@
-# Copyright 2014 Aylien, Inc. All Rights Reserved.
+# Copyright 2015 Aylien, Inc. All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -32,9 +32,10 @@ module AylienTextApi
         send("#{key}=", merged_options[key])
       end
 
-      Configuration::ENDPOINTS.each do |endpoint|
+      Configuration::ENDPOINTS.keys.each do |endpoint|
         self.class.send(:define_method, "#{endpoint}!") do |value=nil, params={}|
-          endpoint, params, config = common_endpoint(value, params, endpoint)
+          endpoint, params, config = common_endpoint(value, params, 
+            Configuration::ENDPOINTS[endpoint])
           Connection.new(endpoint, params, config).request!
         end
       end
@@ -54,7 +55,8 @@ module AylienTextApi
     #   on the data returned.
     #
     def extract(value=nil, params={})
-      endpoint, params, config = common_endpoint(value, params, :extract)
+      endpoint, params, config = common_endpoint(value, params, 
+        Configuration::ENDPOINTS[:extract])
       Connection.new(endpoint, params, config).request
     end
 
@@ -73,7 +75,8 @@ module AylienTextApi
     #   on the data returned.
     #
     def classify(value=nil, params={})
-      endpoint, params, config = common_endpoint(value, params, :classify)
+      endpoint, params, config = common_endpoint(value, params, 
+        Configuration::ENDPOINTS[:classify])
       Connection.new(endpoint, params, config).request
     end
 
@@ -94,7 +97,8 @@ module AylienTextApi
     #   on the data returned.
     #
     def concepts(value=nil, params={})
-      endpoint, params, config = common_endpoint(value, params, :concepts)
+      endpoint, params, config = common_endpoint(value, params, 
+        Configuration::ENDPOINTS[:concepts])
       Connection.new(endpoint, params, config).request
     end
 
@@ -113,7 +117,8 @@ module AylienTextApi
     #   on the data returned.
     #
     def hashtags(value=nil, params={})
-      endpoint, params, config = common_endpoint(value, params, :hashtags)
+      endpoint, params, config = common_endpoint(value, params, 
+        Configuration::ENDPOINTS[:hashtags])
       Connection.new(endpoint, params, config).request
     end
 
@@ -131,7 +136,8 @@ module AylienTextApi
     #   on the data returned.
     #
     def entities(value=nil, params={})
-      endpoint, params, config = common_endpoint(value, params, :entities)
+      endpoint, params, config = common_endpoint(value, params, 
+        Configuration::ENDPOINTS[:entities])
       Connection.new(endpoint, params, config).request
     end
 
@@ -148,7 +154,8 @@ module AylienTextApi
     #   on the data returned.
     #
     def language(value=nil, params={})
-      endpoint, params, config = common_endpoint(value, params, :language)
+      endpoint, params, config = common_endpoint(value, params, 
+        Configuration::ENDPOINTS[:language])
       Connection.new(endpoint, params, config).request
     end
 
@@ -168,7 +175,8 @@ module AylienTextApi
     #   on the data returned.
     #
     def sentiment(value=nil, params={})
-      endpoint, params, config = common_endpoint(value, params, :sentiment)
+      endpoint, params, config = common_endpoint(value, params, 
+        Configuration::ENDPOINTS[:sentiment])
       Connection.new(endpoint, params, config).request
     end
 
@@ -194,7 +202,8 @@ module AylienTextApi
     #   on the data returned.
     #
     def summarize(value=nil, params={})
-      endpoint, params, config = common_endpoint(value, params, :summarize)
+      endpoint, params, config = common_endpoint(value, params, 
+        Configuration::ENDPOINTS[:summarize])
       Connection.new(endpoint, params, config).request
     end
 
@@ -211,7 +220,42 @@ module AylienTextApi
     #   on the data returned.
     #
     def related(value=nil, params={})
-      endpoint, params, config = common_endpoint(value, params, :related)
+      endpoint, params, config = common_endpoint(value, params, 
+        Configuration::ENDPOINTS[:related])
+      Connection.new(endpoint, params, config).request
+    end
+    
+    # Return Microformats.
+    #
+    # @param [String] value (nil) URL
+    # @param [Hash] params The microformats endpoint options
+    # @option params [String] :url The URL
+    #
+    # @return [Hash, nil] A hash of result. See
+    #   http://aylien.com/text-api-doc#microformats for more information
+    #   on the data returned.
+    #
+    def microformats(value=nil, params={})
+      endpoint, params, config = common_endpoint(value, params, 
+        Configuration::ENDPOINTS[:microformats])
+      Connection.new(endpoint, params, config).request
+    end
+    
+    # Return Unsupervised Classify.
+    #
+    # @param [String] value (nil) URL or Text
+    # @param [Hash] params The Unsupervised Classify endpoint options
+    # @option params [String] :url The URL
+    # @option params [String] :text Text
+    # @option params [Array<String>] :class Array of classes
+    #
+    # @return [Hash, nil] A hash of result. See
+    #   http://aylien.com/text-api-doc#unsupervised_classify for more information
+    #   on the data returned.
+    #
+    def unsupervised_classify(value=nil, params={})
+      endpoint, params, config = common_endpoint(value, params, 
+        Configuration::ENDPOINTS[:unsupervised_classify])
       Connection.new(endpoint, params, config).request
     end
 
@@ -230,7 +274,7 @@ module AylienTextApi
         value.strip!
         if validate_uri(value)
           params[:url] = value
-        elsif endpoint == :related
+        elsif endpoint == Configuration::ENDPOINTS[:related]
           params[:phrase] = value
         else
           params[:text] = value

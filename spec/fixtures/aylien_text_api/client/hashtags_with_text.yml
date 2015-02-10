@@ -7,16 +7,18 @@ http_interactions:
       encoding: US-ASCII
       string: text=The+Google+Cast+SDK+is+simple+to+integrate+because+there%E2%80%99s+no%0A++++++need+to+write+a+new+app.+Just+incorporate+the+SDK+into+your+existing%0A++++++mobile+and+web+apps+to+bring+your+content+to+the+TV.+You+are+in%0A++++++control+of+how+and+when+you+develop+and+publish+your+cast-ready%0A++++++apps+through+the+Google+Cast+developer+console.%0A++++++The+SDK+is+available+on+Android+and+iOS+as+well+as+on+Chrome%0A++++++through+the+Google+Cast+browser+extension.
     headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
-      - Aylien Text API Ruby Gem 0.0.1
+      - Aylien Text API Ruby Gem 0.1.0
       Content-Type:
       - application/x-www-form-urlencoded
       App-Id:
-      - <PASSWORD>
+      - "<PASSWORD>"
       App-Key:
-      - <PASSWORD>
+      - "<PASSWORD>"
   response:
     status:
       code: 200
@@ -25,24 +27,36 @@ http_interactions:
       Server:
       - openresty/1.5.12.1
       Date:
-      - Tue, 02 Dec 2014 18:16:43 GMT
+      - Tue, 10 Feb 2015 14:05:43 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
-      - '615'
+      - '612'
       Connection:
       - keep-alive
+      X-Ratelimit-Limit:
+      - '207000'
+      X-Ratelimit-Remaining:
+      - '205404'
+      X-Ratelimit-Reset:
+      - '1423612800'
     body:
-      encoding: US-ASCII
-      string: ! "{\n  \"text\": \"The Google Cast SDK is simple to integrate because
-        there\\u2019s no\\n      need to write a new app. Just incorporate the SDK
-        into your existing\\n      mobile and web apps to bring your content to the
-        TV. You are in\\n      control of how and when you develop and publish your
-        cast-ready\\n      apps through the Google Cast developer console.\\n      The
-        SDK is available on Android and iOS as well as on Chrome\\n      through the
-        Google Cast browser extension.\",\n  \"language\": \"en\",\n  \"hashtags\":
-        [\"#SoftwareDevelopmentKit\", \"#SDK\", \"#Google\", \"#BrowserExtension\",
-        \"#Android\", \"#IOS\", \"#WebApplication\"]\n}"
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogICJ0ZXh0IjogIlRoZSBHb29nbGUgQ2FzdCBTREsgaXMgc2ltcGxlIHRv
+        IGludGVncmF0ZSBiZWNhdXNlIHRoZXJl4oCZcyBub1xuICAgICAgbmVlZCB0
+        byB3cml0ZSBhIG5ldyBhcHAuIEp1c3QgaW5jb3Jwb3JhdGUgdGhlIFNESyBp
+        bnRvIHlvdXIgZXhpc3RpbmdcbiAgICAgIG1vYmlsZSBhbmQgd2ViIGFwcHMg
+        dG8gYnJpbmcgeW91ciBjb250ZW50IHRvIHRoZSBUVi4gWW91IGFyZSBpblxu
+        ICAgICAgY29udHJvbCBvZiBob3cgYW5kIHdoZW4geW91IGRldmVsb3AgYW5k
+        IHB1Ymxpc2ggeW91ciBjYXN0LXJlYWR5XG4gICAgICBhcHBzIHRocm91Z2gg
+        dGhlIEdvb2dsZSBDYXN0IGRldmVsb3BlciBjb25zb2xlLlxuICAgICAgVGhl
+        IFNESyBpcyBhdmFpbGFibGUgb24gQW5kcm9pZCBhbmQgaU9TIGFzIHdlbGwg
+        YXMgb24gQ2hyb21lXG4gICAgICB0aHJvdWdoIHRoZSBHb29nbGUgQ2FzdCBi
+        cm93c2VyIGV4dGVuc2lvbi4iLAogICJsYW5ndWFnZSI6ICJlbiIsCiAgImhh
+        c2h0YWdzIjogWyIjU29mdHdhcmVEZXZlbG9wbWVudEtpdCIsICIjU0RLIiwg
+        IiNHb29nbGUiLCAiI0Jyb3dzZXJFeHRlbnNpb24iLCAiI0FuZHJvaWQiLCAi
+        I0lPUyIsICIjV2ViQXBwbGljYXRpb24iXQp9
     http_version: 
-  recorded_at: Tue, 02 Dec 2014 18:15:40 GMT
+  recorded_at: Tue, 10 Feb 2015 14:05:28 GMT
 recorded_with: VCR 2.9.3

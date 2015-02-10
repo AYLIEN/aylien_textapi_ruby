@@ -7,16 +7,18 @@ http_interactions:
       encoding: US-ASCII
       string: text=Barack+Hussein+Obama+II+is+the+44th+and+current%0A++++++President+of+the+United+States%2C+and+the+first%0A++++++African+American+to+hold+the+office.
     headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
-      - Aylien Text API Ruby Gem 0.0.1
+      - Aylien Text API Ruby Gem 0.1.0
       Content-Type:
       - application/x-www-form-urlencoded
       App-Id:
-      - <PASSWORD>
+      - "<PASSWORD>"
       App-Key:
-      - <PASSWORD>
+      - "<PASSWORD>"
   response:
     status:
       code: 200
@@ -25,20 +27,26 @@ http_interactions:
       Server:
       - openresty/1.5.12.1
       Date:
-      - Tue, 02 Dec 2014 18:16:15 GMT
+      - Tue, 10 Feb 2015 14:06:17 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
       - '1035'
       Connection:
       - keep-alive
+      X-Ratelimit-Limit:
+      - '207000'
+      X-Ratelimit-Remaining:
+      - '205375'
+      X-Ratelimit-Reset:
+      - '1423612800'
     body:
-      encoding: US-ASCII
-      string: ! '{"text":"Barack Hussein Obama II is the 44th and current\n      President
+      encoding: UTF-8
+      string: '{"text":"Barack Hussein Obama II is the 44th and current\n      President
         of the United States, and the first\n      African American to hold the office.","language":"en","concepts":{"http://dbpedia.org/resource/Race_and_ethnicity_in_the_United_States_Census":{"surfaceForms":[{"string":"African
         American","score":0.9775916924283343,"offset":106}],"types":[""],"support":262175},"http://dbpedia.org/resource/Barack_Obama":{"surfaceForms":[{"string":"Barack
         Hussein Obama II","score":1.0,"offset":0}],"types":["http://dbpedia.org/ontology/Agent","http://schema.org/Person","http://xmlns.com/foaf/0.1/Person","http://dbpedia.org/ontology/Person","http://dbpedia.org/ontology/OfficeHolder"],"support":14686},"http://dbpedia.org/resource/United_States":{"surfaceForms":[{"string":"United
         States","score":0.9999067449772838,"offset":71}],"types":["http://schema.org/Place","http://dbpedia.org/ontology/Place","http://dbpedia.org/ontology/PopulatedPlace","http://schema.org/Country","http://dbpedia.org/ontology/Country"],"support":538753}}}'
     http_version: 
-  recorded_at: Tue, 02 Dec 2014 18:15:13 GMT
+  recorded_at: Tue, 10 Feb 2015 14:06:02 GMT
 recorded_with: VCR 2.9.3

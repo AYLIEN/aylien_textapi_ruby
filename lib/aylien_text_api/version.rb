@@ -1,4 +1,4 @@
-# Copyright 2014 Aylien, Inc. All Rights Reserved.
+# Copyright 2015 Aylien, Inc. All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,5 +13,5 @@
 # limitations under the License.
 
 module AylienTextApi
-  VERSION = "0.0.4" unless defined? AylienTextApi::VERSION
+  VERSION = "0.1.0" unless defined? AylienTextApi::VERSION
 end

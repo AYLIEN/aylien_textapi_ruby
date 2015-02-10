@@ -7,16 +7,18 @@ http_interactions:
       encoding: US-ASCII
       string: text=I+really+enjoyed+using+the+Canon+Ixus+in+Madrid.%0A++++++The+Panasonic+Lumix+is+a+poor+camera%2C+but+the+Canon+Ixus+is+really+sleek.%0A++++++The+Canon+Ixus+is+much+better+than+the+Panasonic+Lumix.%0A++++++All+I+want+to+do+with+a+camera+is+point+it+and+then+just+press+the+button.%0A++++++The+Canon+Ixus+is+perfect+for+that.+You+will+soon+get+great+photos%0A++++++with+very+little+effort.+I+had+previously+returned+a+Panasonic+Lumix%0A++++++because+the+pictures+were+not+of+the+quality+I+expected.%0A++++++Spending+the+money+on+the+Canon+was+a+smart+move.%0A++++++I+would+recommend+the+Ixus+to+anyone+without+hesitation.%0A++++++Two+small+issues+to+be+pointed+out%3A+firstly%2C+the+battery%0A++++++life+is+not+fantastic.+Also%2C+the+zoom+is+not+very+powerful.%0A++++++If+your+subject+is+far+away%2C+you+should+not+expect+good+results.%0A++++++Review+made+by+John+Irving+from+Florida.
     headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
-      - Aylien Text API Ruby Gem 0.0.1
+      - Aylien Text API Ruby Gem 0.1.0
       Content-Type:
       - application/x-www-form-urlencoded
       App-Id:
-      - <PASSWORD>
+      - "<PASSWORD>"
       App-Key:
-      - <PASSWORD>
+      - "<PASSWORD>"
   response:
     status:
       code: 200
@@ -25,29 +27,29 @@ http_interactions:
       Server:
       - openresty/1.5.12.1
       Date:
-      - Tue, 02 Dec 2014 18:15:57 GMT
+      - Tue, 10 Feb 2015 14:06:09 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
       - '1013'
       Connection:
       - keep-alive
+      X-Ratelimit-Limit:
+      - '207000'
+      X-Ratelimit-Remaining:
+      - '205382'
+      X-Ratelimit-Reset:
+      - '1423612800'
     body:
-      encoding: US-ASCII
-      string: ! "{\n  \"text\": \"I really enjoyed using the Canon Ixus in Madrid.\\n
-        \     The Panasonic Lumix is a poor camera, but the Canon Ixus is really sleek.\\n
-        \     The Canon Ixus is much better than the Panasonic Lumix.\\n      All
-        I want to do with a camera is point it and then just press the button.\\n
-        \     The Canon Ixus is perfect for that. You will soon get great photos\\n
-        \     with very little effort. I had previously returned a Panasonic Lumix\\n
-        \     because the pictures were not of the quality I expected.\\n      Spending
-        the money on the Canon was a smart move.\\n      I would recommend the Ixus
-        to anyone without hesitation.\\n      Two small issues to be pointed out:
-        firstly, the battery\\n      life is not fantastic. Also, the zoom is not
-        very powerful.\\n      If your subject is far away, you should not expect
-        good results.\\n      Review made by John Irving from Florida.\",\n  \"subjectivity\":
-        \"subjective\",\n  \"subjectivity_confidence\": 1.0,\n  \"polarity\": \"positive\",\n
-        \ \"polarity_confidence\": 0.9751552795031055\n}"
+      encoding: UTF-8
+      string: |-
+        {
+          "polarity": "positive",
+          "subjectivity": "subjective",
+          "text": "I really enjoyed using the Canon Ixus in Madrid.\n      The Panasonic Lumix is a poor camera, but the Canon Ixus is really sleek.\n      The Canon Ixus is much better than the Panasonic Lumix.\n      All I want to do with a camera is point it and then just press the button.\n      The Canon Ixus is perfect for that. You will soon get great photos\n      with very little effort. I had previously returned a Panasonic Lumix\n      because the pictures were not of the quality I expected.\n      Spending the money on the Canon was a smart move.\n      I would recommend the Ixus to anyone without hesitation.\n      Two small issues to be pointed out: firstly, the battery\n      life is not fantastic. Also, the zoom is not very powerful.\n      If your subject is far away, you should not expect good results.\n      Review made by John Irving from Florida.",
+          "polarity_confidence": 0.9751552795031055,
+          "subjectivity_confidence": 1.0
+        }
     http_version: 
-  recorded_at: Tue, 02 Dec 2014 18:14:54 GMT
+  recorded_at: Tue, 10 Feb 2015 14:05:54 GMT
 recorded_with: VCR 2.9.3

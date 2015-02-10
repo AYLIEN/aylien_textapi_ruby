@@ -7,16 +7,18 @@ http_interactions:
       encoding: US-ASCII
       string: url=http%3A%2F%2Fwww.bbc.co.uk%2Fnews%2Fbusiness-25821345
     headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
-      - Aylien Text API Ruby Gem 0.0.1
+      - Aylien Text API Ruby Gem 0.1.0
       Content-Type:
       - application/x-www-form-urlencoded
       App-Id:
-      - <PASSWORD>
+      - "<PASSWORD>"
       App-Key:
-      - <PASSWORD>
+      - "<PASSWORD>"
   response:
     status:
       code: 200
@@ -25,39 +27,114 @@ http_interactions:
       Server:
       - openresty/1.5.12.1
       Date:
-      - Tue, 02 Dec 2014 18:16:14 GMT
+      - Tue, 10 Feb 2015 14:06:19 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
-      - '4113'
+      - '4105'
       Connection:
       - keep-alive
+      X-Ratelimit-Limit:
+      - '207000'
+      X-Ratelimit-Remaining:
+      - '205371'
+      X-Ratelimit-Reset:
+      - '1423612800'
     body:
-      encoding: US-ASCII
-      string: ! '{"text":"Boeing confirms $4bn order from GE\nGeneral Electric''s
-        aircraft leasing and financing arm has confirmed that it has placed an order
-        for 40 Boeing planes worth $4bn (\u00a32.3bn) at list prices.\n\nThe order
-        was booked last year, but so far had been attributed to an \"unidentified
-        customer\" by Boeing.\n\nGE Capital Aviation Services (GECAS) said the new
-        planes would help it meet growing demand for more fuel-efficient aircraft
-        from its customers.\n\n\"Our airline customers require more fuel-efficient
-        aircraft to compete in the marketplace,\" Norman CT Liu, chief executive of
-        GECAS, said in a statement.\n\nGECAS has now placed total orders for 95 units
-        of 737 MAX 8 airplanes and 387 of the next-generation 737-800 jets making
-        it the biggest buyer of the two models in the leasing industry.\n\nA slowdown
-        in global travel demand, coupled with high fuel prices, has hurt the profitability
-        of many airlines across the globe in recent years.\n\nAs a result, airlines
-        have been looking to keep their costs in check to try and sustain their profitability.\n\nThat
-        has in turn caused a rise in demand for fuel-efficient aircraft.\n\nThe 100-200
-        seat narrow-body - or single-aisle - aircraft market is forecast to generate
-        $20 trillion (\u00a312.8tn) over the next 20 years.\n\nThe sector is currently
-        dominated by Airbus''s A320 and Boeing''s 737 aircraft, but other firms are
-        also looking to tap into the market.\n\nBoeing has claimed that its next-generation
-        737''s offer the \"lowest operating costs in its class\".","language":"en","concepts":{"http://dbpedia.org/resource/Connecticut":{"surfaceForms":[{"string":"CT","score":0.7768695300895874,"offset":538}],"types":["http://schema.org/Place","http://dbpedia.org/ontology/Place","http://dbpedia.org/ontology/PopulatedPlace","http://dbpedia.org/ontology/Region","http://schema.org/AdministrativeArea","http://dbpedia.org/ontology/AdministrativeRegion"],"support":22055},"http://dbpedia.org/resource/General_Electric":{"surfaceForms":[{"string":"GE","score":0.9908060693929266,"offset":32}],"types":["http://dbpedia.org/ontology/Device","http://dbpedia.org/ontology/InformationAppliance"],"support":4179},"http://dbpedia.org/resource/Aircraft_lease":{"surfaceForms":[{"string":"aircraft
-        leasing","score":0.9965442211698443,"offset":54}],"types":[""],"support":458},"http://dbpedia.org/resource/GE_Capital_Aviation_Services":{"surfaceForms":[{"string":"GE
-        Capital Aviation Services","score":1.0,"offset":294},{"string":"GECAS","score":1.0,"offset":324}],"types":["http://dbpedia.org/ontology/Agent","http://schema.org/Organization","http://dbpedia.org/ontology/Organisation","http://dbpedia.org/ontology/Company"],"support":68},"http://dbpedia.org/resource/Normans":{"surfaceForms":[{"string":"Norman","score":0.5994888273262919,"offset":531}],"types":[""],"support":4563},"http://dbpedia.org/resource/Our_Airline":{"surfaceForms":[{"string":"Our
-        airline","score":1.0,"offset":440}],"types":["http://dbpedia.org/ontology/Agent","http://schema.org/Organization","http://dbpedia.org/ontology/Organisation","http://dbpedia.org/ontology/Company","http://dbpedia.org/ontology/Airline"],"support":54},"http://dbpedia.org/resource/Boeing_737_MAX":{"surfaceForms":[{"string":"737
-        MAX","score":1.0,"offset":644}],"types":["http://schema.org/Product","http://dbpedia.org/ontology/MeanOfTransportation","http://dbpedia.org/ontology/Aircraft"],"support":69},"http://dbpedia.org/resource/Narrow-body_aircraft":{"surfaceForms":[{"string":"narrow-body","score":1.0,"offset":1124}],"types":[""],"support":144},"http://dbpedia.org/resource/Boeing":{"surfaceForms":[{"string":"Boeing","score":0.9974806337343421,"offset":0}],"types":["http://dbpedia.org/ontology/Agent","http://schema.org/Organization","http://dbpedia.org/ontology/Organisation","http://dbpedia.org/ontology/Company"],"support":7424},"http://dbpedia.org/resource/Airbus_A320_family":{"surfaceForms":[{"string":"A320","score":0.9813322468296155,"offset":1290}],"types":["http://schema.org/Product","http://dbpedia.org/ontology/MeanOfTransportation","http://dbpedia.org/ontology/Aircraft"],"support":1491}}}'
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJ0ZXh0IjoiQm9laW5nIGNvbmZpcm1zICQ0Ym4gb3JkZXIgZnJvbSBHRVxu
+        R2VuZXJhbCBFbGVjdHJpYydzIGFpcmNyYWZ0IGxlYXNpbmcgYW5kIGZpbmFu
+        Y2luZyBhcm0gaGFzIGNvbmZpcm1lZCB0aGF0IGl0IGhhcyBwbGFjZWQgYW4g
+        b3JkZXIgZm9yIDQwIEJvZWluZyBwbGFuZXMgd29ydGggJDRibiAowqMyLjNi
+        bikgYXQgbGlzdCBwcmljZXMuXG5cblRoZSBvcmRlciB3YXMgYm9va2VkIGxh
+        c3QgeWVhciwgYnV0IHNvIGZhciBoYWQgYmVlbiBhdHRyaWJ1dGVkIHRvIGFu
+        IFwidW5pZGVudGlmaWVkIGN1c3RvbWVyXCIgYnkgQm9laW5nLlxuXG5HRSBD
+        YXBpdGFsIEF2aWF0aW9uIFNlcnZpY2VzIChHRUNBUykgc2FpZCB0aGUgbmV3
+        IHBsYW5lcyB3b3VsZCBoZWxwIGl0IG1lZXQgZ3Jvd2luZyBkZW1hbmQgZm9y
+        IG1vcmUgZnVlbC1lZmZpY2llbnQgYWlyY3JhZnQgZnJvbSBpdHMgY3VzdG9t
+        ZXJzLlxuXG5cIk91ciBhaXJsaW5lIGN1c3RvbWVycyByZXF1aXJlIG1vcmUg
+        ZnVlbC1lZmZpY2llbnQgYWlyY3JhZnQgdG8gY29tcGV0ZSBpbiB0aGUgbWFy
+        a2V0cGxhY2UsXCIgTm9ybWFuIENUIExpdSwgY2hpZWYgZXhlY3V0aXZlIG9m
+        IEdFQ0FTLCBzYWlkIGluIGEgc3RhdGVtZW50LlxuXG5HRUNBUyBoYXMgbm93
+        IHBsYWNlZCB0b3RhbCBvcmRlcnMgZm9yIDk1IHVuaXRzIG9mIDczNyBNQVgg
+        OCBhaXJwbGFuZXMgYW5kIDM4NyBvZiB0aGUgbmV4dC1nZW5lcmF0aW9uIDcz
+        Ny04MDAgamV0cyBtYWtpbmcgaXQgdGhlIGJpZ2dlc3QgYnV5ZXIgb2YgdGhl
+        IHR3byBtb2RlbHMgaW4gdGhlIGxlYXNpbmcgaW5kdXN0cnkuXG5cbkEgc2xv
+        d2Rvd24gaW4gZ2xvYmFsIHRyYXZlbCBkZW1hbmQsIGNvdXBsZWQgd2l0aCBo
+        aWdoIGZ1ZWwgcHJpY2VzLCBoYXMgaHVydCB0aGUgcHJvZml0YWJpbGl0eSBv
+        ZiBtYW55IGFpcmxpbmVzIGFjcm9zcyB0aGUgZ2xvYmUgaW4gcmVjZW50IHll
+        YXJzLlxuXG5BcyBhIHJlc3VsdCwgYWlybGluZXMgaGF2ZSBiZWVuIGxvb2tp
+        bmcgdG8ga2VlcCB0aGVpciBjb3N0cyBpbiBjaGVjayB0byB0cnkgYW5kIHN1
+        c3RhaW4gdGhlaXIgcHJvZml0YWJpbGl0eS5cblxuVGhhdCBoYXMgaW4gdHVy
+        biBjYXVzZWQgYSByaXNlIGluIGRlbWFuZCBmb3IgZnVlbC1lZmZpY2llbnQg
+        YWlyY3JhZnQuXG5cblRoZSAxMDAtMjAwIHNlYXQgbmFycm93LWJvZHkgLSBv
+        ciBzaW5nbGUtYWlzbGUgLSBhaXJjcmFmdCBtYXJrZXQgaXMgZm9yZWNhc3Qg
+        dG8gZ2VuZXJhdGUgJDIwIHRyaWxsaW9uICjCozEyLjh0bikgb3ZlciB0aGUg
+        bmV4dCAyMCB5ZWFycy5cblxuVGhlIHNlY3RvciBpcyBjdXJyZW50bHkgZG9t
+        aW5hdGVkIGJ5IEFpcmJ1cydzIEEzMjAgYW5kIEJvZWluZydzIDczNyBhaXJj
+        cmFmdCwgYnV0IG90aGVyIGZpcm1zIGFyZSBhbHNvIGxvb2tpbmcgdG8gdGFw
+        IGludG8gdGhlIG1hcmtldC5cblxuQm9laW5nIGhhcyBjbGFpbWVkIHRoYXQg
+        aXRzIG5leHQtZ2VuZXJhdGlvbiA3MzcncyBvZmZlciB0aGUgXCJsb3dlc3Qg
+        b3BlcmF0aW5nIGNvc3RzIGluIGl0cyBjbGFzc1wiLiIsImxhbmd1YWdlIjoi
+        ZW4iLCJjb25jZXB0cyI6eyJodHRwOi8vZGJwZWRpYS5vcmcvcmVzb3VyY2Uv
+        Q29ubmVjdGljdXQiOnsic3VyZmFjZUZvcm1zIjpbeyJzdHJpbmciOiJDVCIs
+        InNjb3JlIjowLjc3Njg2OTUzMDA4OTU4NzQsIm9mZnNldCI6NTM4fV0sInR5
+        cGVzIjpbImh0dHA6Ly9zY2hlbWEub3JnL1BsYWNlIiwiaHR0cDovL2RicGVk
+        aWEub3JnL29udG9sb2d5L1BsYWNlIiwiaHR0cDovL2RicGVkaWEub3JnL29u
+        dG9sb2d5L1BvcHVsYXRlZFBsYWNlIiwiaHR0cDovL2RicGVkaWEub3JnL29u
+        dG9sb2d5L1JlZ2lvbiIsImh0dHA6Ly9zY2hlbWEub3JnL0FkbWluaXN0cmF0
+        aXZlQXJlYSIsImh0dHA6Ly9kYnBlZGlhLm9yZy9vbnRvbG9neS9BZG1pbmlz
+        dHJhdGl2ZVJlZ2lvbiJdLCJzdXBwb3J0IjoyMjA1NX0sImh0dHA6Ly9kYnBl
+        ZGlhLm9yZy9yZXNvdXJjZS9HZW5lcmFsX0VsZWN0cmljIjp7InN1cmZhY2VG
+        b3JtcyI6W3sic3RyaW5nIjoiR0UiLCJzY29yZSI6MC45OTA4MDYwNjkzOTI5
+        MjY2LCJvZmZzZXQiOjMyfV0sInR5cGVzIjpbImh0dHA6Ly9kYnBlZGlhLm9y
+        Zy9vbnRvbG9neS9EZXZpY2UiLCJodHRwOi8vZGJwZWRpYS5vcmcvb250b2xv
+        Z3kvSW5mb3JtYXRpb25BcHBsaWFuY2UiXSwic3VwcG9ydCI6NDE3OX0sImh0
+        dHA6Ly9kYnBlZGlhLm9yZy9yZXNvdXJjZS9BaXJjcmFmdF9sZWFzZSI6eyJz
+        dXJmYWNlRm9ybXMiOlt7InN0cmluZyI6ImFpcmNyYWZ0IGxlYXNpbmciLCJz
+        Y29yZSI6MC45OTY1NDQyMjExNjk4NDQzLCJvZmZzZXQiOjU0fV0sInR5cGVz
+        IjpbIiJdLCJzdXBwb3J0Ijo0NTh9LCJodHRwOi8vZGJwZWRpYS5vcmcvcmVz
+        b3VyY2UvR0VfQ2FwaXRhbF9BdmlhdGlvbl9TZXJ2aWNlcyI6eyJzdXJmYWNl
+        Rm9ybXMiOlt7InN0cmluZyI6IkdFIENhcGl0YWwgQXZpYXRpb24gU2Vydmlj
+        ZXMiLCJzY29yZSI6MS4wLCJvZmZzZXQiOjI5NH0seyJzdHJpbmciOiJHRUNB
+        UyIsInNjb3JlIjoxLjAsIm9mZnNldCI6MzI0fV0sInR5cGVzIjpbImh0dHA6
+        Ly9kYnBlZGlhLm9yZy9vbnRvbG9neS9BZ2VudCIsImh0dHA6Ly9zY2hlbWEu
+        b3JnL09yZ2FuaXphdGlvbiIsImh0dHA6Ly9kYnBlZGlhLm9yZy9vbnRvbG9n
+        eS9PcmdhbmlzYXRpb24iLCJodHRwOi8vZGJwZWRpYS5vcmcvb250b2xvZ3kv
+        Q29tcGFueSJdLCJzdXBwb3J0Ijo2OH0sImh0dHA6Ly9kYnBlZGlhLm9yZy9y
+        ZXNvdXJjZS9Ob3JtYW5zIjp7InN1cmZhY2VGb3JtcyI6W3sic3RyaW5nIjoi
+        Tm9ybWFuIiwic2NvcmUiOjAuNTk5NDg4ODI3MzI2MjkxOSwib2Zmc2V0Ijo1
+        MzF9XSwidHlwZXMiOlsiIl0sInN1cHBvcnQiOjQ1NjN9LCJodHRwOi8vZGJw
+        ZWRpYS5vcmcvcmVzb3VyY2UvT3VyX0FpcmxpbmUiOnsic3VyZmFjZUZvcm1z
+        IjpbeyJzdHJpbmciOiJPdXIgYWlybGluZSIsInNjb3JlIjoxLjAsIm9mZnNl
+        dCI6NDQwfV0sInR5cGVzIjpbImh0dHA6Ly9kYnBlZGlhLm9yZy9vbnRvbG9n
+        eS9BZ2VudCIsImh0dHA6Ly9zY2hlbWEub3JnL09yZ2FuaXphdGlvbiIsImh0
+        dHA6Ly9kYnBlZGlhLm9yZy9vbnRvbG9neS9PcmdhbmlzYXRpb24iLCJodHRw
+        Oi8vZGJwZWRpYS5vcmcvb250b2xvZ3kvQ29tcGFueSIsImh0dHA6Ly9kYnBl
+        ZGlhLm9yZy9vbnRvbG9neS9BaXJsaW5lIl0sInN1cHBvcnQiOjU0fSwiaHR0
+        cDovL2RicGVkaWEub3JnL3Jlc291cmNlL0JvZWluZ183MzdfTUFYIjp7InN1
+        cmZhY2VGb3JtcyI6W3sic3RyaW5nIjoiNzM3IE1BWCIsInNjb3JlIjoxLjAs
+        Im9mZnNldCI6NjQ0fV0sInR5cGVzIjpbImh0dHA6Ly9zY2hlbWEub3JnL1By
+        b2R1Y3QiLCJodHRwOi8vZGJwZWRpYS5vcmcvb250b2xvZ3kvTWVhbk9mVHJh
+        bnNwb3J0YXRpb24iLCJodHRwOi8vZGJwZWRpYS5vcmcvb250b2xvZ3kvQWly
+        Y3JhZnQiXSwic3VwcG9ydCI6Njl9LCJodHRwOi8vZGJwZWRpYS5vcmcvcmVz
+        b3VyY2UvTmFycm93LWJvZHlfYWlyY3JhZnQiOnsic3VyZmFjZUZvcm1zIjpb
+        eyJzdHJpbmciOiJuYXJyb3ctYm9keSIsInNjb3JlIjoxLjAsIm9mZnNldCI6
+        MTEyNH1dLCJ0eXBlcyI6WyIiXSwic3VwcG9ydCI6MTQ0fSwiaHR0cDovL2Ri
+        cGVkaWEub3JnL3Jlc291cmNlL0JvZWluZyI6eyJzdXJmYWNlRm9ybXMiOlt7
+        InN0cmluZyI6IkJvZWluZyIsInNjb3JlIjowLjk5NzQ4MDYzMzczNDM0MjEs
+        Im9mZnNldCI6MH1dLCJ0eXBlcyI6WyJodHRwOi8vZGJwZWRpYS5vcmcvb250
+        b2xvZ3kvQWdlbnQiLCJodHRwOi8vc2NoZW1hLm9yZy9Pcmdhbml6YXRpb24i
+        LCJodHRwOi8vZGJwZWRpYS5vcmcvb250b2xvZ3kvT3JnYW5pc2F0aW9uIiwi
+        aHR0cDovL2RicGVkaWEub3JnL29udG9sb2d5L0NvbXBhbnkiXSwic3VwcG9y
+        dCI6NzQyNH0sImh0dHA6Ly9kYnBlZGlhLm9yZy9yZXNvdXJjZS9BaXJidXNf
+        QTMyMF9mYW1pbHkiOnsic3VyZmFjZUZvcm1zIjpbeyJzdHJpbmciOiJBMzIw
+        Iiwic2NvcmUiOjAuOTgxMzMyMjQ2ODI5NjE1NSwib2Zmc2V0IjoxMjkwfV0s
+        InR5cGVzIjpbImh0dHA6Ly9zY2hlbWEub3JnL1Byb2R1Y3QiLCJodHRwOi8v
+        ZGJwZWRpYS5vcmcvb250b2xvZ3kvTWVhbk9mVHJhbnNwb3J0YXRpb24iLCJo
+        dHRwOi8vZGJwZWRpYS5vcmcvb250b2xvZ3kvQWlyY3JhZnQiXSwic3VwcG9y
+        dCI6MTQ5MX19fQ==
     http_version: 
-  recorded_at: Tue, 02 Dec 2014 18:15:11 GMT
+  recorded_at: Tue, 10 Feb 2015 14:06:04 GMT
 recorded_with: VCR 2.9.3

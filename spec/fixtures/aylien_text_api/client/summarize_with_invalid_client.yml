@@ -7,10 +7,12 @@ http_interactions:
       encoding: US-ASCII
       string: url=http%3A%2F%2Fwww.bbc.com%2Fsport%2F0%2Ffootball%2F25912393
     headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
-      - Aylien Text API Ruby Gem 0.0.1
+      - Aylien Text API Ruby Gem 0.1.0
       Content-Type:
       - application/x-www-form-urlencoded
   response:
@@ -21,7 +23,7 @@ http_interactions:
       Server:
       - openresty/1.5.12.1
       Date:
-      - Tue, 02 Dec 2014 18:16:05 GMT
+      - Tue, 10 Feb 2015 14:06:01 GMT
       Content-Type:
       - text/plain; charset=us-ascii
       Transfer-Encoding:
@@ -29,8 +31,8 @@ http_interactions:
       Connection:
       - keep-alive
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: Authentication parameters missing
     http_version: 
-  recorded_at: Tue, 02 Dec 2014 18:15:02 GMT
+  recorded_at: Tue, 10 Feb 2015 14:05:46 GMT
 recorded_with: VCR 2.9.3

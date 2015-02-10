@@ -1,0 +1,96 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.aylien.com/api/v1/classify/unsupervised
+    body:
+      encoding: US-ASCII
+      string: url=http%3A%2F%2Ftechcrunch.com%2F2014%2F10%2F20%2Fthe-super-slim-kindle-voyage-is-a-great-travel-companion%2F&class=voyage&class=travel&class=president
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Aylien Text API Ruby Gem 0.1.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      App-Id:
+      - "<PASSWORD>"
+      App-Key:
+      - "<PASSWORD>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty/1.5.12.1
+      Date:
+      - Tue, 10 Feb 2015 14:07:05 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '2154'
+      Connection:
+      - keep-alive
+      X-Ratelimit-Limit:
+      - '207000'
+      X-Ratelimit-Remaining:
+      - '205362'
+      X-Ratelimit-Reset:
+      - '1423612800'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJ0ZXh0IjoiSW4gMTkzNSwgU2lyIEFsbGVuIExhbmUgYW5kIFYuIEsuIEty
+        aXNobmEgTWVub24gZm91bmRlZCBQZW5ndWluIEJvb2tzLCBhIGNvbXBhbnkg
+        ZGVkaWNhdGVkIHRvIHByb2R1Y2luZyBoaWdoLXF1YWxpdHksIHNtYWxsLWZv
+        cm1hdCBwYXBlcmJhY2sgYm9va3MgZm9yIHRoZSB3b3JsZCBtYXJrZXQuIFRo
+        ZXNlIHNtYWxsLCB3ZWxsLW1hZGUgbGl0dGxlIGJvb2tzIGludHJvZHVjZWQg
+        c29tZSBhbWF6aW5nIGZpY3Rpb24sIHBoaWxvc29waHksIGNsYXNzaWNhbCB0
+        aG91Z2h0IGFuZCBzcGlyaXR1YWxpc20gdG8gYSBodW5ncnkgYXVkaWVuY2Us
+        IGFuZCB0aGUgbG93IHByaWNlIG1hZGUgaXQgZWFzeSB0byBidWlsZCBhIGxp
+        YnJhcnkgb2YgYW1hemluZyB0aXRsZXMgdGhhdCBjb3VsZCBmaXQgaW50byBh
+        IG1pbGsgY3JhdGUuIFBlbmd1aW4sIGl0IGNhbiBiZSBhcmd1ZWQsIGJyb3Vn
+        aHQgYWJvdXQgYW4gaW50ZWxsZWN0dWFsIHNlYSBjaGFuZ2UsIGJyaW5naW5n
+        IHVzIGJvdGggdGhlIHBvc3Qtd2FyIHdyaXRlcnMgb2Ygbm90ZSBhbmQsIGlu
+        IGFub3RoZXIgZGlyZWN0aW9uLCB0aGUgQmVhdHMgYW5kIHRoZSBzcGlyaXR1
+        YWwgcmlvdCBvZiB0aGUgMTk2MHMuXG5cbldoeSB3YXMgUGVuZ3VpbiBzbyBw
+        b3B1bGFyPyBBbmQgd2h5IGlzIHRoZSA2LWluY2ggS2luZGxlIFZveWFnZSBp
+        dHMgZW1vdGlvbmFsIHN1Y2Nlc3Nvcj8gQm90aCByZXZvbHV0aW9uaXplZCB0
+        aGUgcGh5c2ljYWwgbm90aW9uIG9mIGJvb2tzLlxuXG5JbiBQZW5ndWlu4oCZ
+        cyBjYXNlLCB0aGUgbWVkaXVtIHdhcyB0cnVseSB0aGUgbWVzc2FnZSwgYW5k
+        wqB0aGUgd3JpdGluZyBpbnNpZGUgdGhlIHNtYWxsLCBwb2NrZXRhYmxlIGJv
+        b2tzIGFsbG93ZWQgZm9yIHBvcnRhYmlsaXR5IGFuZCBlbmNvdXJhZ2VkIGNv
+        bGxlY3Rpb24uIEluIHRoZSBLaW5kbGUgVm95YWdl4oCZcyBjYXNlLCBBbWF6
+        b24gaGFzIGNyZWF0ZWQgYSBkZWxpZ2h0ZnVsIHRyYXZlbCBjb21wYW5pb24u
+        XG5cbkZpcnN0LCBsZXTigJlzIGFkZHJlc3MgdGhlIHNpemUuIFRoZSAkMTk5
+        IFZveWFnZSAoJDIxOSB3aXRob3V0IGFkcyBhbmQgd2l0aCAzRykgaXMgYWJv
+        dXQgYXMgYmlnIGFzIGEgUGVuZ3VpbiBwYXBlcmJhY2sgYW5kIGp1c3QgYSBi
+        aXQgYmlnZ2VyIChhbmQgdGhpY2tlcikgdGhhbiBhIHN0YW5kYXJkIHBhc3Nw
+        b3J0LiBJdOKAmXMgNy42IG1tIHRoaWNrIGFuZCByZW1vdmVkIGZyb20gaXRz
+        IGNhc2UgaXQgbG9va3MgYWJvdXQgYXMgc3Vic3RhbnRpYWwgYXMgYSB0aGlu
+        IHN0YWNrIG9mIHBhcGVyLlxuXG5UaGUgVm95YWdlIGlzIHRoZSBLaW5kbGUg
+        ZGlzdGlsbGVkLiBBbG1vc3QgYWxsIG9mIHRoZSBmZWF0dXJlcyBhcmUgdGhl
+        cmUg4oCTIHRvdWNoc2NyZWVuLCBicmlnaHQgd2hpdGUgZS1pbmsgZGlzcGxh
+        eSwgYW5kIGV2ZW4gYSBzcGVjaWFsIGhhcHRpYyBmZWVkYmFjayBzeXN0ZW0g
+        dGhhdCBhbGxvd3MgeW91IHRvIOKAnGNsaWNr4oCdIGxlZnQgYW5kIHJpZ2h0
+        IHNpZGUgYnV0dG9ucyB0byB0dXJuIHBhZ2VzLiBZb3UgY2FuIGFsc28gc3dp
+        cGUgdGhlIHBhZ2UgbGVmdCBhbmQgcmlnaHQgdG8gbW92ZSB0byB0aGUgbmV4
+        dCBwYWdlIGFuZCBzbWFsbCBkZWRpY2F0ZWQgc3BvdHMgYWJvdmUgdGhlIGxv
+        bmdlciB0b3VjaC1zZW5zaXRpdmUgcGFkcyB0aGF0IGdvIGJhY2sgb25lIHBh
+        Z2UuXG5cbkFtYXpvbiBzZWxscyBhbiAkNDUgZm9sZGluZyBjYXNlIGZvciB0
+        aGUgVm95YWdlIHRoYXQgb3BlbnMgdXAgbGlrZSBhIE1vbGVza2luZSByZXBv
+        cnRlcuKAmXMgbm90ZWJvb2suIEl0IGFjdGl2YXRlcyB0aGUgS2luZGxlIHVw
+        b24gb3BlbmluZyBhbmQgdHVybnMgaXQgb2ZmIHdoZW4gY2xvc2VkLiBIaWRk
+        ZW4gbWFnbmV0cyB0aGVuIGFsbG93IHlvdSB0byB0dXJuIHRoZSBjb3ZlciBp
+        bnRvIGEgbGl0dGxlIHN0YW5kIGZvciBoYW5kcy1mcmVlIHJlYWRpbmcuXG5c
+        blNvIGhvdyBkb2VzIGl0IHdvcms/IEluIHNob3J0LCBJIGxvdmUgZS1pbmsg
+        ZGV2aWNlcywgYW5kIHRoZSBWb3lhZ2UgaXMgdGhlIGJlc3Qgb2YgdGhlbS4g
+        QmVjYXVzZSBpdCBsYSIsImNsYXNzZXMiOlt7ImxhYmVsIjoidm95YWdlIiwi
+        c2NvcmUiOjAuMDE0fSx7ImxhYmVsIjoidHJhdmVsIiwic2NvcmUiOjAuMDA2
+        fSx7ImxhYmVsIjoicHJlc2lkZW50Iiwic2NvcmUiOjAuMDAyfV19
+    http_version: 
+  recorded_at: Tue, 10 Feb 2015 14:06:50 GMT
+recorded_with: VCR 2.9.3

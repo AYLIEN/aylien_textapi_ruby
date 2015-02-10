@@ -7,16 +7,18 @@ http_interactions:
       encoding: US-ASCII
       string: url=http%3A%2F%2Fwww.businessinsider.com%2Fcarl-icahn-open-letter-to-apple-2014-1
     headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
-      - Aylien Text API Ruby Gem 0.0.1
+      - Aylien Text API Ruby Gem 0.1.0
       Content-Type:
       - application/x-www-form-urlencoded
       App-Id:
-      - <PASSWORD>
+      - "<PASSWORD>"
       App-Key:
-      - <PASSWORD>
+      - "<PASSWORD>"
   response:
     status:
       code: 200
@@ -25,278 +27,470 @@ http_interactions:
       Server:
       - openresty/1.5.12.1
       Date:
-      - Tue, 02 Dec 2014 18:16:35 GMT
+      - Tue, 10 Feb 2015 14:05:51 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
-      - '20361'
+      - '20155'
       Connection:
       - keep-alive
+      X-Ratelimit-Limit:
+      - '207000'
+      X-Ratelimit-Remaining:
+      - '205400'
+      X-Ratelimit-Reset:
+      - '1423612800'
     body:
-      encoding: US-ASCII
-      string: ! '{"text":"Carl Icahn Open Letter To Apple\nHe announced on Twitter
-        that he bought another $500 million worth of Apple stock, bringing his total
-        to $3.6 billion.\n\nHe also wrote an open letter to Apple shareholders explaining
-        why he thinks Apple needs to ramp up its share buybacks. He believes a share
-        buyback would easily goose the company''s share price.\n\nOver the course
-        of my long career as an investor and as Chairman of Icahn Enterprises, our
-        best performing investments result from opportunities that we like to call
-        \"no brainers.\" Recent examples of such \u201cno brainers\u201d have been
-        our investments in Netflix, Hain Celestial, Chesapeake, Forest Labs and Herbalife,
-        just to name a few. In our opinion, a great example of a \u201cno brainer\u201d
-        in today\u2019s market is Apple. The S&P 500\u2019s price to earnings multiple
-        is 71% higher than Apple\u2019s, and if Apple were simply valued at the same
-        multiple, its share price would be $840, which is 52% higher than its current
-        price.1 This is a dramatic valuation disconnect that simply makes no sense
-        to us, and it seems that the company agrees with us on this point. Tim Cook
-        himself has expressed on more than one occasion that Apple is undervalued,
-        and as the company states, it already has in place \u201cthe largest share
-        repurchase authorization in history.\u201d We believe, however, that this
-        share repurchase authorization can and should be even larger, and effectuating
-        that for the benefit of all of the company\u2019s shareholders is the sole
-        intention of our proposal. The company has recommended voting against our
-        proposal for various reasons. It seems to us that the basis of its argument
-        against our proposal is that the company believes, because of the \u201cdynamic
-        competitive landscape\u201d and because its \u201crapid pace of innovation
-        require[s] unprecedented investment, flexibility and access to resources\u201d,
-        it does not currently have enough excess liquidity to increase the size of
-        its repurchase program. Assuming this indeed is the basis for the company\u2019s
-        argument, we find its position overly conservative (almost to the point of
-        being irrational), when we consider that the company had $130 billion of net
-        cash as of September 28, 2013 and that consensus earnings are expected to
-        be almost $40 billion next year. Given this massive net cash position and
-        robust earnings generation, Apple is perhaps the most overcapitalized company
-        in corporate history, from our perspective. Regardless of what liquidity it
-        may require with respect to \u201cunprecedented investment, flexibility and
-        access to resources\u201d for innovation moving forward, we believe the unprecedented
-        degree to which the company is currently overcapitalized would overcompensate
-        for any such investments (including possible investments in strategic M&A,
-        to which the company does not refer). Said another way, we believe that the
-        combination of the company\u2019s unprecedentedly enormous net cash balance,
-        robust annual earnings, and tremendous borrowing capacity provide more than
-        enough excess liquidity to afford both the use of cash for any necessary ongoing
-        business-related investments in addition to the cash used for the increased
-        share repurchases proposed.\n\nIt is our belief that it is the responsibility
-        of the Board, on behalf of the company\u2019s shareholders, to take advantage
-        of such a large and unmistakable opportunity. Indeed, we believe that by choosing
-        not to increase the size of the repurchase program, the directors are actually
-        performing a great disservice to the owners, especially smaller shareholders
-        who may not be in a position to buy more stock themselves. Meanwhile, we are
-        in a position to continue buying shares in the market at today''s price, so
-        perhaps we should thank the Board for not being more aggressive, and thus
-        allowing us to accumulate an even larger investment position at a price that
-        reflects the aforementioned valuation disconnect. In fact, over the past two
-        weeks we purchased $1 billion more in Apple shares, $500 million of which
-        we purchased today, bringing our total ownership position in Apple to a current
-        value of approximately $3.6 billion.\n\nGiven the degree to which Apple appears
-        undervalued to us, we almost feel that it\u2019s a waste of time to debate
-        the point. As we believe it to be the preeminent and most innovative consumer
-        products company in the world, with the greatest brand, hardware, software,
-        and services in the world, Apple has had tremendous growth to date, and we
-        fail to see why this growth would not continue moving forward. The industry
-        (smartphones and tablets) is expected to grow volume at a 15% compounded annual
-        growth rate from 2013 through 2017 according to IDC. We believe Apple should
-        continue to benefit from this secular growth, as last year, 85% of Apple\u2019s
-        revenues came from smartphones, tablets, and related software, services, and
-        accessories. The naysayers question whether Apple will be able to participate
-        in this growth without sacrificing pricing and gross margins, especially with
-        competition from Google, Samsung, Microsoft, Amazon and Chinese manufacturers.
-        Our response to them is that the answer is already evident to us from the
-        continuing loyalty of Apple\u2019s growing customer base. The highly successful
-        evolutionary (not revolutionary) introductions of the iPhone 5s and 5c and
-        Ipad Air and Mini, prove to us that Apple could, for the most part, maintain
-        pricing and gross margin as we believe consumers are willing to pay a reasonable
-        premium for the world\u2019s best smartphones and tablets. The rumored future
-        introduction of product line extensions with larger screens for both the iPhone
-        and iPad would further support this view.2 In fact, a recent study from NDC
-        shows that the iPhone accounted for 42% of smartphone users in the United
-        States at the end of 2013, up a staggering 20% from the prior year. Despite
-        its great scale and narrow focus, Apple has an operating margin of just 28.5%.
-        We believe its customers\u2019 willingness to pay a premium price for the
-        world\u2019s greatest products should enable Apple to participate in the expected
-        volume growth of these categories while at the same time largely maintaining
-        its average selling prices and gross margins. And, as software and services
-        improve and become even more important to consumers in the future, we expect
-        customer loyalty to strengthen further.\n\nEven if the story ended with Apple\u2019s
-        existing product and software lines, we would still choose to make Apple our
-        largest investment. But there is more to the story! Tim Cook keeps saying
-        that he expects to introduce \u201cnew products in new categories\u201d and
-        yet very few people seem to be listening. We\u2019re not aware of a single
-        Wall Street analyst who includes \u201cnew products in new categories\u201d
-        or new services in any of their financial projections, even though Apple clearly
-        has an impressive track record of such new category product introductions,
-        even if it does so rarely. Apple released the iPhone in 2007 and the iPad
-        five years later in 2012, both so extraordinarily successful that today they
-        represent the majority of the company\u2019s revenue. Tim Cook\u2019s comments,
-        along with advancements in enabling technologies, lead us to believe that
-        we may see in the not too distant future what new groundbreaking products
-        they\u2019ve been working on developing in Cupertino these last several years.3\n\nTo
-        get a sense of the scale of the opportunity that stems from new products in
-        new categories, let\u2019s take a moment to consider the possibility of an
-        Apple television. The major electronics companies are now focused on ultra
-        high definition TVs as their next big opportunity. Ultra high definition is
-        expected to offer a level of image clarity that is superior to today\u2019s
-        high definition televisions for screen sizes 55 inches and above. To date,
-        the barrier to mass market adoption of ultra high definition has been the
-        price gap between it and regular high definition, but that price gap is closing
-        and will soon be de minimis. The closing of this price gap is supported by
-        statements made by the Co-CEO of Samsung Electronics, who expects the price
-        gap to fall to 10% by the end of this year. While cable companies will likely
-        be slow to upgrade their linear TV infrastructure due to cost, video content
-        is expected to be accessible through the internet via services like Netflix
-        and others. We believe ultra high definition represents a major catalyst for
-        the next TV replacement cycle and a promising moment for Apple to introduce
-        its first new product in this category. Reed Hastings, CEO of Netflix, has
-        referenced ultra high definition as a major catalyst for Netflix going forward.
-        While this is true for Netflix, we believe it is also true for Apple, not
-        just for its hardware but also for selling ultra high definition movies and
-        shows on iTunes through the internet. With 238 million TVs sold globally in
-        2012, it would not surprise us if Apple could sell 25 million new Apple ultra
-        high definition televisions at $1,600 per unit, especially when considering
-        both its track record of introducing best in class products and its market
-        share in smartphones and tablets.4 At a gross margin of 37.7%, which would
-        be consistent with that of the overall company, such a debut would add $40
-        billion of revenues and $15 billion to operating income annually.5\n\nThe
-        possibility of a television represents only one opportunity for the company
-        that stems from new products in new categories. While we won\u2019t go through
-        all of them here, we see several major opportunities in hardware alone. With
-        advancements in miniaturization and continued improvements in Siri, it seems
-        obvious to us that Apple has a compelling opportunity in the exciting area
-        of wearable devices, supported by rumors that Apple is developing a smartwatch
-        (as Tim Cook himself said the wrist is \u201can area of great interest for
-        Apple\u201d). While many consider Apple a hardware company, to pigeonhole
-        it as such is no longer appropriate in our opinion. Apple has built an ecosystem
-        of hardware, software, and services that we believe collectively represents
-        the most successful consumer product platform in the entire history of consumer-facing
-        technologies. And as Apple\u2019s customer base continues to enjoy the use
-        of this ecosystem, storing media in the cloud and moving it from one Apple
-        device to another as doing so becomes increasingly convenient with innovations
-        such as Airplay (as just one simple example of this ecosystem\u2019s current
-        functionality), we believe that customer base grows increasingly loyal and
-        excited for the next Apple product release, making it an asset in and of itself
-        that grows and becomes increasingly valuable. Indeed, we believe any new software
-        service that offers new functionality to this customer base becomes a large
-        opportunity for Apple to introduce as a revolutionary and disruptive bolt-on
-        to the ecosystem. As just one of many possible examples of this phenomenon,
-        Apple could introduce a next generation payments solution. In terms of whether
-        the marketplace is well addressed by mobile payments solutions, Tim Cook has
-        said \u201cI think it is in its infancy\u2026 I think it is just getting started
-        and just of out of the starting block.\u201d With the fingerprint sensor,
-        iBeacon, 575+ million credit card numbers stored in iTunes, and Apple\u2019s
-        homogeneous iOS installed base with 79% of devices using iOS 7, we believe
-        a revolutionary payments solution is now a very real opportunity that the
-        company could choose to pursue. With respect to all of Apple\u2019s new and
-        existing opportunities for growth, they will only prove to be successful with
-        strong execution from the company\u2019s management, in whom we hold great
-        confidence. Naysayers say Tim Cook is not Steve Jobs, and they\u2019re absolutely
-        right. He is Tim Cook and we believe he is doing an excellent job, and Jonathan
-        Ive, Senior VP of Design, is Jonathan Ive and we believe he\u2019s doing an
-        excellent job, etcetera.\n\nIn this letter, we have above summarized why we
-        believe Apple is undervalued in order to express how ridiculous it seems to
-        us for Apple to horde so much cash rather than repurchase stock (and thereby
-        use that cash to make a larger investment in itself for the benefit of all
-        of the company\u2019s shareholders). In its statement in opposition to our
-        proposal, the company claims that \u201cthe Board and management team have
-        demonstrated a strong commitment to returning capital to shareholders\u201d
-        and we believe that is true, but we also believe that commitment is not strong
-        enough given the unique degree to which the company is both undervalued and
-        overcapitalized. Furthermore, it is important to note that a share repurchase
-        is not simply an act of \u201creturning capital to shareholders\u201d since
-        it is also the company effectively making an investment in itself. To us,
-        as long term investors, this is an important difference: a dividend is a pure
-        return of capital while a share repurchase is the company making an investment
-        in itself by buying shares in the market at the current price, which we believe
-        to be undervalued, from shareholders willing to sell at that price for the
-        benefit of shareholders who choose to remain investors for the longer term.
-        And we are long term investors. It should be noted that no one on the Board
-        seems to be an expert in the world of investment management. However, based
-        on our record, we believe few will argue that we are experts in this area,
-        and we have no doubts that the Board is doing a great disservice to its shareholders
-        by not immediately increasing the size of the share repurchase program in
-        order to more effectively take advantage of what we believe to be the company\u2019s
-        low market valuation.\n\nWe have expressed above what we believe to be the
-        company\u2019s primary reason for not supporting our proposal. Conversely,
-        it is our belief that Apple\u2019s current excess liquidity is without historical
-        precedent and beyond reasonable comparison to its peers or otherwise, and
-        such dramatic overcapitalization affords the company enough excess liquidity
-        to repurchase the amount of shares we proposed. Apple\u2019s existing capital
-        return program has just $37 billion remaining, and the company has until the
-        end of 2015 to complete it. Without any changes to the program, the largest
-        pile of corporate cash in the world is likely to grow even larger, and if
-        the share price rises, this Board will have missed a great opportunity to
-        use more of that hoarded cash to repurchase shares at an attractive value.
-        While it is important for the Board to focus on the return of capital on a
-        sustained basis, it is also important for the Board to evaluate whether or
-        not its share price is undervalued and to take advantage of it with share
-        repurchases, especially when the balance sheet exhibits dramatic excess liquidity,
-        as we believe Apple\u2019s does today.\n\nThe Board may argue that with so
-        much opportunity, it would be prudent to maintain its excess liquidity to
-        increase R&D or make acquisitions, especially when considering the financial
-        strength of its competitors. We completely agree that the company must innovate
-        and should be flexible to make prudent strategic acquisitions, yet even after
-        taking such factors into account, we believe that tremendous excess liquidity
-        remains. With respect to possible M&A (to which the company does not refer
-        in its statement), for the opportunities highlighted above (a TV, a watch,
-        a payment service), we find it extremely difficult to identify any possible
-        strategic acquisitions of scale that make sense. Furthermore, such action
-        would seem to conflict with Apple\u2019s culture historically. A remarkable
-        fact is that since the Board reacquired Steve Jobs through the NeXT acquisition
-        for $427 million in 1997, the next largest acquisition Apple made was $2.6
-        billion for Nortel\u2019s patent portfolio. Amazingly, over these 17 years,
-        Apple made just $7.8 billion worth of acquisitions in total during this timeframe.
-        Apple clearly has a long history and culture of developing its innovation
-        internally, which leads us to believe that the company will not seek out large
-        acquisitions to pursue any of the opportunities about which we have speculated.
-        In terms of paying for the necessary innovation internally, Apple is expected
-        to generate $40 billion of earnings next year, which already takes into account
-        an increasing R&D expense. In order to address the argument that Apple should
-        reserve excess liquidity to more effectively compete with some of its deep-pocketed
-        competitors, there is no doubt that some of them also have significant earnings
-        and net cash on their balance sheets (whether or not that is appropriate).
-        But Apple has much more. When compared to its next largest competitor, Microsoft,
-        for example, Apple has $68 billion more net cash and is expected to generate
-        $18 billion more in earnings during 2014.\n\nThe Board may argue that much
-        of its cash and earnings are international and therefore subject to a repatriation
-        tax if returned to the United States to repurchase shares. While this is true,
-        we question why the company would not simply borrow the money in the Unites
-        States to the extent it deems its domestic cash of $36 billion and domestic
-        earnings are insufficient. Given that the company has $130 billion of net
-        cash and $40 billion of expected annual earnings, and the fact that it is
-        hard to find a better time in history to borrow money, a $50 billion share
-        repurchase over the course of fiscal year 2014 seems more than reasonable
-        to us. Today, Apple\u2019s outstanding ten year bonds yield 3.63%, and its
-        five year bonds yield 2%. Apple could either continue to carry this debt,
-        repay it from its domestic earnings over time, or repatriate cash from abroad
-        upon the passage of corporate tax reform.\n\nThe company has stated that it
-        is \u201cupdating perspectives on its capital return program for 2014 and
-        beyond\u201d and \u201ccollecting input from a very broad base of shareholders.\u201d
-        We believe, if our proposal receives majority shareholder support, that the
-        Board should respect it and increase the repurchase program as requested.
-        We believe this action will greatly enhance value for all long term shareholders
-        who believe, as we do, in the great potential of this company. If the Board
-        takes this action, we will applaud them for taking advantage of one of the
-        greatest examples of a \u201cno brainer\u201d we have seen in five decades
-        of successful investing.","entities":{"percentage":["71 %","52 %","15 %","85
-        %","42 %","20 %","10 %","79 %","3.63 %","2 %"],"organization":["Apple","IDC","Samsung
-        , Microsoft","Samsung Electronics","Netflix","Apple\u2019s","VP","Microsoft"],"location":["Chesapeake",".1","United
-        States","Hastings"],"keyword":["Apple could sell 25 million new Apple","Apple
-        product","Apple to introduce its first new product","Apple shares","Apple
-        has $ 68 billion more net cash","opportunity for the company that stems from
-        new products","opportunity for Apple","company making an investment in itself
-        by buying shares","Apple our largest investment","company is currently overcapitalized
-        would overcompensate for any such investments -LRB- including possible investments","products
-        company","Apple","company has $ 130 billion of net cash","company had $ 130
-        billion of net cash","opportunity that the company","company effectively making
-        an investment","Board to evaluate whether or not its share price","company","cash
-        used for the increased share","opportunity that stems from new products"],"date":["September
-        28 , 2013","next year","today","past two weeks","2013","2017","last year","end
-        of 2013","2007","2012","end of this year","1,600","end of 2015","1997","2014","fiscal
-        year 2014","ten year"],"money":["$ 500 million","$ 3.6 billion","$ 840","$
-        130 billion","$ 40 billion","$ 1 billion","$","$ 15 billion","$ 37 billion","$
-        427 million","$ 2.6 billion","$ 7.8 billion","$ 68 billion","$ 18 billion","$
-        36 billion","$ 50 billion"],"person":["Carl","Icahn Open","Icahn Enterprises","Hain
-        Celestial","Tim Cook","Tim Cook\u2019s","Reed Hastings","Steve Jobs","Tim","Cook","Jonathan
-        Ive","Jonathan","Ive"],"product":["iPhone","Ipad","Airplay"]}}'
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJ0ZXh0IjoiQ2FybCBJY2FobiBCdXlzICQ1MDAgTWlsbGlvbiBNT1JFIE9m
+        IEFwcGxlLCBSZWxlYXNlcyBPcGVuIExldHRlciBUbyBUaGUgQ29tcGFueVxu
+        SGUgYW5ub3VuY2VkIG9uIFR3aXR0ZXIgdGhhdCBoZSBib3VnaHQgYW5vdGhl
+        ciAkNTAwIG1pbGxpb24gd29ydGggb2YgQXBwbGUgc3RvY2ssIGJyaW5naW5n
+        IGhpcyB0b3RhbCB0byAkMy42IGJpbGxpb24uXG5cbkhlIGFsc28gd3JvdGUg
+        YW4gb3BlbiBsZXR0ZXIgdG8gQXBwbGUgc2hhcmVob2xkZXJzIGV4cGxhaW5p
+        bmcgd2h5IGhlIHRoaW5rcyBBcHBsZSBuZWVkcyB0byByYW1wIHVwIGl0cyBz
+        aGFyZSBidXliYWNrcy4gSGUgYmVsaWV2ZXMgYSBzaGFyZSBidXliYWNrIHdv
+        dWxkIGVhc2lseSBnb29zZSB0aGUgY29tcGFueSdzIHNoYXJlIHByaWNlLlxu
+        XG5PdmVyIHRoZSBjb3Vyc2Ugb2YgbXkgbG9uZyBjYXJlZXIgYXMgYW4gaW52
+        ZXN0b3IgYW5kIGFzIENoYWlybWFuIG9mIEljYWhuIEVudGVycHJpc2VzLCBv
+        dXIgYmVzdCBwZXJmb3JtaW5nIGludmVzdG1lbnRzIHJlc3VsdCBmcm9tIG9w
+        cG9ydHVuaXRpZXMgdGhhdCB3ZSBsaWtlIHRvIGNhbGwgXCJubyBicmFpbmVy
+        cy5cIiBSZWNlbnQgZXhhbXBsZXMgb2Ygc3VjaCDigJxubyBicmFpbmVyc+KA
+        nSBoYXZlIGJlZW4gb3VyIGludmVzdG1lbnRzIGluIE5ldGZsaXgsIEhhaW4g
+        Q2VsZXN0aWFsLCBDaGVzYXBlYWtlLCBGb3Jlc3QgTGFicyBhbmQgSGVyYmFs
+        aWZlLCBqdXN0IHRvIG5hbWUgYSBmZXcuIEluIG91ciBvcGluaW9uLCBhIGdy
+        ZWF0IGV4YW1wbGUgb2YgYSDigJxubyBicmFpbmVy4oCdIGluIHRvZGF54oCZ
+        cyBtYXJrZXQgaXMgQXBwbGUuIFRoZSBTJlAgNTAw4oCZcyBwcmljZSB0byBl
+        YXJuaW5ncyBtdWx0aXBsZSBpcyA3MSUgaGlnaGVyIHRoYW4gQXBwbGXigJlz
+        LCBhbmQgaWYgQXBwbGUgd2VyZSBzaW1wbHkgdmFsdWVkIGF0IHRoZSBzYW1l
+        IG11bHRpcGxlLCBpdHMgc2hhcmUgcHJpY2Ugd291bGQgYmUgJDg0MCwgd2hp
+        Y2ggaXMgNTIlIGhpZ2hlciB0aGFuIGl0cyBjdXJyZW50IHByaWNlLjEgVGhp
+        cyBpcyBhIGRyYW1hdGljIHZhbHVhdGlvbiBkaXNjb25uZWN0IHRoYXQgc2lt
+        cGx5IG1ha2VzIG5vIHNlbnNlIHRvIHVzLCBhbmQgaXQgc2VlbXMgdGhhdCB0
+        aGUgY29tcGFueSBhZ3JlZXMgd2l0aCB1cyBvbiB0aGlzIHBvaW50LiBUaW0g
+        Q29vayBoaW1zZWxmIGhhcyBleHByZXNzZWQgb24gbW9yZSB0aGFuIG9uZSBv
+        Y2Nhc2lvbiB0aGF0IEFwcGxlIGlzIHVuZGVydmFsdWVkLCBhbmQgYXMgdGhl
+        IGNvbXBhbnkgc3RhdGVzLCBpdCBhbHJlYWR5IGhhcyBpbiBwbGFjZSDigJx0
+        aGUgbGFyZ2VzdCBzaGFyZSByZXB1cmNoYXNlIGF1dGhvcml6YXRpb24gaW4g
+        aGlzdG9yeS7igJ0gV2UgYmVsaWV2ZSwgaG93ZXZlciwgdGhhdCB0aGlzIHNo
+        YXJlIHJlcHVyY2hhc2UgYXV0aG9yaXphdGlvbiBjYW4gYW5kIHNob3VsZCBi
+        ZSBldmVuIGxhcmdlciwgYW5kIGVmZmVjdHVhdGluZyB0aGF0IGZvciB0aGUg
+        YmVuZWZpdCBvZiBhbGwgb2YgdGhlIGNvbXBhbnnigJlzIHNoYXJlaG9sZGVy
+        cyBpcyB0aGUgc29sZSBpbnRlbnRpb24gb2Ygb3VyIHByb3Bvc2FsLiBUaGUg
+        Y29tcGFueSBoYXMgcmVjb21tZW5kZWQgdm90aW5nIGFnYWluc3Qgb3VyIHBy
+        b3Bvc2FsIGZvciB2YXJpb3VzIHJlYXNvbnMuIEl0IHNlZW1zIHRvIHVzIHRo
+        YXQgdGhlIGJhc2lzIG9mIGl0cyBhcmd1bWVudCBhZ2FpbnN0IG91ciBwcm9w
+        b3NhbCBpcyB0aGF0IHRoZSBjb21wYW55IGJlbGlldmVzLCBiZWNhdXNlIG9m
+        IHRoZSDigJxkeW5hbWljIGNvbXBldGl0aXZlIGxhbmRzY2FwZeKAnSBhbmQg
+        YmVjYXVzZSBpdHMg4oCccmFwaWQgcGFjZSBvZiBpbm5vdmF0aW9uIHJlcXVp
+        cmVbc10gdW5wcmVjZWRlbnRlZCBpbnZlc3RtZW50LCBmbGV4aWJpbGl0eSBh
+        bmQgYWNjZXNzIHRvIHJlc291cmNlc+KAnSwgaXQgZG9lcyBub3QgY3VycmVu
+        dGx5IGhhdmUgZW5vdWdoIGV4Y2VzcyBsaXF1aWRpdHkgdG8gaW5jcmVhc2Ug
+        dGhlIHNpemUgb2YgaXRzIHJlcHVyY2hhc2UgcHJvZ3JhbS4gQXNzdW1pbmcg
+        dGhpcyBpbmRlZWQgaXMgdGhlIGJhc2lzIGZvciB0aGUgY29tcGFueeKAmXMg
+        YXJndW1lbnQsIHdlIGZpbmQgaXRzIHBvc2l0aW9uIG92ZXJseSBjb25zZXJ2
+        YXRpdmUgKGFsbW9zdCB0byB0aGUgcG9pbnQgb2YgYmVpbmcgaXJyYXRpb25h
+        bCksIHdoZW4gd2UgY29uc2lkZXIgdGhhdCB0aGUgY29tcGFueSBoYWQgJDEz
+        MCBiaWxsaW9uIG9mIG5ldCBjYXNoIGFzIG9mIFNlcHRlbWJlciAyOCwgMjAx
+        MyBhbmQgdGhhdCBjb25zZW5zdXMgZWFybmluZ3MgYXJlIGV4cGVjdGVkIHRv
+        IGJlIGFsbW9zdCAkNDAgYmlsbGlvbiBuZXh0IHllYXIuIEdpdmVuIHRoaXMg
+        bWFzc2l2ZSBuZXQgY2FzaCBwb3NpdGlvbiBhbmQgcm9idXN0IGVhcm5pbmdz
+        IGdlbmVyYXRpb24sIEFwcGxlIGlzIHBlcmhhcHMgdGhlIG1vc3Qgb3ZlcmNh
+        cGl0YWxpemVkIGNvbXBhbnkgaW4gY29ycG9yYXRlIGhpc3RvcnksIGZyb20g
+        b3VyIHBlcnNwZWN0aXZlLiBSZWdhcmRsZXNzIG9mIHdoYXQgbGlxdWlkaXR5
+        IGl0IG1heSByZXF1aXJlIHdpdGggcmVzcGVjdCB0byDigJx1bnByZWNlZGVu
+        dGVkIGludmVzdG1lbnQsIGZsZXhpYmlsaXR5IGFuZCBhY2Nlc3MgdG8gcmVz
+        b3VyY2Vz4oCdIGZvciBpbm5vdmF0aW9uIG1vdmluZyBmb3J3YXJkLCB3ZSBi
+        ZWxpZXZlIHRoZSB1bnByZWNlZGVudGVkIGRlZ3JlZSB0byB3aGljaCB0aGUg
+        Y29tcGFueSBpcyBjdXJyZW50bHkgb3ZlcmNhcGl0YWxpemVkIHdvdWxkIG92
+        ZXJjb21wZW5zYXRlIGZvciBhbnkgc3VjaCBpbnZlc3RtZW50cyAoaW5jbHVk
+        aW5nIHBvc3NpYmxlIGludmVzdG1lbnRzIGluIHN0cmF0ZWdpYyBNJkEsIHRv
+        IHdoaWNoIHRoZSBjb21wYW55IGRvZXMgbm90IHJlZmVyKS4gU2FpZCBhbm90
+        aGVyIHdheSwgd2UgYmVsaWV2ZSB0aGF0IHRoZSBjb21iaW5hdGlvbiBvZiB0
+        aGUgY29tcGFueeKAmXMgdW5wcmVjZWRlbnRlZGx5IGVub3Jtb3VzIG5ldCBj
+        YXNoIGJhbGFuY2UsIHJvYnVzdCBhbm51YWwgZWFybmluZ3MsIGFuZCB0cmVt
+        ZW5kb3VzIGJvcnJvd2luZyBjYXBhY2l0eSBwcm92aWRlIG1vcmUgdGhhbiBl
+        bm91Z2ggZXhjZXNzIGxpcXVpZGl0eSB0byBhZmZvcmQgYm90aCB0aGUgdXNl
+        IG9mIGNhc2ggZm9yIGFueSBuZWNlc3Nhcnkgb25nb2luZyBidXNpbmVzcy1y
+        ZWxhdGVkIGludmVzdG1lbnRzIGluIGFkZGl0aW9uIHRvIHRoZSBjYXNoIHVz
+        ZWQgZm9yIHRoZSBpbmNyZWFzZWQgc2hhcmUgcmVwdXJjaGFzZXMgcHJvcG9z
+        ZWQuXG5cbkl0IGlzIG91ciBiZWxpZWYgdGhhdCBpdCBpcyB0aGUgcmVzcG9u
+        c2liaWxpdHkgb2YgdGhlIEJvYXJkLCBvbiBiZWhhbGYgb2YgdGhlIGNvbXBh
+        bnnigJlzIHNoYXJlaG9sZGVycywgdG8gdGFrZSBhZHZhbnRhZ2Ugb2Ygc3Vj
+        aCBhIGxhcmdlIGFuZCB1bm1pc3Rha2FibGUgb3Bwb3J0dW5pdHkuIEluZGVl
+        ZCwgd2UgYmVsaWV2ZSB0aGF0IGJ5IGNob29zaW5nIG5vdCB0byBpbmNyZWFz
+        ZSB0aGUgc2l6ZSBvZiB0aGUgcmVwdXJjaGFzZSBwcm9ncmFtLCB0aGUgZGly
+        ZWN0b3JzIGFyZSBhY3R1YWxseSBwZXJmb3JtaW5nIGEgZ3JlYXQgZGlzc2Vy
+        dmljZSB0byB0aGUgb3duZXJzLCBlc3BlY2lhbGx5IHNtYWxsZXIgc2hhcmVo
+        b2xkZXJzIHdobyBtYXkgbm90IGJlIGluIGEgcG9zaXRpb24gdG8gYnV5IG1v
+        cmUgc3RvY2sgdGhlbXNlbHZlcy4gTWVhbndoaWxlLCB3ZSBhcmUgaW4gYSBw
+        b3NpdGlvbiB0byBjb250aW51ZSBidXlpbmcgc2hhcmVzIGluIHRoZSBtYXJr
+        ZXQgYXQgdG9kYXkncyBwcmljZSwgc28gcGVyaGFwcyB3ZSBzaG91bGQgdGhh
+        bmsgdGhlIEJvYXJkIGZvciBub3QgYmVpbmcgbW9yZSBhZ2dyZXNzaXZlLCBh
+        bmQgdGh1cyBhbGxvd2luZyB1cyB0byBhY2N1bXVsYXRlIGFuIGV2ZW4gbGFy
+        Z2VyIGludmVzdG1lbnQgcG9zaXRpb24gYXQgYSBwcmljZSB0aGF0IHJlZmxl
+        Y3RzIHRoZSBhZm9yZW1lbnRpb25lZCB2YWx1YXRpb24gZGlzY29ubmVjdC4g
+        SW4gZmFjdCwgb3ZlciB0aGUgcGFzdCB0d28gd2Vla3Mgd2UgcHVyY2hhc2Vk
+        ICQxIGJpbGxpb24gbW9yZSBpbiBBcHBsZSBzaGFyZXMsICQ1MDAgbWlsbGlv
+        biBvZiB3aGljaCB3ZSBwdXJjaGFzZWQgdG9kYXksIGJyaW5naW5nIG91ciB0
+        b3RhbCBvd25lcnNoaXAgcG9zaXRpb24gaW4gQXBwbGUgdG8gYSBjdXJyZW50
+        IHZhbHVlIG9mIGFwcHJveGltYXRlbHkgJDMuNiBiaWxsaW9uLlxuXG5HaXZl
+        biB0aGUgZGVncmVlIHRvIHdoaWNoIEFwcGxlIGFwcGVhcnMgdW5kZXJ2YWx1
+        ZWQgdG8gdXMsIHdlIGFsbW9zdCBmZWVsIHRoYXQgaXTigJlzIGEgd2FzdGUg
+        b2YgdGltZSB0byBkZWJhdGUgdGhlIHBvaW50LiBBcyB3ZSBiZWxpZXZlIGl0
+        IHRvIGJlIHRoZSBwcmVlbWluZW50IGFuZCBtb3N0IGlubm92YXRpdmUgY29u
+        c3VtZXIgcHJvZHVjdHMgY29tcGFueSBpbiB0aGUgd29ybGQsIHdpdGggdGhl
+        IGdyZWF0ZXN0IGJyYW5kLCBoYXJkd2FyZSwgc29mdHdhcmUsIGFuZCBzZXJ2
+        aWNlcyBpbiB0aGUgd29ybGQsIEFwcGxlIGhhcyBoYWQgdHJlbWVuZG91cyBn
+        cm93dGggdG8gZGF0ZSwgYW5kIHdlIGZhaWwgdG8gc2VlIHdoeSB0aGlzIGdy
+        b3d0aCB3b3VsZCBub3QgY29udGludWUgbW92aW5nIGZvcndhcmQuIFRoZSBp
+        bmR1c3RyeSAoc21hcnRwaG9uZXMgYW5kIHRhYmxldHMpIGlzIGV4cGVjdGVk
+        IHRvIGdyb3cgdm9sdW1lIGF0IGEgMTUlIGNvbXBvdW5kZWQgYW5udWFsIGdy
+        b3d0aCByYXRlIGZyb20gMjAxMyB0aHJvdWdoIDIwMTcgYWNjb3JkaW5nIHRv
+        IElEQy4gV2UgYmVsaWV2ZSBBcHBsZSBzaG91bGQgY29udGludWUgdG8gYmVu
+        ZWZpdCBmcm9tIHRoaXMgc2VjdWxhciBncm93dGgsIGFzIGxhc3QgeWVhciwg
+        ODUlIG9mIEFwcGxl4oCZcyByZXZlbnVlcyBjYW1lIGZyb20gc21hcnRwaG9u
+        ZXMsIHRhYmxldHMsIGFuZCByZWxhdGVkIHNvZnR3YXJlLCBzZXJ2aWNlcywg
+        YW5kIGFjY2Vzc29yaWVzLiBUaGUgbmF5c2F5ZXJzIHF1ZXN0aW9uIHdoZXRo
+        ZXIgQXBwbGUgd2lsbCBiZSBhYmxlIHRvIHBhcnRpY2lwYXRlIGluIHRoaXMg
+        Z3Jvd3RoIHdpdGhvdXQgc2FjcmlmaWNpbmcgcHJpY2luZyBhbmQgZ3Jvc3Mg
+        bWFyZ2lucywgZXNwZWNpYWxseSB3aXRoIGNvbXBldGl0aW9uIGZyb20gR29v
+        Z2xlLCBTYW1zdW5nLCBNaWNyb3NvZnQsIEFtYXpvbiBhbmQgQ2hpbmVzZSBt
+        YW51ZmFjdHVyZXJzLiBPdXIgcmVzcG9uc2UgdG8gdGhlbSBpcyB0aGF0IHRo
+        ZSBhbnN3ZXIgaXMgYWxyZWFkeSBldmlkZW50IHRvIHVzIGZyb20gdGhlIGNv
+        bnRpbnVpbmcgbG95YWx0eSBvZiBBcHBsZeKAmXMgZ3Jvd2luZyBjdXN0b21l
+        ciBiYXNlLiBUaGUgaGlnaGx5IHN1Y2Nlc3NmdWwgZXZvbHV0aW9uYXJ5IChu
+        b3QgcmV2b2x1dGlvbmFyeSkgaW50cm9kdWN0aW9ucyBvZiB0aGUgaVBob25l
+        IDVzIGFuZCA1YyBhbmQgSXBhZCBBaXIgYW5kIE1pbmksIHByb3ZlIHRvIHVz
+        IHRoYXQgQXBwbGUgY291bGQsIGZvciB0aGUgbW9zdCBwYXJ0LCBtYWludGFp
+        biBwcmljaW5nIGFuZCBncm9zcyBtYXJnaW4gYXMgd2UgYmVsaWV2ZSBjb25z
+        dW1lcnMgYXJlIHdpbGxpbmcgdG8gcGF5IGEgcmVhc29uYWJsZSBwcmVtaXVt
+        IGZvciB0aGUgd29ybGTigJlzIGJlc3Qgc21hcnRwaG9uZXMgYW5kIHRhYmxl
+        dHMuIFRoZSBydW1vcmVkIGZ1dHVyZSBpbnRyb2R1Y3Rpb24gb2YgcHJvZHVj
+        dCBsaW5lIGV4dGVuc2lvbnMgd2l0aCBsYXJnZXIgc2NyZWVucyBmb3IgYm90
+        aCB0aGUgaVBob25lIGFuZCBpUGFkIHdvdWxkIGZ1cnRoZXIgc3VwcG9ydCB0
+        aGlzIHZpZXcuMiBJbiBmYWN0LCBhIHJlY2VudCBzdHVkeSBmcm9tIE5EQyBz
+        aG93cyB0aGF0IHRoZSBpUGhvbmUgYWNjb3VudGVkIGZvciA0MiUgb2Ygc21h
+        cnRwaG9uZSB1c2VycyBpbiB0aGUgVW5pdGVkIFN0YXRlcyBhdCB0aGUgZW5k
+        IG9mIDIwMTMsIHVwIGEgc3RhZ2dlcmluZyAyMCUgZnJvbSB0aGUgcHJpb3Ig
+        eWVhci4gRGVzcGl0ZSBpdHMgZ3JlYXQgc2NhbGUgYW5kIG5hcnJvdyBmb2N1
+        cywgQXBwbGUgaGFzIGFuIG9wZXJhdGluZyBtYXJnaW4gb2YganVzdCAyOC41
+        JS4gV2UgYmVsaWV2ZSBpdHMgY3VzdG9tZXJz4oCZIHdpbGxpbmduZXNzIHRv
+        IHBheSBhIHByZW1pdW0gcHJpY2UgZm9yIHRoZSB3b3JsZOKAmXMgZ3JlYXRl
+        c3QgcHJvZHVjdHMgc2hvdWxkIGVuYWJsZSBBcHBsZSB0byBwYXJ0aWNpcGF0
+        ZSBpbiB0aGUgZXhwZWN0ZWQgdm9sdW1lIGdyb3d0aCBvZiB0aGVzZSBjYXRl
+        Z29yaWVzIHdoaWxlIGF0IHRoZSBzYW1lIHRpbWUgbGFyZ2VseSBtYWludGFp
+        bmluZyBpdHMgYXZlcmFnZSBzZWxsaW5nIHByaWNlcyBhbmQgZ3Jvc3MgbWFy
+        Z2lucy4gQW5kLCBhcyBzb2Z0d2FyZSBhbmQgc2VydmljZXMgaW1wcm92ZSBh
+        bmQgYmVjb21lIGV2ZW4gbW9yZSBpbXBvcnRhbnQgdG8gY29uc3VtZXJzIGlu
+        IHRoZSBmdXR1cmUsIHdlIGV4cGVjdCBjdXN0b21lciBsb3lhbHR5IHRvIHN0
+        cmVuZ3RoZW4gZnVydGhlci5cblxuRXZlbiBpZiB0aGUgc3RvcnkgZW5kZWQg
+        d2l0aCBBcHBsZeKAmXMgZXhpc3RpbmcgcHJvZHVjdCBhbmQgc29mdHdhcmUg
+        bGluZXMsIHdlIHdvdWxkIHN0aWxsIGNob29zZSB0byBtYWtlIEFwcGxlIG91
+        ciBsYXJnZXN0IGludmVzdG1lbnQuIEJ1dCB0aGVyZSBpcyBtb3JlIHRvIHRo
+        ZSBzdG9yeSEgVGltIENvb2sga2VlcHMgc2F5aW5nIHRoYXQgaGUgZXhwZWN0
+        cyB0byBpbnRyb2R1Y2Ug4oCcbmV3IHByb2R1Y3RzIGluIG5ldyBjYXRlZ29y
+        aWVz4oCdIGFuZCB5ZXQgdmVyeSBmZXcgcGVvcGxlIHNlZW0gdG8gYmUgbGlz
+        dGVuaW5nLiBXZeKAmXJlIG5vdCBhd2FyZSBvZiBhIHNpbmdsZSBXYWxsIFN0
+        cmVldCBhbmFseXN0IHdobyBpbmNsdWRlcyDigJxuZXcgcHJvZHVjdHMgaW4g
+        bmV3IGNhdGVnb3JpZXPigJ0gb3IgbmV3IHNlcnZpY2VzIGluIGFueSBvZiB0
+        aGVpciBmaW5hbmNpYWwgcHJvamVjdGlvbnMsIGV2ZW4gdGhvdWdoIEFwcGxl
+        IGNsZWFybHkgaGFzIGFuIGltcHJlc3NpdmUgdHJhY2sgcmVjb3JkIG9mIHN1
+        Y2ggbmV3IGNhdGVnb3J5IHByb2R1Y3QgaW50cm9kdWN0aW9ucywgZXZlbiBp
+        ZiBpdCBkb2VzIHNvIHJhcmVseS4gQXBwbGUgcmVsZWFzZWQgdGhlIGlQaG9u
+        ZSBpbiAyMDA3IGFuZCB0aGUgaVBhZCBmaXZlIHllYXJzIGxhdGVyIGluIDIw
+        MTIsIGJvdGggc28gZXh0cmFvcmRpbmFyaWx5IHN1Y2Nlc3NmdWwgdGhhdCB0
+        b2RheSB0aGV5IHJlcHJlc2VudCB0aGUgbWFqb3JpdHkgb2YgdGhlIGNvbXBh
+        bnnigJlzIHJldmVudWUuIFRpbSBDb29r4oCZcyBjb21tZW50cywgYWxvbmcg
+        d2l0aCBhZHZhbmNlbWVudHMgaW4gZW5hYmxpbmcgdGVjaG5vbG9naWVzLCBs
+        ZWFkIHVzIHRvIGJlbGlldmUgdGhhdCB3ZSBtYXkgc2VlIGluIHRoZSBub3Qg
+        dG9vIGRpc3RhbnQgZnV0dXJlIHdoYXQgbmV3IGdyb3VuZGJyZWFraW5nIHBy
+        b2R1Y3RzIHRoZXnigJl2ZSBiZWVuIHdvcmtpbmcgb24gZGV2ZWxvcGluZyBp
+        biBDdXBlcnRpbm8gdGhlc2UgbGFzdCBzZXZlcmFsIHllYXJzLjNcblxuVG8g
+        Z2V0IGEgc2Vuc2Ugb2YgdGhlIHNjYWxlIG9mIHRoZSBvcHBvcnR1bml0eSB0
+        aGF0IHN0ZW1zIGZyb20gbmV3IHByb2R1Y3RzIGluIG5ldyBjYXRlZ29yaWVz
+        LCBsZXTigJlzIHRha2UgYSBtb21lbnQgdG8gY29uc2lkZXIgdGhlIHBvc3Np
+        YmlsaXR5IG9mIGFuIEFwcGxlIHRlbGV2aXNpb24uIFRoZSBtYWpvciBlbGVj
+        dHJvbmljcyBjb21wYW5pZXMgYXJlIG5vdyBmb2N1c2VkIG9uIHVsdHJhIGhp
+        Z2ggZGVmaW5pdGlvbiBUVnMgYXMgdGhlaXIgbmV4dCBiaWcgb3Bwb3J0dW5p
+        dHkuIFVsdHJhIGhpZ2ggZGVmaW5pdGlvbiBpcyBleHBlY3RlZCB0byBvZmZl
+        ciBhIGxldmVsIG9mIGltYWdlIGNsYXJpdHkgdGhhdCBpcyBzdXBlcmlvciB0
+        byB0b2RheeKAmXMgaGlnaCBkZWZpbml0aW9uIHRlbGV2aXNpb25zIGZvciBz
+        Y3JlZW4gc2l6ZXMgNTUgaW5jaGVzIGFuZCBhYm92ZS4gVG8gZGF0ZSwgdGhl
+        IGJhcnJpZXIgdG8gbWFzcyBtYXJrZXQgYWRvcHRpb24gb2YgdWx0cmEgaGln
+        aCBkZWZpbml0aW9uIGhhcyBiZWVuIHRoZSBwcmljZSBnYXAgYmV0d2VlbiBp
+        dCBhbmQgcmVndWxhciBoaWdoIGRlZmluaXRpb24sIGJ1dCB0aGF0IHByaWNl
+        IGdhcCBpcyBjbG9zaW5nIGFuZCB3aWxsIHNvb24gYmUgZGUgbWluaW1pcy4g
+        VGhlIGNsb3Npbmcgb2YgdGhpcyBwcmljZSBnYXAgaXMgc3VwcG9ydGVkIGJ5
+        IHN0YXRlbWVudHMgbWFkZSBieSB0aGUgQ28tQ0VPIG9mIFNhbXN1bmcgRWxl
+        Y3Ryb25pY3MsIHdobyBleHBlY3RzIHRoZSBwcmljZSBnYXAgdG8gZmFsbCB0
+        byAxMCUgYnkgdGhlIGVuZCBvZiB0aGlzIHllYXIuIFdoaWxlIGNhYmxlIGNv
+        bXBhbmllcyB3aWxsIGxpa2VseSBiZSBzbG93IHRvIHVwZ3JhZGUgdGhlaXIg
+        bGluZWFyIFRWIGluZnJhc3RydWN0dXJlIGR1ZSB0byBjb3N0LCB2aWRlbyBj
+        b250ZW50IGlzIGV4cGVjdGVkIHRvIGJlIGFjY2Vzc2libGUgdGhyb3VnaCB0
+        aGUgaW50ZXJuZXQgdmlhIHNlcnZpY2VzIGxpa2UgTmV0ZmxpeCBhbmQgb3Ro
+        ZXJzLiBXZSBiZWxpZXZlIHVsdHJhIGhpZ2ggZGVmaW5pdGlvbiByZXByZXNl
+        bnRzIGEgbWFqb3IgY2F0YWx5c3QgZm9yIHRoZSBuZXh0IFRWIHJlcGxhY2Vt
+        ZW50IGN5Y2xlIGFuZCBhIHByb21pc2luZyBtb21lbnQgZm9yIEFwcGxlIHRv
+        IGludHJvZHVjZSBpdHMgZmlyc3QgbmV3IHByb2R1Y3QgaW4gdGhpcyBjYXRl
+        Z29yeS4gUmVlZCBIYXN0aW5ncywgQ0VPIG9mIE5ldGZsaXgsIGhhcyByZWZl
+        cmVuY2VkIHVsdHJhIGhpZ2ggZGVmaW5pdGlvbiBhcyBhIG1ham9yIGNhdGFs
+        eXN0IGZvciBOZXRmbGl4IGdvaW5nIGZvcndhcmQuIFdoaWxlIHRoaXMgaXMg
+        dHJ1ZSBmb3IgTmV0ZmxpeCwgd2UgYmVsaWV2ZSBpdCBpcyBhbHNvIHRydWUg
+        Zm9yIEFwcGxlLCBub3QganVzdCBmb3IgaXRzIGhhcmR3YXJlIGJ1dCBhbHNv
+        IGZvciBzZWxsaW5nIHVsdHJhIGhpZ2ggZGVmaW5pdGlvbiBtb3ZpZXMgYW5k
+        IHNob3dzIG9uIGlUdW5lcyB0aHJvdWdoIHRoZSBpbnRlcm5ldC4gV2l0aCAy
+        MzggbWlsbGlvbiBUVnMgc29sZCBnbG9iYWxseSBpbiAyMDEyLCBpdCB3b3Vs
+        ZCBub3Qgc3VycHJpc2UgdXMgaWYgQXBwbGUgY291bGQgc2VsbCAyNSBtaWxs
+        aW9uIG5ldyBBcHBsZSB1bHRyYSBoaWdoIGRlZmluaXRpb24gdGVsZXZpc2lv
+        bnMgYXQgJDEsNjAwIHBlciB1bml0LCBlc3BlY2lhbGx5IHdoZW4gY29uc2lk
+        ZXJpbmcgYm90aCBpdHMgdHJhY2sgcmVjb3JkIG9mIGludHJvZHVjaW5nIGJl
+        c3QgaW4gY2xhc3MgcHJvZHVjdHMgYW5kIGl0cyBtYXJrZXQgc2hhcmUgaW4g
+        c21hcnRwaG9uZXMgYW5kIHRhYmxldHMuNCBBdCBhIGdyb3NzIG1hcmdpbiBv
+        ZiAzNy43JSwgd2hpY2ggd291bGQgYmUgY29uc2lzdGVudCB3aXRoIHRoYXQg
+        b2YgdGhlIG92ZXJhbGwgY29tcGFueSwgc3VjaCBhIGRlYnV0IHdvdWxkIGFk
+        ZCAkNDAgYmlsbGlvbiBvZiByZXZlbnVlcyBhbmQgJDE1IGJpbGxpb24gdG8g
+        b3BlcmF0aW5nIGluY29tZSBhbm51YWxseS41XG5cblRoZSBwb3NzaWJpbGl0
+        eSBvZiBhIHRlbGV2aXNpb24gcmVwcmVzZW50cyBvbmx5IG9uZSBvcHBvcnR1
+        bml0eSBmb3IgdGhlIGNvbXBhbnkgdGhhdCBzdGVtcyBmcm9tIG5ldyBwcm9k
+        dWN0cyBpbiBuZXcgY2F0ZWdvcmllcy4gV2hpbGUgd2Ugd29u4oCZdCBnbyB0
+        aHJvdWdoIGFsbCBvZiB0aGVtIGhlcmUsIHdlIHNlZSBzZXZlcmFsIG1ham9y
+        IG9wcG9ydHVuaXRpZXMgaW4gaGFyZHdhcmUgYWxvbmUuIFdpdGggYWR2YW5j
+        ZW1lbnRzIGluIG1pbmlhdHVyaXphdGlvbiBhbmQgY29udGludWVkIGltcHJv
+        dmVtZW50cyBpbiBTaXJpLCBpdCBzZWVtcyBvYnZpb3VzIHRvIHVzIHRoYXQg
+        QXBwbGUgaGFzIGEgY29tcGVsbGluZyBvcHBvcnR1bml0eSBpbiB0aGUgZXhj
+        aXRpbmcgYXJlYSBvZiB3ZWFyYWJsZSBkZXZpY2VzLCBzdXBwb3J0ZWQgYnkg
+        cnVtb3JzIHRoYXQgQXBwbGUgaXMgZGV2ZWxvcGluZyBhIHNtYXJ0d2F0Y2gg
+        KGFzIFRpbSBDb29rIGhpbXNlbGYgc2FpZCB0aGUgd3Jpc3QgaXMg4oCcYW4g
+        YXJlYSBvZiBncmVhdCBpbnRlcmVzdCBmb3IgQXBwbGXigJ0pLiBXaGlsZSBt
+        YW55IGNvbnNpZGVyIEFwcGxlIGEgaGFyZHdhcmUgY29tcGFueSwgdG8gcGln
+        ZW9uaG9sZSBpdCBhcyBzdWNoIGlzIG5vIGxvbmdlciBhcHByb3ByaWF0ZSBp
+        biBvdXIgb3Bpbmlvbi4gQXBwbGUgaGFzIGJ1aWx0IGFuIGVjb3N5c3RlbSBv
+        ZiBoYXJkd2FyZSwgc29mdHdhcmUsIGFuZCBzZXJ2aWNlcyB0aGF0IHdlIGJl
+        bGlldmUgY29sbGVjdGl2ZWx5IHJlcHJlc2VudHMgdGhlIG1vc3Qgc3VjY2Vz
+        c2Z1bCBjb25zdW1lciBwcm9kdWN0IHBsYXRmb3JtIGluIHRoZSBlbnRpcmUg
+        aGlzdG9yeSBvZiBjb25zdW1lci1mYWNpbmcgdGVjaG5vbG9naWVzLiBBbmQg
+        YXMgQXBwbGXigJlzIGN1c3RvbWVyIGJhc2UgY29udGludWVzIHRvIGVuam95
+        IHRoZSB1c2Ugb2YgdGhpcyBlY29zeXN0ZW0sIHN0b3JpbmcgbWVkaWEgaW4g
+        dGhlIGNsb3VkIGFuZCBtb3ZpbmcgaXQgZnJvbSBvbmUgQXBwbGUgZGV2aWNl
+        IHRvIGFub3RoZXIgYXMgZG9pbmcgc28gYmVjb21lcyBpbmNyZWFzaW5nbHkg
+        Y29udmVuaWVudCB3aXRoIGlubm92YXRpb25zIHN1Y2ggYXMgQWlycGxheSAo
+        YXMganVzdCBvbmUgc2ltcGxlIGV4YW1wbGUgb2YgdGhpcyBlY29zeXN0ZW3i
+        gJlzIGN1cnJlbnQgZnVuY3Rpb25hbGl0eSksIHdlIGJlbGlldmUgdGhhdCBj
+        dXN0b21lciBiYXNlIGdyb3dzIGluY3JlYXNpbmdseSBsb3lhbCBhbmQgZXhj
+        aXRlZCBmb3IgdGhlIG5leHQgQXBwbGUgcHJvZHVjdCByZWxlYXNlLCBtYWtp
+        bmcgaXQgYW4gYXNzZXQgaW4gYW5kIG9mIGl0c2VsZiB0aGF0IGdyb3dzIGFu
+        ZCBiZWNvbWVzIGluY3JlYXNpbmdseSB2YWx1YWJsZS4gSW5kZWVkLCB3ZSBi
+        ZWxpZXZlIGFueSBuZXcgc29mdHdhcmUgc2VydmljZSB0aGF0IG9mZmVycyBu
+        ZXcgZnVuY3Rpb25hbGl0eSB0byB0aGlzIGN1c3RvbWVyIGJhc2UgYmVjb21l
+        cyBhIGxhcmdlIG9wcG9ydHVuaXR5IGZvciBBcHBsZSB0byBpbnRyb2R1Y2Ug
+        YXMgYSByZXZvbHV0aW9uYXJ5IGFuZCBkaXNydXB0aXZlIGJvbHQtb24gdG8g
+        dGhlIGVjb3N5c3RlbS4gQXMganVzdCBvbmUgb2YgbWFueSBwb3NzaWJsZSBl
+        eGFtcGxlcyBvZiB0aGlzIHBoZW5vbWVub24sIEFwcGxlIGNvdWxkIGludHJv
+        ZHVjZSBhIG5leHQgZ2VuZXJhdGlvbiBwYXltZW50cyBzb2x1dGlvbi4gSW4g
+        dGVybXMgb2Ygd2hldGhlciB0aGUgbWFya2V0cGxhY2UgaXMgd2VsbCBhZGRy
+        ZXNzZWQgYnkgbW9iaWxlIHBheW1lbnRzIHNvbHV0aW9ucywgVGltIENvb2sg
+        aGFzIHNhaWQg4oCcSSB0aGluayBpdCBpcyBpbiBpdHMgaW5mYW5jeeKApiBJ
+        IHRoaW5rIGl0IGlzIGp1c3QgZ2V0dGluZyBzdGFydGVkIGFuZCBqdXN0IG9m
+        IG91dCBvZiB0aGUgc3RhcnRpbmcgYmxvY2su4oCdIFdpdGggdGhlIGZpbmdl
+        cnByaW50IHNlbnNvciwgaUJlYWNvbiwgNTc1KyBtaWxsaW9uIGNyZWRpdCBj
+        YXJkIG51bWJlcnMgc3RvcmVkIGluIGlUdW5lcywgYW5kIEFwcGxl4oCZcyBo
+        b21vZ2VuZW91cyBpT1MgaW5zdGFsbGVkIGJhc2Ugd2l0aCA3OSUgb2YgZGV2
+        aWNlcyB1c2luZyBpT1MgNywgd2UgYmVsaWV2ZSBhIHJldm9sdXRpb25hcnkg
+        cGF5bWVudHMgc29sdXRpb24gaXMgbm93IGEgdmVyeSByZWFsIG9wcG9ydHVu
+        aXR5IHRoYXQgdGhlIGNvbXBhbnkgY291bGQgY2hvb3NlIHRvIHB1cnN1ZS4g
+        V2l0aCByZXNwZWN0IHRvIGFsbCBvZiBBcHBsZeKAmXMgbmV3IGFuZCBleGlz
+        dGluZyBvcHBvcnR1bml0aWVzIGZvciBncm93dGgsIHRoZXkgd2lsbCBvbmx5
+        IHByb3ZlIHRvIGJlIHN1Y2Nlc3NmdWwgd2l0aCBzdHJvbmcgZXhlY3V0aW9u
+        IGZyb20gdGhlIGNvbXBhbnnigJlzIG1hbmFnZW1lbnQsIGluIHdob20gd2Ug
+        aG9sZCBncmVhdCBjb25maWRlbmNlLiBOYXlzYXllcnMgc2F5IFRpbSBDb29r
+        IGlzIG5vdCBTdGV2ZSBKb2JzLCBhbmQgdGhleeKAmXJlIGFic29sdXRlbHkg
+        cmlnaHQuIEhlIGlzIFRpbSBDb29rIGFuZCB3ZSBiZWxpZXZlIGhlIGlzIGRv
+        aW5nIGFuIGV4Y2VsbGVudCBqb2IsIGFuZCBKb25hdGhhbiBJdmUsIFNlbmlv
+        ciBWUCBvZiBEZXNpZ24sIGlzIEpvbmF0aGFuIEl2ZSBhbmQgd2UgYmVsaWV2
+        ZSBoZeKAmXMgZG9pbmcgYW4gZXhjZWxsZW50IGpvYiwgZXRjZXRlcmEuXG5c
+        bkluIHRoaXMgbGV0dGVyLCB3ZSBoYXZlIGFib3ZlIHN1bW1hcml6ZWQgd2h5
+        IHdlIGJlbGlldmUgQXBwbGUgaXMgdW5kZXJ2YWx1ZWQgaW4gb3JkZXIgdG8g
+        ZXhwcmVzcyBob3cgcmlkaWN1bG91cyBpdCBzZWVtcyB0byB1cyBmb3IgQXBw
+        bGUgdG8gaG9yZGUgc28gbXVjaCBjYXNoIHJhdGhlciB0aGFuIHJlcHVyY2hh
+        c2Ugc3RvY2sgKGFuZCB0aGVyZWJ5IHVzZSB0aGF0IGNhc2ggdG8gbWFrZSBh
+        IGxhcmdlciBpbnZlc3RtZW50IGluIGl0c2VsZiBmb3IgdGhlIGJlbmVmaXQg
+        b2YgYWxsIG9mIHRoZSBjb21wYW554oCZcyBzaGFyZWhvbGRlcnMpLiBJbiBp
+        dHMgc3RhdGVtZW50IGluIG9wcG9zaXRpb24gdG8gb3VyIHByb3Bvc2FsLCB0
+        aGUgY29tcGFueSBjbGFpbXMgdGhhdCDigJx0aGUgQm9hcmQgYW5kIG1hbmFn
+        ZW1lbnQgdGVhbSBoYXZlIGRlbW9uc3RyYXRlZCBhIHN0cm9uZyBjb21taXRt
+        ZW50IHRvIHJldHVybmluZyBjYXBpdGFsIHRvIHNoYXJlaG9sZGVyc+KAnSBh
+        bmQgd2UgYmVsaWV2ZSB0aGF0IGlzIHRydWUsIGJ1dCB3ZSBhbHNvIGJlbGll
+        dmUgdGhhdCBjb21taXRtZW50IGlzIG5vdCBzdHJvbmcgZW5vdWdoIGdpdmVu
+        IHRoZSB1bmlxdWUgZGVncmVlIHRvIHdoaWNoIHRoZSBjb21wYW55IGlzIGJv
+        dGggdW5kZXJ2YWx1ZWQgYW5kIG92ZXJjYXBpdGFsaXplZC4gRnVydGhlcm1v
+        cmUsIGl0IGlzIGltcG9ydGFudCB0byBub3RlIHRoYXQgYSBzaGFyZSByZXB1
+        cmNoYXNlIGlzIG5vdCBzaW1wbHkgYW4gYWN0IG9mIOKAnHJldHVybmluZyBj
+        YXBpdGFsIHRvIHNoYXJlaG9sZGVyc+KAnSBzaW5jZSBpdCBpcyBhbHNvIHRo
+        ZSBjb21wYW55IGVmZmVjdGl2ZWx5IG1ha2luZyBhbiBpbnZlc3RtZW50IGlu
+        IGl0c2VsZi4gVG8gdXMsIGFzIGxvbmcgdGVybSBpbnZlc3RvcnMsIHRoaXMg
+        aXMgYW4gaW1wb3J0YW50IGRpZmZlcmVuY2U6IGEgZGl2aWRlbmQgaXMgYSBw
+        dXJlIHJldHVybiBvZiBjYXBpdGFsIHdoaWxlIGEgc2hhcmUgcmVwdXJjaGFz
+        ZSBpcyB0aGUgY29tcGFueSBtYWtpbmcgYW4gaW52ZXN0bWVudCBpbiBpdHNl
+        bGYgYnkgYnV5aW5nIHNoYXJlcyBpbiB0aGUgbWFya2V0IGF0IHRoZSBjdXJy
+        ZW50IHByaWNlLCB3aGljaCB3ZSBiZWxpZXZlIHRvIGJlIHVuZGVydmFsdWVk
+        LCBmcm9tIHNoYXJlaG9sZGVycyB3aWxsaW5nIHRvIHNlbGwgYXQgdGhhdCBw
+        cmljZSBmb3IgdGhlIGJlbmVmaXQgb2Ygc2hhcmVob2xkZXJzIHdobyBjaG9v
+        c2UgdG8gcmVtYWluIGludmVzdG9ycyBmb3IgdGhlIGxvbmdlciB0ZXJtLiBB
+        bmQgd2UgYXJlIGxvbmcgdGVybSBpbnZlc3RvcnMuIEl0IHNob3VsZCBiZSBu
+        b3RlZCB0aGF0IG5vIG9uZSBvbiB0aGUgQm9hcmQgc2VlbXMgdG8gYmUgYW4g
+        ZXhwZXJ0IGluIHRoZSB3b3JsZCBvZiBpbnZlc3RtZW50IG1hbmFnZW1lbnQu
+        IEhvd2V2ZXIsIGJhc2VkIG9uIG91ciByZWNvcmQsIHdlIGJlbGlldmUgZmV3
+        IHdpbGwgYXJndWUgdGhhdCB3ZSBhcmUgZXhwZXJ0cyBpbiB0aGlzIGFyZWEs
+        IGFuZCB3ZSBoYXZlIG5vIGRvdWJ0cyB0aGF0IHRoZSBCb2FyZCBpcyBkb2lu
+        ZyBhIGdyZWF0IGRpc3NlcnZpY2UgdG8gaXRzIHNoYXJlaG9sZGVycyBieSBu
+        b3QgaW1tZWRpYXRlbHkgaW5jcmVhc2luZyB0aGUgc2l6ZSBvZiB0aGUgc2hh
+        cmUgcmVwdXJjaGFzZSBwcm9ncmFtIGluIG9yZGVyIHRvIG1vcmUgZWZmZWN0
+        aXZlbHkgdGFrZSBhZHZhbnRhZ2Ugb2Ygd2hhdCB3ZSBiZWxpZXZlIHRvIGJl
+        IHRoZSBjb21wYW554oCZcyBsb3cgbWFya2V0IHZhbHVhdGlvbi5cblxuV2Ug
+        aGF2ZSBleHByZXNzZWQgYWJvdmUgd2hhdCB3ZSBiZWxpZXZlIHRvIGJlIHRo
+        ZSBjb21wYW554oCZcyBwcmltYXJ5IHJlYXNvbiBmb3Igbm90IHN1cHBvcnRp
+        bmcgb3VyIHByb3Bvc2FsLiBDb252ZXJzZWx5LCBpdCBpcyBvdXIgYmVsaWVm
+        IHRoYXQgQXBwbGXigJlzIGN1cnJlbnQgZXhjZXNzIGxpcXVpZGl0eSBpcyB3
+        aXRob3V0IGhpc3RvcmljYWwgcHJlY2VkZW50IGFuZCBiZXlvbmQgcmVhc29u
+        YWJsZSBjb21wYXJpc29uIHRvIGl0cyBwZWVycyBvciBvdGhlcndpc2UsIGFu
+        ZCBzdWNoIGRyYW1hdGljIG92ZXJjYXBpdGFsaXphdGlvbiBhZmZvcmRzIHRo
+        ZSBjb21wYW55IGVub3VnaCBleGNlc3MgbGlxdWlkaXR5IHRvIHJlcHVyY2hh
+        c2UgdGhlIGFtb3VudCBvZiBzaGFyZXMgd2UgcHJvcG9zZWQuIEFwcGxl4oCZ
+        cyBleGlzdGluZyBjYXBpdGFsIHJldHVybiBwcm9ncmFtIGhhcyBqdXN0ICQz
+        NyBiaWxsaW9uIHJlbWFpbmluZywgYW5kIHRoZSBjb21wYW55IGhhcyB1bnRp
+        bCB0aGUgZW5kIG9mIDIwMTUgdG8gY29tcGxldGUgaXQuIFdpdGhvdXQgYW55
+        IGNoYW5nZXMgdG8gdGhlIHByb2dyYW0sIHRoZSBsYXJnZXN0IHBpbGUgb2Yg
+        Y29ycG9yYXRlIGNhc2ggaW4gdGhlIHdvcmxkIGlzIGxpa2VseSB0byBncm93
+        IGV2ZW4gbGFyZ2VyLCBhbmQgaWYgdGhlIHNoYXJlIHByaWNlIHJpc2VzLCB0
+        aGlzIEJvYXJkIHdpbGwgaGF2ZSBtaXNzZWQgYSBncmVhdCBvcHBvcnR1bml0
+        eSB0byB1c2UgbW9yZSBvZiB0aGF0IGhvYXJkZWQgY2FzaCB0byByZXB1cmNo
+        YXNlIHNoYXJlcyBhdCBhbiBhdHRyYWN0aXZlIHZhbHVlLiBXaGlsZSBpdCBp
+        cyBpbXBvcnRhbnQgZm9yIHRoZSBCb2FyZCB0byBmb2N1cyBvbiB0aGUgcmV0
+        dXJuIG9mIGNhcGl0YWwgb24gYSBzdXN0YWluZWQgYmFzaXMsIGl0IGlzIGFs
+        c28gaW1wb3J0YW50IGZvciB0aGUgQm9hcmQgdG8gZXZhbHVhdGUgd2hldGhl
+        ciBvciBub3QgaXRzIHNoYXJlIHByaWNlIGlzIHVuZGVydmFsdWVkIGFuZCB0
+        byB0YWtlIGFkdmFudGFnZSBvZiBpdCB3aXRoIHNoYXJlIHJlcHVyY2hhc2Vz
+        LCBlc3BlY2lhbGx5IHdoZW4gdGhlIGJhbGFuY2Ugc2hlZXQgZXhoaWJpdHMg
+        ZHJhbWF0aWMgZXhjZXNzIGxpcXVpZGl0eSwgYXMgd2UgYmVsaWV2ZSBBcHBs
+        ZeKAmXMgZG9lcyB0b2RheS5cblxuVGhlIEJvYXJkIG1heSBhcmd1ZSB0aGF0
+        IHdpdGggc28gbXVjaCBvcHBvcnR1bml0eSwgaXQgd291bGQgYmUgcHJ1ZGVu
+        dCB0byBtYWludGFpbiBpdHMgZXhjZXNzIGxpcXVpZGl0eSB0byBpbmNyZWFz
+        ZSBSJkQgb3IgbWFrZSBhY3F1aXNpdGlvbnMsIGVzcGVjaWFsbHkgd2hlbiBj
+        b25zaWRlcmluZyB0aGUgZmluYW5jaWFsIHN0cmVuZ3RoIG9mIGl0cyBjb21w
+        ZXRpdG9ycy4gV2UgY29tcGxldGVseSBhZ3JlZSB0aGF0IHRoZSBjb21wYW55
+        IG11c3QgaW5ub3ZhdGUgYW5kIHNob3VsZCBiZSBmbGV4aWJsZSB0byBtYWtl
+        IHBydWRlbnQgc3RyYXRlZ2ljIGFjcXVpc2l0aW9ucywgeWV0IGV2ZW4gYWZ0
+        ZXIgdGFraW5nIHN1Y2ggZmFjdG9ycyBpbnRvIGFjY291bnQsIHdlIGJlbGll
+        dmUgdGhhdCB0cmVtZW5kb3VzIGV4Y2VzcyBsaXF1aWRpdHkgcmVtYWlucy4g
+        V2l0aCByZXNwZWN0IHRvIHBvc3NpYmxlIE0mQSAodG8gd2hpY2ggdGhlIGNv
+        bXBhbnkgZG9lcyBub3QgcmVmZXIgaW4gaXRzIHN0YXRlbWVudCksIGZvciB0
+        aGUgb3Bwb3J0dW5pdGllcyBoaWdobGlnaHRlZCBhYm92ZSAoYSBUViwgYSB3
+        YXRjaCwgYSBwYXltZW50IHNlcnZpY2UpLCB3ZSBmaW5kIGl0IGV4dHJlbWVs
+        eSBkaWZmaWN1bHQgdG8gaWRlbnRpZnkgYW55IHBvc3NpYmxlIHN0cmF0ZWdp
+        YyBhY3F1aXNpdGlvbnMgb2Ygc2NhbGUgdGhhdCBtYWtlIHNlbnNlLiBGdXJ0
+        aGVybW9yZSwgc3VjaCBhY3Rpb24gd291bGQgc2VlbSB0byBjb25mbGljdCB3
+        aXRoIEFwcGxl4oCZcyBjdWx0dXJlIGhpc3RvcmljYWxseS4gQSByZW1hcmth
+        YmxlIGZhY3QgaXMgdGhhdCBzaW5jZSB0aGUgQm9hcmQgcmVhY3F1aXJlZCBT
+        dGV2ZSBKb2JzIHRocm91Z2ggdGhlIE5lWFQgYWNxdWlzaXRpb24gZm9yICQ0
+        MjcgbWlsbGlvbiBpbiAxOTk3LCB0aGUgbmV4dCBsYXJnZXN0IGFjcXVpc2l0
+        aW9uIEFwcGxlIG1hZGUgd2FzICQyLjYgYmlsbGlvbiBmb3IgTm9ydGVs4oCZ
+        cyBwYXRlbnQgcG9ydGZvbGlvLiBBbWF6aW5nbHksIG92ZXIgdGhlc2UgMTcg
+        eWVhcnMsIEFwcGxlIG1hZGUganVzdCAkNy44IGJpbGxpb24gd29ydGggb2Yg
+        YWNxdWlzaXRpb25zIGluIHRvdGFsIGR1cmluZyB0aGlzIHRpbWVmcmFtZS4g
+        QXBwbGUgY2xlYXJseSBoYXMgYSBsb25nIGhpc3RvcnkgYW5kIGN1bHR1cmUg
+        b2YgZGV2ZWxvcGluZyBpdHMgaW5ub3ZhdGlvbiBpbnRlcm5hbGx5LCB3aGlj
+        aCBsZWFkcyB1cyB0byBiZWxpZXZlIHRoYXQgdGhlIGNvbXBhbnkgd2lsbCBu
+        b3Qgc2VlayBvdXQgbGFyZ2UgYWNxdWlzaXRpb25zIHRvIHB1cnN1ZSBhbnkg
+        b2YgdGhlIG9wcG9ydHVuaXRpZXMgYWJvdXQgd2hpY2ggd2UgaGF2ZSBzcGVj
+        dWxhdGVkLiBJbiB0ZXJtcyBvZiBwYXlpbmcgZm9yIHRoZSBuZWNlc3Nhcnkg
+        aW5ub3ZhdGlvbiBpbnRlcm5hbGx5LCBBcHBsZSBpcyBleHBlY3RlZCB0byBn
+        ZW5lcmF0ZSAkNDAgYmlsbGlvbiBvZiBlYXJuaW5ncyBuZXh0IHllYXIsIHdo
+        aWNoIGFscmVhZHkgdGFrZXMgaW50byBhY2NvdW50IGFuIGluY3JlYXNpbmcg
+        UiZEIGV4cGVuc2UuIEluIG9yZGVyIHRvIGFkZHJlc3MgdGhlIGFyZ3VtZW50
+        IHRoYXQgQXBwbGUgc2hvdWxkIHJlc2VydmUgZXhjZXNzIGxpcXVpZGl0eSB0
+        byBtb3JlIGVmZmVjdGl2ZWx5IGNvbXBldGUgd2l0aCBzb21lIG9mIGl0cyBk
+        ZWVwLXBvY2tldGVkIGNvbXBldGl0b3JzLCB0aGVyZSBpcyBubyBkb3VidCB0
+        aGF0IHNvbWUgb2YgdGhlbSBhbHNvIGhhdmUgc2lnbmlmaWNhbnQgZWFybmlu
+        Z3MgYW5kIG5ldCBjYXNoIG9uIHRoZWlyIGJhbGFuY2Ugc2hlZXRzICh3aGV0
+        aGVyIG9yIG5vdCB0aGF0IGlzIGFwcHJvcHJpYXRlKS4gQnV0IEFwcGxlIGhh
+        cyBtdWNoIG1vcmUuIFdoZW4gY29tcGFyZWQgdG8gaXRzIG5leHQgbGFyZ2Vz
+        dCBjb21wZXRpdG9yLCBNaWNyb3NvZnQsIGZvciBleGFtcGxlLCBBcHBsZSBo
+        YXMgJDY4IGJpbGxpb24gbW9yZSBuZXQgY2FzaCBhbmQgaXMgZXhwZWN0ZWQg
+        dG8gZ2VuZXJhdGUgJDE4IGJpbGxpb24gbW9yZSBpbiBlYXJuaW5ncyBkdXJp
+        bmcgMjAxNC5cblxuVGhlIEJvYXJkIG1heSBhcmd1ZSB0aGF0IG11Y2ggb2Yg
+        aXRzIGNhc2ggYW5kIGVhcm5pbmdzIGFyZSBpbnRlcm5hdGlvbmFsIGFuZCB0
+        aGVyZWZvcmUgc3ViamVjdCB0byBhIHJlcGF0cmlhdGlvbiB0YXggaWYgcmV0
+        dXJuZWQgdG8gdGhlIFVuaXRlZCBTdGF0ZXMgdG8gcmVwdXJjaGFzZSBzaGFy
+        ZXMuIFdoaWxlIHRoaXMgaXMgdHJ1ZSwgd2UgcXVlc3Rpb24gd2h5IHRoZSBj
+        b21wYW55IHdvdWxkIG5vdCBzaW1wbHkgYm9ycm93IHRoZSBtb25leSBpbiB0
+        aGUgVW5pdGVzIFN0YXRlcyB0byB0aGUgZXh0ZW50IGl0IGRlZW1zIGl0cyBk
+        b21lc3RpYyBjYXNoIG9mICQzNiBiaWxsaW9uIGFuZCBkb21lc3RpYyBlYXJu
+        aW5ncyBhcmUgaW5zdWZmaWNpZW50LiBHaXZlbiB0aGF0IHRoZSBjb21wYW55
+        IGhhcyAkMTMwIGJpbGxpb24gb2YgbmV0IGNhc2ggYW5kICQ0MCBiaWxsaW9u
+        IG9mIGV4cGVjdGVkIGFubnVhbCBlYXJuaW5ncywgYW5kIHRoZSBmYWN0IHRo
+        YXQgaXQgaXMgaGFyZCB0byBmaW5kIGEgYmV0dGVyIHRpbWUgaW4gaGlzdG9y
+        eSB0byBib3Jyb3cgbW9uZXksIGEgJDUwIGJpbGxpb24gc2hhcmUgcmVwdXJj
+        aGFzZSBvdmVyIHRoZSBjb3Vyc2Ugb2YgZmlzY2FsIHllYXIgMjAxNCBzZWVt
+        cyBtb3JlIHRoYW4gcmVhc29uYWJsZSB0byB1cy4gVG9kYXksIEFwcGxl4oCZ
+        cyBvdXRzdGFuZGluZyB0ZW4geWVhciBib25kcyB5aWVsZCAzLjYzJSwgYW5k
+        IGl0cyBmaXZlIHllYXIgYm9uZHMgeWllbGQgMiUuIEFwcGxlIGNvdWxkIGVp
+        dGhlciBjb250aW51ZSB0byBjYXJyeSB0aGlzIGRlYnQsIHJlcGF5IGl0IGZy
+        b20gaXRzIGRvbWVzdGljIGVhcm5pbmdzIG92ZXIgdGltZSwgb3IgcmVwYXRy
+        aWF0ZSBjYXNoIGZyb20gYWJyb2FkIHVwb24gdGhlIHBhc3NhZ2Ugb2YgY29y
+        cG9yYXRlIHRheCByZWZvcm0uXG5cblRoZSBjb21wYW55IGhhcyBzdGF0ZWQg
+        dGhhdCBpdCBpcyDigJx1cGRhdGluZyBwZXJzcGVjdGl2ZXMgb24gaXRzIGNh
+        cGl0YWwgcmV0dXJuIHByb2dyYW0gZm9yIDIwMTQgYW5kIGJleW9uZOKAnSBh
+        bmQg4oCcY29sbGVjdGluZyBpbnB1dCBmcm9tIGEgdmVyeSBicm9hZCBiYXNl
+        IG9mIHNoYXJlaG9sZGVycy7igJ0gV2UgYmVsaWV2ZSwgaWYgb3VyIHByb3Bv
+        c2FsIHJlY2VpdmVzIG1ham9yaXR5IHNoYXJlaG9sZGVyIHN1cHBvcnQsIHRo
+        YXQgdGhlIEJvYXJkIHNob3VsZCByZXNwZWN0IGl0IGFuZCBpbmNyZWFzZSB0
+        aGUgcmVwdXJjaGFzZSBwcm9ncmFtIGFzIHJlcXVlc3RlZC4gV2UgYmVsaWV2
+        ZSB0aGlzIGFjdGlvbiB3aWxsIGdyZWF0bHkgZW5oYW5jZSB2YWx1ZSBmb3Ig
+        YWxsIGxvbmcgdGVybSBzaGFyZWhvbGRlcnMgd2hvIGJlbGlldmUsIGFzIHdl
+        IGRvLCBpbiB0aGUgZ3JlYXQgcG90ZW50aWFsIG9mIHRoaXMgY29tcGFueS4g
+        SWYgdGhlIEJvYXJkIHRha2VzIHRoaXMgYWN0aW9uLCB3ZSB3aWxsIGFwcGxh
+        dWQgdGhlbSBmb3IgdGFraW5nIGFkdmFudGFnZSBvZiBvbmUgb2YgdGhlIGdy
+        ZWF0ZXN0IGV4YW1wbGVzIG9mIGEg4oCcbm8gYnJhaW5lcuKAnSB3ZSBoYXZl
+        IHNlZW4gaW4gZml2ZSBkZWNhZGVzIG9mIHN1Y2Nlc3NmdWwgaW52ZXN0aW5n
+        LiIsImVudGl0aWVzIjp7InBlcmNlbnRhZ2UiOlsiNzEgJSIsIjUyICUiLCIx
+        NSAlIiwiODUgJSIsIjQyICUiLCIyMCAlIiwiMTAgJSIsIjc5ICUiLCIzLjYz
+        ICUiLCIyICUiXSwib3JnYW5pemF0aW9uIjpbIkFwcGxlIiwiSWNhaG4gRW50
+        ZXJwcmlzZXMiLCJNaWNyb3NvZnQiLCJTYW1zdW5nIEVsZWN0cm9uaWNzIiwi
+        TmV0ZmxpeCIsIkFwcGxl4oCZcyIsIlZQIl0sImxvY2F0aW9uIjpbIkNoZXNh
+        cGVha2UiLCJVbml0ZWQgU3RhdGVzIiwiLjQiXSwia2V5d29yZCI6WyJBcHBs
+        ZSBjb3VsZCBzZWxsIDI1IG1pbGxpb24gbmV3IEFwcGxlIiwiQXBwbGUgcHJv
+        ZHVjdCIsIkFwcGxlIHRvIGludHJvZHVjZSBpdHMgZmlyc3QgbmV3IHByb2R1
+        Y3QiLCJBcHBsZSBzaGFyZXMiLCJBcHBsZSBoYXMgJCA2OCBiaWxsaW9uIG1v
+        cmUgbmV0IGNhc2giLCJvcHBvcnR1bml0eSBmb3IgdGhlIGNvbXBhbnkgdGhh
+        dCBzdGVtcyBmcm9tIG5ldyBwcm9kdWN0cyIsImNvbXBhbnkgbWFraW5nIGFu
+        IGludmVzdG1lbnQgaW4gaXRzZWxmIGJ5IGJ1eWluZyBzaGFyZXMiLCJvcHBv
+        cnR1bml0eSBmb3IgQXBwbGUiLCJBcHBsZSBvdXIgbGFyZ2VzdCBpbnZlc3Rt
+        ZW50IiwiY29tcGFueSBpcyBjdXJyZW50bHkgb3ZlcmNhcGl0YWxpemVkIHdv
+        dWxkIG92ZXJjb21wZW5zYXRlIGZvciBhbnkgc3VjaCBpbnZlc3RtZW50cyAt
+        TFJCLSBpbmNsdWRpbmcgcG9zc2libGUgaW52ZXN0bWVudHMiLCJwcm9kdWN0
+        cyBjb21wYW55IiwiY29tcGFueSBoYXMgJCAxMzAgYmlsbGlvbiBvZiBuZXQg
+        Y2FzaCIsImNvbXBhbnkgaGFkICQgMTMwIGJpbGxpb24gb2YgbmV0IGNhc2gi
+        LCJBcHBsZSIsIm9wcG9ydHVuaXR5IHRoYXQgdGhlIGNvbXBhbnkiLCJjb21w
+        YW55IGVmZmVjdGl2ZWx5IG1ha2luZyBhbiBpbnZlc3RtZW50IiwiQm9hcmQg
+        dG8gZXZhbHVhdGUgd2hldGhlciBvciBub3QgaXRzIHNoYXJlIHByaWNlIiwi
+        Q29tcGFueSIsImNhc2ggdXNlZCBmb3IgdGhlIGluY3JlYXNlZCBzaGFyZSIs
+        Im9wcG9ydHVuaXR5IHRoYXQgc3RlbXMgZnJvbSBuZXcgcHJvZHVjdHMiXSwi
+        ZGF0ZSI6WyJTZXB0ZW1iZXIgMjggLCAyMDEzIiwibmV4dCB5ZWFyIiwidG9k
+        YXkiLCJwYXN0IHR3byB3ZWVrcyIsIjIwMTMgdGhyb3VnaCAyMDE3IiwibGFz
+        dCB5ZWFyIiwiZW5kIG9mIDIwMTMiLCIyMDA3IiwiMjAxMiIsImVuZCBvZiB0
+        aGlzIHllYXIiLCIxLDYwMCIsImVuZCBvZiAyMDE1IiwiMTk5NyIsIjIwMTQi
+        LCJmaXNjYWwgeWVhciAyMDE0IiwidGVuIHllYXIiXSwibW9uZXkiOlsiJCA1
+        MDAiLCIkIDUwMCBtaWxsaW9uIiwiJCAzLjYgYmlsbGlvbiIsIiQgODQwIiwi
+        JCAxMzAgYmlsbGlvbiIsIiQgNDAgYmlsbGlvbiIsIiQgMSBiaWxsaW9uIiwi
+        JCIsIiQgMTUgYmlsbGlvbiIsIiQgMzcgYmlsbGlvbiIsIiQgNDI3IG1pbGxp
+        b24iLCIkIDIuNiBiaWxsaW9uIiwiJCA3LjggYmlsbGlvbiIsIiQgNjggYmls
+        bGlvbiIsIiQgMTggYmlsbGlvbiIsIiQgMzYgYmlsbGlvbiIsIiQgNTAgYmls
+        bGlvbiJdLCJwZXJzb24iOlsiQ2FybCBJY2FobiBCdXlzIiwiVGltIENvb2si
+        LCJUaW0gQ29va+KAmXMiLCJSZWVkIEhhc3RpbmdzIiwiU3RldmUgSm9icyIs
+        IlRpbSIsIkNvb2siLCJKb25hdGhhbiBJdmUiLCJKb25hdGhhbiIsIkl2ZSJd
+        LCJwcm9kdWN0IjpbImlQaG9uZSIsIklwYWQiLCJBaXJwbGF5Il19fQ==
     http_version: 
-  recorded_at: Tue, 02 Dec 2014 18:15:32 GMT
+  recorded_at: Tue, 10 Feb 2015 14:05:36 GMT
 recorded_with: VCR 2.9.3

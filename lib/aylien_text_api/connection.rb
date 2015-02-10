@@ -1,4 +1,4 @@
-# Copyright 2014 Aylien, Inc. All Rights Reserved.
+# Copyright 2015 Aylien, Inc. All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,7 +21,7 @@ module AylienTextApi
   class Connection
     def initialize(endpoint, params, config)
       @config = config
-      @uri = URI.join(@config[:base_uri], endpoint.to_s)
+      @uri = URI.join(@config[:base_uri], endpoint)
       @params = params
       compile_request_params
     end
@@ -53,6 +53,8 @@ module AylienTextApi
     private
 
     def compile_request_params
+      @params[:class] = @params.delete(:classes) if @params[:classes]
+      
       if @config[:method] == :post
         request = Net::HTTP::Post.new(@uri.request_uri)
         request.set_form_data(@params)

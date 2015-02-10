@@ -7,16 +7,18 @@ http_interactions:
       encoding: US-ASCII
       string: wrong_param=Batman+has+always+been+my+favourite+superhero+ever+since+the+first+time+I+heard+about+him+because+he+his+human+with+no+powers%2C+also+he+is+much+more+questionable+than+any+other+superhero.+The+story+of+the+film+is+about+Batman%2C+Lieutenant+James+Gordon%2C+and+new+district+attorney+Harvey+Dent+beginning+to+succeed+in+rounding+up+the+criminals+that+plague+Gotham+City.+They+are+unexpectedly+challenged+when+a+mysterious+criminal+mastermind+known+as+the+Joker+appears+in+Gotham.+Batman%27s+struggle+against+the+Joker+becomes+deeply+personal%2C+forcing+him+to+%22confront+everything+he+believes%22+and+to+improve+his+technology+%28which+introduces+the+recreation+of+the+Batcycle%2C+known+as+the+Batpod+and+the+Batsuit+was+redesigned%29+to+stop+the+madman%27s+campaign+of+destruction.+During+the+course+of+the+film%2C+a+love+triangle+develops+between+Bruce+Wayne%2C+Dent+and+Rachel+Dawes.++There+are+now+six+Batman+films+and+I+must+say+that+The+Dark+Knight+is+the+best+out+of+all+of+them.+The+title+is+good+because+that+is+what+Batman+actually+is.+It+has+been+3+years+for+the+adventure+to+continue+from+Batman+Begins+but+that+entire+wait+was+worth+it.+Gotham+city+is+very+Gothic+looking+and+is+very+haunting+and+visionary.+The+whole+movie+is+charged+with+pulse-pounding+suspense%2C+ingenious+special+effects+and+riveting+performances+from+a+first-rate+cast+especially+from+Heath+Ledger+who+gave+an+Oscar+nomination+performance+for+best+supporting-actor.+It+is+a+shame+that+he+can%27t+see+his+terrific+work+on-screen.+The+cinematography+is+excellent+which+is+made+so+dark+%26+sinister+that+really+did+suit+the+mood+for+the+film.+Usually+sequels+don%27t+turn+out+to+be+better+than+the+original+but+The+Dark+Knight+is+one+of+those+rare+sequels+that+surpasses+the+original+like+The+Godfather+2.+I+also+really+liked+the+poster+where+the+building+is+on+fire+in+a+Bat+symbol+%26+Batman+is+standing+in+front+of+it.+Christopher+Nolan+is+a+brilliant+director+and+his+film+Memento+is+one+of+my+most+favourite+films.+He+hasn%27t+made+10+movies+yet+and+3+of+them+are+already+on+the+IMDb+top+250.+Overall+The+Dark+Knight+is+the+kind+of+movie+that+will+make+the+audience+cheer+in+the+end+instead+of+throwing+fruit+%26+vegetables+on+the+screen.
     headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
-      - Aylien Text API Ruby Gem 0.0.1
+      - Aylien Text API Ruby Gem 0.1.0
       Content-Type:
       - application/x-www-form-urlencoded
       App-Id:
-      - <PASSWORD>
+      - "<PASSWORD>"
       App-Key:
-      - <PASSWORD>
+      - "<PASSWORD>"
   response:
     status:
       code: 400
@@ -25,17 +27,23 @@ http_interactions:
       Server:
       - openresty/1.5.12.1
       Date:
-      - Tue, 02 Dec 2014 18:16:02 GMT
+      - Tue, 10 Feb 2015 14:06:00 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
       - '90'
       Connection:
       - keep-alive
+      X-Ratelimit-Limit:
+      - '207000'
+      X-Ratelimit-Remaining:
+      - '205392'
+      X-Ratelimit-Reset:
+      - '1423612800'
     body:
-      encoding: US-ASCII
-      string: ! '{"error" : "requirement failed: you must either provide url or a
-        pair of text and title."}'
+      encoding: UTF-8
+      string: '{"error" : "requirement failed: you must either provide url or a pair
+        of text and title."}'
     http_version: 
-  recorded_at: Tue, 02 Dec 2014 18:14:59 GMT
+  recorded_at: Tue, 10 Feb 2015 14:05:45 GMT
 recorded_with: VCR 2.9.3

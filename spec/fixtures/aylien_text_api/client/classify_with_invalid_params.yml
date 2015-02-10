@@ -7,16 +7,18 @@ http_interactions:
       encoding: US-ASCII
       string: wrong_param=CCTV+footage+shows+the+moment+a+suicide+car+bomber+detonates%0A++++++a+device+in+Beirut+on+Tuesday.+The+incident+took+place+in+an+area%0A++++++of+support+for+Hezbollah+and+left+four+people+dead+with+many+more+wounded.%0A++++++A+group+calling+itself+the+al-Nusra+Front+in+Lebanon+has+claimed%0A++++++responsibility+for+the+attack+saying+it+was+in+retaliation+for%0A++++++Hezbollah%27s+military+support+of+president+Bashar+al-Assad%27s+forces+in+Syria
     headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
-      - Aylien Text API Ruby Gem 0.0.1
+      - Aylien Text API Ruby Gem 0.1.0
       Content-Type:
       - application/x-www-form-urlencoded
       App-Id:
-      - <PASSWORD>
+      - "<PASSWORD>"
       App-Key:
-      - <PASSWORD>
+      - "<PASSWORD>"
   response:
     status:
       code: 400
@@ -25,16 +27,22 @@ http_interactions:
       Server:
       - openresty/1.5.12.1
       Date:
-      - Tue, 02 Dec 2014 18:15:48 GMT
+      - Tue, 10 Feb 2015 14:06:12 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
       - '70'
       Connection:
       - keep-alive
+      X-Ratelimit-Limit:
+      - '207000'
+      X-Ratelimit-Remaining:
+      - '205380'
+      X-Ratelimit-Reset:
+      - '1423612800'
     body:
-      encoding: US-ASCII
-      string: ! '{"error" : "requirement failed: you must either provide url or text."}'
+      encoding: UTF-8
+      string: '{"error" : "requirement failed: you must either provide url or text."}'
     http_version: 
-  recorded_at: Tue, 02 Dec 2014 18:14:45 GMT
+  recorded_at: Tue, 10 Feb 2015 14:05:57 GMT
 recorded_with: VCR 2.9.3

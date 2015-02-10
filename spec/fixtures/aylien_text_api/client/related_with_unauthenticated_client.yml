@@ -7,10 +7,12 @@ http_interactions:
       encoding: US-ASCII
       string: phrase=android
     headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
-      - Aylien Text API Ruby Gem 0.0.1
+      - Aylien Text API Ruby Gem 0.1.0
       Content-Type:
       - application/x-www-form-urlencoded
       App-Id:
@@ -25,7 +27,7 @@ http_interactions:
       Server:
       - openresty/1.5.12.1
       Date:
-      - Tue, 02 Dec 2014 18:16:23 GMT
+      - Tue, 10 Feb 2015 14:06:04 GMT
       Content-Type:
       - text/plain; charset=us-ascii
       Transfer-Encoding:
@@ -33,8 +35,8 @@ http_interactions:
       Connection:
       - keep-alive
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: Authentication failed
     http_version: 
-  recorded_at: Tue, 02 Dec 2014 18:15:21 GMT
+  recorded_at: Tue, 10 Feb 2015 14:05:49 GMT
 recorded_with: VCR 2.9.3

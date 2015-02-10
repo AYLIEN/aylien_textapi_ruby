@@ -7,16 +7,18 @@ http_interactions:
       encoding: US-ASCII
       string: url=http%3A%2F%2Fwww.bbc.com%2Fsport%2F0%2Ffootball%2F25912393
     headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - ! '*/*'
+      - "*/*"
       User-Agent:
-      - Aylien Text API Ruby Gem 0.0.1
+      - Aylien Text API Ruby Gem 0.1.0
       Content-Type:
       - application/x-www-form-urlencoded
       App-Id:
-      - <PASSWORD>
+      - "<PASSWORD>"
       App-Key:
-      - <PASSWORD>
+      - "<PASSWORD>"
   response:
     status:
       code: 200
@@ -25,41 +27,66 @@ http_interactions:
       Server:
       - openresty/1.5.12.1
       Date:
-      - Tue, 02 Dec 2014 18:16:05 GMT
+      - Tue, 10 Feb 2015 14:05:59 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
-      - '1916'
+      - '1960'
       Connection:
       - keep-alive
+      X-Ratelimit-Limit:
+      - '207000'
+      X-Ratelimit-Remaining:
+      - '205395'
+      X-Ratelimit-Reset:
+      - '1423612800'
     body:
-      encoding: US-ASCII
-      string: ! "{\n  \"text\": \"Lionel Messi: Forward is not for sale, says Barcelona
-        president\\n\\nBarcelona forward Lionel Messi is not for sale and the club
-        plan to discuss a new contract with the Argentine, says president Josep Maria
-        Bartomeu.\\n\\nFour-time Ballon d'Or winner Messi, 26, is reported to be a\\n\\nIn
-        an interview with radio station RAC1, Bartomeu said: \\\"The club will sit
-        down and negotiate a new contract.\\n\\n\\\"We will do what we have to, to
-        ensure he's the best-paid player.\\\"\\n\\nMessi scored 60 goals in 50 appearances
-        last season but has struggled to match that goalscoring form in 2013-14.\\n\\nHe
-        has scored 18 goals so far but just eight of those have been in the league.\\n\\nHis
-        last league goal came in September, before he was out for five weeks with
-        a hamstring injury.\\n\\n\\\"He can do everything,\\\" said Barca coach Gerardo
-        Martino. \\\"If he succeeds in other facets of his game, it doesn't matter
-        if he scores.\\n\\n\\\"Nothing surprises me with him. He controls the game
-        well, passes the ball well, he is a good finisher, he can press and recover
-        the ball.\\n\\n\\\"He sees passes that most people can only see whilst watching
-        the game on TV or in the stands, not ones that you can normally see on the
-        field.\\\"\",\n  \"sentences\": [\"Lionel Messi: Forward is not for sale,
-        says Barcelona president\\n\\nBarcelona forward Lionel Messi is not for sale
-        and the club plan to discuss a new contract with the Argentine, says president
-        Josep Maria Bartomeu.\", \"Four-time Ballon d'Or winner Messi, 26, is reported
-        to be a\\n\\nIn an interview with radio station RAC1, Bartomeu said: \\\"The
-        club will sit down and negotiate a new contract.\", \"His last league goal
-        came in September, before he was out for five weeks with a hamstring injury.\",
-        \"\\\"If he succeeds in other facets of his game, it doesn't matter if he
-        scores.\", \"He controls the game well, passes the ball well, he is a good
-        finisher, he can press and recover the ball.\"]\n}"
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogICJ0ZXh0IjogIkxpb25lbCBNZXNzaTogRm9yd2FyZCBpcyBub3QgZm9y
+        IHNhbGUsIHNheXMgQmFyY2Vsb25hIHByZXNpZGVudFxuXG5CYXJjZWxvbmEg
+        Zm9yd2FyZCBMaW9uZWwgTWVzc2kgaXMgbm90IGZvciBzYWxlIGFuZCB0aGUg
+        Y2x1YiBwbGFuIHRvIGRpc2N1c3MgYSBuZXcgY29udHJhY3Qgd2l0aCB0aGUg
+        QXJnZW50aW5lLCBzYXlzIHByZXNpZGVudCBKb3NlcCBNYXJpYSBCYXJ0b21l
+        dS5cblxuRm91ci10aW1lIEJhbGxvbiBkJ09yIHdpbm5lciBNZXNzaSwgMjYs
+        IGlzIHJlcG9ydGVkIHRvIGJlIGEgdGFyZ2V0IGZvciBGcmVuY2ggc2lkZSBQ
+        YXJpcyBTdC1HZXJtYWluLlxuXG5JbiBhbiBpbnRlcnZpZXcgd2l0aCByYWRp
+        byBzdGF0aW9uIFJBQzEsIHBvc3RlZCBvbiBCYXJjZWxvbmEncyB3ZWJzaXRl
+        LMKgIEJhcnRvbWV1IHNhaWQ6IFwiVGhlIGNsdWIgd2lsbCBzaXQgZG93biBh
+        bmQgbmVnb3RpYXRlIGEgbmV3IGNvbnRyYWN0LlxuXG5cIldlIHdpbGwgZG8g
+        d2hhdCB3ZSBoYXZlIHRvLCB0byBlbnN1cmUgaGUncyB0aGUgYmVzdC1wYWlk
+        IHBsYXllci5cIlxuXG5NZXNzaSBzY29yZWQgNjAgZ29hbHMgaW4gNTAgYXBw
+        ZWFyYW5jZXMgbGFzdCBzZWFzb24gYnV0IGhhcyBzdHJ1Z2dsZWQgdG8gbWF0
+        Y2ggdGhhdCBnb2Fsc2NvcmluZyBmb3JtIGluIDIwMTMtMTQuXG5cbkhlIGhh
+        cyBzY29yZWQgMTggZ29hbHMgc28gZmFyIGJ1dCBqdXN0IGVpZ2h0IG9mIHRo
+        b3NlIGhhdmUgYmVlbiBpbiB0aGUgbGVhZ3VlLlxuXG5IaXMgbGFzdCBsZWFn
+        dWUgZ29hbCBjYW1lIGluIFNlcHRlbWJlciwgYmVmb3JlIGhlIHdhcyBvdXQg
+        Zm9yIGZpdmUgd2Vla3Mgd2l0aCBhIGhhbXN0cmluZyBpbmp1cnkuXG5cblwi
+        SGUgY2FuIGRvIGV2ZXJ5dGhpbmcsXCIgc2FpZCBCYXJjYSBjb2FjaCBHZXJh
+        cmRvIE1hcnRpbm8uIFwiSWYgaGUgc3VjY2VlZHMgaW4gb3RoZXIgZmFjZXRz
+        IG9mIGhpcyBnYW1lLCBpdCBkb2Vzbid0IG1hdHRlciBpZiBoZSBzY29yZXMu
+        XG5cblwiTm90aGluZyBzdXJwcmlzZXMgbWUgd2l0aCBoaW0uIEhlIGNvbnRy
+        b2xzIHRoZSBnYW1lIHdlbGwsIHBhc3NlcyB0aGUgYmFsbCB3ZWxsLCBoZSBp
+        cyBhIGdvb2QgZmluaXNoZXIsIGhlIGNhbiBwcmVzcyBhbmQgcmVjb3ZlciB0
+        aGUgYmFsbC5cblxuXCJIZSBzZWVzIHBhc3NlcyB0aGF0IG1vc3QgcGVvcGxl
+        IGNhbiBvbmx5IHNlZSB3aGlsc3Qgd2F0Y2hpbmcgdGhlIGdhbWUgb24gVFYg
+        b3IgaW4gdGhlIHN0YW5kcywgbm90IG9uZXMgdGhhdCB5b3UgY2FuIG5vcm1h
+        bGx5IHNlZSBvbiB0aGUgZmllbGQuXCIiLAogICJzZW50ZW5jZXMiOiBbIkxp
+        b25lbCBNZXNzaTogRm9yd2FyZCBpcyBub3QgZm9yIHNhbGUsIHNheXMgQmFy
+        Y2Vsb25hIHByZXNpZGVudFxuXG5CYXJjZWxvbmEgZm9yd2FyZCBMaW9uZWwg
+        TWVzc2kgaXMgbm90IGZvciBzYWxlIGFuZCB0aGUgY2x1YiBwbGFuIHRvIGRp
+        c2N1c3MgYSBuZXcgY29udHJhY3Qgd2l0aCB0aGUgQXJnZW50aW5lLCBzYXlz
+        IHByZXNpZGVudCBKb3NlcCBNYXJpYSBCYXJ0b21ldS4iLCAiSW4gYW4gaW50
+        ZXJ2aWV3IHdpdGggcmFkaW8gc3RhdGlvbiBSQUMxLCBwb3N0ZWQgb24gQmFy
+        Y2Vsb25hJ3Mgd2Vic2l0ZSzCoCBCYXJ0b21ldSBzYWlkOiBcIlRoZSBjbHVi
+        IHdpbGwgc2l0IGRvd24gYW5kIG5lZ290aWF0ZSBhIG5ldyBjb250cmFjdC4i
+        LCAiSGlzIGxhc3QgbGVhZ3VlIGdvYWwgY2FtZSBpbiBTZXB0ZW1iZXIsIGJl
+        Zm9yZSBoZSB3YXMgb3V0IGZvciBmaXZlIHdlZWtzIHdpdGggYSBoYW1zdHJp
+        bmcgaW5qdXJ5LiIsICJcIklmIGhlIHN1Y2NlZWRzIGluIG90aGVyIGZhY2V0
+        cyBvZiBoaXMgZ2FtZSwgaXQgZG9lc24ndCBtYXR0ZXIgaWYgaGUgc2NvcmVz
+        LiIsICJIZSBjb250cm9scyB0aGUgZ2FtZSB3ZWxsLCBwYXNzZXMgdGhlIGJh
+        bGwgd2VsbCwgaGUgaXMgYSBnb29kIGZpbmlzaGVyLCBoZSBjYW4gcHJlc3Mg
+        YW5kIHJlY292ZXIgdGhlIGJhbGwuIl0KfQ==
     http_version: 
-  recorded_at: Tue, 02 Dec 2014 18:15:02 GMT
+  recorded_at: Tue, 10 Feb 2015 14:05:44 GMT
 recorded_with: VCR 2.9.3
