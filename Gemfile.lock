@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    aylien_text_api (0.1.0)
+    aylien_text_api (0.2.0)
 
 GEM
   remote: https://rubygems.org/

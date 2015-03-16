@@ -258,6 +258,21 @@ module AylienTextApi
         Configuration::ENDPOINTS[:unsupervised_classify])
       Connection.new(endpoint, params, config).request
     end
+    
+    # Assigns relevant tags to an image.
+    #
+    # @param [String] value (nil) URL
+    # @option params [String] :url The URL
+    #
+    # @return [Hash, nil] A hash of result. See
+    #   http://aylien.com/text-api-doc#image_tags for more information
+    #   on the data returned.
+    #
+    def image_tags(value=nil, params={})
+      endpoint, params, config = common_endpoint(value, params, 
+        Configuration::ENDPOINTS[:image_tags])
+      Connection.new(endpoint, params, config).request
+    end
 
     private
 

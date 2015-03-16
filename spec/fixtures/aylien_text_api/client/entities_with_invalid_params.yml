@@ -12,7 +12,7 @@ http_interactions:
       Accept:
       - "*/*"
       User-Agent:
-      - Aylien Text API Ruby Gem 0.1.0
+      - Aylien Text API Ruby Gem 0.2.0
       Content-Type:
       - application/x-www-form-urlencoded
       App-Id:
@@ -25,24 +25,33 @@ http_interactions:
       message: Bad Request
     headers:
       Server:
-      - openresty/1.5.12.1
+      - openresty/1.7.7.2
       Date:
-      - Tue, 10 Feb 2015 14:05:57 GMT
+      - Mon, 16 Mar 2015 14:33:27 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
-      - '70'
+      - '219'
       Connection:
       - keep-alive
       X-Ratelimit-Limit:
       - '207000'
       X-Ratelimit-Remaining:
-      - '205396'
+      - '205547'
       X-Ratelimit-Reset:
-      - '1423612800'
+      - '1426550400'
     body:
       encoding: UTF-8
-      string: '{"error" : "requirement failed: you must either provide url or text."}'
+      string: |-
+        {
+          "error": "requirement failed: Either text or url is required",
+          "errors": [{
+            "reason": "required",
+            "message": "Either text or url is required",
+            "locationType": "parameter",
+            "location": "text"
+          }]
+        }
     http_version: 
-  recorded_at: Tue, 10 Feb 2015 14:05:42 GMT
+  recorded_at: Mon, 16 Mar 2015 14:33:27 GMT
 recorded_with: VCR 2.9.3

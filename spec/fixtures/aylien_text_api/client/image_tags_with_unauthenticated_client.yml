@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: post
-    uri: https://api.aylien.com/api/v1/microformats
+    uri: https://api.aylien.com/api/v1/image-tags
     body:
       encoding: US-ASCII
-      string: url=http%3A%2F%2Fcodepen.io%2Fanon%2Fpen%2FZYaKbz.html
+      string: url=http%3A%2F%2Faylien.com%2Fimages%2Fmichaelo.png
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
@@ -15,6 +15,10 @@ http_interactions:
       - Aylien Text API Ruby Gem 0.2.0
       Content-Type:
       - application/x-www-form-urlencoded
+      App-Id:
+      - random_string
+      App-Key:
+      - random_string
   response:
     status:
       code: 403
@@ -23,7 +27,7 @@ http_interactions:
       Server:
       - openresty/1.7.7.2
       Date:
-      - Mon, 16 Mar 2015 14:33:57 GMT
+      - Mon, 16 Mar 2015 14:33:11 GMT
       Content-Type:
       - text/plain; charset=us-ascii
       Transfer-Encoding:
@@ -32,7 +36,7 @@ http_interactions:
       - keep-alive
     body:
       encoding: UTF-8
-      string: Authentication parameters missing
+      string: Authentication failed
     http_version: 
-  recorded_at: Mon, 16 Mar 2015 14:33:57 GMT
+  recorded_at: Mon, 16 Mar 2015 14:33:11 GMT
 recorded_with: VCR 2.9.3

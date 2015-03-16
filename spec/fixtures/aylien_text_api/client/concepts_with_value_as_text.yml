@@ -12,7 +12,7 @@ http_interactions:
       Accept:
       - "*/*"
       User-Agent:
-      - Aylien Text API Ruby Gem 0.1.0
+      - Aylien Text API Ruby Gem 0.2.0
       Content-Type:
       - application/x-www-form-urlencoded
       App-Id:
@@ -25,9 +25,9 @@ http_interactions:
       message: OK
     headers:
       Server:
-      - openresty/1.5.12.1
+      - openresty/1.7.7.2
       Date:
-      - Tue, 10 Feb 2015 14:06:17 GMT
+      - Mon, 16 Mar 2015 14:33:32 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
@@ -37,9 +37,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '207000'
       X-Ratelimit-Remaining:
-      - '205375'
+      - '205542'
       X-Ratelimit-Reset:
-      - '1423612800'
+      - '1426550400'
     body:
       encoding: UTF-8
       string: '{"text":"Barack Hussein Obama II is the 44th and current\n      President
@@ -48,5 +48,5 @@ http_interactions:
         Hussein Obama II","score":1.0,"offset":0}],"types":["http://dbpedia.org/ontology/Agent","http://schema.org/Person","http://xmlns.com/foaf/0.1/Person","http://dbpedia.org/ontology/Person","http://dbpedia.org/ontology/OfficeHolder"],"support":14686},"http://dbpedia.org/resource/United_States":{"surfaceForms":[{"string":"United
         States","score":0.9999067449772838,"offset":71}],"types":["http://schema.org/Place","http://dbpedia.org/ontology/Place","http://dbpedia.org/ontology/PopulatedPlace","http://schema.org/Country","http://dbpedia.org/ontology/Country"],"support":538753}}}'
     http_version: 
-  recorded_at: Tue, 10 Feb 2015 14:06:02 GMT
+  recorded_at: Mon, 16 Mar 2015 14:33:32 GMT
 recorded_with: VCR 2.9.3

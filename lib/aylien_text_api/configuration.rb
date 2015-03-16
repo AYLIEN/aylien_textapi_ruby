@@ -36,7 +36,8 @@ module AylienTextApi
       sentiment: 'sentiment',
       summarize: 'summarize',
       microformats: 'microformats',
-      unsupervised_classify: 'classify/unsupervised'
+      unsupervised_classify: 'classify/unsupervised',
+      image_tags: 'image-tags'
     }
 
     # Build accessor methods for every config options so we can do this, for example:
