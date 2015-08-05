@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    aylien_text_api (0.2.0)
+    aylien_text_api (0.3.0)
 
 GEM
   remote: https://rubygems.org/
@@ -26,3 +26,6 @@ DEPENDENCIES
   rake (~> 10.4)
   vcr (~> 2.9)
   webmock (~> 1.20)
+
+BUNDLED WITH
+   1.10.5

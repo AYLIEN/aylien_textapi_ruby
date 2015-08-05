@@ -63,8 +63,8 @@ module AylienTextApi
         request = Net::HTTP::Get.new(@uri.request_uri)
       end
 
-      request['app_id'] = @config[:app_id]
-      request['app_key'] = @config[:app_key]
+      request['X-AYLIEN-TextAPI-Application-ID'] = @config[:app_id]
+      request['X-AYLIEN-TextAPI-Application-Key'] = @config[:app_key]
       request['user-agent'] = @config[:user_agent]
 
       @request = request

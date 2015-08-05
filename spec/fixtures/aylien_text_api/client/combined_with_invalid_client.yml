@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.aylien.com/api/v1/combined
+    body:
+      encoding: US-ASCII
+      string: text=CCTV+footage+shows+the+moment+a+suicide+car+bomber+detonates%0A++++++a+device+in+Beirut+on+Tuesday.+The+incident+took+place+in+an+area%0A++++++of+support+for+Hezbollah+and+left+four+people+dead+with+many+more+wounded.%0A++++++A+group+calling+itself+the+al-Nusra+Front+in+Lebanon+has+claimed%0A++++++responsibility+for+the+attack+saying+it+was+in+retaliation+for%0A++++++Hezbollah%27s+military+support+of+president+Bashar+al-Assad%27s+forces+in+Syria&endpoint=extract&endpoint=concepts&endpoint=entities&endpoint=summarize&endpoint=classify&endpoint=hashtags&endpoint=language
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Aylien Text API Ruby Gem 0.3.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Server:
+      - openresty/1.7.7.2
+      Date:
+      - Thu, 06 Aug 2015 16:59:37 GMT
+      Content-Type:
+      - text/plain; charset=us-ascii
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: Authentication parameters missing
+    http_version: 
+  recorded_at: Thu, 06 Aug 2015 16:59:37 GMT
+recorded_with: VCR 2.9.3

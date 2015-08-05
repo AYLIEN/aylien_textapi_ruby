@@ -12,12 +12,12 @@ http_interactions:
       Accept:
       - "*/*"
       User-Agent:
-      - Aylien Text API Ruby Gem 0.2.0
+      - Aylien Text API Ruby Gem 0.3.0
       Content-Type:
       - application/x-www-form-urlencoded
-      App-Id:
+      X-Aylien-Textapi-Application-Id:
       - "<PASSWORD>"
-      App-Key:
+      X-Aylien-Textapi-Application-Key:
       - "<PASSWORD>"
   response:
     status:
@@ -27,26 +27,55 @@ http_interactions:
       Server:
       - openresty/1.7.7.2
       Date:
-      - Mon, 16 Mar 2015 14:33:27 GMT
+      - Thu, 06 Aug 2015 17:00:20 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
-      - '1035'
+      - '1171'
       Connection:
       - keep-alive
       X-Ratelimit-Limit:
       - '207000'
       X-Ratelimit-Remaining:
-      - '205546'
+      - '206059'
       X-Ratelimit-Reset:
-      - '1426550400'
+      - '1438905600'
     body:
       encoding: UTF-8
-      string: '{"text":"Barack Hussein Obama II is the 44th and current\n      President
-        of the United States, and the first\n      African American to hold the office.","language":"en","concepts":{"http://dbpedia.org/resource/Race_and_ethnicity_in_the_United_States_Census":{"surfaceForms":[{"string":"African
-        American","score":0.9775916924283343,"offset":106}],"types":[""],"support":262175},"http://dbpedia.org/resource/Barack_Obama":{"surfaceForms":[{"string":"Barack
-        Hussein Obama II","score":1.0,"offset":0}],"types":["http://dbpedia.org/ontology/Agent","http://schema.org/Person","http://xmlns.com/foaf/0.1/Person","http://dbpedia.org/ontology/Person","http://dbpedia.org/ontology/OfficeHolder"],"support":14686},"http://dbpedia.org/resource/United_States":{"surfaceForms":[{"string":"United
-        States","score":0.9999067449772838,"offset":71}],"types":["http://schema.org/Place","http://dbpedia.org/ontology/Place","http://dbpedia.org/ontology/PopulatedPlace","http://schema.org/Country","http://dbpedia.org/ontology/Country"],"support":538753}}}'
+      string: |-
+        {
+          "text": "Barack Hussein Obama II is the 44th and current\n      President of the United States, and the first\n      African American to hold the office.",
+          "language": "en",
+          "concepts": {
+            "http://dbpedia.org/resource/Race_and_ethnicity_in_the_United_States_Census": {
+              "surfaceForms": [{
+                "string": "African American",
+                "score": 0.8827383920486191,
+                "offset": 106
+              }],
+              "types": [""],
+              "support": 300880
+            },
+            "http://dbpedia.org/resource/Barack_Obama": {
+              "surfaceForms": [{
+                "string": "Barack Hussein Obama II",
+                "score": 1.0,
+                "offset": 0
+              }],
+              "types": ["http://dbpedia.org/ontology/Agent", "http://www.wikidata.org/entity/Q215627", "http://schema.org/Person", "http://xmlns.com/foaf/0.1/Person", "http://www.wikidata.org/entity/Q5", "http://dbpedia.org/ontology/Person"],
+              "support": 16974
+            },
+            "http://dbpedia.org/resource/United_States": {
+              "surfaceForms": [{
+                "string": "United States",
+                "score": 0.9998810412179507,
+                "offset": 71
+              }],
+              "types": ["http://dbpedia.org/ontology/Country"],
+              "support": 562059
+            }
+          }
+        }
     http_version: 
-  recorded_at: Mon, 16 Mar 2015 14:33:27 GMT
+  recorded_at: Thu, 06 Aug 2015 17:00:21 GMT
 recorded_with: VCR 2.9.3

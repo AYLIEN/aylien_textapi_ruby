@@ -5,19 +5,19 @@ http_interactions:
     uri: https://api.aylien.com/api/v1/extract
     body:
       encoding: US-ASCII
-      string: text=The+oil-rich+billionaires+of+the+Gulf+have+planted%0A++++++++++++++++a+flag+at+the+heart+of+the+sporting+landscape+in+recent+years.
+      string: wrong_param=The+oil-rich+billionaires+of+the+Gulf+have+planted%0A++++++++++++++++a+flag+at+the+heart+of+the+sporting+landscape+in+recent+years.
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - "*/*"
       User-Agent:
-      - Aylien Text API Ruby Gem 0.2.0
+      - Aylien Text API Ruby Gem 0.3.0
       Content-Type:
       - application/x-www-form-urlencoded
-      App-Id:
+      X-Aylien-Textapi-Application-Id:
       - "<PASSWORD>"
-      App-Key:
+      X-Aylien-Textapi-Application-Key:
       - "<PASSWORD>"
   response:
     status:
@@ -27,22 +27,31 @@ http_interactions:
       Server:
       - openresty/1.7.7.2
       Date:
-      - Mon, 16 Mar 2015 14:33:17 GMT
+      - Thu, 06 Aug 2015 16:59:22 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
-      - '70'
+      - '218'
       Connection:
       - keep-alive
       X-Ratelimit-Limit:
       - '207000'
       X-Ratelimit-Remaining:
-      - '205553'
+      - '206162'
       X-Ratelimit-Reset:
-      - '1426550400'
+      - '1438905600'
     body:
       encoding: UTF-8
-      string: '{"error" : "requirement failed: you must either provide url or html."}'
+      string: |-
+        {
+          "error": "requirement failed: either html or url is required",
+          "errors": [{
+            "reason": "required",
+            "message": "either html or url is required",
+            "locationType": "parameter",
+            "location": "url"
+          }]
+        }
     http_version: 
-  recorded_at: Mon, 16 Mar 2015 14:33:17 GMT
+  recorded_at: Thu, 06 Aug 2015 16:59:22 GMT
 recorded_with: VCR 2.9.3

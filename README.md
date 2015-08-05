@@ -9,7 +9,7 @@ Installation
 ============
     gem install aylien_text_api
 
-See the [Developers Guide](https://developer.aylien.com/docs) for additional documentation.
+See the [Developers Guide](http://docs.aylien.com/docs/ruby-sdk) for additional documentation.
 
 Configuration
 =============

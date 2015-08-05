@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: post
-    uri: https://api.aylien.com/api/v1/microformats
+    uri: https://api.aylien.com/api/v1/combined
     body:
       encoding: US-ASCII
-      string: url=http%3A%2F%2Fcodepen.io%2Fanon%2Fpen%2FZYaKbz.html
+      string: text=CCTV+footage+shows+the+moment+a+suicide+car+bomber+detonates%0A++++++a+device+in+Beirut+on+Tuesday.+The+incident+took+place+in+an+area%0A++++++of+support+for+Hezbollah+and+left+four+people+dead+with+many+more+wounded.%0A++++++A+group+calling+itself+the+al-Nusra+Front+in+Lebanon+has+claimed%0A++++++responsibility+for+the+attack+saying+it+was+in+retaliation+for%0A++++++Hezbollah%27s+military+support+of+president+Bashar+al-Assad%27s+forces+in+Syria&endpoint=extract&endpoint=concepts&endpoint=entities&endpoint=summarize&endpoint=classify&endpoint=hashtags&endpoint=language
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
@@ -27,7 +27,7 @@ http_interactions:
       Server:
       - openresty/1.7.7.2
       Date:
-      - Thu, 06 Aug 2015 16:59:31 GMT
+      - Thu, 06 Aug 2015 16:59:36 GMT
       Content-Type:
       - text/plain; charset=us-ascii
       Transfer-Encoding:
@@ -38,5 +38,5 @@ http_interactions:
       encoding: UTF-8
       string: Authentication failed
     http_version: 
-  recorded_at: Thu, 06 Aug 2015 16:59:31 GMT
+  recorded_at: Thu, 06 Aug 2015 16:59:36 GMT
 recorded_with: VCR 2.9.3

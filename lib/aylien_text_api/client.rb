@@ -51,7 +51,7 @@ module AylienTextApi
     #   Whether extract the best image of the article
     #
     # @return [Hash, nil] A hash of result. See
-    #   http://aylien.com/text-api-doc#extract for more information
+    #   http://docs.aylien.com/docs/extract for more information
     #   on the data returned.
     #
     def extract(value=nil, params={})
@@ -71,7 +71,7 @@ module AylienTextApi
     #   If set to auto, it'll try to detect the language.
     #
     # @return [Hash, nil] A hash of result. See
-    #   http://aylien.com/text-api-doc#classify for more information
+    #   http://docs.aylien.com/docs/classify for more information
     #   on the data returned.
     #
     def classify(value=nil, params={})
@@ -93,7 +93,7 @@ module AylienTextApi
     #   If set to auto, it'll try to detect the language.
     #
     # @return [Hash, nil] A hash of result. See
-    #   http://aylien.com/text-api-doc#concepts for more information
+    #   http://docs.aylien.com/docs/concepts for more information
     #   on the data returned.
     #
     def concepts(value=nil, params={})
@@ -113,7 +113,7 @@ module AylienTextApi
     #   If set to auto, it'll try to detect the language.
     #
     # @return [Hash, nil] A hash of result. See
-    #   http://aylien.com/text-api-doc#hashtags for more information
+    #   http://docs.aylien.com/docs/hashtags for more information
     #   on the data returned.
     #
     def hashtags(value=nil, params={})
@@ -130,9 +130,12 @@ module AylienTextApi
     # @param [Hash] params The entities endpoint options
     # @option params [String] :url The URL
     # @option params [String] :text Text
+    # @option params [String] :language ('en') Language of text.
+    #   Valid options are en, de, fr, es, it, pt, and auto.
+    #   If set to auto, it'll try to detect the language.
     #
     # @return [Hash, nil] A hash of result. See
-    #   http://aylien.com/text-api-doc#entities for more information
+    #   http://docs.aylien.com/docs/entities for more information
     #   on the data returned.
     #
     def entities(value=nil, params={})
@@ -150,7 +153,7 @@ module AylienTextApi
     # @option params [String] :text Text
     #
     # @return [Hash, nil] A hash of result. See
-    #   http://aylien.com/text-api-doc#language for more information
+    #   http://docs.aylien.com/docs/language for more information
     #   on the data returned.
     #
     def language(value=nil, params={})
@@ -171,7 +174,7 @@ module AylienTextApi
     #   Valid options are tweet, and document.
     #
     # @return [Hash, nil] A hash of result. See
-    #   http://aylien.com/text-api-doc#sentiment for more information
+    #   http://docs.aylien.com/docs/sentiment for more information
     #   on the data returned.
     #
     def sentiment(value=nil, params={})
@@ -196,9 +199,12 @@ module AylienTextApi
     # @option params [Integer] :sentences_percentage Percentage of sentences
     #   to be returned. Only in default mode (not applicable to short mode).
     #   Possible range is 1-100.
+    # @option params [String] :language ('en') Language of text.
+    #   Valid options are en, de, fr, es, it, pt, and auto.
+    #   If set to auto, it'll try to detect the language.
     #
     # @return [Hash, nil] A hash of result. See
-    #   http://aylien.com/text-api-doc#summarize for more information
+    #   http://docs.aylien.com/docs/summarize for more information
     #   on the data returned.
     #
     def summarize(value=nil, params={})
@@ -216,7 +222,7 @@ module AylienTextApi
     #   Max is 100.
     #
     # @return [Hash, nil] A hash of result. See
-    #   http://aylien.com/text-api-doc#related for more information
+    #   http://docs.aylien.com/docs/related for more information
     #   on the data returned.
     #
     def related(value=nil, params={})
@@ -230,9 +236,12 @@ module AylienTextApi
     # @param [String] value (nil) URL
     # @param [Hash] params The microformats endpoint options
     # @option params [String] :url The URL
+    # @option params [String] :language ('en') Language of text.
+    #   Valid options are en, de, fr, es, it, pt, and auto.
+    #   If set to auto, it'll try to detect the language.
     #
     # @return [Hash, nil] A hash of result. See
-    #   http://aylien.com/text-api-doc#microformats for more information
+    #   http://docs.aylien.com/docs/microformats for more information
     #   on the data returned.
     #
     def microformats(value=nil, params={})
@@ -248,14 +257,34 @@ module AylienTextApi
     # @option params [String] :url The URL
     # @option params [String] :text Text
     # @option params [Array<String>] :class Array of classes
+    # @option params [Integer] :number_of_concepts Number of intermediary 
+    #   common topics to consider when calculating semantic similarity
     #
     # @return [Hash, nil] A hash of result. See
-    #   http://aylien.com/text-api-doc#unsupervised_classify for more information
+    #   http://docs.aylien.com/docs/classify-unsupervised for more information
     #   on the data returned.
     #
     def unsupervised_classify(value=nil, params={})
       endpoint, params, config = common_endpoint(value, params, 
         Configuration::ENDPOINTS[:unsupervised_classify])
+      Connection.new(endpoint, params, config).request
+    end
+    
+    # Runs multiple analysis operations in one API call.
+    #
+    # @param [String] value (nil) URL or Text
+    # @param [Hash] params The Combined endpoint options
+    # @option params [String] :url The URL
+    # @option params [String] :text Text
+    # @option params [Array<String>] :endpoint Array of endpoints
+    #
+    # @return [Hash, nil] A hash of result. See
+    #   http://docs.aylien.com/docs/combined for more information
+    #   on the data returned.
+    #
+    def combined(value=nil, params={})
+      endpoint, params, config = common_endpoint(value, params, 
+        Configuration::ENDPOINTS[:combined])
       Connection.new(endpoint, params, config).request
     end
     
@@ -265,7 +294,7 @@ module AylienTextApi
     # @option params [String] :url The URL
     #
     # @return [Hash, nil] A hash of result. See
-    #   http://aylien.com/text-api-doc#image_tags for more information
+    #   http://docs.aylien.com/docs/image-tags for more information
     #   on the data returned.
     #
     def image_tags(value=nil, params={})

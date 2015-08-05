@@ -12,12 +12,12 @@ http_interactions:
       Accept:
       - "*/*"
       User-Agent:
-      - Aylien Text API Ruby Gem 0.2.0
+      - Aylien Text API Ruby Gem 0.3.0
       Content-Type:
       - application/x-www-form-urlencoded
-      App-Id:
+      X-Aylien-Textapi-Application-Id:
       - "<PASSWORD>"
-      App-Key:
+      X-Aylien-Textapi-Application-Key:
       - "<PASSWORD>"
   response:
     status:
@@ -27,86 +27,86 @@ http_interactions:
       Server:
       - openresty/1.7.7.2
       Date:
-      - Mon, 16 Mar 2015 14:33:52 GMT
+      - Thu, 06 Aug 2015 16:59:12 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
-      - '1403'
+      - '1470'
       Connection:
       - keep-alive
       X-Ratelimit-Limit:
       - '207000'
       X-Ratelimit-Remaining:
-      - '205523'
+      - '206170'
       X-Ratelimit-Reset:
-      - '1426550400'
+      - '1438905600'
     body:
       encoding: UTF-8
       string: |-
         {
           "phrase": "android",
           "related": [{
+            "phrase": "android version",
+            "distance": 0.3989213705062866
+          }, {
             "phrase": "ios",
-            "distance": 0.8744090795516968
+            "distance": 0.41522765159606934
+          }, {
+            "phrase": "android devices",
+            "distance": 0.423676073551178
+          }, {
+            "phrase": "android lollipop",
+            "distance": 0.4261924624443054
           }, {
             "phrase": "iphone",
-            "distance": 0.8465747237205505
+            "distance": 0.42704862356185913
           }, {
-            "phrase": "iphone ipad",
-            "distance": 0.8268404006958008
-          }, {
-            "phrase": "blackberry playbook",
-            "distance": 0.8240213394165039
-          }, {
-            "phrase": "symbian",
-            "distance": 0.8222286701202393
-          }, {
-            "phrase": "smartphones",
-            "distance": 0.8179833889007568
-          }, {
-            "phrase": "smartphone",
-            "distance": 0.8097701072692871
+            "phrase": "android os",
+            "distance": 0.42750751972198486
           }, {
             "phrase": "froyo",
-            "distance": 0.7987280488014221
+            "distance": 0.4317677617073059
           }, {
-            "phrase": "webos",
-            "distance": 0.7951686382293701
+            "phrase": "smartphone",
+            "distance": 0.4510107636451721
           }, {
-            "phrase": "ipad",
-            "distance": 0.7910612225532532
+            "phrase": "android platform",
+            "distance": 0.45518678426742554
+          }, {
+            "phrase": "ios platforms",
+            "distance": 0.45898914337158203
+          }, {
+            "phrase": "touchwiz ui",
+            "distance": 0.4686887264251709
+          }, {
+            "phrase": "ios devices",
+            "distance": 0.47086143493652344
+          }, {
+            "phrase": "ice cream sandwich",
+            "distance": 0.4727413058280945
+          }, {
+            "phrase": "android device",
+            "distance": 0.4732778072357178
+          }, {
+            "phrase": "apple ios",
+            "distance": 0.47654372453689575
+          }, {
+            "phrase": "windows phone",
+            "distance": 0.47724878787994385
+          }, {
+            "phrase": "ios version",
+            "distance": 0.47820836305618286
           }, {
             "phrase": "app",
-            "distance": 0.7821643352508545
+            "distance": 0.4802556037902832
           }, {
-            "phrase": "blackberry",
-            "distance": 0.7789986729621887
+            "phrase": "custom roms",
+            "distance": 0.4839458465576172
           }, {
-            "phrase": "jelly bean",
-            "distance": 0.7675120830535889
-          }, {
-            "phrase": "ipod touch",
-            "distance": 0.762033998966217
-          }, {
-            "phrase": "symbian s60",
-            "distance": 0.7563616633415222
-          }, {
-            "phrase": "kitkat",
-            "distance": 0.7541030645370483
-          }, {
-            "phrase": "iphones",
-            "distance": 0.7453151345252991
-          }, {
-            "phrase": "cyanogenmod",
-            "distance": 0.7441946864128113
-          }, {
-            "phrase": "jailbroken",
-            "distance": 0.7417730093002319
-          }, {
-            "phrase": "tizen",
-            "distance": 0.7413533329963684
+            "phrase": "android apps",
+            "distance": 0.4847920536994934
           }]
         }
     http_version: 
-  recorded_at: Mon, 16 Mar 2015 14:33:52 GMT
+  recorded_at: Thu, 06 Aug 2015 16:59:12 GMT
 recorded_with: VCR 2.9.3

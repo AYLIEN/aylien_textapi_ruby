@@ -12,12 +12,12 @@ http_interactions:
       Accept:
       - "*/*"
       User-Agent:
-      - Aylien Text API Ruby Gem 0.2.0
+      - Aylien Text API Ruby Gem 0.3.0
       Content-Type:
       - application/x-www-form-urlencoded
-      App-Id:
+      X-Aylien-Textapi-Application-Id:
       - "<PASSWORD>"
-      App-Key:
+      X-Aylien-Textapi-Application-Key:
       - "<PASSWORD>"
   response:
     status:
@@ -27,7 +27,7 @@ http_interactions:
       Server:
       - openresty/1.7.7.2
       Date:
-      - Mon, 16 Mar 2015 14:33:47 GMT
+      - Thu, 06 Aug 2015 16:59:25 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
@@ -37,9 +37,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '207000'
       X-Ratelimit-Remaining:
-      - '205529'
+      - '206158'
       X-Ratelimit-Reset:
-      - '1426550400'
+      - '1438905600'
     body:
       encoding: UTF-8
       string: |-
@@ -47,9 +47,9 @@ http_interactions:
           "polarity": "positive",
           "subjectivity": "subjective",
           "text": "I really enjoyed using the Canon Ixus in Madrid.\n      The Panasonic Lumix is a poor camera, but the Canon Ixus is really sleek.\n      The Canon Ixus is much better than the Panasonic Lumix.\n      All I want to do with a camera is point it and then just press the button.\n      The Canon Ixus is perfect for that. You will soon get great photos\n      with very little effort. I had previously returned a Panasonic Lumix\n      because the pictures were not of the quality I expected.\n      Spending the money on the Canon was a smart move.\n      I would recommend the Ixus to anyone without hesitation.\n      Two small issues to be pointed out: firstly, the battery\n      life is not fantastic. Also, the zoom is not very powerful.\n      If your subject is far away, you should not expect good results.\n      Review made by John Irving from Florida.",
-          "polarity_confidence": 0.9751552795031055,
+          "polarity_confidence": 0.9999997111599744,
           "subjectivity_confidence": 1.0
         }
     http_version: 
-  recorded_at: Mon, 16 Mar 2015 14:33:47 GMT
+  recorded_at: Thu, 06 Aug 2015 16:59:25 GMT
 recorded_with: VCR 2.9.3

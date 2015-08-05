@@ -30,5 +30,6 @@ describe AylienTextApi::Client do
   require_relative './summarize'
   require_relative './microformats'
   require_relative './unsupervised_classify'
+  require_relative './combined'
   require_relative './image_tags'
 end

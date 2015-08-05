@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.license     = 'Apache License, Version 2.0'
   s.email       = ["hello@aylien.com", "hamed.r.nik@gmail.com"]
   s.homepage    = "https://github.com/AYLIEN/aylien_textapi_ruby"
-  s.summary     = %q{Aylien Text API is a package of nine different Natural Language Processing, Information Retrieval and Machine Learning APIs that can be quickly and easily adapted to your processes and applications.}
-  s.description = %q{Aylien Text API is a package of nine different Natural Language Processing, Information Retrieval and Machine Learning APIs that can be quickly and easily adapted to your processes and applications.}
+  s.summary     = %q{AYLIEN Text Analysis API is a package of Natural Language Processing and Machine Learning-powered tools for analyzing and extracting various kinds of information from text and images.}
+  s.description = %q{AYLIEN Text Analysis API is a package of Natural Language Processing and Machine Learning-powered tools for analyzing and extracting various kinds of information from text and images.}
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")

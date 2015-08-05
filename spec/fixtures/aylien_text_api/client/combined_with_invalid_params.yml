@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: post
-    uri: https://api.aylien.com/api/v1/extract
+    uri: https://api.aylien.com/api/v1/combined
     body:
       encoding: US-ASCII
-      string: text=The+oil-rich+billionaires+of+the+Gulf+have+planted%0A++++++++++++++++a+flag+at+the+heart+of+the+sporting+landscape+in+recent+years.
+      string: wrong_param=CCTV+footage+shows+the+moment+a+suicide+car+bomber+detonates%0A++++++a+device+in+Beirut+on+Tuesday.+The+incident+took+place+in+an+area%0A++++++of+support+for+Hezbollah+and+left+four+people+dead+with+many+more+wounded.%0A++++++A+group+calling+itself+the+al-Nusra+Front+in+Lebanon+has+claimed%0A++++++responsibility+for+the+attack+saying+it+was+in+retaliation+for%0A++++++Hezbollah%27s+military+support+of+president+Bashar+al-Assad%27s+forces+in+Syria&endpoint=extract&endpoint=concepts&endpoint=entities&endpoint=summarize&endpoint=classify&endpoint=hashtags&endpoint=language
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
@@ -27,31 +27,31 @@ http_interactions:
       Server:
       - openresty/1.7.7.2
       Date:
-      - Thu, 06 Aug 2015 16:59:22 GMT
+      - Thu, 06 Aug 2015 16:59:34 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
-      - '218'
+      - '219'
       Connection:
       - keep-alive
       X-Ratelimit-Limit:
       - '207000'
       X-Ratelimit-Remaining:
-      - '206161'
+      - '206143'
       X-Ratelimit-Reset:
       - '1438905600'
     body:
       encoding: UTF-8
       string: |-
         {
-          "error": "requirement failed: either html or url is required",
+          "error": "requirement failed: either text or url is required",
           "errors": [{
             "reason": "required",
-            "message": "either html or url is required",
+            "message": "either text or url is required",
             "locationType": "parameter",
-            "location": "url"
+            "location": "text"
           }]
         }
     http_version: 
-  recorded_at: Thu, 06 Aug 2015 16:59:23 GMT
+  recorded_at: Thu, 06 Aug 2015 16:59:34 GMT
 recorded_with: VCR 2.9.3

@@ -37,7 +37,8 @@ module AylienTextApi
       summarize: 'summarize',
       microformats: 'microformats',
       unsupervised_classify: 'classify/unsupervised',
-      image_tags: 'image-tags'
+      image_tags: 'image-tags',
+      combined: 'combined'
     }
 
     # Build accessor methods for every config options so we can do this, for example:

@@ -12,12 +12,12 @@ http_interactions:
       Accept:
       - "*/*"
       User-Agent:
-      - Aylien Text API Ruby Gem 0.2.0
+      - Aylien Text API Ruby Gem 0.3.0
       Content-Type:
       - application/x-www-form-urlencoded
-      App-Id:
+      X-Aylien-Textapi-Application-Id:
       - "<PASSWORD>"
-      App-Key:
+      X-Aylien-Textapi-Application-Key:
       - "<PASSWORD>"
   response:
     status:
@@ -27,22 +27,31 @@ http_interactions:
       Server:
       - openresty/1.7.7.2
       Date:
-      - Mon, 16 Mar 2015 14:33:28 GMT
+      - Thu, 06 Aug 2015 17:00:20 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
-      - '70'
+      - '219'
       Connection:
       - keep-alive
       X-Ratelimit-Limit:
       - '207000'
       X-Ratelimit-Remaining:
-      - '205545'
+      - '206060'
       X-Ratelimit-Reset:
-      - '1426550400'
+      - '1438905600'
     body:
       encoding: UTF-8
-      string: '{"error" : "requirement failed: you must either provide url or text."}'
+      string: |-
+        {
+          "error": "requirement failed: either text or url is required",
+          "errors": [{
+            "reason": "required",
+            "message": "either text or url is required",
+            "locationType": "parameter",
+            "location": "text"
+          }]
+        }
     http_version: 
-  recorded_at: Mon, 16 Mar 2015 14:33:28 GMT
+  recorded_at: Thu, 06 Aug 2015 17:00:20 GMT
 recorded_with: VCR 2.9.3
