@@ -28,6 +28,7 @@ module AylienTextApi
     ENDPOINTS = {
       extract:  'extract',
       classify: 'classify',
+      classify_by_taxonomy: 'classify/:taxonomy',
       concepts: 'concepts',
       entities: 'entities',
       hashtags: 'hashtags',

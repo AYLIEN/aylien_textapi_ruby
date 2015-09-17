@@ -16,7 +16,10 @@ module AylienTextApi
   class Error < StandardError
     # Raised when Aylien Text API returns a 4xx HTTP status code
     ClientError = Class.new(self)
-
+    
+    # Raised when Aylien Text API input is invalid 
+    InvalidInput = Class.new(ClientError)
+    
     # Raised when Aylien Text API returns the HTTP status code 400
     BadRequest = Class.new(ClientError)
 
@@ -68,7 +71,7 @@ module AylienTextApi
       500 => AylienTextApi::Error::InternalServerError,
       502 => AylienTextApi::Error::BadGateway,
       503 => AylienTextApi::Error::ServiceUnavailable,
-      504 => AylienTextApi::Error::GatewayTimeout,
+      504 => AylienTextApi::Error::GatewayTimeout
     }
 
     class << self

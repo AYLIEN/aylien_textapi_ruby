@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: post
-    uri: https://api.aylien.com/api/v1/image-tags
+    uri: https://api.aylien.com/api/v1/classify/random_string
     body:
       encoding: US-ASCII
-      string: ''
+      string: text=CCTV+footage+shows+the+moment+a+suicide+car+bomber+detonates%0A++++++a+device+in+Beirut+on+Tuesday.+The+incident+took+place+in+an+area%0A++++++of+support+for+Hezbollah+and+left+four+people+dead+with+many+more+wounded.%0A++++++A+group+calling+itself+the+al-Nusra+Front+in+Lebanon+has+claimed%0A++++++responsibility+for+the+attack+saying+it+was+in+retaliation+for%0A++++++Hezbollah%27s+military+support+of+president+Bashar+al-Assad%27s+forces+in+Syria&taxonomy=random_string
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
@@ -21,42 +21,28 @@ http_interactions:
       - "<PASSWORD>"
   response:
     status:
-      code: 400
-      message: Bad Request
+      code: 404
+      message: Not Found
     headers:
       Server:
       - openresty/1.7.7.2
       Date:
-      - Thu, 17 Sep 2015 11:17:34 GMT
+      - Thu, 17 Sep 2015 11:17:31 GMT
       Content-Type:
-      - application/json;charset=UTF-8
+      - text/plain;charset=UTF-8
       Content-Length:
-      - '345'
+      - '42'
       Connection:
       - keep-alive
       X-Ratelimit-Limit:
       - '207000'
       X-Ratelimit-Remaining:
-      - '206402'
+      - '206406'
       X-Ratelimit-Reset:
       - '1442534400'
     body:
       encoding: UTF-8
-      string: |-
-        {
-          "error": "requirement failed: Form field 'url' Required",
-          "errors": [{
-            "reason": "required",
-            "message": "Form field 'url' Required",
-            "locationType": "parameter",
-            "location": "url"
-          }, {
-            "reason": "required",
-            "message": "Query parameter 'url' Required",
-            "locationType": "parameter",
-            "location": "url"
-          }]
-        }
+      string: The requested resource could not be found.
     http_version: 
-  recorded_at: Thu, 17 Sep 2015 11:17:34 GMT
+  recorded_at: Thu, 17 Sep 2015 11:17:31 GMT
 recorded_with: VCR 2.9.3

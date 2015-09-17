@@ -12,7 +12,7 @@ http_interactions:
       Accept:
       - "*/*"
       User-Agent:
-      - Aylien Text API Ruby Gem 0.3.0
+      - Aylien Text API Ruby Gem 0.4.0
       Content-Type:
       - application/x-www-form-urlencoded
       X-Aylien-Textapi-Application-Id:
@@ -27,7 +27,7 @@ http_interactions:
       Server:
       - openresty/1.7.7.2
       Date:
-      - Thu, 06 Aug 2015 16:59:35 GMT
+      - Thu, 17 Sep 2015 11:18:32 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
@@ -37,9 +37,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '207000'
       X-Ratelimit-Remaining:
-      - '206143'
+      - '206303'
       X-Ratelimit-Reset:
-      - '1438905600'
+      - '1442534400'
       X-Mashape-Billing:
       - requests=7
     body:
@@ -239,7 +239,7 @@ http_interactions:
         Y2guY29tLzIwMTQvMTAvMjAvdGhlLXN1cGVyLXNsaW0ta2luZGxlLXZveWFn
         ZS1pcy1hLWdyZWF0LXRyYXZlbC1jb21wYW5pb24vZmVlZC8iXX19LHsiZW5k
         cG9pbnQiOiJsYW5ndWFnZSIsInJlc3VsdCI6eyJsYW5nIjoiZW4iLCJjb25m
-        aWRlbmNlIjowLjk5OTk5Njg5NTEwMTM4NDd9fSx7ImVuZHBvaW50IjoiZW50
+        aWRlbmNlIjowLjk5OTk5Njc1NjEzODQ3NDR9fSx7ImVuZHBvaW50IjoiZW50
         aXRpZXMiLCJyZXN1bHQiOnsibGFuZ3VhZ2UiOiJlbiIsImVudGl0aWVzIjp7
         Im9yZ2FuaXphdGlvbiI6WyJQZW5ndWluIEJvb2tzIiwiUGVuZ3VpbiJdLCJs
         b2NhdGlvbiI6WyJMQ0QuIiwiRXVyb3BlIl0sImtleXdvcmQiOlsiVm95YWdl
@@ -290,9 +290,9 @@ http_interactions:
         LSBjb21wdXRpbmcgYW5kIGluZm9ybWF0aW9uIHRlY2hub2xvZ3kiLCJjb2Rl
         IjoiMDQwMDMwMDAiLCJjb25maWRlbmNlIjoxLjB9XX19LHsiZW5kcG9pbnQi
         OiJoYXNodGFncyIsInJlc3VsdCI6eyJsYW5ndWFnZSI6ImVuIiwiaGFzaHRh
-        Z3MiOlsiI0VyZWFkZXIiLCIjUGVuZ3VpbkNsYXNzaWNzIiwiI0Vib29rIiwi
-        I1NwaXJpdHVhbGl0eSIsIiMzRyIsIiNQZW5ndWluQm9va3MiLCIjQWxsZW5M
-        YW5lIiwiI1ZLS3Jpc2huYU1lbm9uIl19fSx7ImVuZHBvaW50Ijoic3VtbWFy
+        Z3MiOlsiI0VyZWFkZXIiLCIjU3Bpcml0dWFsaXR5IiwiI1Blbmd1aW5Cb29r
+        cyIsIiNFYm9vayIsIiNBbGxlbkxhbmUiLCIjVktLcmlzaG5hTWVub24iLCIj
+        UGVuZ3VpbkNsYXNzaWNzIiwiIzNHIl19fSx7ImVuZHBvaW50Ijoic3VtbWFy
         aXplIiwicmVzdWx0Ijp7InNlbnRlbmNlcyI6WyJJbiAxOTM1LCBTaXIgQWxs
         ZW4gTGFuZSBhbmQgVi4gSy4gS3Jpc2huYSBNZW5vbiBmb3VuZGVkIFBlbmd1
         aW4gQm9va3MsIGEgY29tcGFueSBkZWRpY2F0ZWQgdG8gcHJvZHVjaW5nIGhp
@@ -311,5 +311,5 @@ http_interactions:
         ZWFkaW5nIGV4cGVyaWVuY2UgYWtpbiB0byB0aHVtYmluZyB0aHJvdWdoIGEg
         UGVuZ3VpbiBDbGFzc2ljLiJdfX1dfQ==
     http_version: 
-  recorded_at: Thu, 06 Aug 2015 16:59:35 GMT
+  recorded_at: Thu, 17 Sep 2015 11:18:32 GMT
 recorded_with: VCR 2.9.3

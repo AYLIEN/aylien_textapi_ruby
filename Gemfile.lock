@@ -1,19 +1,19 @@
 PATH
   remote: .
   specs:
-    aylien_text_api (0.3.0)
+    aylien_text_api (0.4.0)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.3.6)
+    addressable (2.3.8)
     crack (0.4.2)
       safe_yaml (~> 1.0.0)
-    minitest (5.4.3)
-    rake (10.4.0)
+    minitest (5.8.0)
+    rake (10.4.2)
     safe_yaml (1.0.4)
     vcr (2.9.3)
-    webmock (1.20.4)
+    webmock (1.21.0)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
 
@@ -28,4 +28,4 @@ DEPENDENCIES
   webmock (~> 1.20)
 
 BUNDLED WITH
-   1.10.5
+   1.10.6

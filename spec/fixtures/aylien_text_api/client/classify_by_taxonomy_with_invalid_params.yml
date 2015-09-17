@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: post
-    uri: https://api.aylien.com/api/v1/image-tags
+    uri: https://api.aylien.com/api/v1/classify/iab-qag
     body:
       encoding: US-ASCII
-      string: ''
+      string: wrong_param=CCTV+footage+shows+the+moment+a+suicide+car+bomber+detonates%0A++++++a+device+in+Beirut+on+Tuesday.+The+incident+took+place+in+an+area%0A++++++of+support+for+Hezbollah+and+left+four+people+dead+with+many+more+wounded.%0A++++++A+group+calling+itself+the+al-Nusra+Front+in+Lebanon+has+claimed%0A++++++responsibility+for+the+attack+saying+it+was+in+retaliation+for%0A++++++Hezbollah%27s+military+support+of+president+Bashar+al-Assad%27s+forces+in+Syria&taxonomy=iab-qag
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
@@ -27,36 +27,31 @@ http_interactions:
       Server:
       - openresty/1.7.7.2
       Date:
-      - Thu, 17 Sep 2015 11:17:34 GMT
+      - Thu, 17 Sep 2015 11:17:30 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
-      - '345'
+      - '219'
       Connection:
       - keep-alive
       X-Ratelimit-Limit:
       - '207000'
       X-Ratelimit-Remaining:
-      - '206402'
+      - '206407'
       X-Ratelimit-Reset:
       - '1442534400'
     body:
       encoding: UTF-8
       string: |-
         {
-          "error": "requirement failed: Form field 'url' Required",
+          "error": "requirement failed: either text or url is required",
           "errors": [{
             "reason": "required",
-            "message": "Form field 'url' Required",
+            "message": "either text or url is required",
             "locationType": "parameter",
-            "location": "url"
-          }, {
-            "reason": "required",
-            "message": "Query parameter 'url' Required",
-            "locationType": "parameter",
-            "location": "url"
+            "location": "text"
           }]
         }
     http_version: 
-  recorded_at: Thu, 17 Sep 2015 11:17:34 GMT
+  recorded_at: Thu, 17 Sep 2015 11:17:31 GMT
 recorded_with: VCR 2.9.3

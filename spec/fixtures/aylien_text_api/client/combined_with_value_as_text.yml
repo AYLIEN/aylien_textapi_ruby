@@ -12,7 +12,7 @@ http_interactions:
       Accept:
       - "*/*"
       User-Agent:
-      - Aylien Text API Ruby Gem 0.3.0
+      - Aylien Text API Ruby Gem 0.4.0
       Content-Type:
       - application/x-www-form-urlencoded
       X-Aylien-Textapi-Application-Id:
@@ -27,24 +27,24 @@ http_interactions:
       Server:
       - openresty/1.7.7.2
       Date:
-      - Thu, 06 Aug 2015 16:59:33 GMT
+      - Thu, 17 Sep 2015 11:18:26 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
-      - '3988'
+      - '3986'
       Connection:
       - keep-alive
       X-Ratelimit-Limit:
       - '207000'
       X-Ratelimit-Remaining:
-      - '206151'
+      - '206324'
       X-Ratelimit-Reset:
-      - '1438905600'
+      - '1442534400'
       X-Mashape-Billing:
       - requests=7
     body:
       encoding: UTF-8
-      string: '{"text":"\nCCTV footage shows the moment a suicide car bomber detonates\n      a
+      string: '{"text":"CCTV footage shows the moment a suicide car bomber detonates\n      a
         device in Beirut on Tuesday. The incident took place in an area\n      of
         support for Hezbollah and left four people dead with many more wounded.\n      A
         group calling itself the al-Nusra Front in Lebanon has claimed\n      responsibility
@@ -55,16 +55,16 @@ http_interactions:
         Hezbollah and left four people dead with many more wounded.\n      A group
         calling itself the al-Nusra Front in Lebanon has claimed\n      responsibility
         for the attack saying it was in retaliation for\n      Hezbollah''s military
-        support of president Bashar al-Assad''s forces in Syria","videos":[],"title":"","feeds":[]}},{"endpoint":"language","result":{"lang":"en","confidence":0.9999971731429884}},{"endpoint":"entities","result":{"language":"en","entities":{"date":["Tuesday"],"location":["Beirut","Lebanon","Syria"],"keyword":["support
+        support of president Bashar al-Assad''s forces in Syria","videos":[],"title":"","feeds":[]}},{"endpoint":"language","result":{"lang":"en","confidence":0.9999981613101834}},{"endpoint":"entities","result":{"language":"en","entities":{"date":["Tuesday"],"location":["Beirut","Lebanon","Syria"],"keyword":["support
         of president Bashar","support for Hezbollah","support","Hezbollah","suicide","bomber","device","Bashar","president","Beirut","moment","Tuesday","military","responsibility","incident","Lebanon","Front","al-Assad","group","dead"],"organization":["Hezbollah"]}}},{"endpoint":"concepts","result":{"language":"en","concepts":{"http://dbpedia.org/resource/Bashar_al-Assad":{"surfaceForms":[{"string":"Bashar
-        al-Assad","score":1.0,"offset":403}],"types":["http://dbpedia.org/ontology/Agent","http://www.wikidata.org/entity/Q215627","http://schema.org/Person","http://xmlns.com/foaf/0.1/Person","http://www.wikidata.org/entity/Q5","http://dbpedia.org/ontology/Person"],"support":1139},"http://dbpedia.org/resource/Syria":{"surfaceForms":[{"string":"Syria","score":0.9999997769859554,"offset":431}],"types":["http://dbpedia.org/ontology/Country"],"support":26138},"http://dbpedia.org/resource/Beirut":{"surfaceForms":[{"string":"Beirut","score":0.9999825931459005,"offset":80}],"types":["http://dbpedia.org/ontology/Location","http://schema.org/Place","http://dbpedia.org/ontology/Place","http://dbpedia.org/ontology/PopulatedPlace","http://www.wikidata.org/entity/Q486972","http://dbpedia.org/ontology/Settlement"],"support":8176},"http://dbpedia.org/resource/Hezbollah":{"surfaceForms":[{"string":"Hezbollah","score":1.0,"offset":155}],"types":["http://dbpedia.org/ontology/PoliticalParty"],"support":5001},"http://dbpedia.org/resource/Al-Nusra_Front":{"surfaceForms":[{"string":"al-Nusra
-        Front","score":1.0,"offset":248}],"types":[""],"support":411},"http://dbpedia.org/resource/Closed-circuit_television":{"surfaceForms":[{"string":"CCTV","score":0.9997132750008201,"offset":1}],"types":[""],"support":1724},"http://dbpedia.org/resource/Bomber":{"surfaceForms":[{"string":"bomber","score":0.9524579388652058,"offset":45}],"types":[""],"support":3798},"http://dbpedia.org/resource/Lebanon":{"surfaceForms":[{"string":"Lebanon","score":0.9999999930598733,"offset":266}],"types":["http://dbpedia.org/ontology/Country"],"support":23160}}}},{"endpoint":"classify","result":{"language":"en","categories":[{"label":"defence
-        - biological and chemical weapons","code":"11001007","confidence":1.0}]}},{"endpoint":"hashtags","result":{"language":"en","hashtags":["#Hezbollah","#CCTV","#BasharAlAssad","#Syria","#Beirut","#AlNusraFront","#ClosedcircuitTelevision","#Bomber","#Lebanon"]}},{"endpoint":"summarize","result":{"sentences":["The
+        al-Assad","score":1.0,"offset":402}],"types":["http://dbpedia.org/ontology/Agent","http://www.wikidata.org/entity/Q215627","http://schema.org/Person","http://xmlns.com/foaf/0.1/Person","http://www.wikidata.org/entity/Q5","http://dbpedia.org/ontology/Person"],"support":1139},"http://dbpedia.org/resource/Syria":{"surfaceForms":[{"string":"Syria","score":0.9999997769859554,"offset":430}],"types":["http://dbpedia.org/ontology/Country"],"support":26138},"http://dbpedia.org/resource/Beirut":{"surfaceForms":[{"string":"Beirut","score":0.9999825931459005,"offset":79}],"types":["http://dbpedia.org/ontology/Location","http://schema.org/Place","http://dbpedia.org/ontology/Place","http://dbpedia.org/ontology/PopulatedPlace","http://www.wikidata.org/entity/Q486972","http://dbpedia.org/ontology/Settlement"],"support":8176},"http://dbpedia.org/resource/Hezbollah":{"surfaceForms":[{"string":"Hezbollah","score":1.0,"offset":154}],"types":["http://dbpedia.org/ontology/PoliticalParty"],"support":5001},"http://dbpedia.org/resource/Al-Nusra_Front":{"surfaceForms":[{"string":"al-Nusra
+        Front","score":1.0,"offset":247}],"types":[""],"support":411},"http://dbpedia.org/resource/Closed-circuit_television":{"surfaceForms":[{"string":"CCTV","score":0.9997132750008201,"offset":0}],"types":[""],"support":1724},"http://dbpedia.org/resource/Bomber":{"surfaceForms":[{"string":"bomber","score":0.9524579388652058,"offset":44}],"types":[""],"support":3798},"http://dbpedia.org/resource/Lebanon":{"surfaceForms":[{"string":"Lebanon","score":0.9999999930598733,"offset":265}],"types":["http://dbpedia.org/ontology/Country"],"support":23160}}}},{"endpoint":"classify","result":{"language":"en","categories":[{"label":"defence
+        - biological and chemical weapons","code":"11001007","confidence":1.0}]}},{"endpoint":"hashtags","result":{"language":"en","hashtags":["#Hezbollah","#Beirut","#ClosedcircuitTelevision","#Syria","#Lebanon","#AlNusraFront","#CCTV","#Bomber","#BasharAlAssad"]}},{"endpoint":"summarize","result":{"sentences":["The
         incident took place in an area\n      of support for Hezbollah and left four
         people dead with many more wounded.","A group calling itself the al-Nusra
         Front in Lebanon has claimed\n      responsibility for the attack saying it
         was in retaliation for\n      Hezbollah''s military support of president Bashar
         al-Assad''s forces in Syria"]}}]}'
     http_version: 
-  recorded_at: Thu, 06 Aug 2015 16:59:33 GMT
+  recorded_at: Thu, 17 Sep 2015 11:18:27 GMT
 recorded_with: VCR 2.9.3

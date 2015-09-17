@@ -32,4 +32,5 @@ describe AylienTextApi::Client do
   require_relative './unsupervised_classify'
   require_relative './combined'
   require_relative './image_tags'
+  require_relative './classify_by_taxonomy'
 end

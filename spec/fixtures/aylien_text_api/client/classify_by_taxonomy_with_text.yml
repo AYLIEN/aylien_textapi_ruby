@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: post
-    uri: https://api.aylien.com/api/v1/classify
+    uri: https://api.aylien.com/api/v1/classify/iab-qag
     body:
       encoding: US-ASCII
-      string: text=CCTV+footage+shows+the+moment+a+suicide+car+bomber+detonates%0A++++++a+device+in+Beirut+on+Tuesday.+The+incident+took+place+in+an+area%0A++++++of+support+for+Hezbollah+and+left+four+people+dead+with+many+more+wounded.%0A++++++A+group+calling+itself+the+al-Nusra+Front+in+Lebanon+has+claimed%0A++++++responsibility+for+the+attack+saying+it+was+in+retaliation+for%0A++++++Hezbollah%27s+military+support+of+president+Bashar+al-Assad%27s+forces+in+Syria
+      string: text=CCTV+footage+shows+the+moment+a+suicide+car+bomber+detonates%0A++++++a+device+in+Beirut+on+Tuesday.+The+incident+took+place+in+an+area%0A++++++of+support+for+Hezbollah+and+left+four+people+dead+with+many+more+wounded.%0A++++++A+group+calling+itself+the+al-Nusra+Front+in+Lebanon+has+claimed%0A++++++responsibility+for+the+attack+saying+it+was+in+retaliation+for%0A++++++Hezbollah%27s+military+support+of+president+Bashar+al-Assad%27s+forces+in+Syria&taxonomy=iab-qag
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
@@ -27,17 +27,17 @@ http_interactions:
       Server:
       - openresty/1.7.7.2
       Date:
-      - Thu, 17 Sep 2015 11:21:05 GMT
+      - Thu, 17 Sep 2015 11:17:31 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
-      - '605'
+      - '1104'
       Connection:
       - keep-alive
       X-Ratelimit-Limit:
       - '207000'
       X-Ratelimit-Remaining:
-      - '206278'
+      - '206405'
       X-Ratelimit-Reset:
       - '1442534400'
     body:
@@ -45,13 +45,31 @@ http_interactions:
       string: |-
         {
           "text": "CCTV footage shows the moment a suicide car bomber detonates\n      a device in Beirut on Tuesday. The incident took place in an area\n      of support for Hezbollah and left four people dead with many more wounded.\n      A group calling itself the al-Nusra Front in Lebanon has claimed\n      responsibility for the attack saying it was in retaliation for\n      Hezbollah's military support of president Bashar al-Assad's forces in Syria",
+          "taxonomy": "iab-qag",
           "language": "en",
           "categories": [{
-            "label": "defence - biological and chemical weapons",
-            "code": "11001007",
-            "confidence": 1.0
+            "confident": true,
+            "score": 0.5310729690053986,
+            "label": "Islam",
+            "links": [{
+              "rel": "self",
+              "link": "https://api.aylien.com/api/v1/classify/taxonomy/iab-qag/IAB23-7"
+            }, {
+              "rel": "parent",
+              "link": "https://api.aylien.com/api/v1/classify/taxonomy/iab-qag/IAB23"
+            }],
+            "id": "IAB23-7"
+          }, {
+            "confident": true,
+            "score": 0.12306655961300701,
+            "label": "Religion & Spirituality",
+            "links": [{
+              "rel": "self",
+              "link": "https://api.aylien.com/api/v1/classify/taxonomy/iab-qag/IAB23"
+            }],
+            "id": "IAB23"
           }]
         }
     http_version: 
-  recorded_at: Thu, 17 Sep 2015 11:21:05 GMT
+  recorded_at: Thu, 17 Sep 2015 11:17:31 GMT
 recorded_with: VCR 2.9.3

@@ -12,7 +12,7 @@ http_interactions:
       Accept:
       - "*/*"
       User-Agent:
-      - Aylien Text API Ruby Gem 0.3.0
+      - Aylien Text API Ruby Gem 0.4.0
       Content-Type:
       - application/x-www-form-urlencoded
       X-Aylien-Textapi-Application-Id:
@@ -27,7 +27,7 @@ http_interactions:
       Server:
       - openresty/1.7.7.2
       Date:
-      - Thu, 06 Aug 2015 16:59:32 GMT
+      - Thu, 17 Sep 2015 11:18:24 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
@@ -37,9 +37,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '207000'
       X-Ratelimit-Remaining:
-      - '206153'
+      - '206326'
       X-Ratelimit-Reset:
-      - '1438905600'
+      - '1442534400'
     body:
       encoding: UTF-8
       string: |-
@@ -61,7 +61,7 @@ http_interactions:
               "familyName": "van der Harten",
               "givenName": "Sally",
               "honorificSuffix": "Ph.D.",
-              "id": "e4a7e359ded025c9cb0bfc559044f16952021e38",
+              "id": "561e55f44f66eb96656a87b3b424c3041ea637c1",
               "additionalName": "K.",
               "honorificPrefix": "Dr."
             },
@@ -80,5 +80,5 @@ http_interactions:
           }]
         }
     http_version: 
-  recorded_at: Thu, 06 Aug 2015 16:59:32 GMT
+  recorded_at: Thu, 17 Sep 2015 11:18:24 GMT
 recorded_with: VCR 2.9.3

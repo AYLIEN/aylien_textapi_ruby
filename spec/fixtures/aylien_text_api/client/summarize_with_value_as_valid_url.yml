@@ -12,7 +12,7 @@ http_interactions:
       Accept:
       - "*/*"
       User-Agent:
-      - Aylien Text API Ruby Gem 0.3.0
+      - Aylien Text API Ruby Gem 0.4.0
       Content-Type:
       - application/x-www-form-urlencoded
       X-Aylien-Textapi-Application-Id:
@@ -27,7 +27,7 @@ http_interactions:
       Server:
       - openresty/1.7.7.2
       Date:
-      - Thu, 06 Aug 2015 17:00:03 GMT
+      - Thu, 17 Sep 2015 11:18:16 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
@@ -37,9 +37,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '207000'
       X-Ratelimit-Remaining:
-      - '206068'
+      - '206336'
       X-Ratelimit-Reset:
-      - '1438905600'
+      - '1442534400'
     body:
       encoding: ASCII-8BIT
       string: !binary |-
@@ -88,5 +88,5 @@ http_interactions:
         bGwgd2VsbCwgaGUgaXMgYSBnb29kIGZpbmlzaGVyLCBoZSBjYW4gcHJlc3Mg
         YW5kIHJlY292ZXIgdGhlIGJhbGwuIl0KfQ==
     http_version: 
-  recorded_at: Thu, 06 Aug 2015 17:00:03 GMT
+  recorded_at: Thu, 17 Sep 2015 11:18:16 GMT
 recorded_with: VCR 2.9.3
