@@ -49,7 +49,8 @@ module AylienTextApi
     def extract(value=nil, params={})
       endpoint, params, config = common_endpoint(value, params, 
         Configuration::ENDPOINTS[:extract])
-      Connection.new(endpoint, params, config).request
+      @connection = Connection.new(endpoint, params, config)
+      @connection.request
     end
     
     # Like extract, but calls request! so an exception is raised 
@@ -58,7 +59,8 @@ module AylienTextApi
     def extract!(value=nil, params={})
       endpoint, params, config = common_endpoint(value, params, 
         Configuration::ENDPOINTS[:extract])
-      Connection.new(endpoint, params, config).request!
+      @connection = Connection.new(endpoint, params, config)
+      @connection.request!
     end
 
     # Classifies a piece of text according to the specified taxonomy.
@@ -78,7 +80,8 @@ module AylienTextApi
     def classify_by_taxonomy(value=nil, params={})
       endpoint, params, config = common_endpoint(value, params, 
         Configuration::ENDPOINTS[:classify_by_taxonomy])
-      Connection.new(endpoint, params, config).request
+      @connection = Connection.new(endpoint, params, config)
+      @connection.request
     end
     
     # Like classify_by_taxonomy, but calls request! so an exception is raised 
@@ -87,7 +90,8 @@ module AylienTextApi
     def classify_by_taxonomy!(value=nil, params={})
       endpoint, params, config = common_endpoint(value, params, 
         Configuration::ENDPOINTS[:classify_by_taxonomy])
-      Connection.new(endpoint, params, config).request!
+      @connection = Connection.new(endpoint, params, config)
+      @connection.request!
     end
     
     # Classifies a piece of text according to IPTC NewsCode standard.
@@ -107,7 +111,8 @@ module AylienTextApi
     def classify(value=nil, params={})
       endpoint, params, config = common_endpoint(value, params, 
         Configuration::ENDPOINTS[:classify])
-      Connection.new(endpoint, params, config).request
+      @connection = Connection.new(endpoint, params, config)
+      @connection.request
     end
     
     # Like classify, but calls request! so an exception is raised 
@@ -116,7 +121,8 @@ module AylienTextApi
     def classify!(value=nil, params={})
       endpoint, params, config = common_endpoint(value, params, 
         Configuration::ENDPOINTS[:classify])
-      Connection.new(endpoint, params, config).request!
+      @connection = Connection.new(endpoint, params, config)
+      @connection.request!
     end
 
     # Extracts named entities mentioned in a document, disambiguates
@@ -138,7 +144,8 @@ module AylienTextApi
     def concepts(value=nil, params={})
       endpoint, params, config = common_endpoint(value, params, 
         Configuration::ENDPOINTS[:concepts])
-      Connection.new(endpoint, params, config).request
+      @connection = Connection.new(endpoint, params, config)
+      @connection.request
     end
     
     # Like concepts, but calls request! so an exception is raised 
@@ -147,7 +154,8 @@ module AylienTextApi
     def concepts!(value=nil, params={})
       endpoint, params, config = common_endpoint(value, params, 
         Configuration::ENDPOINTS[:concepts])
-      Connection.new(endpoint, params, config).request!
+      @connection = Connection.new(endpoint, params, config)
+      @connection.request!
     end
 
     # Suggests hashtags describing the document.
@@ -167,7 +175,8 @@ module AylienTextApi
     def hashtags(value=nil, params={})
       endpoint, params, config = common_endpoint(value, params, 
         Configuration::ENDPOINTS[:hashtags])
-      Connection.new(endpoint, params, config).request
+      @connection = Connection.new(endpoint, params, config)
+      @connection.request
     end
     
     # Like hashtags, but calls request! so an exception is raised 
@@ -176,7 +185,8 @@ module AylienTextApi
     def hashtags!(value=nil, params={})
       endpoint, params, config = common_endpoint(value, params, 
         Configuration::ENDPOINTS[:hashtags])
-      Connection.new(endpoint, params, config).request!
+      @connection = Connection.new(endpoint, params, config)
+      @connection.request!
     end
 
     # Extracts named entities (people, organizations and locations) and
@@ -198,7 +208,8 @@ module AylienTextApi
     def entities(value=nil, params={})
       endpoint, params, config = common_endpoint(value, params, 
         Configuration::ENDPOINTS[:entities])
-      Connection.new(endpoint, params, config).request
+      @connection = Connection.new(endpoint, params, config)
+      @connection.request
     end
     
     # Like entities, but calls request! so an exception is raised 
@@ -207,7 +218,8 @@ module AylienTextApi
     def entities!(value=nil, params={})
       endpoint, params, config = common_endpoint(value, params, 
         Configuration::ENDPOINTS[:entities])
-      Connection.new(endpoint, params, config).request!
+      @connection = Connection.new(endpoint, params, config)
+      @connection.request!
     end
     
     # Detects the main language a document is written in and returns it
@@ -225,7 +237,8 @@ module AylienTextApi
     def language(value=nil, params={})
       endpoint, params, config = common_endpoint(value, params, 
         Configuration::ENDPOINTS[:language])
-      Connection.new(endpoint, params, config).request
+      @connection = Connection.new(endpoint, params, config)
+      @connection.request
     end
     
     # Like language, but calls request! so an exception is raised 
@@ -234,7 +247,8 @@ module AylienTextApi
     def language!(value=nil, params={})
       endpoint, params, config = common_endpoint(value, params, 
         Configuration::ENDPOINTS[:language])
-      Connection.new(endpoint, params, config).request!
+      @connection = Connection.new(endpoint, params, config)
+      @connection.request!
     end
     
     # Detects sentiment of a document in terms of
@@ -255,7 +269,8 @@ module AylienTextApi
     def sentiment(value=nil, params={})
       endpoint, params, config = common_endpoint(value, params, 
         Configuration::ENDPOINTS[:sentiment])
-      Connection.new(endpoint, params, config).request
+      @connection = Connection.new(endpoint, params, config)
+      @connection.request
     end
     
     # Like sentiment, but calls request! so an exception is raised 
@@ -264,7 +279,8 @@ module AylienTextApi
     def sentiment!(value=nil, params={})
       endpoint, params, config = common_endpoint(value, params, 
         Configuration::ENDPOINTS[:sentiment])
-      Connection.new(endpoint, params, config).request!
+      @connection = Connection.new(endpoint, params, config)
+      @connection.request!
     end
     # Summarizes an article into a few key sentences.
     #
@@ -293,7 +309,8 @@ module AylienTextApi
     def summarize(value=nil, params={})
       endpoint, params, config = common_endpoint(value, params, 
         Configuration::ENDPOINTS[:summarize])
-      Connection.new(endpoint, params, config).request
+      @connection = Connection.new(endpoint, params, config)
+      @connection.request
     end
     
     # Like summarize, but calls request! so an exception is raised 
@@ -302,7 +319,8 @@ module AylienTextApi
     def summarize!(value=nil, params={})
       endpoint, params, config = common_endpoint(value, params, 
         Configuration::ENDPOINTS[:summarize])
-      Connection.new(endpoint, params, config).request!
+      @connection = Connection.new(endpoint, params, config)
+      @connection.request!
     end
     
     # Returns phrases related to the provided unigram, or bigram.
@@ -320,7 +338,8 @@ module AylienTextApi
     def related(value=nil, params={})
       endpoint, params, config = common_endpoint(value, params, 
         Configuration::ENDPOINTS[:related])
-      Connection.new(endpoint, params, config).request
+      @connection = Connection.new(endpoint, params, config)
+      @connection.request
     end
     
     # Like related, but calls request! so an exception is raised 
@@ -329,7 +348,8 @@ module AylienTextApi
     def related!(value=nil, params={})
       endpoint, params, config = common_endpoint(value, params, 
         Configuration::ENDPOINTS[:related])
-      Connection.new(endpoint, params, config).request!
+      @connection = Connection.new(endpoint, params, config)
+      @connection.request!
     end
     
     # Return Microformats.
@@ -348,7 +368,8 @@ module AylienTextApi
     def microformats(value=nil, params={})
       endpoint, params, config = common_endpoint(value, params, 
         Configuration::ENDPOINTS[:microformats])
-      Connection.new(endpoint, params, config).request
+      @connection = Connection.new(endpoint, params, config)
+      @connection.request
     end
     
     # Like microformats, but calls request! so an exception is raised 
@@ -357,7 +378,8 @@ module AylienTextApi
     def microformats!(value=nil, params={})
       endpoint, params, config = common_endpoint(value, params, 
         Configuration::ENDPOINTS[:microformats])
-      Connection.new(endpoint, params, config).request!
+      @connection = Connection.new(endpoint, params, config)
+      @connection.request!
     end
     
     # Return Unsupervised Classify.
@@ -377,7 +399,8 @@ module AylienTextApi
     def unsupervised_classify(value=nil, params={})
       endpoint, params, config = common_endpoint(value, params, 
         Configuration::ENDPOINTS[:unsupervised_classify])
-      Connection.new(endpoint, params, config).request
+      @connection = Connection.new(endpoint, params, config)
+      @connection.request
     end
     
     # Like unsupervised_classify, but calls request! so an exception is raised 
@@ -386,7 +409,8 @@ module AylienTextApi
     def unsupervised_classify!(value=nil, params={})
       endpoint, params, config = common_endpoint(value, params, 
         Configuration::ENDPOINTS[:unsupervised_classify])
-      Connection.new(endpoint, params, config).request!
+      @connection = Connection.new(endpoint, params, config)
+      @connection.request!
     end
     
     # Runs multiple analysis operations in one API call.
@@ -404,7 +428,8 @@ module AylienTextApi
     def combined(value=nil, params={})
       endpoint, params, config = common_endpoint(value, params, 
         Configuration::ENDPOINTS[:combined])
-      Connection.new(endpoint, params, config).request
+      @connection = Connection.new(endpoint, params, config)
+      @connection.request
     end
     
     # Like combined, but calls request! so an exception is raised 
@@ -413,8 +438,10 @@ module AylienTextApi
     def combined!(value=nil, params={})
       endpoint, params, config = common_endpoint(value, params, 
         Configuration::ENDPOINTS[:combined])
-      Connection.new(endpoint, params, config).request!
+      @connection = Connection.new(endpoint, params, config)
+      @connection.request!
     end
+    
     # Assigns relevant tags to an image.
     #
     # @param [String] value (nil) URL
@@ -427,7 +454,8 @@ module AylienTextApi
     def image_tags(value=nil, params={})
       endpoint, params, config = common_endpoint(value, params, 
         Configuration::ENDPOINTS[:image_tags])
-      Connection.new(endpoint, params, config).request
+      @connection = Connection.new(endpoint, params, config)
+      @connection.request
     end
     
     # Like image_tags, but calls request! so an exception is raised 
@@ -436,9 +464,22 @@ module AylienTextApi
     def image_tags!(value=nil, params={})
       endpoint, params, config = common_endpoint(value, params, 
         Configuration::ENDPOINTS[:image_tags])
-      Connection.new(endpoint, params, config).request!
+      @connection = Connection.new(endpoint, params, config)
+      @connection.request!
     end
-
+    
+    # Returns current client's rate limit values. If it gets failed,
+    # nil will be returned.
+    # 
+    # @return [Hash, nil] A hash of result. See
+    #   http://docs.aylien.com/docs/rate-limits for more information
+    #   on the data returned.
+    def rate_limits
+      self.language text: "Hello world!" unless defined?(@connection)
+      
+      (@connection || {}).rate_limits
+    end
+    
     private
 
     def validate_uri(value)

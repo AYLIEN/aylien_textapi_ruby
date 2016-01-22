@@ -19,6 +19,8 @@ require 'net/http'
 
 module AylienTextApi
   class Connection
+    attr_reader :rate_limits
+    
     def initialize(endpoint, params, config)
       @config = config
       @uri = URI.join(@config[:base_uri], endpoint)
@@ -41,6 +43,11 @@ module AylienTextApi
       Net::HTTP.start(@uri.host, @uri.port, use_ssl: (@uri.scheme == 'https')) do |http|
         response = http.request(@request)
         if response.kind_of?(Net::HTTPSuccess)
+          @rate_limits = {
+            limit: response["X-RateLimit-Limit"],
+            remaining: response["X-RateLimit-Remaining"],
+            reset: response["X-RateLimit-Reset"]
+          }
           JSON.parse(response.body, :symbolize_names => true)
         else
           klass = AylienTextApi::Error::ERRORS[response.code.to_i]

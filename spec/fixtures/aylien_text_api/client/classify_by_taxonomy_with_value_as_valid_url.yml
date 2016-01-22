@@ -25,9 +25,9 @@ http_interactions:
       message: OK
     headers:
       Server:
-      - openresty/1.7.7.2
+      - openresty/1.9.3.2
       Date:
-      - Thu, 17 Sep 2015 11:17:33 GMT
+      - Fri, 22 Jan 2016 13:17:58 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
@@ -37,9 +37,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '207000'
       X-Ratelimit-Remaining:
-      - '206403'
+      - '206341'
       X-Ratelimit-Reset:
-      - '1442534400'
+      - '1453507200'
     body:
       encoding: ASCII-8BIT
       string: !binary |-
@@ -151,5 +151,5 @@ http_interactions:
         YXBpL3YxL2NsYXNzaWZ5L3RheG9ub215L2lhYi1xYWcvSUFCMTkiCiAgICB9
         XSwKICAgICJpZCI6ICJJQUIxOS0yMiIKICB9XQp9
     http_version: 
-  recorded_at: Thu, 17 Sep 2015 11:17:33 GMT
+  recorded_at: Fri, 22 Jan 2016 13:17:58 GMT
 recorded_with: VCR 2.9.3

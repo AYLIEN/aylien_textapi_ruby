@@ -25,9 +25,9 @@ http_interactions:
       message: OK
     headers:
       Server:
-      - openresty/1.7.7.2
+      - openresty/1.9.3.2
       Date:
-      - Thu, 17 Sep 2015 11:18:23 GMT
+      - Fri, 22 Jan 2016 13:17:37 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
@@ -37,9 +37,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '207000'
       X-Ratelimit-Remaining:
-      - '206327'
+      - '206390'
       X-Ratelimit-Reset:
-      - '1442534400'
+      - '1453507200'
     body:
       encoding: UTF-8
       string: |-
@@ -61,7 +61,7 @@ http_interactions:
               "familyName": "van der Harten",
               "givenName": "Sally",
               "honorificSuffix": "Ph.D.",
-              "id": "f5be5c8634c4749c5934233699d021fdba9fb651",
+              "id": "68f31b816a322c437167ce5967de3b6a7299d3a2",
               "additionalName": "K.",
               "honorificPrefix": "Dr."
             },
@@ -80,5 +80,5 @@ http_interactions:
           }]
         }
     http_version: 
-  recorded_at: Thu, 17 Sep 2015 11:18:24 GMT
+  recorded_at: Fri, 22 Jan 2016 13:17:37 GMT
 recorded_with: VCR 2.9.3
