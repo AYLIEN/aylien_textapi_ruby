@@ -12,7 +12,7 @@ http_interactions:
       Accept:
       - "*/*"
       User-Agent:
-      - Aylien Text API Ruby Gem 0.4.0
+      - Aylien Text API Ruby Gem 0.6.0
       Content-Type:
       - application/x-www-form-urlencoded
       X-Aylien-Textapi-Application-Id:
@@ -27,56 +27,27 @@ http_interactions:
       Server:
       - openresty/1.9.3.2
       Date:
-      - Fri, 22 Jan 2016 13:16:42 GMT
+      - Thu, 28 Apr 2016 10:37:37 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
-      - '1512'
+      - '1459'
       Connection:
       - keep-alive
       X-Ratelimit-Limit:
       - '207000'
       X-Ratelimit-Remaining:
-      - '206458'
+      - '173980'
       X-Ratelimit-Reset:
-      - '1453507200'
+      - '1461888000'
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        ewogICJ0ZXh0IjogIk1lc3NpIG5vdCBmb3Igc2FsZSAtIEJhcmNhIHByZXNp
-        ZGVudFxuTGlvbmVsIE1lc3NpOiBGb3J3YXJkIGlzIG5vdCBmb3Igc2FsZSwg
-        c2F5cyBCYXJjZWxvbmEgcHJlc2lkZW50XG5cbkJhcmNlbG9uYSBmb3J3YXJk
-        IExpb25lbCBNZXNzaSBpcyBub3QgZm9yIHNhbGUgYW5kIHRoZSBjbHViIHBs
-        YW4gdG8gZGlzY3VzcyBhIG5ldyBjb250cmFjdCB3aXRoIHRoZSBBcmdlbnRp
-        bmUsIHNheXMgcHJlc2lkZW50IEpvc2VwIE1hcmlhIEJhcnRvbWV1LlxuXG5G
-        b3VyLXRpbWUgQmFsbG9uIGQnT3Igd2lubmVyIE1lc3NpLCAyNiwgaXMgcmVw
-        b3J0ZWQgdG8gYmUgYSB0YXJnZXQgZm9yIEZyZW5jaCBzaWRlIFBhcmlzIFN0
-        LUdlcm1haW4uXG5cbkluIGFuIGludGVydmlldyB3aXRoIHJhZGlvIHN0YXRp
-        b24gUkFDMSwgcG9zdGVkIG9uIEJhcmNlbG9uYSdzIHdlYnNpdGUswqAgQmFy
-        dG9tZXUgc2FpZDogXCJUaGUgY2x1YiB3aWxsIHNpdCBkb3duIGFuZCBuZWdv
-        dGlhdGUgYSBuZXcgY29udHJhY3QuXG5cblwiV2Ugd2lsbCBkbyB3aGF0IHdl
-        IGhhdmUgdG8sIHRvIGVuc3VyZSBoZSdzIHRoZSBiZXN0LXBhaWQgcGxheWVy
-        LlwiXG5cbk1lc3NpIHNjb3JlZCA2MCBnb2FscyBpbiA1MCBhcHBlYXJhbmNl
-        cyBsYXN0IHNlYXNvbiBidXQgaGFzIHN0cnVnZ2xlZCB0byBtYXRjaCB0aGF0
-        IGdvYWxzY29yaW5nIGZvcm0gaW4gMjAxMy0xNC5cblxuSGUgaGFzIHNjb3Jl
-        ZCAxOCBnb2FscyBzbyBmYXIgYnV0IGp1c3QgZWlnaHQgb2YgdGhvc2UgaGF2
-        ZSBiZWVuIGluIHRoZSBsZWFndWUuXG5cbkhpcyBsYXN0IGxlYWd1ZSBnb2Fs
-        IGNhbWUgaW4gU2VwdGVtYmVyLCBiZWZvcmUgaGUgd2FzIG91dCBmb3IgZml2
-        ZSB3ZWVrcyB3aXRoIGEgaGFtc3RyaW5nIGluanVyeS5cblxuXCJIZSBjYW4g
-        ZG8gZXZlcnl0aGluZyxcIiBzYWlkIEJhcmNhIGNvYWNoIEdlcmFyZG8gTWFy
-        dGluby4gXCJJZiBoZSBzdWNjZWVkcyBpbiBvdGhlciBmYWNldHMgb2YgaGlz
-        IGdhbWUsIGl0IGRvZXNuJ3QgbWF0dGVyIGlmIGhlIHNjb3Jlcy5cblxuXCJO
-        b3RoaW5nIHN1cnByaXNlcyBtZSB3aXRoIGhpbS4gSGUgY29udHJvbHMgdGhl
-        IGdhbWUgd2VsbCwgcGFzc2VzIHRoZSBiYWxsIHdlbGwsIGhlIGlzIGEgZ29v
-        ZCBmaW5pc2hlciwgaGUgY2FuIHByZXNzIGFuZCByZWNvdmVyIHRoZSBiYWxs
-        LlxuXG5cIkhlIHNlZXMgcGFzc2VzIHRoYXQgbW9zdCBwZW9wbGUgY2FuIG9u
-        bHkgc2VlIHdoaWxzdCB3YXRjaGluZyB0aGUgZ2FtZSBvbiBUViBvciBpbiB0
-        aGUgc3RhbmRzLCBub3Qgb25lcyB0aGF0IHlvdSBjYW4gbm9ybWFsbHkgc2Vl
-        IG9uIHRoZSBmaWVsZC5cIiIsCiAgImxhbmd1YWdlIjogImVuIiwKICAiaGFz
-        aHRhZ3MiOiBbIiNMaW9uZWxNZXNzaSIsICIjRkNCYXJjZWxvbmEiLCAiI1JB
-        QzEiLCAiI0ZyYW5jZSIsICIjSm9zZXBNYXJpYUJhcnRvbWV1IiwgIiNBcmdl
-        bnRpbmFOYXRpb25hbEZvb3RiYWxsVGVhbSIsICIjR2VyYXJkb01hcnRpbm8i
-        LCAiI1BhcmlzU2FpbnRHZXJtYWluRkMiXQp9
+      encoding: UTF-8
+      string: |-
+        {
+          "text": "Lionel Messi: Forward is not for sale, says Barcelona president\nBarcelona forward Lionel Messi is not for sale and the club plan to discuss a new contract with the Argentine, says president Josep Maria Bartomeu.\n\nFour-time Ballon d'Or winner Messi, 26, is reported to be a target for French side Paris St-Germain.\n\nIn an interview with radio station RAC1, posted on Barcelona's website, Bartomeu said: \"The club will sit down and negotiate a new contract.\n\n\"We will do what we have to, to ensure he's the best-paid player.\"\n\nMessi scored 60 goals in 50 appearances last season but has struggled to match that goalscoring form in 2013-14.\n\nHe has scored 18 goals so far but just eight of those have been in the league.\n\nHis last league goal came in September, before he was out for five weeks with a hamstring injury.\n\n\"He can do everything,\" said Barca coach Gerardo Martino. \"If he succeeds in other facets of his game, it doesn't matter if he scores.\n\n\"Nothing surprises me with him. He controls the game well, passes the ball well, he is a good finisher, he can press and recover the ball.\n\n\"He sees passes that most people can only see whilst watching the game on TV or in the stands, not ones that you can normally see on the field.\"",
+          "language": "en",
+          "hashtags": ["#LionelMessi", "#FCBarcelona", "#RAC1", "#JosepMariaBartomeu", "#ArgentinaNationalFootballTeam", "#GerardoMartino", "#ParisSaintGermainFC"]
+        }
     http_version: 
-  recorded_at: Fri, 22 Jan 2016 13:16:42 GMT
+  recorded_at: Thu, 28 Apr 2016 10:37:37 GMT
 recorded_with: VCR 2.9.3

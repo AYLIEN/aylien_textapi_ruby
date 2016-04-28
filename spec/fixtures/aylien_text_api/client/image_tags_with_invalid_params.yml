@@ -5,14 +5,14 @@ http_interactions:
     uri: https://api.aylien.com/api/v1/image-tags
     body:
       encoding: US-ASCII
-      string: text
+      string: wrong_param
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - "*/*"
       User-Agent:
-      - Aylien Text API Ruby Gem 0.4.0
+      - Aylien Text API Ruby Gem 0.6.0
       Content-Type:
       - application/x-www-form-urlencoded
       X-Aylien-Textapi-Application-Id:
@@ -27,7 +27,7 @@ http_interactions:
       Server:
       - openresty/1.9.3.2
       Date:
-      - Fri, 22 Jan 2016 13:17:52 GMT
+      - Thu, 28 Apr 2016 10:35:28 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
@@ -37,9 +37,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '207000'
       X-Ratelimit-Remaining:
-      - '206382'
+      - '174308'
       X-Ratelimit-Reset:
-      - '1453507200'
+      - '1461888000'
     body:
       encoding: UTF-8
       string: |-
@@ -58,5 +58,5 @@ http_interactions:
           }]
         }
     http_version: 
-  recorded_at: Fri, 22 Jan 2016 13:17:52 GMT
+  recorded_at: Thu, 28 Apr 2016 10:35:28 GMT
 recorded_with: VCR 2.9.3

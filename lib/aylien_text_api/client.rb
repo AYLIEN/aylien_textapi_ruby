@@ -18,6 +18,7 @@ module AylienTextApi
     attr_accessor *Configuration::VALID_CONFIG_KEYS
 
     # Creates a Client object.
+    #
     # @param [Hash] options Configuration params
     # @option options [String] :app_id The APP_ID
     # @option options [String] :app_key The APP_KEY
@@ -53,7 +54,7 @@ module AylienTextApi
       @connection.request
     end
     
-    # Like extract, but calls request! so an exception is raised 
+    # Same as extract, but calls request! so an exception is raised 
     # if the request fails.
     #
     def extract!(value=nil, params={})
@@ -84,7 +85,7 @@ module AylienTextApi
       @connection.request
     end
     
-    # Like classify_by_taxonomy, but calls request! so an exception is raised 
+    # Same as classify_by_taxonomy, but calls request! so an exception is raised 
     # if the request fails.
     #
     def classify_by_taxonomy!(value=nil, params={})
@@ -115,7 +116,7 @@ module AylienTextApi
       @connection.request
     end
     
-    # Like classify, but calls request! so an exception is raised 
+    # Same as classify, but calls request! so an exception is raised 
     # if the request fails.
     #
     def classify!(value=nil, params={})
@@ -148,7 +149,7 @@ module AylienTextApi
       @connection.request
     end
     
-    # Like concepts, but calls request! so an exception is raised 
+    # Same as concepts, but calls request! so an exception is raised 
     # if the request fails.
     #
     def concepts!(value=nil, params={})
@@ -179,7 +180,7 @@ module AylienTextApi
       @connection.request
     end
     
-    # Like hashtags, but calls request! so an exception is raised 
+    # Same as hashtags, but calls request! so an exception is raised 
     # if the request fails.
     #
     def hashtags!(value=nil, params={})
@@ -212,7 +213,7 @@ module AylienTextApi
       @connection.request
     end
     
-    # Like entities, but calls request! so an exception is raised 
+    # Same as entities, but calls request! so an exception is raised 
     # if the request fails.
     #
     def entities!(value=nil, params={})
@@ -241,7 +242,7 @@ module AylienTextApi
       @connection.request
     end
     
-    # Like language, but calls request! so an exception is raised 
+    # Same as language, but calls request! so an exception is raised 
     # if the request fails.
     #
     def language!(value=nil, params={})
@@ -273,7 +274,7 @@ module AylienTextApi
       @connection.request
     end
     
-    # Like sentiment, but calls request! so an exception is raised 
+    # Same as sentiment, but calls request! so an exception is raised 
     # if the request fails.
     #
     def sentiment!(value=nil, params={})
@@ -313,7 +314,7 @@ module AylienTextApi
       @connection.request
     end
     
-    # Like summarize, but calls request! so an exception is raised 
+    # Same as summarize, but calls request! so an exception is raised 
     # if the request fails.
     #
     def summarize!(value=nil, params={})
@@ -342,7 +343,7 @@ module AylienTextApi
       @connection.request
     end
     
-    # Like related, but calls request! so an exception is raised 
+    # Same as related, but calls request! so an exception is raised 
     # if the request fails.
     #
     def related!(value=nil, params={})
@@ -372,7 +373,7 @@ module AylienTextApi
       @connection.request
     end
     
-    # Like microformats, but calls request! so an exception is raised 
+    # Same as microformats, but calls request! so an exception is raised 
     # if the request fails.
     #
     def microformats!(value=nil, params={})
@@ -403,7 +404,7 @@ module AylienTextApi
       @connection.request
     end
     
-    # Like unsupervised_classify, but calls request! so an exception is raised 
+    # Same as unsupervised_classify, but calls request! so an exception is raised 
     # if the request fails.
     #
     def unsupervised_classify!(value=nil, params={})
@@ -432,7 +433,7 @@ module AylienTextApi
       @connection.request
     end
     
-    # Like combined, but calls request! so an exception is raised 
+    # Same as combined, but calls request! so an exception is raised 
     # if the request fails.
     #
     def combined!(value=nil, params={})
@@ -458,12 +459,44 @@ module AylienTextApi
       @connection.request
     end
     
-    # Like image_tags, but calls request! so an exception is raised 
+    # Same as image_tags, but calls request! so an exception is raised 
     # if the request fails.
     #
     def image_tags!(value=nil, params={})
       endpoint, params, config = common_endpoint(value, params, 
         Configuration::ENDPOINTS[:image_tags])
+      @connection = Connection.new(endpoint, params, config)
+      @connection.request!
+    end
+    
+    # Detects aspects and sentiment of a body of text.
+    # Given a review for a product or service, analyzes the sentiment of the
+    # review towards each of the aspects of the product or review that are
+    # mentioned in it.
+    #
+    # @param [String] value (nil) URL or Text
+    # @param [Hash] params The ABSA endpoint options
+    # @option params [String] :url The URL
+    # @option params [String] :text Text
+    # @option params [String] :domain Domain which document belongs to
+    #
+    # @return [Hash, nil] A hash of result. See
+    #   http://docs.aylien.com/docs/absa for more information
+    #   on the data returned.
+    #
+    def aspect_based_sentiment(value=nil, params={})
+      endpoint, params, config = common_endpoint(value, params, 
+        Configuration::ENDPOINTS[:absa])
+      @connection = Connection.new(endpoint, params, config)
+      @connection.request
+    end
+    
+    # Same as aspect_based_sentiment, but calls request! so an exception is raised 
+    # if the request fails.
+    #
+    def aspect_based_sentiment!(value=nil, params={})
+      endpoint, params, config = common_endpoint(value, params, 
+        Configuration::ENDPOINTS[:absa])
       @connection = Connection.new(endpoint, params, config)
       @connection.request!
     end
@@ -508,6 +541,17 @@ module AylienTextApi
             .gsub(/\:taxonomy/, params[:taxonomy])
         else
           error_message = "Invalid taxonomy. Taxonomy can't be blank."
+          error = AylienTextApi::Error::InvalidInput.new(error_message)
+          raise error
+        end
+      end
+      
+      if endpoint == Configuration::ENDPOINTS[:absa]
+        if params[:domain] && !params[:domain].empty?
+          endpoint = Configuration::ENDPOINTS[:absa]
+            .gsub(/\:domain/, params[:domain])
+        else
+          error_message = "Invalid domain. Domain can't be blank."
           error = AylienTextApi::Error::InvalidInput.new(error_message)
           raise error
         end

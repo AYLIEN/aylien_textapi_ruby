@@ -33,5 +33,6 @@ describe AylienTextApi::Client do
   require_relative './combined'
   require_relative './image_tags'
   require_relative './classify_by_taxonomy'
+  require_relative './absa'
   require_relative './rate_limits'
 end

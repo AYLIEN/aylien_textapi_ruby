@@ -5,14 +5,14 @@ http_interactions:
     uri: https://api.aylien.com/api/v1/classify
     body:
       encoding: US-ASCII
-      string: wrong_param=CCTV+footage+shows+the+moment+a+suicide+car+bomber+detonates%0A++++++a+device+in+Beirut+on+Tuesday.+The+incident+took+place+in+an+area%0A++++++of+support+for+Hezbollah+and+left+four+people+dead+with+many+more+wounded.%0A++++++A+group+calling+itself+the+al-Nusra+Front+in+Lebanon+has+claimed%0A++++++responsibility+for+the+attack+saying+it+was+in+retaliation+for%0A++++++Hezbollah%27s+military+support+of+president+Bashar+al-Assad%27s+forces+in+Syria&class=voyage&class=travel&class=president
+      string: wrong_param=CCTV+footage+shows+the+moment+a+suicide+car+bomber+detonates%0A++++++a+device+in+Beirut+on+Tuesday.+The+incident+took+place+in+an+area%0A++++++of+support+for+Hezbollah+and+left+four+people+dead+with+many+more+wounded.%0A++++++A+group+calling+itself+the+al-Nusra+Front+in+Lebanon+has+claimed%0A++++++responsibility+for+the+attack+saying+it+was+in+retaliation+for%0A++++++Hezbollah%27s+military+support+of+president+Bashar+al-Assad%27s+forces+in+Syria
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - "*/*"
       User-Agent:
-      - Aylien Text API Ruby Gem 0.4.0
+      - Aylien Text API Ruby Gem 0.6.0
       Content-Type:
       - application/x-www-form-urlencoded
       X-Aylien-Textapi-Application-Id:
@@ -27,7 +27,7 @@ http_interactions:
       Server:
       - openresty/1.9.3.2
       Date:
-      - Fri, 22 Jan 2016 13:17:45 GMT
+      - Thu, 28 Apr 2016 10:35:51 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
@@ -37,9 +37,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '207000'
       X-Ratelimit-Remaining:
-      - '206385'
+      - '174230'
       X-Ratelimit-Reset:
-      - '1453507200'
+      - '1461888000'
     body:
       encoding: UTF-8
       string: |-
@@ -53,5 +53,5 @@ http_interactions:
           }]
         }
     http_version: 
-  recorded_at: Fri, 22 Jan 2016 13:17:45 GMT
+  recorded_at: Thu, 28 Apr 2016 10:35:52 GMT
 recorded_with: VCR 2.9.3

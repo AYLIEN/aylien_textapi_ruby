@@ -12,7 +12,7 @@ http_interactions:
       Accept:
       - "*/*"
       User-Agent:
-      - Aylien Text API Ruby Gem 0.4.0
+      - Aylien Text API Ruby Gem 0.6.0
       Content-Type:
       - application/x-www-form-urlencoded
   response:
@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - openresty/1.9.3.2
       Date:
-      - Fri, 22 Jan 2016 13:18:03 GMT
+      - Thu, 28 Apr 2016 10:35:44 GMT
       Content-Type:
       - text/plain; charset=us-ascii
       Transfer-Encoding:
@@ -34,5 +34,5 @@ http_interactions:
       encoding: UTF-8
       string: Authentication parameters missing
     http_version: 
-  recorded_at: Fri, 22 Jan 2016 13:18:03 GMT
+  recorded_at: Thu, 28 Apr 2016 10:35:44 GMT
 recorded_with: VCR 2.9.3

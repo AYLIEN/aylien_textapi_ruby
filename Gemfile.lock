@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    aylien_text_api (0.5.1)
+    aylien_text_api (0.6.0)
 
 GEM
   remote: https://rubygems.org/
@@ -28,4 +28,4 @@ DEPENDENCIES
   webmock (~> 1.20)
 
 BUNDLED WITH
-   1.10.6
+   1.11.2

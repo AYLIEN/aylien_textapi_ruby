@@ -12,7 +12,7 @@ http_interactions:
       Accept:
       - "*/*"
       User-Agent:
-      - Aylien Text API Ruby Gem 0.4.0
+      - Aylien Text API Ruby Gem 0.6.0
       Content-Type:
       - application/x-www-form-urlencoded
       X-Aylien-Textapi-Application-Id:
@@ -27,19 +27,19 @@ http_interactions:
       Server:
       - openresty/1.9.3.2
       Date:
-      - Fri, 22 Jan 2016 13:17:52 GMT
+      - Thu, 28 Apr 2016 10:37:22 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
-      - '2198'
+      - '2201'
       Connection:
       - keep-alive
       X-Ratelimit-Limit:
       - '207000'
       X-Ratelimit-Remaining:
-      - '206383'
+      - '174003'
       X-Ratelimit-Reset:
-      - '1453507200'
+      - '1461888000'
     body:
       encoding: ASCII-8BIT
       string: !binary |-
@@ -56,42 +56,42 @@ http_interactions:
         aHQgYWJvdXQgYW4gaW50ZWxsZWN0dWFsIHNlYSBjaGFuZ2UsIGJyaW5naW5n
         IHVzIGJvdGggdGhlIHBvc3Qtd2FyIHdyaXRlcnMgb2Ygbm90ZSBhbmQsIGlu
         IGFub3RoZXIgZGlyZWN0aW9uLCB0aGUgQmVhdHMgYW5kIHRoZSBzcGlyaXR1
-        YWwgcmlvdCBvZiB0aGUgMTk2MHMuXG5cbldoeSB3YXMgUGVuZ3VpbiBzbyBw
-        b3B1bGFyPyBBbmQgd2h5IGlzIHRoZSA2LWluY2ggS2luZGxlIFZveWFnZSBp
-        dHMgZW1vdGlvbmFsIHN1Y2Nlc3Nvcj8gQm90aCByZXZvbHV0aW9uaXplZCB0
-        aGUgcGh5c2ljYWwgbm90aW9uIG9mIGJvb2tzLlxuXG5JbiBQZW5ndWlu4oCZ
-        cyBjYXNlLCB0aGUgbWVkaXVtIHdhcyB0cnVseSB0aGUgbWVzc2FnZSwgYW5k
-        wqB0aGUgd3JpdGluZyBpbnNpZGUgdGhlIHNtYWxsLCBwb2NrZXRhYmxlIGJv
-        b2tzIGFsbG93ZWQgZm9yIHBvcnRhYmlsaXR5IGFuZCBlbmNvdXJhZ2VkIGNv
-        bGxlY3Rpb24uIEluIHRoZSBLaW5kbGUgVm95YWdl4oCZcyBjYXNlLCBBbWF6
-        b24gaGFzIGNyZWF0ZWQgYSBkZWxpZ2h0ZnVsIHRyYXZlbCBjb21wYW5pb24u
-        XG5cbkZpcnN0LCBsZXTigJlzIGFkZHJlc3MgdGhlIHNpemUuIFRoZSAkMTk5
-        IFZveWFnZSAoJDIxOSB3aXRob3V0IGFkcyBhbmQgd2l0aCAzRykgaXMgYWJv
-        dXQgYXMgYmlnIGFzIGEgUGVuZ3VpbiBwYXBlcmJhY2sgYW5kIGp1c3QgYSBi
-        aXQgYmlnZ2VyIChhbmQgdGhpY2tlcikgdGhhbiBhIHN0YW5kYXJkIHBhc3Nw
-        b3J0LiBJdOKAmXMgNy42IG1tIHRoaWNrIGFuZCByZW1vdmVkIGZyb20gaXRz
-        IGNhc2UgaXQgbG9va3MgYWJvdXQgYXMgc3Vic3RhbnRpYWwgYXMgYSB0aGlu
-        IHN0YWNrIG9mIHBhcGVyLlxuXG5UaGUgVm95YWdlIGlzIHRoZSBLaW5kbGUg
-        ZGlzdGlsbGVkLiBBbG1vc3QgYWxsIG9mIHRoZSBmZWF0dXJlcyBhcmUgdGhl
-        cmUg4oCTIHRvdWNoc2NyZWVuLCBicmlnaHQgd2hpdGUgZS1pbmsgZGlzcGxh
-        eSwgYW5kIGV2ZW4gYSBzcGVjaWFsIGhhcHRpYyBmZWVkYmFjayBzeXN0ZW0g
-        dGhhdCBhbGxvd3MgeW91IHRvIOKAnGNsaWNr4oCdIGxlZnQgYW5kIHJpZ2h0
-        IHNpZGUgYnV0dG9ucyB0byB0dXJuIHBhZ2VzLiBZb3UgY2FuIGFsc28gc3dp
-        cGUgdGhlIHBhZ2UgbGVmdCBhbmQgcmlnaHQgdG8gbW92ZSB0byB0aGUgbmV4
-        dCBwYWdlIGFuZCBzbWFsbCBkZWRpY2F0ZWQgc3BvdHMgYWJvdmUgdGhlIGxv
-        bmdlciB0b3VjaC1zZW5zaXRpdmUgcGFkcyB0aGF0IGdvIGJhY2sgb25lIHBh
-        Z2UuXG5cbkFtYXpvbiBzZWxscyBhbiAkNDUgZm9sZGluZyBjYXNlIGZvciB0
-        aGUgVm95YWdlIHRoYXQgb3BlbnMgdXAgbGlrZSBhIE1vbGVza2luZSByZXBv
-        cnRlcuKAmXMgbm90ZWJvb2suIEl0IGFjdGl2YXRlcyB0aGUgS2luZGxlIHVw
-        b24gb3BlbmluZyBhbmQgdHVybnMgaXQgb2ZmIHdoZW4gY2xvc2VkLiBIaWRk
-        ZW4gbWFnbmV0cyB0aGVuIGFsbG93IHlvdSB0byB0dXJuIHRoZSBjb3ZlciBp
-        bnRvIGEgbGl0dGxlIHN0YW5kIGZvciBoYW5kcy1mcmVlIHJlYWRpbmcuXG5c
-        blNvIGhvdyBkb2VzIGl0IHdvcms/IEluIHNob3J0LCBJIGxvdmUgZS1pbmsg
-        ZGV2aWNlcywgYW5kIHRoZSBWb3lhZ2UgaXMgdGhlIGJlc3Qgb2YgdGhlbS4g
-        QmVjYXVzZSBpdCBsYSIsImNsYXNzZXMiOlt7ImxhYmVsIjoidm95YWdlIiwi
-        c2NvcmUiOjAuMDE4NjE0MjcwOTQxMDU0ODF9LHsibGFiZWwiOiJ0cmF2ZWwi
-        LCJzY29yZSI6MC4wMDQxMzY1MDQ2NTM1Njc3MzZ9LHsibGFiZWwiOiJwcmVz
-        aWRlbnQiLCJzY29yZSI6MC4wMDEwMzQxMjYxNjMzOTE5MzR9XX0=
+        YWwgcmlvdCBvZiB0aGUgMTk2MHMuXHJcblxyXG5XaHkgd2FzIFBlbmd1aW4g
+        c28gcG9wdWxhcj8gQW5kIHdoeSBpcyB0aGUgNi1pbmNoIEtpbmRsZSBWb3lh
+        Z2UgaXRzIGVtb3Rpb25hbCBzdWNjZXNzb3I/IEJvdGggcmV2b2x1dGlvbml6
+        ZWQgdGhlIHBoeXNpY2FsIG5vdGlvbiBvZiBib29rcy5cclxuXHJcbkluIFBl
+        bmd1aW4ncyBjYXNlLCB0aGUgbWVkaXVtIHdhcyB0cnVseSB0aGUgbWVzc2Fn
+        ZSwgYW5kwqB0aGUgd3JpdGluZyBpbnNpZGUgdGhlIHNtYWxsLCBwb2NrZXRh
+        YmxlIGJvb2tzIGFsbG93ZWQgZm9yIHBvcnRhYmlsaXR5IGFuZCBlbmNvdXJh
+        Z2VkIGNvbGxlY3Rpb24uIEluIHRoZSBLaW5kbGUgVm95YWdlJ3MgY2FzZSwg
+        QW1hem9uIGhhcyBjcmVhdGVkIGEgZGVsaWdodGZ1bCB0cmF2ZWwgY29tcGFu
+        aW9uLlxyXG5cclxuXHJcblxyXG5GaXJzdCwgbGV0J3MgYWRkcmVzcyB0aGUg
+        c2l6ZS4gVGhlICQxOTkgVm95YWdlICgkMjE5IHdpdGhvdXQgYWRzIGFuZCB3
+        aXRoIDNHKSBpcyBhYm91dCBhcyBiaWcgYXMgYSBQZW5ndWluIHBhcGVyYmFj
+        ayBhbmQganVzdCBhIGJpdCBiaWdnZXIgKGFuZCB0aGlja2VyKSB0aGFuIGEg
+        c3RhbmRhcmQgcGFzc3BvcnQuIEl0J3MgNy42IG1tIHRoaWNrIGFuZCByZW1v
+        dmVkIGZyb20gaXRzIGNhc2UgaXQgbG9va3MgYWJvdXQgYXMgc3Vic3RhbnRp
+        YWwgYXMgYSB0aGluIHN0YWNrIG9mIHBhcGVyLlxyXG5cclxuVGhlIFZveWFn
+        ZSBpcyB0aGUgS2luZGxlIGRpc3RpbGxlZC4gQWxtb3N0IGFsbCBvZiB0aGUg
+        ZmVhdHVyZXMgYXJlIHRoZXJlIC0gdG91Y2hzY3JlZW4sIGJyaWdodCB3aGl0
+        ZSBlLWluayBkaXNwbGF5LCBhbmQgZXZlbiBhIHNwZWNpYWwgaGFwdGljIGZl
+        ZWRiYWNrIHN5c3RlbSB0aGF0IGFsbG93cyB5b3UgdG8gXCJjbGlja1wiIGxl
+        ZnQgYW5kIHJpZ2h0IHNpZGUgYnV0dG9ucyB0byB0dXJuIHBhZ2VzLiBZb3Ug
+        Y2FuIGFsc28gc3dpcGUgdGhlIHBhZ2UgbGVmdCBhbmQgcmlnaHQgdG8gbW92
+        ZSB0byB0aGUgbmV4dCBwYWdlIGFuZCBzbWFsbCBkZWRpY2F0ZWQgc3BvdHMg
+        YWJvdmUgdGhlIGxvbmdlciB0b3VjaC1zZW5zaXRpdmUgcGFkcyB0aGF0IGdv
+        IGJhY2sgb25lIHBhZ2UuXHJcblxyXG5BbWF6b24gc2VsbHMgYW4gJDQ1IGZv
+        bGRpbmcgY2FzZSBmb3IgdGhlIFZveWFnZSB0aGF0IG9wZW5zIHVwIGxpa2Ug
+        YSBNb2xlc2tpbmUgcmVwb3J0ZXIncyBub3RlYm9vay4gSXQgYWN0aXZhdGVz
+        IHRoZSBLaW5kbGUgdXBvbiBvcGVuaW5nIGFuZCB0dXJucyBpdCBvZmYgd2hl
+        biBjbG9zZWQuIEhpZGRlbiBtYWduZXRzIHRoZW4gYWxsb3cgeW91IHRvIHR1
+        cm4gdGhlIGNvdmVyIGludG8gYSBsaXR0bGUgc3RhbmQgZm9yIGhhbmRzLWZy
+        ZWUgcmVhZGluZy5cclxuXHJcblNvIGhvdyBkb2VzIGl0IHdvcms/IEluIHNo
+        b3J0LCBJIGxvdmUgZS1pbmsgZGV2aWNlcywgYW5kIHRoZSBWb3lhZ2UgaXMg
+        dGhlIGJlc3Qgb2YgdGhlIiwiY2xhc3NlcyI6W3sibGFiZWwiOiJ2b3lhZ2Ui
+        LCJzY29yZSI6MC4wMTg2MzM1NDAzNzI2NzA4MDh9LHsibGFiZWwiOiJ0cmF2
+        ZWwiLCJzY29yZSI6MC4wMDUxNzU5ODM0MzY4NTMwMDJ9LHsibGFiZWwiOiJw
+        cmVzaWRlbnQiLCJzY29yZSI6MC4wMDIwNzAzOTMzNzQ3NDEyMDF9XX0=
     http_version: 
-  recorded_at: Fri, 22 Jan 2016 13:17:52 GMT
+  recorded_at: Thu, 28 Apr 2016 10:37:22 GMT
 recorded_with: VCR 2.9.3

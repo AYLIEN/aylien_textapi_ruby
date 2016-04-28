@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.aylien.com/api/v1/absa/restaurants
+    body:
+      encoding: US-ASCII
+      string: text=We+visited+here+during+our+recent+trip+to+Sydney+and+%0A++++++overall+we+were+very+impressed.+We+decided+to+make+a+reservation+online%2C+%0A++++++which+was+quick+and+easy+with+instant+confirmation.+%0A++++++It+was+nice+to+be+able+to+view+the+table+layout+and+select+our+own+online.+%0A++++++The+location+is+spectacular+with+stunning+views+of+the+harbour+%0A++++++and+Opera+House.+It+truly+was+amazing.+%0A++++++Despite+this%2C+however%2C+the+restaurant+was++only+about+25%25+%0A++++++full+and+so+the+atmosphere+was+a+bit+flat.+Perhaps+this+was+to+our+%0A++++++benefit+as+we+received+top+class+service+from+our+waiter%2C+%0A++++++Brandon%2C+who+was+not+only+friendly+and+funny+but+extremely+%0A++++++knowledgeable+when+it+came+to+food+and+wine+pairings.+%0A++++++Speaking+of+wine%2C+the+list+was+extensive+-+we+loved+it+-+%0A++++++and+it+took+us+what+seemed+like+an+hour+to+eventually+%0A++++++decide+on+a+local+Shiraz.+Now+on+to+the+most+important+%0A++++++aspect%2C+the+food.+Our+seafood+starters+were+delicious%2C+%0A++++++as+were+out+fillet+steak+mains.+%0A++++++The+one+and+only+real+disappointment+was+the+dessert+which+was+served+%0A++++++with+no+real+imagination+and+looked+like+it+had+been+purchased+%0A++++++yesterday+at+the+local+grocery+store.+%0A++++++All+in+all%2C+my+favourite+Sydney+restaurant+so+far.+%0A++++++So+many+positives+and+really+good+value+too.+Highly+recommend%21&domain=restaurants
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Aylien Text API Ruby Gem 0.6.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Server:
+      - openresty/1.9.3.2
+      Date:
+      - Thu, 28 Apr 2016 10:36:21 GMT
+      Content-Type:
+      - text/plain; charset=us-ascii
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: Authentication parameters missing
+    http_version: 
+  recorded_at: Thu, 28 Apr 2016 10:36:21 GMT
+recorded_with: VCR 2.9.3

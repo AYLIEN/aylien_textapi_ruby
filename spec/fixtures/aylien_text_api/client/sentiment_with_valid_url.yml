@@ -12,7 +12,7 @@ http_interactions:
       Accept:
       - "*/*"
       User-Agent:
-      - Aylien Text API Ruby Gem 0.4.0
+      - Aylien Text API Ruby Gem 0.6.0
       Content-Type:
       - application/x-www-form-urlencoded
       X-Aylien-Textapi-Application-Id:
@@ -27,54 +27,29 @@ http_interactions:
       Server:
       - openresty/1.9.3.2
       Date:
-      - Fri, 22 Jan 2016 13:17:25 GMT
+      - Thu, 28 Apr 2016 10:36:51 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
-      - '1422'
+      - '1353'
       Connection:
       - keep-alive
       X-Ratelimit-Limit:
       - '207000'
       X-Ratelimit-Remaining:
-      - '206402'
+      - '174053'
       X-Ratelimit-Reset:
-      - '1453507200'
+      - '1461888000'
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        ewogICJwb2xhcml0eSI6ICJuZXV0cmFsIiwKICAic3ViamVjdGl2aXR5Ijog
-        InN1YmplY3RpdmUiLAogICJ0ZXh0IjogIkxpb25lbCBNZXNzaTogRm9yd2Fy
-        ZCBpcyBub3QgZm9yIHNhbGUsIHNheXMgQmFyY2Vsb25hIHByZXNpZGVudFxu
-        XG5CYXJjZWxvbmEgZm9yd2FyZCBMaW9uZWwgTWVzc2kgaXMgbm90IGZvciBz
-        YWxlIGFuZCB0aGUgY2x1YiBwbGFuIHRvIGRpc2N1c3MgYSBuZXcgY29udHJh
-        Y3Qgd2l0aCB0aGUgQXJnZW50aW5lLCBzYXlzIHByZXNpZGVudCBKb3NlcCBN
-        YXJpYSBCYXJ0b21ldS5cblxuRm91ci10aW1lIEJhbGxvbiBkJ09yIHdpbm5l
-        ciBNZXNzaSwgMjYsIGlzIHJlcG9ydGVkIHRvIGJlIGEgdGFyZ2V0IGZvciBG
-        cmVuY2ggc2lkZSBQYXJpcyBTdC1HZXJtYWluLlxuXG5JbiBhbiBpbnRlcnZp
-        ZXcgd2l0aCByYWRpbyBzdGF0aW9uIFJBQzEsIHBvc3RlZCBvbiBCYXJjZWxv
-        bmEncyB3ZWJzaXRlLMKgIEJhcnRvbWV1IHNhaWQ6IFwiVGhlIGNsdWIgd2ls
-        bCBzaXQgZG93biBhbmQgbmVnb3RpYXRlIGEgbmV3IGNvbnRyYWN0LlxuXG5c
-        IldlIHdpbGwgZG8gd2hhdCB3ZSBoYXZlIHRvLCB0byBlbnN1cmUgaGUncyB0
-        aGUgYmVzdC1wYWlkIHBsYXllci5cIlxuXG5NZXNzaSBzY29yZWQgNjAgZ29h
-        bHMgaW4gNTAgYXBwZWFyYW5jZXMgbGFzdCBzZWFzb24gYnV0IGhhcyBzdHJ1
-        Z2dsZWQgdG8gbWF0Y2ggdGhhdCBnb2Fsc2NvcmluZyBmb3JtIGluIDIwMTMt
-        MTQuXG5cbkhlIGhhcyBzY29yZWQgMTggZ29hbHMgc28gZmFyIGJ1dCBqdXN0
-        IGVpZ2h0IG9mIHRob3NlIGhhdmUgYmVlbiBpbiB0aGUgbGVhZ3VlLlxuXG5I
-        aXMgbGFzdCBsZWFndWUgZ29hbCBjYW1lIGluIFNlcHRlbWJlciwgYmVmb3Jl
-        IGhlIHdhcyBvdXQgZm9yIGZpdmUgd2Vla3Mgd2l0aCBhIGhhbXN0cmluZyBp
-        bmp1cnkuXG5cblwiSGUgY2FuIGRvIGV2ZXJ5dGhpbmcsXCIgc2FpZCBCYXJj
-        YSBjb2FjaCBHZXJhcmRvIE1hcnRpbm8uIFwiSWYgaGUgc3VjY2VlZHMgaW4g
-        b3RoZXIgZmFjZXRzIG9mIGhpcyBnYW1lLCBpdCBkb2Vzbid0IG1hdHRlciBp
-        ZiBoZSBzY29yZXMuXG5cblwiTm90aGluZyBzdXJwcmlzZXMgbWUgd2l0aCBo
-        aW0uIEhlIGNvbnRyb2xzIHRoZSBnYW1lIHdlbGwsIHBhc3NlcyB0aGUgYmFs
-        bCB3ZWxsLCBoZSBpcyBhIGdvb2QgZmluaXNoZXIsIGhlIGNhbiBwcmVzcyBh
-        bmQgcmVjb3ZlciB0aGUgYmFsbC5cblxuXCJIZSBzZWVzIHBhc3NlcyB0aGF0
-        IG1vc3QgcGVvcGxlIGNhbiBvbmx5IHNlZSB3aGlsc3Qgd2F0Y2hpbmcgdGhl
-        IGdhbWUgb24gVFYgb3IgaW4gdGhlIHN0YW5kcywgbm90IG9uZXMgdGhhdCB5
-        b3UgY2FuIG5vcm1hbGx5IHNlZSBvbiB0aGUgZmllbGQuXCIiLAogICJwb2xh
-        cml0eV9jb25maWRlbmNlIjogMC45OTkwNjc3Njk5MTE4MDA4LAogICJzdWJq
-        ZWN0aXZpdHlfY29uZmlkZW5jZSI6IDEuMAp9
+      encoding: UTF-8
+      string: |-
+        {
+          "polarity": "neutral",
+          "subjectivity": "subjective",
+          "text": "Barcelona forward Lionel Messi is not for sale and the club plan to discuss a new contract with the Argentine, says president Josep Maria Bartomeu.\n\nFour-time Ballon d'Or winner Messi, 26, is reported to be a target for French side Paris St-Germain.\n\nIn an interview with radio station RAC1, posted on Barcelona's website, Bartomeu said: \"The club will sit down and negotiate a new contract.\n\n\"We will do what we have to, to ensure he's the best-paid player.\"\n\nMessi scored 60 goals in 50 appearances last season but has struggled to match that goalscoring form in 2013-14.\n\nHe has scored 18 goals so far but just eight of those have been in the league.\n\nHis last league goal came in September, before he was out for five weeks with a hamstring injury.\n\n\"He can do everything,\" said Barca coach Gerardo Martino. \"If he succeeds in other facets of his game, it doesn't matter if he scores.\n\n\"Nothing surprises me with him. He controls the game well, passes the ball well, he is a good finisher, he can press and recover the ball.\n\n\"He sees passes that most people can only see whilst watching the game on TV or in the stands, not ones that you can normally see on the field.\"",
+          "polarity_confidence": 0.9997059056004345,
+          "subjectivity_confidence": 1.0
+        }
     http_version: 
-  recorded_at: Fri, 22 Jan 2016 13:17:25 GMT
+  recorded_at: Thu, 28 Apr 2016 10:36:51 GMT
 recorded_with: VCR 2.9.3

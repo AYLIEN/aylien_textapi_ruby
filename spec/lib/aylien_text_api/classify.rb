@@ -79,7 +79,7 @@ describe "Classify endpoint" do
   it "should raise BadRequest with invalid params" do
     VCR.use_cassette('classify_with_invalid_params') do
       proc {
-        @invalid_client.classify!(wrong_param: @text)
+        @client.classify!(wrong_param: @text)
       }.must_raise AylienTextApi::Error::BadRequest
     end
   end

@@ -12,7 +12,7 @@ http_interactions:
       Accept:
       - "*/*"
       User-Agent:
-      - Aylien Text API Ruby Gem 0.4.0
+      - Aylien Text API Ruby Gem 0.6.0
       Content-Type:
       - application/x-www-form-urlencoded
       X-Aylien-Textapi-Application-Id:
@@ -27,23 +27,23 @@ http_interactions:
       Server:
       - openresty/1.9.3.2
       Date:
-      - Fri, 22 Jan 2016 13:17:56 GMT
+      - Thu, 28 Apr 2016 10:35:26 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
-      - '3201'
+      - '2849'
       Connection:
       - keep-alive
       X-Ratelimit-Limit:
       - '207000'
       X-Ratelimit-Remaining:
-      - '206361'
+      - '174310'
       X-Ratelimit-Reset:
-      - '1453507200'
+      - '1461888000'
     body:
       encoding: UTF-8
-      string: '{"image":"http://aylien.com/images/michaelo.png","tags":[{"tag":"man","confidence":0.41905796757197195},{"tag":"male","confidence":0.38725180534808623},{"tag":"person","confidence":0.29507827705193707},{"tag":"caucasian","confidence":0.2881993798784205},{"tag":"adult","confidence":0.28600742166330817},{"tag":"people","confidence":0.2813499226088357},{"tag":"portrait","confidence":0.255608056915516},{"tag":"happy","confidence":0.19802269096390282},{"tag":"expression","confidence":0.1827944847651656},{"tag":"face","confidence":0.17406795354537002},{"tag":"smiling","confidence":0.17137503160072742},{"tag":"professional","confidence":0.16758256015028825},{"tag":"men","confidence":0.16086813161537478},{"tag":"handsome","confidence":0.1601836250066154},{"tag":"businessman","confidence":0.15903475608020326},{"tag":"looking","confidence":0.15796172517987517},{"tag":"business","confidence":0.15571183907769018},{"tag":"smile","confidence":0.1543835538106374},{"tag":"mature","confidence":0.14688734455031838},{"tag":"attractive","confidence":0.13361367028619456},{"tag":"lifestyle","confidence":0.12992043549987056},{"tag":"hand","confidence":0.1273582134164509},{"tag":"holding","confidence":0.1235500706875494},{"tag":"standing","confidence":0.12295081292376475},{"tag":"boy","confidence":0.12164446428200634},{"tag":"executive","confidence":0.11187875768052749},{"tag":"black","confidence":0.11010645154855403},{"tag":"suit","confidence":0.10927890964776438},{"tag":"tie","confidence":0.10618284584378972},{"tag":"one
-        person","confidence":0.10453506675937672},{"tag":"senior","confidence":0.10431091380019382},{"tag":"guy","confidence":0.10391495632118602},{"tag":"casual","confidence":0.10351146336470968},{"tag":"close","confidence":0.10345066131585914},{"tag":"work","confidence":0.10211116740493105},{"tag":"head","confidence":0.10156530611483629},{"tag":"serious","confidence":0.09743612610033811},{"tag":"model","confidence":0.09610429149840519},{"tag":"sitting","confidence":0.09588822587202168},{"tag":"hair","confidence":0.09586617337860202},{"tag":"occupation","confidence":0.09450395103185658},{"tag":"glasses","confidence":0.09449592353236794},{"tag":"hat","confidence":0.09400743004394961},{"tag":"alone","confidence":0.09328376848087352},{"tag":"job","confidence":0.09142264109136393},{"tag":"one","confidence":0.09118751524650705},{"tag":"office","confidence":0.08990688613033954},{"tag":"gesture","confidence":0.08865037570976295},{"tag":"corporate","confidence":0.088288120338472},{"tag":"happiness","confidence":0.08670638622640708},{"tag":"phone","confidence":0.08506223321692227},{"tag":"elderly","confidence":0.07976172908201179},{"tag":"youth","confidence":0.07942132048582976},{"tag":"studio","confidence":0.07849703338520976},{"tag":"lady","confidence":0.0767680551013607},{"tag":"old","confidence":0.0766331516772676},{"tag":"worker","confidence":0.07498433800643954},{"tag":"indoors","confidence":0.07366468197644963},{"tag":"home","confidence":0.07342255873099172},{"tag":"pretty","confidence":0.07277674826117082},{"tag":"eyes","confidence":0.07229058875631711},{"tag":"uniform","confidence":0.07073310660629857},{"tag":"thinking","confidence":0.07067450202564741}]}'
+      string: '{"image":"http://aylien.com/images/michaelo.png","tags":[{"tag":"man","confidence":0.3852650307103344},{"tag":"male","confidence":0.3317226317740392},{"tag":"adult","confidence":0.2784401671818152},{"tag":"person","confidence":0.2766912776213286},{"tag":"caucasian","confidence":0.26156983911435333},{"tag":"portrait","confidence":0.254440511247649},{"tag":"people","confidence":0.2531908362168205},{"tag":"expression","confidence":0.18991485696898355},{"tag":"face","confidence":0.18667383050737904},{"tag":"hat","confidence":0.1861666248096993},{"tag":"happy","confidence":0.1791785206147423},{"tag":"smiling","confidence":0.1775314247730419},{"tag":"handsome","confidence":0.1678676961342144},{"tag":"smile","confidence":0.14039983457465233},{"tag":"attractive","confidence":0.13969248907894685},{"tag":"guy","confidence":0.13784770458903223},{"tag":"businessman","confidence":0.13325095861169473},{"tag":"boy","confidence":0.12921201147186337},{"tag":"men","confidence":0.12829721168178237},{"tag":"professional","confidence":0.12715450593178124},{"tag":"hand","confidence":0.12682197473788226},{"tag":"business","confidence":0.12618182449690196},{"tag":"looking","confidence":0.12000124565718967},{"tag":"mature","confidence":0.11187658853930682},{"tag":"head","confidence":0.10898489324803128},{"tag":"model","confidence":0.10311892640022063},{"tag":"uniform","confidence":0.09675233060563534},{"tag":"eyes","confidence":0.09604154938404169},{"tag":"lifestyle","confidence":0.09545451455835278},{"tag":"youth","confidence":0.09482103682489519},{"tag":"work","confidence":0.09429791866101654},{"tag":"glasses","confidence":0.094014162910243},{"tag":"holding","confidence":0.09231146516414217},{"tag":"job","confidence":0.09097382998300835},{"tag":"one","confidence":0.09082795584097435},{"tag":"gesture","confidence":0.08820796518542512},{"tag":"black","confidence":0.08810763234494445},{"tag":"tie","confidence":0.08802022329618735},{"tag":"occupation","confidence":0.08555103662817311},{"tag":"teenager","confidence":0.08441262328615626},{"tag":"fun","confidence":0.08189185698788366},{"tag":"standing","confidence":0.08163340757406994},{"tag":"cowboy
+        hat","confidence":0.07897052018807374},{"tag":"clothing","confidence":0.07834390718705528},{"tag":"fashion","confidence":0.07811595923488043},{"tag":"emotion","confidence":0.07657799139351638},{"tag":"alone","confidence":0.07609837339984105},{"tag":"success","confidence":0.07603948056053668},{"tag":"suit","confidence":0.07528032210015322},{"tag":"worker","confidence":0.07462980737982215},{"tag":"hair","confidence":0.07357872271721946},{"tag":"close","confidence":0.07228052012564232},{"tag":"sitting","confidence":0.07152945540878397},{"tag":"casual","confidence":0.07129846261355807},{"tag":"studio","confidence":0.07114551290485585},{"tag":"helmet","confidence":0.07103317709917002}]}'
     http_version: 
-  recorded_at: Fri, 22 Jan 2016 13:17:56 GMT
+  recorded_at: Thu, 28 Apr 2016 10:35:26 GMT
 recorded_with: VCR 2.9.3

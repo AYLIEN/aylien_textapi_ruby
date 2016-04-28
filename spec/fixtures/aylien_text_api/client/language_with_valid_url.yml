@@ -12,7 +12,7 @@ http_interactions:
       Accept:
       - "*/*"
       User-Agent:
-      - Aylien Text API Ruby Gem 0.4.0
+      - Aylien Text API Ruby Gem 0.6.0
       Content-Type:
       - application/x-www-form-urlencoded
       X-Aylien-Textapi-Application-Id:
@@ -27,51 +27,27 @@ http_interactions:
       Server:
       - openresty/1.9.3.2
       Date:
-      - Fri, 22 Jan 2016 13:17:12 GMT
+      - Thu, 28 Apr 2016 10:45:11 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
-      - '1290'
+      - '1269'
       Connection:
       - keep-alive
       X-Ratelimit-Limit:
       - '207000'
       X-Ratelimit-Remaining:
-      - '206412'
+      - '173632'
       X-Ratelimit-Reset:
-      - '1453507200'
+      - '1461888000'
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        ewogICJ0ZXh0IjogIkZvdXItdGltZSBCYWxsb24gZCdPciB3aW5uZXIgTWVz
-        c2ksIDI2LCBpcyByZXBvcnRlZCB0byBiZSBhIHRhcmdldCBmb3IgRnJlbmNo
-        IHNpZGUgUGFyaXMgU3QtR2VybWFpbi7CoFxuTWVzc2kgbWFraW5nIGNoYW5j
-        ZXNcbkxpb25lbCBNZXNzaSBoYXMgY3JlYXRlZCAzNiBjaGFuY2VzIGZvciBC
-        YXJjZWxvbmEgdGhpcyBzZWFzb24gYW5kIGhhcyBiZWVuIG9uIHRoZSB3aW5u
-        aW5nIHNpZGUgaW4gMTYgb2YgdGhlIDIwIGdhbWVzIGhlIGhhcyBwbGF5ZWRc
-        bkluIGFuIGludGVydmlldyB3aXRoIHJhZGlvIHN0YXRpb24gUkFDMSwgcG9z
-        dGVkIG9uIEJhcmNlbG9uYSdzIHdlYnNpdGUswqAgQmFydG9tZXUgc2FpZDog
-        XCJUaGUgY2x1YiB3aWxsIHNpdCBkb3duIGFuZCBuZWdvdGlhdGUgYSBuZXcg
-        Y29udHJhY3QuXG5cIldlIHdpbGwgZG8gd2hhdCB3ZSBoYXZlIHRvLCB0byBl
-        bnN1cmUgaGUncyB0aGUgYmVzdC1wYWlkIHBsYXllci5cIlxuTWVzc2kgc2Nv
-        cmVkIDYwIGdvYWxzIGluIDUwIGFwcGVhcmFuY2VzIGxhc3Qgc2Vhc29uIGJ1
-        dCBoYXMgc3RydWdnbGVkIHRvIG1hdGNoIHRoYXQgZ29hbHNjb3JpbmcgZm9y
-        bSBpbiAyMDEzLTE0LlxuSGUgaGFzIHNjb3JlZCAxOCBnb2FscyBzbyBmYXIg
-        YnV0IGp1c3QgZWlnaHQgb2YgdGhvc2UgaGF2ZSBiZWVuIGluIHRoZSBsZWFn
-        dWUuXG5IaXMgbGFzdCBsZWFndWUgZ29hbCBjYW1lIGluIFNlcHRlbWJlciwg
-        YmVmb3JlIGhlIHdhcyBvdXQgZm9yIGZpdmUgd2Vla3Mgd2l0aCBhIGhhbXN0
-        cmluZyBpbmp1cnkuXG5cIkhlIGNhbiBkbyBldmVyeXRoaW5nLFwiIHNhaWQg
-        QmFyY2EgY29hY2ggR2VyYXJkbyBNYXJ0aW5vLiBcIklmIGhlIHN1Y2NlZWRz
-        IGluIG90aGVyIGZhY2V0cyBvZiBoaXMgZ2FtZSwgaXQgZG9lc24ndCBtYXR0
-        ZXIgaWYgaGUgc2NvcmVzLlxuXCJOb3RoaW5nIHN1cnByaXNlcyBtZSB3aXRo
-        IGhpbS4gSGUgY29udHJvbHMgdGhlIGdhbWUgd2VsbCwgcGFzc2VzIHRoZSBi
-        YWxsIHdlbGwsIGhlIGlzIGEgZ29vZCBmaW5pc2hlciwgaGUgY2FuIHByZXNz
-        IGFuZCByZWNvdmVyIHRoZSBiYWxsLlxuXCJIZSBzZWVzIHBhc3NlcyB0aGF0
-        IG1vc3QgcGVvcGxlIGNhbiBvbmx5IHNlZSB3aGlsc3Qgd2F0Y2hpbmcgdGhl
-        IGdhbWUgb24gVFYgb3IgaW4gdGhlIHN0YW5kcywgbm90IG9uZXMgdGhhdCB5
-        b3UgY2FuIG5vcm1hbGx5IHNlZSBvbiB0aGUgZmllbGQuXCJcbkFsc28gcmVs
-        YXRlZCB0byB0aGlzIHN0b3J5XG4iLAogICJsYW5nIjogImVuIiwKICAiY29u
-        ZmlkZW5jZSI6IDAuOTk5OTk3NDM5MTI1NzA4Mwp9
+      encoding: UTF-8
+      string: |-
+        {
+          "text": "Barcelona forward Lionel Messi is not for sale and the club plan to discuss a new contract with the Argentine, says president Josep Maria Bartomeu.\n\nFour-time Ballon d'Or winner Messi, 26, is reported to be a target for French side Paris St-Germain.\n\nIn an interview with radio station RAC1, posted on Barcelona's website, Bartomeu said: \"The club will sit down and negotiate a new contract.\n\n\"We will do what we have to, to ensure he's the best-paid player.\"\n\nMessi scored 60 goals in 50 appearances last season but has struggled to match that goalscoring form in 2013-14.\n\nHe has scored 18 goals so far but just eight of those have been in the league.\n\nHis last league goal came in September, before he was out for five weeks with a hamstring injury.\n\n\"He can do everything,\" said Barca coach Gerardo Martino. \"If he succeeds in other facets of his game, it doesn't matter if he scores.\n\n\"Nothing surprises me with him. He controls the game well, passes the ball well, he is a good finisher, he can press and recover the ball.\n\n\"He sees passes that most people can only see whilst watching the game on TV or in the stands, not ones that you can normally see on the field.\"",
+          "lang": "en",
+          "confidence": 0.9999971879926305
+        }
     http_version: 
-  recorded_at: Fri, 22 Jan 2016 13:17:12 GMT
+  recorded_at: Thu, 28 Apr 2016 10:45:11 GMT
 recorded_with: VCR 2.9.3

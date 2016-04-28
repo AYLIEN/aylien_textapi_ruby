@@ -12,7 +12,7 @@ http_interactions:
       Accept:
       - "*/*"
       User-Agent:
-      - Aylien Text API Ruby Gem 0.4.0
+      - Aylien Text API Ruby Gem 0.6.0
       Content-Type:
       - application/x-www-form-urlencoded
       X-Aylien-Textapi-Application-Id:
@@ -27,7 +27,7 @@ http_interactions:
       Server:
       - openresty/1.9.3.2
       Date:
-      - Fri, 22 Jan 2016 13:17:00 GMT
+      - Thu, 28 Apr 2016 10:36:35 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
@@ -37,9 +37,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '207000'
       X-Ratelimit-Remaining:
-      - '206422'
+      - '174096'
       X-Ratelimit-Reset:
-      - '1453507200'
+      - '1461888000'
     body:
       encoding: UTF-8
       string: |-
@@ -50,11 +50,11 @@ http_interactions:
             "http://dbpedia.org/resource/Race_and_ethnicity_in_the_United_States_Census": {
               "surfaceForms": [{
                 "string": "African American",
-                "score": 0.8827383920486191,
+                "score": 0.8779984484117411,
                 "offset": 106
               }],
               "types": [""],
-              "support": 300880
+              "support": 300943
             },
             "http://dbpedia.org/resource/Barack_Obama": {
               "surfaceForms": [{
@@ -63,19 +63,19 @@ http_interactions:
                 "offset": 0
               }],
               "types": ["http://dbpedia.org/ontology/Agent", "http://www.wikidata.org/entity/Q215627", "http://schema.org/Person", "http://xmlns.com/foaf/0.1/Person", "http://www.wikidata.org/entity/Q5", "http://dbpedia.org/ontology/Person"],
-              "support": 16974
+              "support": 18146
             },
             "http://dbpedia.org/resource/United_States": {
               "surfaceForms": [{
                 "string": "United States",
-                "score": 0.9998810412179507,
+                "score": 0.9998811846886878,
                 "offset": 71
               }],
               "types": ["http://dbpedia.org/ontology/Country"],
-              "support": 562059
+              "support": 563058
             }
           }
         }
     http_version: 
-  recorded_at: Fri, 22 Jan 2016 13:17:00 GMT
+  recorded_at: Thu, 28 Apr 2016 10:36:35 GMT
 recorded_with: VCR 2.9.3

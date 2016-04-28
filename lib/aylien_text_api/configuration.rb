@@ -39,7 +39,8 @@ module AylienTextApi
       microformats: 'microformats',
       unsupervised_classify: 'classify/unsupervised',
       image_tags: 'image-tags',
-      combined: 'combined'
+      combined: 'combined',
+      absa: 'absa/:domain'
     }
 
     # Build accessor methods for every config options so we can do this, for example:

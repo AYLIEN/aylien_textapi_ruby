@@ -1,0 +1,229 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.aylien.com/api/v1/absa/restaurants
+    body:
+      encoding: US-ASCII
+      string: domain=restaurants&text=We+visited+here+during+our+recent+trip+to+Sydney+and+%0A++++++overall+we+were+very+impressed.+We+decided+to+make+a+reservation+online%2C+%0A++++++which+was+quick+and+easy+with+instant+confirmation.+%0A++++++It+was+nice+to+be+able+to+view+the+table+layout+and+select+our+own+online.+%0A++++++The+location+is+spectacular+with+stunning+views+of+the+harbour+%0A++++++and+Opera+House.+It+truly+was+amazing.+%0A++++++Despite+this%2C+however%2C+the+restaurant+was++only+about+25%25+%0A++++++full+and+so+the+atmosphere+was+a+bit+flat.+Perhaps+this+was+to+our+%0A++++++benefit+as+we+received+top+class+service+from+our+waiter%2C+%0A++++++Brandon%2C+who+was+not+only+friendly+and+funny+but+extremely+%0A++++++knowledgeable+when+it+came+to+food+and+wine+pairings.+%0A++++++Speaking+of+wine%2C+the+list+was+extensive+-+we+loved+it+-+%0A++++++and+it+took+us+what+seemed+like+an+hour+to+eventually+%0A++++++decide+on+a+local+Shiraz.+Now+on+to+the+most+important+%0A++++++aspect%2C+the+food.+Our+seafood+starters+were+delicious%2C+%0A++++++as+were+out+fillet+steak+mains.+%0A++++++The+one+and+only+real+disappointment+was+the+dessert+which+was+served+%0A++++++with+no+real+imagination+and+looked+like+it+had+been+purchased+%0A++++++yesterday+at+the+local+grocery+store.+%0A++++++All+in+all%2C+my+favourite+Sydney+restaurant+so+far.+%0A++++++So+many+positives+and+really+good+value+too.+Highly+recommend%21
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Aylien Text API Ruby Gem 0.6.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      X-Aylien-Textapi-Application-Id:
+      - "<PASSWORD>"
+      X-Aylien-Textapi-Application-Key:
+      - "<PASSWORD>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty/1.9.3.2
+      Date:
+      - Thu, 28 Apr 2016 10:36:30 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '7586'
+      Connection:
+      - keep-alive
+      X-Ratelimit-Limit:
+      - '207000'
+      X-Ratelimit-Remaining:
+      - '174111'
+      X-Ratelimit-Reset:
+      - '1461888000'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "text": "We visited here during our recent trip to Sydney and \n      overall we were very impressed. We decided to make a reservation online, \n      which was quick and easy with instant confirmation. \n      It was nice to be able to view the table layout and select our own online. \n      The location is spectacular with stunning views of the harbour \n      and Opera House. It truly was amazing. \n      Despite this, however, the restaurant was  only about 25% \n      full and so the atmosphere was a bit flat. Perhaps this was to our \n      benefit as we received top class service from our waiter, \n      Brandon, who was not only friendly and funny but extremely \n      knowledgeable when it came to food and wine pairings. \n      Speaking of wine, the list was extensive - we loved it - \n      and it took us what seemed like an hour to eventually \n      decide on a local Shiraz. Now on to the most important \n      aspect, the food. Our seafood starters were delicious, \n      as were out fillet steak mains. \n      The one and only real disappointment was the dessert which was served \n      with no real imagination and looked like it had been purchased \n      yesterday at the local grocery store. \n      All in all, my favourite Sydney restaurant so far. \n      So many positives and really good value too. Highly recommend!",
+          "domain": "restaurants",
+          "aspects": [{
+            "aspect": "food",
+            "aspect_confidence": 0.6389723569154739,
+            "polarity": "positive",
+            "polarity_confidence": 0.8153238445520401
+          }, {
+            "aspect": "reservations",
+            "aspect_confidence": 0.9852001070976257,
+            "polarity": "positive",
+            "polarity_confidence": 0.580098569393158
+          }, {
+            "aspect": "value",
+            "aspect_confidence": 0.5432076454162598,
+            "polarity": "positive",
+            "polarity_confidence": 0.9174333810806274
+          }, {
+            "aspect": "desserts",
+            "aspect_confidence": 0.9849463701248169,
+            "polarity": "negative",
+            "polarity_confidence": 0.995750904083252
+          }, {
+            "aspect": "location",
+            "aspect_confidence": 0.9726915955543518,
+            "polarity": "positive",
+            "polarity_confidence": 0.9497880935668945
+          }, {
+            "aspect": "ambience",
+            "aspect_confidence": 0.972251832485199,
+            "polarity": "neutral",
+            "polarity_confidence": 0.7817545533180239
+          }, {
+            "aspect": "staff",
+            "aspect_confidence": 0.6776670217514038,
+            "polarity": "positive",
+            "polarity_confidence": 0.956576406955719
+          }, {
+            "aspect": "drinks",
+            "aspect_confidence": 0.5717936754226685,
+            "polarity": "positive",
+            "polarity_confidence": 0.8246688544750214
+          }],
+          "sentences": [{
+            "text": "We visited here during our recent trip to Sydney and \n      overall we were very impressed.",
+            "polarity": "positive",
+            "polarity_confidence": 0.984675943851471,
+            "aspects": []
+          }, {
+            "text": "We decided to make a reservation online, \n      which was quick and easy with instant confirmation.",
+            "polarity": "positive",
+            "polarity_confidence": 0.5614513754844666,
+            "aspects": [{
+              "aspect": "reservations",
+              "aspect_confidence": 0.9985753297805786,
+              "polarity": "positive",
+              "polarity_confidence": 0.5614513754844666
+            }]
+          }, {
+            "text": "It was nice to be able to view the table layout and select our own online.",
+            "polarity": "positive",
+            "polarity_confidence": 0.5987457633018494,
+            "aspects": [{
+              "aspect": "reservations",
+              "aspect_confidence": 0.9718248844146729,
+              "polarity": "positive",
+              "polarity_confidence": 0.5987457633018494
+            }]
+          }, {
+            "text": "The location is spectacular with stunning views of the harbour \n      and Opera House.",
+            "polarity": "positive",
+            "polarity_confidence": 0.9497880935668945,
+            "aspects": [{
+              "aspect": "location",
+              "aspect_confidence": 0.9726915955543518,
+              "polarity": "positive",
+              "polarity_confidence": 0.9497880935668945
+            }]
+          }, {
+            "text": "It truly was amazing.",
+            "polarity": "positive",
+            "polarity_confidence": 0.9748669266700745,
+            "aspects": []
+          }, {
+            "text": "Despite this, however, the restaurant was  only about 25% \n      full and so the atmosphere was a bit flat.",
+            "polarity": "neutral",
+            "polarity_confidence": 0.7817545533180239,
+            "aspects": [{
+              "aspect": "ambience",
+              "aspect_confidence": 0.972251832485199,
+              "polarity": "neutral",
+              "polarity_confidence": 0.7817545533180239
+            }]
+          }, {
+            "text": "Perhaps this was to our \n      benefit as we received top class service from our waiter, \n      Brandon, who was not only friendly and funny but extremely \n      knowledgeable when it came to food and wine pairings.",
+            "polarity": "positive",
+            "polarity_confidence": 0.956576406955719,
+            "aspects": [{
+              "aspect": "staff",
+              "aspect_confidence": 0.6776670217514038,
+              "polarity": "positive",
+              "polarity_confidence": 0.956576406955719
+            }, {
+              "aspect": "drinks",
+              "aspect_confidence": 0.1781337857246399,
+              "polarity": "positive",
+              "polarity_confidence": 0.956576406955719
+            }, {
+              "aspect": "food",
+              "aspect_confidence": 0.13842004537582397,
+              "polarity": "positive",
+              "polarity_confidence": 0.956576406955719
+            }]
+          }, {
+            "text": "Speaking of wine, the list was extensive - we loved it - \n      and it took us what seemed like an hour to eventually \n      decide on a local Shiraz.",
+            "polarity": "positive",
+            "polarity_confidence": 0.6927613019943237,
+            "aspects": [{
+              "aspect": "drinks",
+              "aspect_confidence": 0.965453565120697,
+              "polarity": "positive",
+              "polarity_confidence": 0.6927613019943237
+            }]
+          }, {
+            "text": "Now on to the most important \n      aspect, the food.",
+            "polarity": "neutral",
+            "polarity_confidence": 0.7868802547454836,
+            "aspects": [{
+              "aspect": "food",
+              "aspect_confidence": 0.9815698862075806,
+              "polarity": "neutral",
+              "polarity_confidence": 0.7868802547454836
+            }]
+          }, {
+            "text": "Our seafood starters were delicious, \n      as were out fillet steak mains.",
+            "polarity": "positive",
+            "polarity_confidence": 0.8636056184768677,
+            "aspects": [{
+              "aspect": "food",
+              "aspect_confidence": 0.9942840933799744,
+              "polarity": "positive",
+              "polarity_confidence": 0.8636056184768677
+            }]
+          }, {
+            "text": "The one and only real disappointment was the dessert which was served \n      with no real imagination and looked like it had been purchased \n      yesterday at the local grocery store.",
+            "polarity": "negative",
+            "polarity_confidence": 0.995750904083252,
+            "aspects": [{
+              "aspect": "desserts",
+              "aspect_confidence": 0.9849463701248169,
+              "polarity": "negative",
+              "polarity_confidence": 0.995750904083252
+            }]
+          }, {
+            "text": "All in all, my favourite Sydney restaurant so far.",
+            "polarity": "positive",
+            "polarity_confidence": 0.8425158262252808,
+            "aspects": []
+          }, {
+            "text": "So many positives and really good value too.",
+            "polarity": "positive",
+            "polarity_confidence": 0.9174333810806274,
+            "aspects": [{
+              "aspect": "value",
+              "aspect_confidence": 0.5432076454162598,
+              "polarity": "positive",
+              "polarity_confidence": 0.9174333810806274
+            }, {
+              "aspect": "food",
+              "aspect_confidence": 0.44161540269851685,
+              "polarity": "positive",
+              "polarity_confidence": 0.9174333810806274
+            }]
+          }, {
+            "text": "Highly recommend!",
+            "polarity": "positive",
+            "polarity_confidence": 0.9992091059684753,
+            "aspects": []
+          }]
+        }
+    http_version: 
+  recorded_at: Thu, 28 Apr 2016 10:36:30 GMT
+recorded_with: VCR 2.9.3
