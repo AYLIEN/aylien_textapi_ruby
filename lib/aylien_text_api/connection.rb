@@ -43,10 +43,14 @@ module AylienTextApi
       Net::HTTP.start(@uri.host, @uri.port, use_ssl: (@uri.scheme == 'https')) do |http|
         response = http.request(@request)
         
+        limit = response["X-RateLimit-Limit"]
+        remaining = response["X-RateLimit-Remaining"]
+        reset = response["X-RateLimit-Reset"]
+        
         @rate_limits = {
-          limit: response["X-RateLimit-Limit"],
-          remaining: response["X-RateLimit-Remaining"],
-          reset: response["X-RateLimit-Reset"]
+          limit: limit ? limit.to_i : nil,
+          remaining: remaining ? remaining.to_i : nil,
+          reset: reset ? reset.to_i : nil
         }
         
         if response.kind_of?(Net::HTTPSuccess)
