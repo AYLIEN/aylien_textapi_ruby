@@ -42,12 +42,14 @@ module AylienTextApi
     def request!
       Net::HTTP.start(@uri.host, @uri.port, use_ssl: (@uri.scheme == 'https')) do |http|
         response = http.request(@request)
+        
+        @rate_limits = {
+          limit: response["X-RateLimit-Limit"],
+          remaining: response["X-RateLimit-Remaining"],
+          reset: response["X-RateLimit-Reset"]
+        }
+        
         if response.kind_of?(Net::HTTPSuccess)
-          @rate_limits = {
-            limit: response["X-RateLimit-Limit"],
-            remaining: response["X-RateLimit-Remaining"],
-            reset: response["X-RateLimit-Reset"]
-          }
           JSON.parse(response.body, :symbolize_names => true)
         else
           klass = AylienTextApi::Error::ERRORS[response.code.to_i]

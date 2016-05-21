@@ -13,14 +13,18 @@ describe "RateLimits header parameter" do
   it "should be nil with unauthenticated client" do
     VCR.use_cassette('rate_limits_with_unauthenticated_client') do
       result = @unauthenticated_client.rate_limits
-      result.must_be_nil
+      result[:limit].must_be_nil
+      result[:remaining].must_be_nil
+      result[:reset].must_be_nil
     end
   end
 
   it "should be nil with invalid client" do
     VCR.use_cassette('rate_limits_with_invalid_client') do
       result = @invalid_client.rate_limits
-      result.must_be_nil
+      result[:limit].must_be_nil
+      result[:remaining].must_be_nil
+      result[:reset].must_be_nil
     end
   end
 end
