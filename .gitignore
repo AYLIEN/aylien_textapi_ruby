@@ -2,3 +2,4 @@ config/app_config.yml
 doc/
 .yardoc/
 *.gem
+Gemfile.lock
