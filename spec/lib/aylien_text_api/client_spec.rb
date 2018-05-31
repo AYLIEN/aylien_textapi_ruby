@@ -22,6 +22,7 @@ describe AylienTextApi::Client do
   require_relative './classify'
   require_relative './concepts'
   require_relative './entities'
+  require_relative './elsa'
   require_relative './extract'
   require_relative './hashtags'
   require_relative './language'

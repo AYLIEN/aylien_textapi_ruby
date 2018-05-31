@@ -222,6 +222,35 @@ module AylienTextApi
       @connection = Connection.new(endpoint, params, config)
       @connection.request!
     end
+
+    # Extracts named entities (people, organizations and locations) and
+    # applies a sentiment analysis to them
+    #
+    # @param [String] value (nil) URL or Text
+    # @param [Hash] params The entities endpoint options
+    # @option params [String] :url The URL
+    # @option params [String] :text Text
+    #
+    # @return [Hash, nil] A hash of result. See
+    #   http://docs.aylien.com/docs/elsa for more information
+    #   on the data returned.
+    #
+    def elsa(value=nil, params={})
+      endpoint, params, config = common_endpoint(value, params, 
+        Configuration::ENDPOINTS[:elsa])
+      @connection = Connection.new(endpoint, params, config)
+      @connection.request
+    end
+    
+    # Same as elsa, but calls request! so an exception is raised 
+    # if the request fails.
+    #
+    def elsa!(value=nil, params={})
+      endpoint, params, config = common_endpoint(value, params, 
+        Configuration::ENDPOINTS[:elsa])
+      @connection = Connection.new(endpoint, params, config)
+      @connection.request!
+    end
     
     # Detects the main language a document is written in and returns it
     # in ISO 639-1 format.

@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.aylien.com/api/v1/elsa
+    body:
+      encoding: US-ASCII
+      string: text=Barack+Hussein+Obama+II+is+the+44th+and+current%0A++++++President+of+the+United+States%2C+and+the+first%0A++++++African+American+to+hold+the+office.
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Aylien Text API Ruby Gem 0.7.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+      X-Aylien-Textapi-Application-Id:
+      - random_string
+      X-Aylien-Textapi-Application-Key:
+      - random_string
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Server:
+      - openresty/1.13.6.1
+      Date:
+      - Thu, 31 May 2018 11:03:03 GMT
+      Content-Type:
+      - text/plain; charset=us-ascii
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+    body:
+      encoding: UTF-8
+      string: Authentication failed
+    http_version: 
+  recorded_at: Thu, 31 May 2018 11:03:03 GMT
+recorded_with: VCR 2.9.3
