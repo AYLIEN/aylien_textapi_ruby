@@ -6,9 +6,9 @@ Gem::Specification.new do |s|
   s.name        = "aylien_text_api"
   s.version     = AylienTextApi::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["Aylien Inc.", "Hamed Ramezanian"]
+  s.authors     = ["Aylien Inc."]
   s.license     = 'Apache-2.0'
-  s.email       = ["support@aylien.com", "hamed.r.nik@gmail.com"]
+  s.email       = ["support@aylien.com"]
   s.homepage    = "https://github.com/AYLIEN/aylien_textapi_ruby"
   s.summary     = %q{AYLIEN Text Analysis API is a package of Natural Language Processing and Machine Learning-powered tools for analyzing and extracting various kinds of information from text and images.}
   s.description = %q{AYLIEN Text Analysis API is a package of Natural Language Processing and Machine Learning-powered tools for analyzing and extracting various kinds of information from text and images.}
@@ -23,5 +23,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rake', '~> 10.4'
   s.add_development_dependency 'minitest', '~> 5.4'
   s.add_development_dependency 'vcr', '~> 2.9'
-  s.add_development_dependency 'webmock', '~> 1.20'
+  s.add_development_dependency 'webmock', '~> 2.3.2'
 end
