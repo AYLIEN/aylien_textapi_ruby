@@ -323,97 +323,7 @@ module AylienTextApi
       @connection = Connection.new(endpoint, params, config)
       @connection.request!
     end
-    
-    # Returns phrases related to the provided unigram, or bigram.
-    #
-    # @param [String] value (nil) URL or Text
-    # @param [Hash] params The related endpoint options
-    # @option params [String] :phrase Phrase
-    # @option params [Integer] :count (20) Number of phrases to return.
-    #   Max is 100.
-    #
-    # @return [Hash, nil] A hash of result. See
-    #   http://docs.aylien.com/docs/related for more information
-    #   on the data returned.
-    #
-    def related(value=nil, params={})
-      endpoint, params, config = common_endpoint(value, params, 
-        Configuration::ENDPOINTS[:related])
-      @connection = Connection.new(endpoint, params, config)
-      @connection.request
-    end
-    
-    # Same as related, but calls request! so an exception is raised 
-    # if the request fails.
-    #
-    def related!(value=nil, params={})
-      endpoint, params, config = common_endpoint(value, params, 
-        Configuration::ENDPOINTS[:related])
-      @connection = Connection.new(endpoint, params, config)
-      @connection.request!
-    end
-    
-    # Return Microformats.
-    #
-    # @param [String] value (nil) URL
-    # @param [Hash] params The microformats endpoint options
-    # @option params [String] :url The URL
-    # @option params [String] :language ('en') Language of text.
-    #   Valid options are en, de, fr, es, it, pt, and auto.
-    #   If set to auto, it'll try to detect the language.
-    #
-    # @return [Hash, nil] A hash of result. See
-    #   http://docs.aylien.com/docs/microformats for more information
-    #   on the data returned.
-    #
-    def microformats(value=nil, params={})
-      endpoint, params, config = common_endpoint(value, params, 
-        Configuration::ENDPOINTS[:microformats])
-      @connection = Connection.new(endpoint, params, config)
-      @connection.request
-    end
-    
-    # Same as microformats, but calls request! so an exception is raised 
-    # if the request fails.
-    #
-    def microformats!(value=nil, params={})
-      endpoint, params, config = common_endpoint(value, params, 
-        Configuration::ENDPOINTS[:microformats])
-      @connection = Connection.new(endpoint, params, config)
-      @connection.request!
-    end
-    
-    # Return Unsupervised Classify.
-    #
-    # @param [String] value (nil) URL or Text
-    # @param [Hash] params The Unsupervised Classify endpoint options
-    # @option params [String] :url The URL
-    # @option params [String] :text Text
-    # @option params [Array<String>] :class Array of classes
-    # @option params [Integer] :number_of_concepts Number of intermediary 
-    #   common topics to consider when calculating semantic similarity
-    #
-    # @return [Hash, nil] A hash of result. See
-    #   http://docs.aylien.com/docs/classify-unsupervised for more information
-    #   on the data returned.
-    #
-    def unsupervised_classify(value=nil, params={})
-      endpoint, params, config = common_endpoint(value, params, 
-        Configuration::ENDPOINTS[:unsupervised_classify])
-      @connection = Connection.new(endpoint, params, config)
-      @connection.request
-    end
-    
-    # Same as unsupervised_classify, but calls request! so an exception is raised 
-    # if the request fails.
-    #
-    def unsupervised_classify!(value=nil, params={})
-      endpoint, params, config = common_endpoint(value, params, 
-        Configuration::ENDPOINTS[:unsupervised_classify])
-      @connection = Connection.new(endpoint, params, config)
-      @connection.request!
-    end
-    
+ 
     # Runs multiple analysis operations in one API call.
     #
     # @param [String] value (nil) URL or Text
@@ -528,8 +438,6 @@ module AylienTextApi
         value.strip!
         if validate_uri(value)
           params[:url] = value
-        elsif endpoint == Configuration::ENDPOINTS[:related]
-          params[:phrase] = value
         else
           params[:text] = value
         end
