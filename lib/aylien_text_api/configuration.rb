@@ -33,14 +33,12 @@ module AylienTextApi
       entities: 'entities',
       hashtags: 'hashtags',
       language: 'language',
-      related: 'related',
       sentiment: 'sentiment',
       summarize: 'summarize',
-      microformats: 'microformats',
-      unsupervised_classify: 'classify/unsupervised',
       image_tags: 'image-tags',
       combined: 'combined',
-      absa: 'absa/:domain'
+      absa: 'absa/:domain',
+      elsa: 'elsa'
     }
 
     # Build accessor methods for every config options so we can do this, for example:
