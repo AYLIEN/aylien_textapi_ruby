@@ -40,7 +40,7 @@ module AylienTextApi
     end
 
     def request!
-      Net::HTTP.start(@uri.host, @uri.port, use_ssl: (@uri.scheme == 'https')) do |http|
+      Net::HTTP.start(@uri.host, @uri.port, :ENV, use_ssl: (@uri.scheme == 'https')) do |http|
         response = http.request(@request)
         
         limit = response["X-RateLimit-Limit"]
